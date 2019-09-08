@@ -1,0 +1,37 @@
+###############################################################################
+# Jekyll Configuration
+highlighter: rouge
+markdown: kramdown
+permalink: /:title.html
+#paginate: 5
+port: 3000
+safe: true
+language: 'en-uk'
+plugins: [jekyll-feed]
+
+###############################################################################
+# Page Personal Details
+url: https://ZhiningLiu1998.github.io/
+baseurl: /
+author: Zhi-ning Liu
+title: Zhi-ning Liu | Welcome to my homepage
+description: Personal Landing Page
+avatar: zhiningliu.jpg
+
+# Contacts
+email: zhining.liu@outlook.com
+
+# Upon Request for Phone, Skype, Hangouts, etc.
+urequest: Upon request
+
+# Social Usernames for Twitter, Github, Medium, Linkedin
+username_github: ZhiningLiu1998
+username_linkedin: zhiningliu
+username_zhihu: liu-zhi-zhu-14
+
+# Research Outputs
+google_scholar: BrDL99cAAAAJ
+orcid: 0000-0001-8728-9449
+
+# Google Analytics
+google_analytics: UA-47728743-1
