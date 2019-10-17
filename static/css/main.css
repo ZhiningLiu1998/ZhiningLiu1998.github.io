@@ -4,7 +4,8 @@ html,
 body {
   position: relative;
   height: 100%;
-  background-color: #fff;
+  /* background-color: #fff; */
+  background-color: #ECF5FF;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 21px;
   /* The html and body elements cannot have any padding or margin. */
@@ -18,6 +19,7 @@ body {
 .container {
   max-width: 1200px;
   padding-top: 5%;
+  color: black;
 }
 
 .page-not-found{
@@ -36,14 +38,17 @@ body {
 }
 
 #topbar a:link {
-color:#BDBDBD;
+/* color:#BDBDBD; */
+color:#ECF5FF;
 text-decoration:none;
 }
 #topbar a:hover {
-color:#000000;
+/* color:#000000; */
+color:#84C1FF;
 text-decoration:underline;
 }
 #topbar a:visited {
-color:#BDBDBD;
+/* color:#BDBDBD; */
+color:#ECF5FF;
 text-decoration:none;
 }
