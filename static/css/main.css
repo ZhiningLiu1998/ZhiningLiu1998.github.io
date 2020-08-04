@@ -5,7 +5,7 @@ body {
   position: relative;
   height: 100%;
   /* background-color: #fff; */
-  background-color: #ECF5FF;
+  background-color: #2c3e50;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 21px;
   /* The html and body elements cannot have any padding or margin. */
@@ -18,9 +18,16 @@ body {
 
 .container {
   max-width: 1200px;
-  padding-top: 5%;
-  color: black;
+  padding-top: 2%;
+  color: #ecf0f1;
 }
+
+a:link{color:#81cfe0;}
+a:visited{color:#81cfe0;}   
+a:hover{
+  color:#c5eff7;
+  /* background-color: #706A5E; */
+} 
 
 .page-not-found{
   margin: 0 auto;
@@ -39,16 +46,16 @@ body {
 
 #topbar a:link {
 /* color:#BDBDBD; */
-color:#ECF5FF;
+color:#22a7f0;
 text-decoration:none;
 }
 #topbar a:hover {
 /* color:#000000; */
-color:#84C1FF;
+color:#22a7f0;
 text-decoration:underline;
 }
 #topbar a:visited {
 /* color:#BDBDBD; */
-color:#ECF5FF;
+color:#22a7f0;
 text-decoration:none;
 }
