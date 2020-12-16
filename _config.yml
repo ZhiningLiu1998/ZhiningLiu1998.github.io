@@ -11,7 +11,7 @@ title                    : "LZN's Homepage"
 title_separator          : "-"
 name                     : &name "Zhining Liu"
 description              : &description "Welcome to my homepage!"
-url                      : http://zhiningliu.com # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : https://zhiningliu.com # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : ""
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
@@ -91,7 +91,7 @@ author:
   googlescholar    : "https://scholar.google.com/citations?user=5WORAUQAAAAJ&hl=zh-CN"
   email            : zhining.liu@outlook.com
   researchgate     : "https://www.researchgate.net/profile/Zhi_Ning_Liu"
-  uri              : "http://zhiningliu.com/"
+  uri              : "https://zhiningliu.com/"
   bitbucket        :
   codepen          :
   dribbble         :
