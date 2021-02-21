@@ -10,6 +10,11 @@ redirect_from:
 ---
 
 <!-- <style> h2 { border-bottom: none } </style> -->
+[![GitHub](https://img.shields.io/badge/dynamic/json?label=GitHub&query=%24.data.totalSubs&url=https%3A%2F%2Fapi.spencerwoo.com%2Fsubstats%2F%3Fsource%3Dgithub%26queryKey%3DZhiningLiu1998&labelColor=grey&color=181717&logo=github&longCache=true&style=flat-square&suffix=%20Followers)](https://github.com/ZhiningLiu1998)
+[![Zhihu](https://img.shields.io/badge/dynamic/json?color=282c34&labelColor=0084ff&label=%E7%9F%A5%E4%B9%8E/Zhihu&query=%24.data.totalSubs&url=https%3A%2F%2Fapi.spencerwoo.com%2Fsubstats%2F%3Fsource%3Dzhihu%26queryKey%3Dliu-zhi-zhu-14&longCache=true&style=flat-square&suffix=%20Followers)](https://www.zhihu.com/people/liu-zhi-zhu-14)
+[![Steam](https://img.shields.io/badge/dynamic/json?label=Steam&query=%24.data.totalSubs&url=https%3A%2F%2Fapi.spencerwoo.com%2Fsubstats%2F%3Fsource%3DsteamFriends%26queryKey%3D76561198283527394&suffix=%20Friends&logo=steam&labelColor=134375&color=0b1a37&longCache=true&style=flat-square)](https://steamcommunity.com/id/zhiningliu1998)
+![BSc](https://img.shields.io/badge/B.Sc.-Jilin%20Univ.%20(2015--2019)-yellowgreen?style=flat-square&color=181717&labelColor=red)
+![MSc](https://img.shields.io/badge/M.Sc.-Jilin%20Univ.%20(2019--2022)-brightgreen?style=flat-square&color=181717&labelColor=blueviolet)
 
 <!-- ---------------- -->
 I am a M.Sc. student at [School of Artificial Intelligence](http://sai.jlu.edu.cn/) at [Jilin University](http://global.jlu.edu.cn/), 
@@ -17,7 +22,7 @@ supervised by Prof. [Yi Chang](http://yichang-cs.com/).
 Before that, I obtained my B.Sc. degree in Computer Science with high honor from Jilin University in 2019.  
 My recent research interests include Imbalanced Learning, Transfer Learning, and Applied Machine Learning.
 
-Contact me via:  
+**Contact me via**:  
 <i class="fa fa-fw fa-envelope"></i> <font style="font-size: 0.9em;">Mail: <a href="mailto:zhining.liu@outlook.com">zhining.liu(AT)outlook.com</a> or <a href="mailto:znliu19@mails.jlu.edu.cn">znliu19(AT)mails.jlu.edu.cn</a></font>
 <br>
 <i class="fa fa-fw fa-phone"></i> <font style="font-size: 0.9em;">Mobile: +86 176-1010-6607</font>
