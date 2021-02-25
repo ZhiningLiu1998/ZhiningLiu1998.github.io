@@ -125,6 +125,7 @@ My recent research interests include Imbalanced Learning, Transfer Learning, and
       [<a href="{{ site.baseurl }}files/ICDE_2020_self_paced_ensemble_slides.pdf">Slides</a>] 
       [<a href="https://zhuanlan.zhihu.com/p/86891438">Zhihu/知乎</a>] 
       [<a href="https://github.com/ZhiningLiu1998/self-paced-ensemble">Github</a>]
+      [<a href="https://pypi.org/project/self-paced-ensemble">PyPI</a>]
     </td>
   </tr>
 </table>
@@ -134,25 +135,57 @@ My recent research interests include Imbalanced Learning, Transfer Learning, and
 <!-- <h5><i>Articles & Projects</i></h5> -->
 # Miscellaneous
 
-### *Articles & Projects*
+### *Recent Articles & Projects*
 
 <table style="border:none;font-size:0.95em;">
+
   <tr>
-  <td style="border:none;"><a href="https://github.com/ZhiningLiu1998/mesa">Build powerful ensemble class-imbalanced learning models via meta-sampler</a> (Github Repository) &emsp; </td>
-  <td style="border:none;text-align:center;"><a href="https://github.com/ZhiningLiu1998/mesa/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/ZhiningLiu1998/mesa?style=social"></a></td>
+  <td style="border:none;">
+  <a href="https://github.com/ZhiningLiu1998/awesome-imbalanced-learning">Awesome-imbalanced-learning: paper, code, frameworks, and libraries</a> (Github Repository) &nbsp;
+  </td>
+  <td style="border:none;text-align:center;">
+    <a href="https://github.com/ZhiningLiu1998/awesome-imbalanced-learning/stargazers">
+    <img alt="GitHub stars" src="https://img.shields.io/github/stars/ZhiningLiu1998/awesome-imbalanced-learning?style=social">
+    </a>
+    <a href="https://github.com/ZhiningLiu1998/awesome-imbalanced-learning/network/members">
+    <img alt="GitHub forks" src="https://img.shields.io/github/forks/ZhiningLiu1998/awesome-imbalanced-learning?style=social">
+    </a>
+  </td>
   </tr>
+
   <tr>
-  <td style="border:none;"><a href="https://github.com/ZhiningLiu1998/self-paced-ensemble">Self-paced Ensemble for Highly Imbalanced Massive Data Classification</a> (Github Repository) &nbsp;</td>
-  <td style="border:none;text-align:center;"><a href="https://github.com/ZhiningLiu1998/self-paced-ensemble/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/ZhiningLiu1998/self-paced-ensemble?style=social"></a></td>
+    <td style="border:none;">
+      <a href="https://github.com/ZhiningLiu1998/mesa">Build powerful ensemble class-imbalanced learning models via meta-sampler</a> (Github Repository) 
+    </td>
+    <td style="border:none;text-align:center;">
+      <a href="https://github.com/ZhiningLiu1998/mesa/stargazers">
+      <img alt="GitHub stars" src="https://img.shields.io/github/stars/ZhiningLiu1998/mesa?style=social">
+      </a>
+      <a href="https://github.com/ZhiningLiu1998/mesa/network/members">
+      <img alt="GitHub forks" src="https://img.shields.io/github/forks/ZhiningLiu1998/mesa?style=social">
+      </a>
+    </td>
   </tr>
+
   <tr>
-  <td style="border:none;"><a href="https://github.com/ZhiningLiu1998/awesome-imbalanced-learning">Awesome-imbalanced-learning: paper, code, frameworks, and libraries</a> (Github Repository) &nbsp;</td>
-  <td style="border:none;text-align:center;"><a href="https://github.com/ZhiningLiu1998/awesome-imbalanced-learning/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/ZhiningLiu1998/awesome-imbalanced-learning?style=social"></a></td>
+  <td style="border:none;">
+    <a href="https://github.com/ZhiningLiu1998/self-paced-ensemble">Self-paced Ensemble for Highly Imbalanced Massive Data Classification</a> (Github Repository) &nbsp;
+  </td>
+  <td style="border:none;text-align:center;">
+    <a href="https://github.com/ZhiningLiu1998/self-paced-ensemble/stargazers">
+    <img alt="GitHub stars" src="https://img.shields.io/github/stars/ZhiningLiu1998/self-paced-ensemble?style=social">
+    </a>
+    <a href="https://github.com/ZhiningLiu1998/self-paced-ensemble/network/members">
+    <img alt="GitHub forks" src="https://img.shields.io/github/forks/ZhiningLiu1998/self-paced-ensemble?style=social">
+    </a>
+  </td>
   </tr>
+
   <tr>
   <td style="border:none;"><a href="https://zhuanlan.zhihu.com/p/66373943">Learning unbiased classifier from class-imbalanced data: an overview</a> (Chinese Article)</td>
   <td style="border:none;"></td>
   </tr>
+
 </table>
 
 ### *Selected Honors*
@@ -199,6 +232,18 @@ My recent research interests include Imbalanced Learning, Transfer Learning, and
     <td style="border:none;"><i>National Endeavor Fellowship</i> (top 5%, ¥5,000 CNY) by Ministry of Education.
     </td>
     <td style="border:none;text-align:center;">2017
+    </td>
+  </tr>
+</table>
+
+### *Github Stats*
+<table style="font-size:0.92em;">
+  <tr>
+    <td align="center">
+    <img src="https://github-readme-stats.vercel.app/api?username=ZhiningLiu1998&show_icons=true&hide_border=true&bg_color=30,4a0908,643296&hide=issues&hide_rank=false&include_all_commits=true&theme=vision-friendly-dark">
+    </td>
+    <td align="center">
+    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ZhiningLiu1998&show_icons=true&hide_border=true&bg_color=30,4a0908,643296&hide=issues,contribs&layout=compact&theme=vision-friendly-dark">
     </td>
   </tr>
 </table>
