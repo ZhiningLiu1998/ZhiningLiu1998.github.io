@@ -32,6 +32,7 @@ My recent research interests include Imbalanced Learning, Transfer Learning, and
   <p>
   <!-- [09/2019] My colleague Boyang Yu will was elected as the class monitor of JLUSAI!!!<br> -->
   <!-- [09/2019] My colleague Zhepei Wei will serve as on of the general chairs of AAAI 2021!!!<br> -->
+  <b>[05/2021]</b> The <a href="https://github.com/ZhiningLiu1998/imbalanced-ensemble">imbalanced-ensemble</a> python package is released (<a href="https://imbalanced-ensemble.readthedocs.io">Docs</a>, <a href="https://pypi.org/project/imbalanced-ensemble/">PyPI</a>), try it out!<br>
   <b>[10/2020]</b> Our work on meta imbalanced learning was accepted by <a href="https://neurips.cc/Conferences/2020/">NeurIPS 2020</a>!<br>
   <b>[06/2020]</b> I am helping to organize <a href="https://sigir.org/sigir2020/">ACM SIGIR 2020</a>. Welcome!<br>
   <b>[10/2019]</b> Our work on imbalanced classification was accepted by <a href="https://www.utdallas.edu/icde/">IEEE ICDE 2020</a>!<br>
@@ -138,6 +139,20 @@ My recent research interests include Imbalanced Learning, Transfer Learning, and
 ### *Recent Articles & Projects*
 
 <table style="border:none;font-size:0.95em;">
+
+  <tr>
+  <td style="border:none;">
+    <a href="https://github.com/ZhiningLiu1998/imbalanced-ensemble">imbalanced-ensemble: ensemble imbalanced learning in Python </a> (Python Package) &nbsp;
+  </td>
+  <td style="border:none;text-align:center;">
+    <a href="https://github.com/ZhiningLiu1998/imbalanced-ensemble/stargazers">
+    <img alt="GitHub stars" src="https://img.shields.io/github/stars/ZhiningLiu1998/imbalanced-ensemble?style=social">
+    </a>
+    <a href="https://github.com/ZhiningLiu1998/imbalanced-ensemble/network/members">
+    <img alt="GitHub forks" src="https://img.shields.io/github/forks/ZhiningLiu1998/imbalanced-ensemble?style=social">
+    </a>
+  </td>
+  </tr>
 
   <tr>
   <td style="border:none;">
