@@ -1,7 +1,7 @@
 ---
 layout: archive
 permalink: /
-title: "Hi! I'm Zhi-ning LIU (刘芷宁)."
+title: "Greetings! I'm Zhi-ning LIU (刘芷宁)."
 excerpt: "About me"
 author_profile: true
 redirect_from: 
@@ -16,11 +16,12 @@ redirect_from:
 ![BSc](https://img.shields.io/badge/B.Sc.-Jilin%20Univ.%20(2015--2019)-yellowgreen?style=flat-square&color=181717&labelColor=red)
 ![MSc](https://img.shields.io/badge/M.Sc.-Jilin%20Univ.%20(2019--2022)-brightgreen?style=flat-square&color=181717&labelColor=blueviolet)
 
-<!-- ---------------- -->
-I am a M.Sc. student at [School of Artificial Intelligence](http://sai.jlu.edu.cn/) at [Jilin University](http://global.jlu.edu.cn/), 
-supervised by Prof. [Yi Chang](http://yichang-cs.com/).  
-Before that, I obtained my B.Sc. degree in Computer Science with high honor from Jilin University in 2019.  
-My recent research interests include Imbalanced Learning, Transfer Learning, and Applied Machine Learning.
+<!-------------------->
+**你好! / Hello! / こんにちは! / Здравствуй! / Bonjour! / Guten Tag! / Hola! / Ciao! / السلام عليكم!**
+
+I am a M.Sc. student at [School of Artificial Intelligence](http://sai.jlu.edu.cn/) at [Jilin University](http://global.jlu.edu.cn/), supervised by Prof. [Yi Chang](http://yichang-cs.com/).
+Before that, I obtained my B.Sc. degree in Computer Science with high honor from Jilin University in 2019.
+My recent research interests include Imbalanced Learning, Meta Learning, and Applied Machine Learning.
 
 **Contact me via**:  
 <i class="fa fa-fw fa-envelope"></i> <font style="font-size: 0.9em;">Mail: <a href="mailto:zhining.liu@outlook.com">zhining.liu(AT)outlook.com</a> or <a href="mailto:znliu19@mails.jlu.edu.cn">znliu19(AT)mails.jlu.edu.cn</a></font>
