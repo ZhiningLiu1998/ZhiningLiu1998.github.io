@@ -78,6 +78,32 @@ My recent research interests include Imbalanced Learning, Meta Learning, and App
 <table style="width:100%;border:None;border-spacing:0px;border-collapse:separate;margin-right:0;margin-left:0;font-size:0.95em;">
   <tr>
     <td style="padding:8px;width:30%;vertical-align:middle;border:none;">
+      <a href="images/dube.png">
+      <img src='images/dube.png' width="300">
+      </a>
+    </td>
+    <td style="padding:20px;width:70%;vertical-align:middle;border-right:none;border:none;">
+      <b>"Towards Inter-class and Intra-class Imbalance in Class-imbalanced Learning"</b>, 
+      <br>
+      <u>Zhining Liu</u>, et al. <i>Preprint</i>. [<a href="{{ site.baseurl }}files/preprint_dube.pdf">PDF</a>]
+    </td>
+  </tr>
+
+  <tr>
+    <td style="padding:8px;width:30%;vertical-align:middle;border:none;">
+      <a href="images/imbens.png">
+      <img src='images/imbens.png' width="300">
+      </a>
+    </td>
+    <td style="padding:20px;width:70%;vertical-align:middle;border-right:none;border:none;">
+      <b>"IMBENS: Ensemble Class-imbalanced Learning in Python"</b>, 
+      <br>
+      <u>Zhining Liu</u>, et al. <i>Preprint</i>. [<a href="{{ site.baseurl }}files/preprint_imbens.pdf">PDF</a>]
+    </td>
+  </tr>
+
+  <tr>
+    <td style="padding:8px;width:30%;vertical-align:middle;border:none;">
       <a href="images/mesa.png">
       <img src='images/mesa.png' width="300">
       </a>
