@@ -9,12 +9,12 @@ redirect_from:
 
 {% include base_path %}
 
-<b style="color: #9D9D9D;font-size: 1.5em;">
+<b style="font-size: 1.5em;">
     PDF:
     &nbsp;
-    <a href="/files/Resume_ZhiningLiu.pdf" style="color: #9D9D9D">English</a>
+    [<a href="/files/Resume_ZhiningLiu.pdf">English</a>]
     &nbsp;
-    <a href="/files/Resume_ZhiningLiu_Chinese.pdf" style="color: #9D9D9D">中文</a>
+    [<a href="/files/Resume_ZhiningLiu_Chinese.pdf">中文</a>]
 </b>
 
 Education
