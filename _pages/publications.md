@@ -44,22 +44,6 @@ author_profile: true
   </tr>
 </table>
 
-<!-- 1. ***"MESA: Boost Ensemble Imbalanced Learning with MEta-SAmpler",***  
-   **Zhining Liu**,
-   [Pengfei Wei](https://scholar.google.com/citations?hl=en&user=a94WthkAAAAJ)
-   [Jing Jiang](https://www.uts.edu.au/staff/jing.jiang)
-   [Wei Cao](https://weicao1990.github.io/)
-   [Jiang Bian](https://scholar.google.com/citations?user=pZBEnY8AAAAJ&hl=zh-CN) and 
-   [Yi Chang](http://yichang-cs.com/)  
-   *in 34th Conference on Neural Information Processing Systems (**NeurIPS 2020**).*  
-   [[PDF](/files/NeurIPS_2020_MESA.pdf)]
-   [[Video](https://studio.slideslive.com/web_recorder/share/20201020T134559Z__NeurIPS_posters__17343__mesa-effective-ensemble-imbal?s=d3745afc-cfcf-4d60-9f34-63d3d811b55f)]
-   [[arXiv](https://arxiv.org/abs/2010.08830)]
-   [[Zhihu/知乎](https://zhuanlan.zhihu.com/p/268539195)]
-   [[Github](https://github.com/ZhiningLiu1998/mesa)] -->
-
-   <!-- *MESA is a meta-learning-based ensemble learning framework for solving class-imbalanced learning problems. It is a task-agnostic general-purpose solution that is able to boost most of the existing machine learning models' performance on imbalanced data.* -->
-
 ```bib
 @article{liu2020mesa,
   title={MESA: Boost Ensemble Imbalanced Learning with MEta-SAmpler},
@@ -69,6 +53,7 @@ author_profile: true
   year={2020}
 }
 ```
+
 
 <table style="width:100%;border:None;border-spacing:0px;border-collapse:separate;margin-right:0;margin-left:0;font-size:0.95em;">
   <tr>
@@ -101,21 +86,6 @@ author_profile: true
   </tr>
 </table>
 
-<!-- 1. ***"Self-paced Ensemble for Highly Imbalanced Massive Data Classification",***  
-   **Zhining Liu**,
-   [Wei Cao](https://weicao1990.github.io/)
-   [Zhifeng Gao](https://scholar.google.com/citations?user=uBo3SJcAAAAJ&hl=en)
-   [Jiang Bian](https://scholar.google.com/citations?user=pZBEnY8AAAAJ&hl=zh-CN)
-   [Hechang Chen](https://scholar.google.com/citations?user=EezEcbgAAAAJ&hl=en)
-   [Yi Chang](http://yichang-cs.com/) and 
-   [Tie-Yan Liu](https://www.microsoft.com/en-us/research/people/tyliu/)  
-   *in 36th IEEE International Conference on Data Engineering (**ICDE 2020**).*  
-   [[PDF](/files/ICDE_2020_self_paced_ensemble.pdf)]
-   [[arXiv](https://arxiv.org/abs/1909.03500v3)]
-   [[Slides](/files/ICDE_2020_self_paced_ensemble_slides.pdf)]
-   [[Zhihu/知乎](https://zhuanlan.zhihu.com/p/86891438)]
-   [[Github](https://github.com/ZhiningLiu1998/self-paced-ensemble)] -->
-
   ```bib
   @inproceedings{liu2020self,
     title={Self-paced Ensemble for Highly Imbalanced Massive Data Classification},
@@ -127,3 +97,65 @@ author_profile: true
   }
   ```
   
+
+<table style="width:100%;border:None;border-spacing:0px;border-collapse:separate;margin-right:0;margin-left:0;font-size:0.95em;">
+  <tr>
+    <td style="padding:5px;width:70%;vertical-align:middle;border-right:none;border-bottom:none;">
+      <b>3. "Towards Inter-class and Intra-class Imbalance in Class-imbalanced Learning"</b>, 
+      <br>
+      <u>Zhining Liu</u>, et al. <i>Preprint</i>. 
+      <br>
+      [<a href="{{ site.baseurl }}files/preprint_dube.pdf">PDF</a>]
+      [<a href="https://arxiv.org/abs/2111.12791">arXiv</a>]
+      [<a href="https://github.com/ICDE2022Sub/duplebalance">Github</a>]
+      [<a href="https://duplebalance.readthedocs.io/">Documentation</a>]
+    </td>
+    <td style="padding:10px;width:30%;vertical-align:middle;border-right:none;border-bottom:none;">
+      <a href="/images/dube.png">
+      <img src='/images/dube.png' width="300">
+      </a>
+    </td>
+  </tr>
+</table>
+
+```bib
+@article{liu2021towards,
+  title={Towards Inter-class and Intra-class Imbalance in Class-imbalanced Learning},
+  author={Liu, Zhining and Wei, Pengfei and Wei, Zhepei and Yu, Boyang and Jiang, Jing and Cao, Wei and Bian, Jiang and Chang, Yi},
+  journal={arXiv preprint arXiv:2111.12791},
+  year={2021}
+}
+```
+
+
+<table style="width:100%;border:None;border-spacing:0px;border-collapse:separate;margin-right:0;margin-left:0;font-size:0.95em;">
+  <tr>
+    <td style="padding:5px;width:70%;vertical-align:middle;border-right:none;border-bottom:none;">
+      <b>4. "IMBENS: Ensemble Class-imbalanced Learning in Python"</b>, 
+      <br>
+      <u>Zhining Liu</u>, et al. <i>Preprint</i>. 
+      <br>
+      [<a href="{{ site.baseurl }}files/preprint_imbens.pdf">PDF</a>]
+      [<a href="https://arxiv.org/abs/2111.12776">arXiv</a>]
+      [<a href="https://zhuanlan.zhihu.com/p/376572330">Zhihu/知乎</a>] 
+      [<a href="https://github.com/ZhiningLiu1998/imbalanced-ensemble">Github</a>]
+      [<a href="https://imbalanced-ensemble.readthedocs.io/">Documentation</a>]
+      [<a href="https://imbalanced-ensemble.readthedocs.io/en/latest/auto_examples/index.html#">Example Gallery</a>]
+      [<a href="https://pypi.org/project/imbalanced-ensemble/">PyPI</a>]
+    </td>
+    <td style="padding:10px;width:30%;vertical-align:middle;border-right:none;border-bottom:none;">
+      <a href="/images/imbens.png">
+      <img src='/images/imbens.png' width="300">
+      </a>
+    </td>
+  </tr>
+</table>
+
+```bib
+@article{liu2021imbens,
+  title={IMBENS: Ensemble Class-imbalanced Learning in Python},
+  author={Liu, Zhining and Wei, Zhepei and Yu, Erxin and Huang, Qiang and Guo, Kai and Yu, Boyang and Cai, Zhaonian and Ye, Hangting and Cao, Wei and Bian, Jiang and Wei, Pengfei and Jiang, Jing and Chang, Yi},
+  journal={arXiv preprint arXiv:2111.12776},
+  year={2021}
+}
+```

@@ -253,13 +253,6 @@ My recent research interests include Imbalanced Learning, Meta Learning, and App
 
 ### *Selected Honors*
 
-<!-- | *National Scholarship* (2/80, ¥20,000 CNY) by Ministry of Education.              | 2020 |
-| *National Scholarship* (1/40, ¥20,000 CNY) by Ministry of Education.              | 2019 |
-| *Undergraduate Research Scholarship* (20/400, ¥5,000 CNY) by Jilin University.    | 2018 |
-| *Outstanding Student Project Scholarship* (2/84, ¥5,000 CNY) by Jilin University. | 2018 |
-| *Undergraduate Student Project Funding* (¥10,000 CNY) by Ministry of Education.   | 2018 |
-| *National Endeavor Fellowship* (top 5%, ¥5,000 CNY) by Ministry of Education.     | 2017 | -->
-
 <table style="border:none;font-size:0.95em;">
   <tr>
     <td style="border:none;"><i>National Scholarship</i> (2/80, ¥20,000 CNY) by Ministry of Education.
