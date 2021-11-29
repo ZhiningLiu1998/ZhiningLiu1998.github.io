@@ -24,7 +24,7 @@ Before that, I obtained my B.Sc. degree in Computer Science with high honor from
 My recent research interests include Imbalanced Learning, Meta Learning, and Applied Machine Learning.
 
 **Contact me via**:  
-<i class="fa fa-fw fa-envelope"></i> <font style="font-size: 0.9em;">Mail: <a href="mailto:zhining.liu@outlook.com">zhining.liu(AT)outlook.com</a> or <a href="mailto:znliu19@mails.jlu.edu.cn">znliu19(AT)mails.jlu.edu.cn</a></font>
+<i class="fa fa-fw fa-envelope"></i> <font style="font-size: 0.9em;">Mail: <a href="mailto:zhining.liu@outlook.com">zhining [DOT] liu [AT] outlook [DOT] com</a> or <a href="mailto:znliu19@mails.jlu.edu.cn">znliu19 [AT] mails [DOT] jlu [DOT] edu [DOT] cn</a></font>
 <br>
 <i class="fa fa-fw fa-phone"></i> <font style="font-size: 0.9em;">Mobile: +86 176-1010-6607</font>
 
@@ -33,9 +33,12 @@ My recent research interests include Imbalanced Learning, Meta Learning, and App
   <p>
   <!-- [09/2019] My colleague Boyang Yu will was elected as the class monitor of JLUSAI!!!<br> -->
   <!-- [09/2019] My colleague Zhepei Wei will serve as on of the general chairs of AAAI 2021!!!<br> -->
-  <b>[05/2021]</b> The <a href="https://github.com/ZhiningLiu1998/imbalanced-ensemble">imbalanced-ensemble</a> python package is released (<a href="https://imbalanced-ensemble.readthedocs.io">Docs</a>, <a href="https://pypi.org/project/imbalanced-ensemble/">PyPI</a>), try it out!<br>
+  <b>[11/2021]</b> What are inter-&intra-class imbalance and how do they affect learning? See our <a href="https://arxiv.org/abs/2111.12791">discussion</a>.<br>
+  <b>[11/2021]</b> Check out our latest <a href="https://arxiv.org/abs/2111.12791">paper</a> describing the <a href="https://github.com/ZhiningLiu1998/imbalanced-ensemble">imbens</a> package.<br>
+  <b>[06/2021]</b> The <a href="https://github.com/ZhiningLiu1998/imbalanced-ensemble">imbalanced-ensemble</a> python package is released (<a href="https://imbalanced-ensemble.readthedocs.io">Docs</a>, <a href="https://pypi.org/project/imbalanced-ensemble/">PyPI</a>), try it out!<br>
   <b>[10/2020]</b> Our work on meta imbalanced learning was accepted by <a href="https://neurips.cc/Conferences/2020/">NeurIPS 2020</a>!<br>
   <b>[06/2020]</b> I am helping to organize <a href="https://sigir.org/sigir2020/">ACM SIGIR 2020</a>. Welcome!<br>
+  <b>[04/2020]</b> We started the "<a href="https://github.com/ZhiningLiu1998/awesome-imbalanced-learning">awesome-imbalanced-learning</a>" project. Contributions are welcomed!<br>
   <b>[10/2019]</b> Our work on imbalanced classification was accepted by <a href="https://www.utdallas.edu/icde/">IEEE ICDE 2020</a>!<br>
   <b>[07/2019]</b> I received my B.Sc. degree from the Tang Aoqing Honors Program in Science.<br>
   <b>[09/2018]</b> I will intern at MSRA in the following year, supervised by Dr. <a href="https://scholar.google.com/citations?user=pZBEnY8AAAAJ&hl=zh-CN">Jiang BIAN</a> and Dr. <a href="https://weicao1990.github.io/">Wei CAO</a>.<br>
@@ -56,6 +59,10 @@ My recent research interests include Imbalanced Learning, Meta Learning, and App
       Master of Science (Sept. 2019 - Now)
       <br>
       Supervisor: Dr. <a href="http://yichang-cs.com/">Yi CHANG</a>
+      <br>
+      Work closely with: 
+      Dr. <a href="http://pengfei-wei.com/">Pengfei WEI</a>,
+      Dr. <a href="https://profiles.uts.edu.au/jing.jiang">Jing JIANG</a>.
     </td>
   </tr>
   <tr>
@@ -83,9 +90,14 @@ My recent research interests include Imbalanced Learning, Meta Learning, and App
       </a>
     </td>
     <td style="padding:20px;width:70%;vertical-align:middle;border-right:none;border:none;">
-      <b>"Towards Inter-class and Intra-class Imbalance in Class-imbalanced Learning"</b>, 
+      <b>"Towards Inter-class and Intra-class Imbalance in Class-imbalanced Learning"</b>
       <br>
-      <u>Zhining Liu</u>, et al. <i>Preprint</i>. [<a href="{{ site.baseurl }}files/preprint_dube.pdf">PDF</a>]
+      <u>Zhining Liu</u>, et al. <i>Preprint</i>. 
+      <br>
+      [<a href="{{ site.baseurl }}files/preprint_dube.pdf">PDF</a>]
+      [<a href="https://arxiv.org/abs/2111.12791">arXiv</a>]
+      [<a href="https://github.com/ICDE2022Sub/duplebalance">Github</a>]
+      [<a href="https://duplebalance.readthedocs.io/">Documentation</a>]
     </td>
   </tr>
 
@@ -96,9 +108,17 @@ My recent research interests include Imbalanced Learning, Meta Learning, and App
       </a>
     </td>
     <td style="padding:20px;width:70%;vertical-align:middle;border-right:none;border:none;">
-      <b>"IMBENS: Ensemble Class-imbalanced Learning in Python"</b>, 
+      <b>"IMBENS: Ensemble Class-imbalanced Learning in Python"</b>
       <br>
-      <u>Zhining Liu</u>, et al. <i>Preprint</i>. [<a href="{{ site.baseurl }}files/preprint_imbens.pdf">PDF</a>]
+      <u>Zhining Liu</u>, et al. <i>Preprint</i>. 
+      <br>
+      [<a href="{{ site.baseurl }}files/preprint_imbens.pdf">PDF</a>]
+      [<a href="https://arxiv.org/abs/2111.12776">arXiv</a>]
+      [<a href="https://zhuanlan.zhihu.com/p/376572330">Zhihu/知乎</a>] 
+      [<a href="https://github.com/ZhiningLiu1998/imbalanced-ensemble">Github</a>]
+      [<a href="https://imbalanced-ensemble.readthedocs.io/">Documentation</a>]
+      [<a href="https://imbalanced-ensemble.readthedocs.io/en/latest/auto_examples/index.html#">Example Gallery</a>]
+      [<a href="https://pypi.org/project/imbalanced-ensemble/">PyPI</a>]
     </td>
   </tr>
 
@@ -109,10 +129,10 @@ My recent research interests include Imbalanced Learning, Meta Learning, and App
       </a>
     </td>
     <td style="padding:20px;width:70%;vertical-align:middle;border-right:none;border:none;">
-      <b>"MESA: Boost Ensemble Imbalanced Learning with MEta-SAmpler"</b>, 
+      <b>"MESA: Boost Ensemble Imbalanced Learning with MEta-SAmpler"</b>
       <br>
       <u>Zhining Liu</u>, 
-      <a href="https://scholar.google.com/citations?hl=en&user=a94WthkAAAAJ"> Pengfei Wei</a>, 
+      <a href="http://pengfei-wei.com/"> Pengfei Wei</a>, 
       <a href="https://www.uts.edu.au/staff/jing.jiang"> Jing Jiang</a>, 
       <a href="https://weicao1990.github.io/"> Wei Cao</a>, 
       <a href="https://scholar.google.com/citations?user=pZBEnY8AAAAJ&hl=zh-CN"> Jiang Bian</a>, 
@@ -122,8 +142,8 @@ My recent research interests include Imbalanced Learning, Meta Learning, and App
       <i>in 34th Conference on Neural Information Processing Systems (<b>NeurIPS 2020</b>)</i>. 
       <br>
       [<a href="{{ site.baseurl }}files/NeurIPS_2020_MESA.pdf">PDF</a>]
-      [<a href="https://studio.slideslive.com/web_recorder/share/20201020T134559Z__NeurIPS_posters__17343__mesa-effective-ensemble-imbal?s=d3745afc-cfcf-4d60-9f34-63d3d811b55f">Video</a>]
       [<a href="https://arxiv.org/abs/2010.08830">arXiv</a>]
+      [<a href="https://studio.slideslive.com/web_recorder/share/20201020T134559Z__NeurIPS_posters__17343__mesa-effective-ensemble-imbal?s=d3745afc-cfcf-4d60-9f34-63d3d811b55f">Video</a>]
       [<a href="https://zhuanlan.zhihu.com/p/268539195">Zhihu/知乎</a>] 
       [<a href="https://github.com/ZhiningLiu1998/mesa">Github</a>]
     </td>
@@ -136,7 +156,7 @@ My recent research interests include Imbalanced Learning, Meta Learning, and App
       </a>
     </td>
     <td style="padding:20px;width:70%;vertical-align:middle;border-right:none;border:none;">
-      <b>"Self-paced Ensemble for Highly Imbalanced Massive Data Classification"</b>, 
+      <b>"Self-paced Ensemble for Highly Imbalanced Massive Data Classification"</b>
       <br>
       <u>Zhining Liu</u>, 
       <a href="https://weicao1990.github.io/"> Wei Cao</a>, 
@@ -150,6 +170,7 @@ My recent research interests include Imbalanced Learning, Meta Learning, and App
       <br>
       [<a href="https://conferences.computer.org/icde/2020/pdfs/ICDE2020-5acyuqhpJ6L9P042wmjY1p/290300a841/290300a841.pdf">PDF</a>]
       [<a href="https://arxiv.org/abs/1909.03500v3">arXiv</a>] 
+      [<a href="https://www.bilibili.com/video/BV1Fg411L7gk">Video(bilibili)</a>]
       [<a href="{{ site.baseurl }}files/ICDE_2020_self_paced_ensemble_slides.pdf">Slides</a>] 
       [<a href="https://zhuanlan.zhihu.com/p/86891438">Zhihu/知乎</a>] 
       [<a href="https://github.com/ZhiningLiu1998/self-paced-ensemble">Github</a>]
