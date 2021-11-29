@@ -31,8 +31,8 @@ author_profile: true
       <i>in 34th Conference on Neural Information Processing Systems (<b>NeurIPS 2020</b>)</i>. 
       <br>
       [<a href="{{ site.baseurl }}files/NeurIPS_2020_MESA.pdf">PDF</a>]
-      [<a href="https://studio.slideslive.com/web_recorder/share/20201020T134559Z__NeurIPS_posters__17343__mesa-effective-ensemble-imbal?s=d3745afc-cfcf-4d60-9f34-63d3d811b55f">Video</a>]
       [<a href="https://arxiv.org/abs/2010.08830">arXiv</a>]
+      [<a href="https://studio.slideslive.com/web_recorder/share/20201020T134559Z__NeurIPS_posters__17343__mesa-effective-ensemble-imbal?s=d3745afc-cfcf-4d60-9f34-63d3d811b55f">Video</a>]
       [<a href="https://zhuanlan.zhihu.com/p/268539195">Zhihu/知乎</a>] 
       [<a href="https://github.com/ZhiningLiu1998/mesa">Github</a>]
     </td>
@@ -60,7 +60,7 @@ author_profile: true
 
    <!-- *MESA is a meta-learning-based ensemble learning framework for solving class-imbalanced learning problems. It is a task-agnostic general-purpose solution that is able to boost most of the existing machine learning models' performance on imbalanced data.* -->
 
-```
+```bib
 @article{liu2020mesa,
   title={MESA: Boost Ensemble Imbalanced Learning with MEta-SAmpler},
   author={Liu, Zhining and Wei, Pengfei and Jiang, Jing and Cao, Wei and Bian, Jiang and Chang, Yi},
@@ -87,9 +87,11 @@ author_profile: true
       <br>
       [<a href="https://conferences.computer.org/icde/2020/pdfs/ICDE2020-5acyuqhpJ6L9P042wmjY1p/290300a841/290300a841.pdf">PDF</a>]
       [<a href="https://arxiv.org/abs/1909.03500v3">arXiv</a>] 
-      [<a href="{{ site.baseurl }}files/ICDE_2020_self_paced_ensemble_slides.pdf">Slides</a>] 
+      [<a href="https://www.bilibili.com/video/BV1Fg411L7gk">Video(bilibili)</a>]
+      [<a href="{{ site.baseurl }}files/ICDE_2020_SPE_slides.pdf">Slides</a>] 
       [<a href="https://zhuanlan.zhihu.com/p/86891438">Zhihu/知乎</a>] 
       [<a href="https://github.com/ZhiningLiu1998/self-paced-ensemble">Github</a>]
+      [<a href="https://pypi.org/project/self-paced-ensemble">PyPI</a>]
     </td>
     <td style="padding:10px;width:30%;vertical-align:middle;border-right:none;border-bottom:none;">
       <a href="/images/spe.png">
@@ -114,7 +116,7 @@ author_profile: true
    [[Zhihu/知乎](https://zhuanlan.zhihu.com/p/86891438)]
    [[Github](https://github.com/ZhiningLiu1998/self-paced-ensemble)] -->
 
-  ```
+  ```bib
   @inproceedings{liu2020self,
     title={Self-paced Ensemble for Highly Imbalanced Massive Data Classification},
     author={Liu, Zhining and Cao, Wei and Gao, Zhifeng and Bian, Jiang and Chen, Hechang and Chang, Yi and Liu, Tie-Yan},
