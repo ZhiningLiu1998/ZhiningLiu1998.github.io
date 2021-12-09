@@ -19,9 +19,12 @@ redirect_from:
 <!-------------------->
 **你好! / Hello! / こんにちは! / Здравствуй! / Bonjour! / Guten Tag! / Hola! / Ciao! / السلام عليكم!**
 
-I am a M.Sc. student at [School of Artificial Intelligence](http://sai.jlu.edu.cn/) at [Jilin University](http://global.jlu.edu.cn/), supervised by Prof. [Yi Chang](http://yichang-cs.com/).
-Before that, I obtained my B.Sc. degree in Computer Science with high honor from Jilin University in 2019.
-My recent research interests include Imbalanced Learning, Meta Learning, and Applied Machine Learning.
+I am a M.S. student at [School of Artificial Intelligence](http://sai.jlu.edu.cn/) at [Jilin University](http://global.jlu.edu.cn/), supervised by Prof. [Yi Chang](http://yichang-cs.com/).
+Prior to that, I received my B.S. in Computer Science (Tang Ao-qing Honors Program) from Jilin University in 2019.
+
+My goal is to build *fair intelligent systems* that benefit our lives and make the world more equitable. I am particularly interested in developing algorithms and systems for **<u>unbiased</u>**, **<u>efficient</u>** and **<u>robust</u>** learning in real-world applications. My recent interests include imbalanced learning, meta learning, and fair learning from graph/stream data.
+
+
 
 **Contact me via**:  
 <i class="fa fa-fw fa-envelope"></i> <font style="font-size: 0.9em;">Mail: <a href="mailto:zhining.liu@outlook.com">zhining.liu[AT]outlook.com</a> or <a href="mailto:znliu19@mails.jlu.edu.cn">znliu19[AT]mails.jlu.edu.cn</a></font>
