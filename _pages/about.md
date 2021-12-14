@@ -37,7 +37,7 @@ My goal is to build *fair intelligent systems* that benefit our lives and make t
   <!-- [09/2019] My colleague Boyang Yu will was elected as the class monitor of JLUSAI!!!<br> -->
   <!-- [09/2019] My colleague Zhepei Wei will serve as on of the general chairs of AAAI 2021!!!<br> -->
   <b>[11/2021]</b> What are inter-&intra-class imbalance and how do they affect learning? See our <a href="https://arxiv.org/abs/2111.12791">discussion</a>.<br>
-  <b>[11/2021]</b> Check out our <a href="https://arxiv.org/abs/2111.12791">paper</a> describing the <a href="https://github.com/ZhiningLiu1998/imbalanced-ensemble">imbens</a> package.<br>
+  <b>[11/2021]</b> Check out our <a href="https://arxiv.org/abs/2111.12776">paper</a> describing the <a href="https://github.com/ZhiningLiu1998/imbalanced-ensemble">imbens</a> package.<br>
   <b>[06/2021]</b> The <a href="https://github.com/ZhiningLiu1998/imbalanced-ensemble">imbalanced-ensemble</a> Python package is released (<a href="https://imbalanced-ensemble.readthedocs.io">Docs</a>, <a href="https://pypi.org/project/imbalanced-ensemble/">PyPI</a>), try it out!<br>
   <b>[10/2020]</b> Our work on meta imbalanced learning was accepted by NeurIPS 2020 (<a href="{{ site.baseurl }}files/NeurIPS_2020_MESA.pdf">PDF</a>).<br>
   <b>[06/2020]</b> I am helping to organize <a href="https://sigir.org/sigir2020/">ACM SIGIR 2020</a>. Welcome!<br>
