@@ -193,7 +193,7 @@ My goal is to build *fair intelligent systems* that benefit our lives and make t
 
   <tr>
   <td style="border:none;">
-    <a href="https://github.com/ZhiningLiu1998/imbalanced-ensemble">imbalanced-ensemble: ensemble imbalanced learning in Python </a> (Python Package) &nbsp;
+    <a href="https://github.com/ZhiningLiu1998/imbalanced-ensemble">🔥 imbalanced-ensemble: ensemble imbalanced learning in Python </a> (Python Package) &nbsp;
   </td>
   <td style="border:none;text-align:center;">
     <a href="https://github.com/ZhiningLiu1998/imbalanced-ensemble/stargazers">
@@ -207,7 +207,7 @@ My goal is to build *fair intelligent systems* that benefit our lives and make t
 
   <tr>
   <td style="border:none;">
-  <a href="https://github.com/ZhiningLiu1998/awesome-imbalanced-learning">Awesome-imbalanced-learning: paper, code, frameworks, and libraries</a> (Github Repository) &nbsp;
+  <a href="https://github.com/ZhiningLiu1998/awesome-imbalanced-learning">🔥 Awesome-imbalanced-learning: paper, code, frameworks, and libraries</a> (Github Repository) &nbsp;
   </td>
   <td style="border:none;text-align:center;">
     <a href="https://github.com/ZhiningLiu1998/awesome-imbalanced-learning/stargazers">
@@ -218,10 +218,24 @@ My goal is to build *fair intelligent systems* that benefit our lives and make t
     </a>
   </td>
   </tr>
+ 
+  <tr>
+  <td style="border:none;">
+  <a href="https://github.com/ZhiningLiu1998/awesome-awesome-machine-learning">🔥 Awesome Awesome Machine Learning: curated list of awesome lists across all machine learning topics</a> (Github Repository) &nbsp;
+  </td>
+  <td style="border:none;text-align:center;">
+    <a href="https://github.com/ZhiningLiu1998/awesome-awesome-machine-learning/stargazers">
+    <img alt="GitHub stars" src="https://img.shields.io/github/stars/ZhiningLiu1998/awesome-awesome-machine-learning?style=social">
+    </a>
+    <a href="https://github.com/ZhiningLiu1998/awesome-awesome-machine-learning/network/members">
+    <img alt="GitHub forks" src="https://img.shields.io/github/forks/ZhiningLiu1998/awesome-awesome-machine-learning?style=social">
+    </a>
+  </td>
+  </tr>
 
   <tr>
     <td style="border:none;">
-      <a href="https://github.com/ZhiningLiu1998/mesa">Build powerful ensemble class-imbalanced learning models via meta-sampler</a> (Github Repository) 
+      <a href="https://github.com/ZhiningLiu1998/mesa">🔥 Build powerful ensemble class-imbalanced learning models via meta-sampler</a> (Github Repository) 
     </td>
     <td style="border:none;text-align:center;">
       <a href="https://github.com/ZhiningLiu1998/mesa/stargazers">
@@ -235,7 +249,7 @@ My goal is to build *fair intelligent systems* that benefit our lives and make t
 
   <tr>
   <td style="border:none;">
-    <a href="https://github.com/ZhiningLiu1998/self-paced-ensemble">Self-paced Ensemble for Highly Imbalanced Massive Data Classification</a> (Github Repository) &nbsp;
+    <a href="https://github.com/ZhiningLiu1998/self-paced-ensemble">🔥 Self-paced Ensemble for Highly Imbalanced Massive Data Classification</a> (Github Repository) &nbsp;
   </td>
   <td style="border:none;text-align:center;">
     <a href="https://github.com/ZhiningLiu1998/self-paced-ensemble/stargazers">
@@ -248,7 +262,7 @@ My goal is to build *fair intelligent systems* that benefit our lives and make t
   </tr>
 
   <tr>
-  <td style="border:none;"><a href="https://zhuanlan.zhihu.com/p/66373943">Learning unbiased classifier from class-imbalanced data: an overview</a> (Chinese Article)</td>
+  <td style="border:none;"><a href="https://zhuanlan.zhihu.com/p/66373943">🔥 Learning unbiased classifier from class-imbalanced data: an overview</a> (Chinese Article)</td>
   <td style="border:none;"></td>
   </tr>
 
