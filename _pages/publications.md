@@ -30,7 +30,7 @@ author_profile: true
       <br>
       <i>in 34th Conference on Neural Information Processing Systems (<b>NeurIPS 2020</b>)</i>. 
       <br>
-      [<a href="{{ site.baseurl }}files/NeurIPS_2020_MESA.pdf">PDF</a>]
+      [<a href="https://arxiv.org/pdf/2010.08830.pdf">PDF</a>]
       [<a href="https://arxiv.org/abs/2010.08830">arXiv</a>]
       [<a href="https://studio.slideslive.com/web_recorder/share/20201020T134559Z__NeurIPS_posters__17343__mesa-effective-ensemble-imbal?s=d3745afc-cfcf-4d60-9f34-63d3d811b55f">Video</a>]
       [<a href="https://zhuanlan.zhihu.com/p/268539195">Zhihu/知乎</a>] 
@@ -70,7 +70,7 @@ author_profile: true
       <br>
       <i>in 36th IEEE International Conference on Data Engineering (<b>ICDE 2020</b>).</i>
       <br>
-      [<a href="https://conferences.computer.org/icde/2020/pdfs/ICDE2020-5acyuqhpJ6L9P042wmjY1p/290300a841/290300a841.pdf">PDF</a>]
+      [<a href="https://arxiv.org/pdf/1909.03500v3.pdf">PDF</a>]
       [<a href="https://arxiv.org/abs/1909.03500v3">arXiv</a>] 
       [<a href="https://www.bilibili.com/video/BV1Fg411L7gk">Video(bilibili)</a>]
       [<a href="{{ site.baseurl }}files/ICDE_2020_SPE_slides.pdf">Slides</a>] 
@@ -105,7 +105,7 @@ author_profile: true
       <br>
       <u>Zhining Liu</u>, et al. <i>Preprint</i>. 
       <br>
-      [<a href="{{ site.baseurl }}files/preprint_dube.pdf">PDF</a>]
+      [<a href="https://arxiv.org/pdf/2111.12791.pdf">PDF</a>]
       [<a href="https://arxiv.org/abs/2111.12791">arXiv</a>]
       [<a href="https://github.com/ICDE2022Sub/duplebalance">Github</a>]
       [<a href="https://duplebalance.readthedocs.io/">Documentation</a>]
@@ -135,7 +135,7 @@ author_profile: true
       <br>
       <u>Zhining Liu</u>, et al. <i>Preprint</i>. 
       <br>
-      [<a href="{{ site.baseurl }}files/preprint_imbens.pdf">PDF</a>]
+      [<a href="https://arxiv.org/pdf/2111.12776.pdf">PDF</a>]
       [<a href="https://arxiv.org/abs/2111.12776">arXiv</a>]
       [<a href="https://zhuanlan.zhihu.com/p/376572330">Zhihu/知乎</a>] 
       [<a href="https://github.com/ZhiningLiu1998/imbalanced-ensemble">Github</a>]
