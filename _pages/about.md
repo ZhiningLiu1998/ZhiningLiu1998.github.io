@@ -36,13 +36,14 @@ My goal is to build *fair intelligent systems* that benefit our lives and make t
   <p>
   <!-- [09/2019] My colleague Boyang Yu will was elected as the class monitor of JLUSAI!!!<br> -->
   <!-- [09/2019] My colleague Zhepei Wei will serve as on of the general chairs of AAAI 2021!!!<br> -->
-  <b>[11/2021]</b> What are inter-&intra-class imbalance and how do they affect learning? See our <a href="https://arxiv.org/abs/2111.12791">discussion</a>.<br>
-  <b>[11/2021]</b> Check out our <a href="https://arxiv.org/abs/2111.12776">paper</a> describing the <a href="https://github.com/ZhiningLiu1998/imbalanced-ensemble">imbens</a> package.<br>
-  <b>[06/2021]</b> The <a href="https://github.com/ZhiningLiu1998/imbalanced-ensemble">imbalanced-ensemble</a> Python package is released (<a href="https://imbalanced-ensemble.readthedocs.io">Docs</a>, <a href="https://pypi.org/project/imbalanced-ensemble/">PyPI</a>), try it out!<br>
-  <b>[10/2020]</b> Our work on meta imbalanced learning was accepted by NeurIPS 2020 (<a href="{{ site.baseurl }}files/NeurIPS_2020_MESA.pdf">PDF</a>).<br>
+  <b>[01/2022]</b> A curated list across all Machine Learning topics: <a href="https://github.com/ZhiningLiu1998/awesome-awesome-machine-learning">Awesome2ML</a> <b>[<a href="https://github.com/ZhiningLiu1998/awesome-awesome-machine-learning">ENG</a>/<a href="https://github.com/ZhiningLiu1998/awesome-awesome-machine-learning/blob/main/README_CN.md">中文</a>]</b><br>
+  <b>[11/2021]</b> What are inter-&intra-class imbalance and how do they affect learning? <b>[<a href="https://arxiv.org/abs/2111.12791">PDF</a>]</b><br>
+  <b>[11/2021]</b> Check out our <a href="https://arxiv.org/abs/2111.12776">paper</a> describing the <a href="https://github.com/ZhiningLiu1998/imbalanced-ensemble">IMBENS</a> package. <b>[<a href="https://arxiv.org/abs/2111.12776">PDF</a>]</b><br>
+  <b>[06/2021]</b> The <a href="https://github.com/ZhiningLiu1998/imbalanced-ensemble">imbalanced-ensemble</a> Python package is released, try it out! <b>[<a href="https://imbalanced-ensemble.readthedocs.io">Docs</a>/<a href="https://pypi.org/project/imbalanced-ensemble/">PyPI</a>]</b><br>
+  <b>[10/2020]</b> Our work on meta imbalanced learning was accepted by NeurIPS 2020. <b>[<a href="{{ site.baseurl }}files/NeurIPS_2020_MESA.pdf">PDF</a>]</b><br>
   <b>[06/2020]</b> I am helping to organize <a href="https://sigir.org/sigir2020/">ACM SIGIR 2020</a>. Welcome!<br>
-  <b>[04/2020]</b> We started the "<a href="https://github.com/ZhiningLiu1998/awesome-imbalanced-learning">awesome-imbalanced-learning</a>" project. Contributions are welcomed!<br>
-  <b>[10/2019]</b> Our work on imbalanced classification was accepted by IEEE ICDE 2020 (<a href="{{ site.baseurl }}files/ICDE_2020_SPE.pdf">PDF</a>).<br>
+  <b>[04/2020]</b> We started the <a href="https://github.com/ZhiningLiu1998/awesome-imbalanced-learning">Awesome-Imbalanced-Learning</a> project. Contributions are welcomed!<br>
+  <b>[10/2019]</b> Our work on imbalanced classification was accepted by IEEE ICDE 2020. <b>[<a href="{{ site.baseurl }}files/ICDE_2020_SPE.pdf">PDF</a>]</b><br>
   <b>[07/2019]</b> I received my B.Sc. degree from the Tang Aoqing Honors Program in Science.<br>
   <b>[09/2018]</b> I will intern at MSRA in the following year, supervised by Dr. <a href="https://sites.google.com/view/jiangbian">Jiang BIAN</a> and Dr. <a href="https://weicao1990.github.io/">Wei CAO</a>.<br>
   </p>
