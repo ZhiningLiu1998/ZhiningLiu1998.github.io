@@ -22,7 +22,7 @@ redirect_from:
 I am a M.S. student at [School of Artificial Intelligence](http://sai.jlu.edu.cn/) at [Jilin University](http://global.jlu.edu.cn/), supervised by Prof. [Yi Chang](http://yichang-cs.com/).
 Prior to that, I received my B.S. in Computer Science (Tang Ao-qing Honors Program) from Jilin University in 2019.
 
-My goal is to build *fair machine learning systems* that benefit minority/under-represented groups and make the world more equitable. I am particularly interested in developing algorithms and systems for **<u>unbiased</u>**, **<u>efficient</u>** and **<u>robust</u>** learning in real-world applications. My recent interests include imbalanced learning, meta learning, and fair learning from graph/stream data.
+My goal is to build *fair machine learning systems* that benefit *minority* and *under-represented* groups. I am particularly interested in developing algorithms and systems for **<u>unbiased</u>**, **<u>efficient</u>** and **<u>robust</u>** learning in real-world applications. My recent interests include imbalanced learning, meta learning, and fair learning from graph/stream data.
 
 
 
