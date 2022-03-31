@@ -36,6 +36,7 @@ My goal is to build *fair machine learning systems* that benefit *minority* and 
   <p>
   <!-- [09/2019] My colleague Boyang Yu will was elected as the class monitor of JLUSAI!!!<br> -->
   <!-- [09/2019] My colleague Zhepei Wei will serve as on of the general chairs of AAAI 2021!!!<br> -->
+  <b>[03/2022]</b> I will join Prof. <a href="http://tonghanghang.org/">Hanghang Tong</a>'s group at UIUC this fall as a Ph.D. student!<br>
   <b>[01/2022]</b> A curated list across all Machine Learning topics: <a href="https://github.com/ZhiningLiu1998/awesome-awesome-machine-learning">Awesome2ML</a> <b>[<a href="https://github.com/ZhiningLiu1998/awesome-awesome-machine-learning">ENG</a>/<a href="https://github.com/ZhiningLiu1998/awesome-awesome-machine-learning/blob/main/README_CN.md">中文</a>]</b><br>
   <b>[11/2021]</b> What are inter-&intra-class imbalance and how do they affect learning? <b>[<a href="https://arxiv.org/abs/2111.12791">PDF</a>]</b><br>
   <b>[11/2021]</b> Check out our <a href="https://arxiv.org/abs/2111.12776">paper</a> describing the <a href="https://github.com/ZhiningLiu1998/imbalanced-ensemble">IMBENS</a> package. <b>[<a href="https://arxiv.org/abs/2111.12776">PDF</a>]</b><br>
