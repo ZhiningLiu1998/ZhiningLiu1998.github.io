@@ -8,9 +8,9 @@ author_profile: true
 <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:0;margin-left:0;font-size:1.0em;">
   <tr>
     <th colspan="2" style="padding:8px;width:100%;vertical-align:middle;horizontal-align:middle;border:none;">
-    <center>Me and my fiancee. @Handan, China, 2020</center>
-      <a href="/images/me-and-fiancee.jpg">
-      <img src='/images/me-and-fiancee.jpg' style="border-radius:20px;">
+    <center>Me and my wife. @Shenzhen, China, 2022</center>
+      <a href="/images/Shenzhen.jpg">
+      <img src='/images/Shenzhen.jpg' style="border-radius:20px;">
       </a>
     </th>
   </tr>

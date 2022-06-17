@@ -101,7 +101,7 @@ My goal is to build *fair machine learning systems* that benefit *minority* and 
       <br>
       [<a href="{{ site.baseurl }}files/preprint_dube.pdf">PDF</a>]
       [<a href="https://arxiv.org/abs/2111.12791">arXiv</a>]
-      [<a href="https://github.com/ICDE2022Sub/duplebalance">Github</a>]
+      [<a href="https://github.com/AnonAuthorAI/duplebalance">Github</a>]
       [<a href="https://duplebalance.readthedocs.io/">Documentation</a>]
     </td>
   </tr>

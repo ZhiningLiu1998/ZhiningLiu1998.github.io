@@ -19,7 +19,7 @@ redirect_from:
 
 Education
 ======
-* M.Sc. in Computer Science, [Jilin University](http://global.jlu.edu.cn/), 2019 - 2022 (expected)
+* M.Eng. in Computer Science, [Jilin University](http://global.jlu.edu.cn/), 2019 - 2022 (expected)
   * @School of Artificial Intelligence
   * Supervisor: Prof. [Yi Chang](http://yichang-cs.com/)
 * B.Sc. in Computer Science, [Jilin University](http://global.jlu.edu.cn/), 2015 - 2019
