@@ -19,8 +19,13 @@ redirect_from:
 <!-------------------->
 **你好! / Hello! / こんにちは! / Здравствуй! / Bonjour! / Guten Tag! / Hola! / Ciao! / السلام عليكم!**
 
-I am a M.S. student at [School of Artificial Intelligence](http://sai.jlu.edu.cn/) at [Jilin University](http://global.jlu.edu.cn/), supervised by Prof. [Yi Chang](http://yichang-cs.com/).
-Prior to that, I received my B.S. in Computer Science (Tang Ao-qing Honors Program) from Jilin University in 2019.
+I'm a first-year Ph.D. student in [Department of Computer Science](https://cs.illinois.edu/), [University of Illinois at Urbana-Champaign](https://illinois.edu/), working with the very nice [Prof. Hanghang Tong](http://tonghanghang.org/). 
+
+Before joining UIUC, I received my M.Eng. and B.S. in Computer Science from [Jilin University](http://global.jlu.edu.cn/) in 2019 and 2022, respectively. 
+During my time at Jilin University, I was fortunate to have [Prof. Yi Chang](http://yichang-cs.com/) as my mentor, and had the pleasure of working with [Dr. Jiang Bian](https://sites.google.com/view/jiangbian)  (MSRA), [Dr. Wei Cao](https://weicao1990.github.io/) (MSRA), [Dr. Pengfei Wei](http://pengfei-wei.com/) (ByteDance), and [Prof. Jing Jiang](https://profiles.uts.edu.au/jing.jiang) (UTS).
+
+<!-- I am a M.S. student at [School of Artificial Intelligence](http://sai.jlu.edu.cn/) at [Jilin University](http://global.jlu.edu.cn/), supervised by Prof. [Yi Chang](http://yichang-cs.com/).
+Prior to that, I received my B.S. in Computer Science (Tang Ao-qing Honors Program) from Jilin University in 2019. -->
 
 My goal is to build *fair machine learning systems* that benefit *minority* and *under-represented* groups. I am particularly interested in developing algorithms and systems for **<u>unbiased</u>**, **<u>efficient</u>** and **<u>robust</u>** learning in real-world applications. My recent interests include imbalanced learning, meta learning, and fair learning from graph/stream data.
 
@@ -61,7 +66,7 @@ My goal is to build *fair machine learning systems* that benefit *minority* and 
     <td style="padding:20px;width:70%;vertical-align:middle;border-right:none;border:none;">
       <b><a href="http://sai.jlu.edu.cn/">School of Artificial Intelligence</a>, Jilin University.</b>
       <br>
-      Master of Science (Sept. 2019 - Now)
+      Master of Science (Sept. 2019 - July 2022)
       <br>
       Supervisor: Dr. <a href="http://yichang-cs.com/">Yi CHANG</a>
       <br>
