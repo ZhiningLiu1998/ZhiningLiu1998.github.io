@@ -19,7 +19,10 @@ redirect_from:
 
 Education
 ======
-* M.Eng. in Computer Science, [Jilin University](http://global.jlu.edu.cn/), 2019 - 2022 (expected)
+* Ph.D. in Computer Science, [University of Illinois at Urbana-Champaign](https://illinois.edu/), 2022 - present
+  * @Department of Computer Science
+  * Supervisor: Prof. [Hanghang Tong](http://tonghanghang.org/)
+* M.Eng. in Computer Science, [Jilin University](http://global.jlu.edu.cn/), 2019 - 2022
   * @School of Artificial Intelligence
   * Supervisor: Prof. [Yi Chang](http://yichang-cs.com/)
 * B.Sc. in Computer Science, [Jilin University](http://global.jlu.edu.cn/), 2015 - 2019
@@ -43,12 +46,13 @@ Service
 
 Selected Honors & Awards
 ======
-
+| *Top 10 Honorary Masters Graduates* (10/all masters graduates) by Jilin University.| 2022 |
+| *Masters Research Performance Scholarship, First Prize*, (¥10,000 CNY) by Jilin University. | 2021 & 2022 |
 | *National Scholarship* (2/80, ¥20,000 CNY) by Ministry of Education.              | 2020 |
 | *National Scholarship* (1/40, ¥20,000 CNY) by Ministry of Education.              | 2019 |
-| *Postgraduate Academic Performance Scholarship* (¥8,000 CNY) by Jilin University. | 2019 & 2020 |
-| *Master’s Excellence Scholarship, First Prize* (Top 5%, ¥1,500 RMB) by Jilin University | 2019 & 2020 |
-| *CASC Scholarship* (5 students/14 schools, ¥5,000 RMB) by CASC Committee          | 2020 |
+| *Masters Academic Performance Scholarship* (¥8,000 CNY) by Jilin University.      | 2019 & 2020 |
+<!-- | *Master’s Excellence Scholarship, First Prize* (Top 5%, ¥1,500 RMB) by Jilin University.| 2019 & 2020 | -->
+| *CASC Scholarship* (5 students/14 schools, ¥5,000 RMB) by CASC Committee.         | 2020 |
 | *Undergraduate Research Scholarship* (20/400, ¥5,000 CNY) by Jilin University.    | 2018 |
 | *Outstanding Student Project Scholarship* (2/84, ¥5,000 CNY) by Jilin University. | 2018 |
 | *Undergraduate Student Project Funding* (¥10,000 CNY) by Ministry of Education.   | 2018 |
