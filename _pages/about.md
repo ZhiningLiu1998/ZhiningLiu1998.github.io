@@ -17,12 +17,12 @@ redirect_from:
 ![MSc](https://img.shields.io/badge/M.Sc.-Jilin%20Univ.%20(2019--2022)-brightgreen?style=flat-square&color=181717&labelColor=blueviolet)
 
 <!-------------------->
-**你好! / Hello! / こんにちは! / Здравствуй! / Bonjour! / Guten Tag! / Hola! / Ciao! / السلام عليكم!**
+**你好! / Hello! / 안녕하십니까! / こんにちは! / Здравствуй! / Bonjour! / Guten Tag! / Hola! / Ciao! / السلام عليكم!**
 
 I'm a first-year Ph.D. student in [Department of Computer Science](https://cs.illinois.edu/), [University of Illinois at Urbana-Champaign](https://illinois.edu/), working with the very nice [Prof. Hanghang Tong](http://tonghanghang.org/). 
 
 Before joining UIUC, I received my M.Eng. and B.S. in Computer Science from [Jilin University](http://global.jlu.edu.cn/) in 2019 and 2022, respectively. 
-During my time at Jilin University, I was fortunate to have [Prof. Yi Chang](http://yichang-cs.com/) as my mentor, and had the pleasure of working with [Dr. Jiang Bian](https://sites.google.com/view/jiangbian)  (MSRA), [Dr. Wei Cao](https://weicao1990.github.io/) (MSRA), [Dr. Pengfei Wei](http://pengfei-wei.com/) (ByteDance), and [Prof. Jing Jiang](https://profiles.uts.edu.au/jing.jiang) (UTS).
+During my time at Jilin University, I was fortunate to have [Prof. Yi Chang](http://yichang-cs.com/) as my mentor, and had the pleasure of working with [Dr. Jiang Bian](https://sites.google.com/view/jiangbian) & [Dr. Wei Cao](https://weicao1990.github.io/) (Microsoft Research), [Dr. Pengfei Wei](http://pengfei-wei.com/) (ByteDance), and [Prof. Jing Jiang](https://profiles.uts.edu.au/jing.jiang) (UTS).
 
 <!-- I am a M.S. student at [School of Artificial Intelligence](http://sai.jlu.edu.cn/) at [Jilin University](http://global.jlu.edu.cn/), supervised by Prof. [Yi Chang](http://yichang-cs.com/).
 Prior to that, I received my B.S. in Computer Science (Tang Ao-qing Honors Program) from Jilin University in 2019. -->
@@ -32,9 +32,9 @@ My goal is to build *fair machine learning systems* that benefit *minority* and 
 
 
 **Contact me via**:  
-<i class="fa fa-fw fa-envelope"></i> <font style="font-size: 0.9em;">Mail: <a href="mailto:zhining.liu@outlook.com">zhining.liu[AT]outlook.com</a> or <a href="mailto:znliu19@mails.jlu.edu.cn">znliu19[AT]mails.jlu.edu.cn</a></font>
+<i class="fa fa-fw fa-envelope"></i> <font style="font-size: 0.9em;">Mail: <a href="mailto:zhining.liu@outlook.com">zhining.liu[AT]outlook.com</a> or <a href="mailto:liu326@illinois.edu">liu326[AT]illinois.edu</a></font>
 <br>
-<i class="fa fa-fw fa-phone"></i> <font style="font-size: 0.9em;">Mobile: +86 176-1010-6607</font>
+<!-- <i class="fa fa-fw fa-phone"></i> <font style="font-size: 0.9em;">Mobile: +86 176-1010-6607</font> -->
 
 <h1 style="color: rgb(231, 65, 65);"><b>What's new:</b></h1>
 <div style="line-height: 1.5em; font-size: 0.95em">
@@ -56,8 +56,7 @@ My goal is to build *fair machine learning systems* that benefit *minority* and 
 </div>
 
 
-# Experience
-<!-- <h2><b>Experience</b></h2> -->
+<!-- # Experience
 <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:0;margin-left:0;font-size:0.95em;">
   <tr>
     <td style="padding:8px;width:30%;vertical-align:middle;border:none;">
@@ -87,10 +86,10 @@ My goal is to build *fair machine learning systems* that benefit *minority* and 
       Mentor: Dr. <a href="https://sites.google.com/view/jiangbian">Jiang BIAN</a> and Dr. <a href="https://weicao1990.github.io/">Wei CAO</a>.
     </td>
   </tr>
-</table>
+</table> -->
 
 
-# Publications
+## Check out my research (they are interesting)!
 <!-- <h2><b>Publications</b></h2> -->
 <table style="width:100%;border:None;border-spacing:0px;border-collapse:separate;margin-right:0;margin-left:0;font-size:0.95em;">
   <tr>
@@ -192,9 +191,9 @@ My goal is to build *fair machine learning systems* that benefit *minority* and 
 
 <!-- <h4><b>Miscellaneous</b></h4> -->
 <!-- <h5><i>Articles & Projects</i></h5> -->
-# Miscellaneous
+<!-- # Miscellaneous -->
 
-### *Recent Projects*
+### *Open-source Projects*
 
 <table style="font-size:0.95em;">
   <tr>

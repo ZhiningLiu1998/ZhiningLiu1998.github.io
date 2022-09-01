@@ -17,8 +17,8 @@ redirect_from:
     [<a href="/files/Resume_ZhiningLiu_Chinese.pdf">中文</a>]
 </b>
 
-Education
-======
+## Education
+
 * Ph.D. in Computer Science, [University of Illinois at Urbana-Champaign](https://illinois.edu/), 2022 - present
   * @Department of Computer Science
   * Supervisor: Prof. [Hanghang Tong](http://tonghanghang.org/)
@@ -29,14 +29,14 @@ Education
   * @School of Computer Science and Technology
   * GPA: 3.55/4.0, Ave. Score: 88.96/100
 
-Experience
-======
+## Experience
+
 * Research Intern, [Microsoft Research Asia](https://msra.cn), 2018 - 2019
   * Develop prototype learning systems for intelligent logistics.
   * Supervisor: Dr. [Jiang Bian](https://scholar.google.com/citations?user=pZBEnY8AAAAJ&hl=zh-CN) and Dr. [Wei Cao](https://weicao1990.github.io/)
 
-Service
-======
+## Service
+
 * Serve as a class monitor since 2015.
 * Serve as a reviewer for:
   * Journals: TKDE, TCYB, TNNLS, Neurocomputing
@@ -44,8 +44,8 @@ Service
 * Volunteer for:
   * [ACM SIGIR 2020](https://sigir.org/sigir2020/volunteers/), responsible for conference promotion and publicity.
 
-Selected Honors & Awards
-======
+## Selected Honors & Awards
+
 | *Top 10 Honorary Masters Graduates* (10/all masters graduates) by Jilin University.| 2022 |
 | *Masters Research Performance Scholarship, First Prize*, (¥10,000 CNY) by Jilin University. | 2021 & 2022 |
 | *National Scholarship* (2/80, ¥20,000 CNY) by Ministry of Education.              | 2020 |
