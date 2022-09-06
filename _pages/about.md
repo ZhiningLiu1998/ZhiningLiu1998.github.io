@@ -17,7 +17,7 @@ redirect_from:
 ![MSc](https://img.shields.io/badge/M.Sc.-Jilin%20Univ.%20(2019--2022)-brightgreen?style=flat-square&color=181717&labelColor=blueviolet)
 
 <!-------------------->
-**你好! / Hello! / 안녕하십니까! / こんにちは! / Здравствуй! / Bonjour! / Guten Tag! / Hola! / Ciao! / السلام عليكم!**
+**你好! / Hello! / 안녕하세요! / こんにちは! / Здравствуй! / Bonjour! / Guten Tag! / Hola! / Ciao! / السلام عليكم!**
 
 I'm a first-year Ph.D. student in [Department of Computer Science](https://cs.illinois.edu/), [University of Illinois at Urbana-Champaign](https://illinois.edu/), working with the very nice [Prof. Hanghang Tong](http://tonghanghang.org/). 
 
