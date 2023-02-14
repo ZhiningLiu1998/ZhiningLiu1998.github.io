@@ -35,13 +35,14 @@ My goal is to build *fair machine learning systems* that benefit *minority* and 
 **Contact me via**:  
 <i class="fa fa-fw fa-envelope"></i> <font style="font-size: 0.9em;">Mail: <a href="mailto:zhining.liu@outlook.com">zhining.liu[AT]outlook.com</a> or <a href="mailto:liu326@illinois.edu">liu326[AT]illinois.edu</a></font>
 <br>
-<!-- <i class="fa fa-fw fa-phone"></i> <font style="font-size: 0.9em;">Mobile: +86 176-1010-6607</font> -->
 
 <h1 style="color: rgb(231, 65, 65);"><b>What's new:</b></h1>
 <div style="line-height: 1.5em; font-size: 0.95em">
   <p>
   <!-- [09/2019] My colleague Boyang Yu will was elected as the class monitor of JLUSAI!!!<br> -->
   <!-- [09/2019] My colleague Zhepei Wei will serve as on of the general chairs of AAAI 2021!!!<br> -->
+  <b>[02/2023]</b> Just released a major version of <a href="https://github.com/ZhiningLiu1998/imbalanced-ensemble">imbalanced-ensemble</a>. <b>[<a href="https://imbalanced-ensemble.readthedocs.io">Docs</a>/<a href="https://pypi.org/project/imbalanced-ensemble/">PyPI</a>]</b><br>
+  <b>[02/2023]</b> Our work on unsupervised anomaly detection was accepted by ICDE 2023, congrats to hangting! <b>[<a href="https://github.com/HangtingYe/UADB">Code</a>]</b><br>
   <b>[03/2022]</b> I will join Prof. <a href="http://tonghanghang.org/">Hanghang Tong</a>'s group at UIUC this fall as a Ph.D. student!<br>
   <b>[01/2022]</b> A curated list across all Machine Learning topics: <a href="https://github.com/ZhiningLiu1998/awesome-awesome-machine-learning">Awesome2ML</a> <b>[<a href="https://github.com/ZhiningLiu1998/awesome-awesome-machine-learning">ENG</a>/<a href="https://github.com/ZhiningLiu1998/awesome-awesome-machine-learning/blob/main/README_CN.md">中文</a>]</b><br>
   <b>[11/2021]</b> What are inter-&intra-class imbalance and how do they affect learning? <b>[<a href="https://arxiv.org/abs/2111.12791">PDF</a>]</b><br>
