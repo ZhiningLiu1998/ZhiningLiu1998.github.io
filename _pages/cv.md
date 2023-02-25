@@ -12,9 +12,9 @@ redirect_from:
 <b style="font-size: 1.5em;">
     PDF:
     &nbsp;
-    [<a href="/files/Resume_ZhiningLiu.pdf">English</a>]
-    &nbsp;
-    [<a href="/files/Resume_ZhiningLiu_Chinese.pdf">中文</a>]
+    [<a href="/files/Resume_ZhiningLiu.pdf">CV/Résumé</a>]
+    <!-- &nbsp;
+    [<a href="/files/Resume_ZhiningLiu_Chinese.pdf">中文</a>] -->
 </b>
 
 ## Education

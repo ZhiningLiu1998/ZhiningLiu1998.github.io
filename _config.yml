@@ -81,11 +81,12 @@ analytics:
 # Site Author
 author:
   name             : "Zhining Liu"
-  avatar           : "zhiningliu.jpg"
+  avatar           : "https://zhiningliu.com/images/zhiningliu.jpg"
   bio              : "All those moments will be lost in time, like tears in rain."
   location         : "Champaign, USA"
-  employer         : "University of Illinois (UIUC)"
+  employer         : "Univ. of Illinois (UIUC)"
   employer_site    : "https://illinois.edu/"
+  cv               : "https://zhiningliu.com/files/Resume_ZhiningLiu.pdf"
   zhihu            : "liu-zhi-zhu-14"
   pubmed           : 
   googlescholar    : "https://scholar.google.com/citations?user=5WORAUQAAAAJ&hl=zh-CN"

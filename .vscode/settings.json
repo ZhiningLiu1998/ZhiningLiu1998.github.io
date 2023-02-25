@@ -1,0 +1,5 @@
+{
+    "python.linting.lintOnSave": false,
+    "php.validate.run": "onType",
+    "latex-workshop.linting.run": "onType"
+}
