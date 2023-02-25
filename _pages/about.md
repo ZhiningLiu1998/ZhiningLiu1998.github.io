@@ -20,18 +20,15 @@ redirect_from:
 <!-------------------->
 **你好! / Hello! / 안녕하세요! / こんにちは! / Здравствуй! / Bonjour! / Guten Tag! / Hola! / Ciao! / السلام عليكم!**
 
-I'm a first-year Ph.D. student in [Department of Computer Science](https://cs.illinois.edu/), [University of Illinois at Urbana-Champaign](https://illinois.edu/), working with the very nice [Prof. Hanghang Tong](http://tonghanghang.org/). 
-
+I'm a first-year Ph.D. student in [Department of Computer Science](https://cs.illinois.edu/), [University of Illinois at Urbana-Champaign](https://illinois.edu/), working with the very nice [Dr. Hanghang Tong](http://tonghanghang.org/). 
 Before joining UIUC, I received my M.Eng. and B.S. in Computer Science from [Jilin University](http://global.jlu.edu.cn/) in 2019 and 2022, respectively. 
-During my time at Jilin University, I was fortunate to have [Prof. Yi Chang](http://yichang-cs.com/) as my mentor, and had the pleasure of working with [Dr. Jiang Bian](https://sites.google.com/view/jiangbian) & [Dr. Wei Cao](https://weicao1990.github.io/) (Microsoft Research), [Dr. Pengfei Wei](http://pengfei-wei.com/) (ByteDance), and [Prof. Jing Jiang](https://profiles.uts.edu.au/jing.jiang) (UTS).
-
-<!-- I am a M.S. student at [School of Artificial Intelligence](http://sai.jlu.edu.cn/) at [Jilin University](http://global.jlu.edu.cn/), supervised by Prof. [Yi Chang](http://yichang-cs.com/).
-Prior to that, I received my B.S. in Computer Science (Tang Ao-qing Honors Program) from Jilin University in 2019. -->
-
-My goal is to build *fair machine learning systems* that benefit *minority* and *under-represented* groups. I am particularly interested in developing algorithms and systems for **<u>unbiased</u>**, **<u>efficient</u>** and **<u>robust</u>** learning in real-world applications. My recent interests include imbalanced learning, meta learning, and fair learning from graph/stream data.
+During my time at Jilin University, I was fortunate to have [Dr. Yi Chang](http://yichang-cs.com/) as my mentor, and had the pleasure of working with [Dr. Jiang Bian](https://sites.google.com/view/jiangbian) & [Dr. Wei Cao](https://weicao1990.github.io/) (Microsoft Research), [Dr. Pengfei Wei](http://pengfei-wei.com/) (ByteDance), and [Dr. Jing Jiang](https://profiles.uts.edu.au/jing.jiang) (UTS).
 
 
+My goal is to build *practical machine learning systems* that promote **fairness** and **equity**. I am particularly interested in developing algorithms and open-source softwares for **<u>unbiased</u>**, **<u>efficient</u>**, and **<u>robust</u>** learning from skewed data in real-world applications.
+My recent interest lies in topics related to graph data mining, especially, learning from real-world graphs with skewed data distribution.
 
+ 
 **Contact me via**:  
 <i class="fa fa-fw fa-envelope"></i> <font style="font-size: 0.9em;">Mail: <a href="mailto:zhining.liu@outlook.com">zhining.liu[AT]outlook.com</a> or <a href="mailto:liu326@illinois.edu">liu326[AT]illinois.edu</a></font>
 <br>
@@ -42,7 +39,7 @@ My goal is to build *fair machine learning systems* that benefit *minority* and 
   <!-- [09/2019] My colleague Boyang Yu will was elected as the class monitor of JLUSAI!!!<br> -->
   <!-- [09/2019] My colleague Zhepei Wei will serve as on of the general chairs of AAAI 2021!!!<br> -->
   <b>[02/2023]</b> Just released a major version of <a href="https://github.com/ZhiningLiu1998/imbalanced-ensemble">imbalanced-ensemble</a>. <b>[<a href="https://imbalanced-ensemble.readthedocs.io">Docs</a>/<a href="https://pypi.org/project/imbalanced-ensemble/">PyPI</a>]</b><br>
-  <b>[02/2023]</b> Our work on unsupervised anomaly detection was accepted by ICDE 2023, congrats to hangting! <b>[<a href="https://github.com/HangtingYe/UADB">Code</a>]</b><br>
+  <b>[02/2023]</b> Our work on unsupervised anomaly detection was accepted by ICDE 2023, congrats to hangting! <b>[<a href="https://github.com/HangtingYe/UADB">Code</a>][<a href="{{ site.baseurl }}files/ICDE_2023_UADB.pdf">PDF</a>]</b><br>
   <b>[03/2022]</b> I will join Prof. <a href="http://tonghanghang.org/">Hanghang Tong</a>'s group at UIUC this fall as a Ph.D. student!<br>
   <b>[01/2022]</b> A curated list across all Machine Learning topics: <a href="https://github.com/ZhiningLiu1998/awesome-awesome-machine-learning">Awesome2ML</a> <b>[<a href="https://github.com/ZhiningLiu1998/awesome-awesome-machine-learning">ENG</a>/<a href="https://github.com/ZhiningLiu1998/awesome-awesome-machine-learning/blob/main/README_CN.md">中文</a>]</b><br>
   <b>[11/2021]</b> What are inter-&intra-class imbalance and how do they affect learning? <b>[<a href="https://arxiv.org/abs/2111.12791">PDF</a>]</b><br>
@@ -91,24 +88,24 @@ My goal is to build *fair machine learning systems* that benefit *minority* and 
 </table> -->
 
 
-## Check out my research (they are interesting)!
+## Check out some my (interesting) research :)
 <!-- <h2><b>Publications</b></h2> -->
 <table style="width:100%;border:None;border-spacing:0px;border-collapse:separate;margin-right:0;margin-left:0;font-size:0.95em;">
   <tr>
     <td style="padding:8px;width:30%;vertical-align:middle;border:none;">
-      <a href="images/dube.png">
-      <img src='images/dube.png' width="300">
+      <a href="images/UADB.png">
+      <img src='images/UADB.png' width="300">
       </a>
     </td>
     <td style="padding:20px;width:70%;vertical-align:middle;border-right:none;border:none;">
-      <b>"Towards Inter-class and Intra-class Imbalance in Class-imbalanced Learning"</b>
+      <b>"UADB: Unsupervised Anomaly Detection Booster"</b>
       <br>
-      <u>Zhining Liu</u>, et al. <i>Preprint</i>. 
+      <u>Zhining Liu*</u>, Hangting Ye*, Xinyi Shen, Wei Cao, Shun Zheng, Xiaofan Gui, Huishuai Zhang, Yi Chang, Jiang Bian. 
       <br>
-      [<a href="{{ site.baseurl }}files/preprint_dube.pdf">PDF</a>]
-      [<a href="https://arxiv.org/abs/2111.12791">arXiv</a>]
-      [<a href="https://github.com/AnonAuthorAI/duplebalance">Github</a>]
-      [<a href="https://duplebalance.readthedocs.io/">Documentation</a>]
+      <i>In 39th IEEE International Conference on Data Engineering (ICDE), 2023.</i>
+      <br>
+      [<a href="{{ site.baseurl }}files/ICDE_2023_UADB.pdf">PDF</a>]
+      [<a href="https://github.com/HangtingYe/UADB">Github</a>]
     </td>
   </tr>
 
@@ -133,6 +130,24 @@ My goal is to build *fair machine learning systems* that benefit *minority* and 
     </td>
   </tr>
 
+  <!-- <tr>
+    <td style="padding:8px;width:30%;vertical-align:middle;border:none;">
+      <a href="images/dube.png">
+      <img src='images/dube.png' width="300">
+      </a>
+    </td>
+    <td style="padding:20px;width:70%;vertical-align:middle;border-right:none;border:none;">
+      <b>"Towards Inter-class and Intra-class Imbalance in Class-imbalanced Learning"</b>
+      <br>
+      <u>Zhining Liu</u>, et al. <i>Preprint</i>. 
+      <br>
+      [<a href="{{ site.baseurl }}files/preprint_dube.pdf">PDF</a>]
+      [<a href="https://arxiv.org/abs/2111.12791">arXiv</a>]
+      [<a href="https://github.com/AnonAuthorAI/duplebalance">Github</a>]
+      [<a href="https://duplebalance.readthedocs.io/">Documentation</a>]
+    </td>
+  </tr> -->
+
   <tr>
     <td style="padding:8px;width:30%;vertical-align:middle;border:none;">
       <a href="images/mesa.png">
@@ -150,7 +165,7 @@ My goal is to build *fair machine learning systems* that benefit *minority* and 
       and 
       <a href="http://yichang-cs.com/"> Yi Chang</a>*, 
       <br>
-      <i>in 34th Conference on Neural Information Processing Systems (<b>NeurIPS 2020</b>)</i>. 
+      <i>In 34th Conference on Neural Information Processing Systems (NeurIPS), 2020.</i>
       <br>
       [<a href="{{ site.baseurl }}files/NeurIPS_2020_MESA.pdf">PDF</a>]
       [<a href="https://arxiv.org/abs/2010.08830">arXiv</a>]
@@ -175,9 +190,9 @@ My goal is to build *fair machine learning systems* that benefit *minority* and 
       <a href="https://sites.google.com/view/jiangbian"> Jiang Bian</a>, 
       <a href="https://scholar.google.com/citations?user=EezEcbgAAAAJ&hl=en"> Hechang Chen</a>, 
       <a href="http://yichang-cs.com/"> Yi Chang</a>, 
-      <a href="https://www.microsoft.com/en-us/research/people/tyliu/"> Tie-Yan Liu</a>, 
+      <a href="https://www.microsoft.com/en-us/research/people/tyliu/"> Tie-Yan Liu</a>. 
       <br>
-      <i>in 36th IEEE International Conference on Data Engineering (<b>ICDE 2020</b>).</i>
+      <i>In 36th IEEE International Conference on Data Engineering (ICDE), 2020.</i>
       <br>
       [<a href="https://conferences.computer.org/icde/2020/pdfs/ICDE2020-5acyuqhpJ6L9P042wmjY1p/290300a841/290300a841.pdf">PDF</a>]
       [<a href="https://arxiv.org/abs/1909.03500v3">arXiv</a>] 
@@ -330,7 +345,7 @@ My goal is to build *fair machine learning systems* that benefit *minority* and 
   </tr>
 </table>
 
-### *Selected Honors*
+<!-- ### *Selected Honors*
 
 <table style="border:none;font-size:0.95em;">
   <tr>
@@ -369,7 +384,7 @@ My goal is to build *fair machine learning systems* that benefit *minority* and 
     <td style="border:none;text-align:center;">2017
     </td>
   </tr>
-</table>
+</table> -->
 
 ### *Fun Facts*
 
