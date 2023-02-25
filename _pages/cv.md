@@ -35,23 +35,22 @@ redirect_from:
   * Develop prototype learning systems for intelligent logistics.
   * Supervisor: Dr. [Jiang Bian](https://scholar.google.com/citations?user=pZBEnY8AAAAJ&hl=zh-CN) and Dr. [Wei Cao](https://weicao1990.github.io/)
 
-## Service
+<!-- ## Service
 
 * Serve as a class monitor since 2015.
 * Serve as a reviewer for:
   * Journals: TKDE, TCYB, TNNLS, Neurocomputing
   * Conferences: SIGKDD, ICDM, IROS
 * Volunteer for:
-  * [ACM SIGIR 2020](https://sigir.org/sigir2020/volunteers/), responsible for conference promotion and publicity.
+  * [ACM SIGIR 2020](https://sigir.org/sigir2020/volunteers/), responsible for conference promotion and publicity. -->
 
-## Selected Honors & Awards
+## Honors & Awards
 
-| *Top 10 Honorary Masters Graduates* (10/all masters graduates) by Jilin University.| 2022 |
+| *Top 10 Honorary Graduates* (Highest Honor) by Jilin University.| 2022 |
 | *Masters Research Performance Scholarship, First Prize*, (¥10,000 CNY) by Jilin University. | 2021 & 2022 |
 | *National Scholarship* (2/80, ¥20,000 CNY) by Ministry of Education.              | 2020 |
 | *National Scholarship* (1/40, ¥20,000 CNY) by Ministry of Education.              | 2019 |
 | *Masters Academic Performance Scholarship* (¥8,000 CNY) by Jilin University.      | 2019 & 2020 |
-<!-- | *Master’s Excellence Scholarship, First Prize* (Top 5%, ¥1,500 RMB) by Jilin University.| 2019 & 2020 | -->
 | *CASC Scholarship* (5 students/14 schools, ¥5,000 RMB) by CASC Committee.         | 2020 |
 | *Undergraduate Research Scholarship* (20/400, ¥5,000 CNY) by Jilin University.    | 2018 |
 | *Outstanding Student Project Scholarship* (2/84, ¥5,000 CNY) by Jilin University. | 2018 |
