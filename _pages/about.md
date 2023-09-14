@@ -16,9 +16,9 @@ redirect_from:
 
 **你好! / Hello! / 안녕하세요! / こんにちは! / Здравствуй! / Bonjour! / Guten Tag! / Hola! / Ciao! / السلام عليكم!**
 
-I'm a first-year Ph.D. student in [Department of Computer Science](https://cs.illinois.edu/), [University of Illinois at Urbana-Champaign](https://illinois.edu/), working with the very nice [Dr. Hanghang Tong](http://tonghanghang.org/). 
-Before joining UIUC, I received my M.Eng. and B.S. in Computer Science from [Jilin University](http://global.jlu.edu.cn/) in 2019 and 2022, respectively. 
-During my time at Jilin University, I was fortunate to have [Dr. Yi Chang](http://yichang-cs.com/) as my mentor, and had the pleasure of working with [Dr. Jiang Bian](https://sites.google.com/view/jiangbian) & [Dr. Wei Cao](https://weicao1990.github.io/) (Microsoft Research), [Dr. Pengfei Wei](http://pengfei-wei.com/) (ByteDance), and [Dr. Jing Jiang](https://profiles.uts.edu.au/jing.jiang) (UTS).
+I'm a Ph.D. student in [Department of Computer Science](https://cs.illinois.edu/), [University of Illinois at Urbana-Champaign](https://illinois.edu/), working with the very nice [Prof. Hanghang Tong](http://tonghanghang.org/). 
+Before joining UIUC, I received my B.S. and M.Eng. in Computer Science from [Jilin University](http://global.jlu.edu.cn/) in 2019 and 2022, respectively. 
+During my time at Jilin U, I was fortunate to have [Prof. Yi Chang](http://yichang-cs.com/) as my advisor, and had the pleasure of working with [Dr. Jiang Bian](https://sites.google.com/view/jiangbian), [Dr. Wei Cao](https://weicao1990.github.io/), [Dr. Pengfei Wei](http://pengfei-wei.com/), and [Prof. Jing Jiang](https://profiles.uts.edu.au/jing.jiang).
 
 
 My goal is to build *practical machine learning systems* that promote **fairness** and **equity**. I am particularly interested in developing algorithms and open-source softwares for **<u>unbiased</u>**, **<u>efficient</u>**, and **<u>robust</u>** learning from skewed data in real-world applications.
@@ -32,8 +32,8 @@ My recent interest lies in topics related to graph data mining, especially, lear
 <h1 style="color: rgb(231, 65, 65);"><b>What's new:</b></h1>
 <div style="line-height: 1.5em; font-size: 0.95em">
   <p>
-  <b>[05/2023]</b> One paper on treatment outcome forecasting accepted by KDD'23.<br>
-  <b>[05/2023]</b> I'll be at Amazon as an Applied Scientist Intern this summer, see you in Seattle!<br>
+  <b>[05/2023]</b> One paper on treatment outcome forecasting accepted by KDD'23, see you in Long Beach : ) <br>
+  <b>[05/2023]</b> I'll be at Amazon@Seattle as an Applied Scientist Intern this summer!<br>
   <b>[02/2023]</b> Just released a major version of <a href="https://github.com/ZhiningLiu1998/imbalanced-ensemble">imbalanced-ensemble</a>. <b>[<a href="https://imbalanced-ensemble.readthedocs.io">Docs</a>/<a href="https://pypi.org/project/imbalanced-ensemble/">PyPI</a>]</b><br>
   <b>[02/2023]</b> One paper on unsupervised anomaly detection accepted by ICDE'23, congrats to Hangting! <b>[<a href="https://github.com/HangtingYe/UADB">Code</a>][<a href="{{ site.baseurl }}files/ICDE_2023_UADB.pdf">PDF</a>]</b><br>
   <b>[03/2022]</b> I will join Prof. <a href="http://tonghanghang.org/">Hanghang Tong</a>'s group at UIUC this fall as a Ph.D. student!<br>
@@ -50,60 +50,9 @@ My recent interest lies in topics related to graph data mining, especially, lear
   </p>
 </div>
 
-
-<!-- # Experience
-<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:0;margin-left:0;font-size:0.95em;">
-  <tr>
-    <td style="padding:8px;width:30%;vertical-align:middle;border:none;">
-      <img src='images/jlusai.png' width="300">
-    </td>
-    <td style="padding:20px;width:70%;vertical-align:middle;border-right:none;border:none;">
-      <b><a href="http://sai.jlu.edu.cn/">School of Artificial Intelligence</a>, Jilin University.</b>
-      <br>
-      Master of Science (Sept. 2019 - July 2022)
-      <br>
-      Supervisor: Dr. <a href="http://yichang-cs.com/">Yi CHANG</a>
-      <br>
-      Work closely with: 
-      Dr. <a href="http://pengfei-wei.com/">Pengfei WEI</a>,
-      Dr. <a href="https://profiles.uts.edu.au/jing.jiang">Jing JIANG</a>.
-    </td>
-  </tr>
-  <tr>
-    <td style="padding:8px;width:30%;vertical-align:middle;border:none;">
-      <img src='images/microsoft.png' width="300">
-    </td>
-    <td style="padding:20px;width:70%;vertical-align:middle;border-right:none;border:none;">
-      <a href="https://msra.cn"><b>Microsoft Research Asia</b></a>.
-      <br>
-      Research Intern, Machine Learning Group (Sept. 2018 to Jun. 2019)
-      <br>
-      Mentor: Dr. <a href="https://sites.google.com/view/jiangbian">Jiang BIAN</a> and Dr. <a href="https://weicao1990.github.io/">Wei CAO</a>.
-    </td>
-  </tr>
-</table> -->
-
-
 ## Selected Research Items :-)
 <!-- <h2><b>Publications</b></h2> -->
 <table style="width:100%;border:None;border-spacing:0px;border-collapse:separate;margin-right:0;margin-left:0;font-size:0.95em;">
-  <tr>
-    <td style="padding:8px;width:30%;vertical-align:middle;border:none;">
-      <a href="images/UADB.png">
-      <img src='images/UADB.png' width="300">
-      </a>
-    </td>
-    <td style="padding:20px;width:70%;vertical-align:middle;border-right:none;border:none;">
-      <b>"UADB: Unsupervised Anomaly Detection Booster"</b>
-      <br>
-      <u>Zhining Liu*</u>, Hangting Ye*, Xinyi Shen, Wei Cao, Shun Zheng, Xiaofan Gui, Huishuai Zhang, Yi Chang, Jiang Bian. 
-      <br>
-      <i>In 39th IEEE International Conference on Data Engineering (ICDE), 2023.</i>
-      <br>
-      [<a href="{{ site.baseurl }}files/ICDE_2023_UADB.pdf">PDF</a>]
-      [<a href="https://github.com/HangtingYe/UADB">Github</a>]
-    </td>
-  </tr>
 
   <tr>
     <td style="padding:8px;width:30%;vertical-align:middle;border:none;">
@@ -116,7 +65,7 @@ My recent interest lies in topics related to graph data mining, especially, lear
       <br>
       <u>Zhining Liu</u>, et al. <i>Preprint</i>. 
       <br>
-      [<a href="{{ site.baseurl }}files/preprint_imbens.pdf">PDF</a>]
+      [<a href="https://arxiv.org/pdf/2111.12776.pdf">PDF</a>]
       [<a href="https://arxiv.org/abs/2111.12776">arXiv</a>]
       [<a href="https://zhuanlan.zhihu.com/p/376572330">Zhihu/知乎</a>] 
       [<a href="https://github.com/ZhiningLiu1998/imbalanced-ensemble">Github</a>]
@@ -125,24 +74,6 @@ My recent interest lies in topics related to graph data mining, especially, lear
       [<a href="https://pypi.org/project/imbalanced-ensemble/">PyPI</a>]
     </td>
   </tr>
-
-  <!-- <tr>
-    <td style="padding:8px;width:30%;vertical-align:middle;border:none;">
-      <a href="images/dube.png">
-      <img src='images/dube.png' width="300">
-      </a>
-    </td>
-    <td style="padding:20px;width:70%;vertical-align:middle;border-right:none;border:none;">
-      <b>"Towards Inter-class and Intra-class Imbalance in Class-imbalanced Learning"</b>
-      <br>
-      <u>Zhining Liu</u>, et al. <i>Preprint</i>. 
-      <br>
-      [<a href="{{ site.baseurl }}files/preprint_dube.pdf">PDF</a>]
-      [<a href="https://arxiv.org/abs/2111.12791">arXiv</a>]
-      [<a href="https://github.com/AnonAuthorAI/duplebalance">Github</a>]
-      [<a href="https://duplebalance.readthedocs.io/">Documentation</a>]
-    </td>
-  </tr> -->
 
   <tr>
     <td style="padding:8px;width:30%;vertical-align:middle;border:none;">
@@ -163,7 +94,7 @@ My recent interest lies in topics related to graph data mining, especially, lear
       <br>
       <i>In 34th Conference on Neural Information Processing Systems (NeurIPS), 2020.</i>
       <br>
-      [<a href="{{ site.baseurl }}files/NeurIPS_2020_MESA.pdf">PDF</a>]
+      [<a href="https://proceedings.neurips.cc/paper/2020/file/a64bd53139f71961c5c31a9af03d775e-Paper.pdf">PDF</a>]
       [<a href="https://arxiv.org/abs/2010.08830">arXiv</a>]
       [<a href="https://studio.slideslive.com/web_recorder/share/20201020T134559Z__NeurIPS_posters__17343__mesa-effective-ensemble-imbal?s=d3745afc-cfcf-4d60-9f34-63d3d811b55f">Video</a>]
       [<a href="https://zhuanlan.zhihu.com/p/268539195">Zhihu/知乎</a>] 
@@ -199,6 +130,43 @@ My recent interest lies in topics related to graph data mining, especially, lear
       [<a href="https://pypi.org/project/self-paced-ensemble">PyPI</a>]
     </td>
   </tr>
+
+  <!-- <tr>
+    <td style="padding:8px;width:30%;vertical-align:middle;border:none;">
+      <a href="images/dube.png">
+      <img src='images/dube.png' width="300">
+      </a>
+    </td>
+    <td style="padding:20px;width:70%;vertical-align:middle;border-right:none;border:none;">
+      <b>"Towards Inter-class and Intra-class Imbalance in Class-imbalanced Learning"</b>
+      <br>
+      <u>Zhining Liu</u>, et al. <i>Preprint</i>. 
+      <br>
+      [<a href="{{ site.baseurl }}files/preprint_dube.pdf">PDF</a>]
+      [<a href="https://arxiv.org/abs/2111.12791">arXiv</a>]
+      [<a href="https://github.com/AnonAuthorAI/duplebalance">Github</a>]
+      [<a href="https://duplebalance.readthedocs.io/">Documentation</a>]
+    </td>
+  </tr> -->
+
+  <!-- <tr>
+    <td style="padding:8px;width:30%;vertical-align:middle;border:none;">
+      <a href="images/UADB.png">
+      <img src='images/UADB.png' width="300">
+      </a>
+    </td>
+    <td style="padding:20px;width:70%;vertical-align:middle;border-right:none;border:none;">
+      <b>"UADB: Unsupervised Anomaly Detection Booster"</b>
+      <br>
+      <u>Zhining Liu*</u>, Hangting Ye*, Xinyi Shen, Wei Cao, Shun Zheng, Xiaofan Gui, Huishuai Zhang, Yi Chang, Jiang Bian. 
+      <br>
+      <i>In 39th IEEE International Conference on Data Engineering (ICDE), 2023.</i>
+      <br>
+      [<a href="https://arxiv.org/pdf/2306.01997.pdf">PDF</a>]
+      [<a href="https://github.com/HangtingYe/UADB">Github</a>]
+    </td>
+  </tr> -->
+  
 </table>
 
 
