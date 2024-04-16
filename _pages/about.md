@@ -32,7 +32,9 @@ My recent interest lies in topics related to graph data mining, especially, lear
 <h1 style="color: rgb(231, 65, 65);"><b>What's new:</b></h1>
 <div style="line-height: 1.5em; font-size: 0.95em">
   <p>
-  <b>[05/2023]</b> One paper on treatment outcome forecasting accepted by KDD'23, see you in Long Beach : ) <br>
+  <b>[03/2024]</b> One paper "Group Fairness via Group Consensus" is accepted by ACM FAccT'24. <br>
+  <b>[02/2024]</b> I'll be at Amazon@BayArea as an Applied Scientist Intern this summer.<br>
+  <b>[05/2023]</b> One paper on treatment outcome forecasting accepted by KDD'23, see you in Long Beach :-) <br>
   <b>[05/2023]</b> I'll be at Amazon@Seattle as an Applied Scientist Intern this summer!<br>
   <b>[02/2023]</b> Just released a major version of <a href="https://github.com/ZhiningLiu1998/imbalanced-ensemble">imbalanced-ensemble</a>. <b>[<a href="https://imbalanced-ensemble.readthedocs.io">Docs</a>/<a href="https://pypi.org/project/imbalanced-ensemble/">PyPI</a>]</b><br>
   <b>[02/2023]</b> One paper on unsupervised anomaly detection accepted by ICDE'23, congrats to Hangting! <b>[<a href="https://github.com/HangtingYe/UADB">Code</a>][<a href="{{ site.baseurl }}files/ICDE_2023_UADB.pdf">PDF</a>]</b><br>
