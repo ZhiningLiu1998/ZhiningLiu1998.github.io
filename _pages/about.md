@@ -31,22 +31,22 @@ Mail: [zhining.liu[AT]outlook.com](mailto:zhining.liu@outlook.com) or [liu326[AT
 
 <h1 style="color: rgb(231, 65, 65);"><b>What's new:</b></h1>
 
-- **[05/2024]** 🍻 *KDD'24 accepted:* "AIM: Attributing, Interpreting, Mitigating Data-encoded Unfairness".
-- **[04/2024]** 🍻 *ICML'24 accepted:* "Class-Imbalanced Graph Learning without Class Rebalancing". [[Code](https://github.com/ZhiningLiu1998/BAT)/[PDF](https://arxiv.org/pdf/2308.14181)]
-- **[03/2024]** 🍻 *FAccT'24 accepted:* "Group Fairness via Group Consensus" (with Eunice Chan).
+- **[05/2024]** 🍻 *KDD'24:* "AIM: Attributing, Interpreting, Mitigating Data-encoded Unfairness".
+- **[04/2024]** 🍻 *ICML'24:* "Class-Imbalanced Graph Learning without Class Rebalancing". [[Code](https://github.com/ZhiningLiu1998/BAT)/[PDF](https://arxiv.org/pdf/2308.14181)]
+- **[03/2024]** 🍻 *FAccT'24:* "Group Fairness via Group Consensus" (with Eunice Chan).
 - **[02/2024]** 🧑‍💻 *Internship:* I'll be at Amazon@PaloAlto as an Applied Scientist Intern this summer.
-- **[05/2023]** 🍻 *KDD'23 accepted:* "Treatment Outcome Forecasting via Multi-Task Learning" (with Hangting Ye).
+- **[05/2023]** 🍻 *KDD'23:* "Web-based Long-term Spine Treatment Outcome Forecasting" (with Hangting Ye).
 - **[05/2023]** 🧑‍💻 *Internship:* I'll be at Amazon@Seattle as an Applied Scientist Intern this summer.
 - **[02/2023]** 💾 *Open-source:* Major release of [IMBENS](https://github.com/ZhiningLiu1998/imbalanced-ensemble) - imbalanced learning toolbox [[Github](https://github.com/ZhiningLiu1998/imbalanced-ensemble)/[Docs](https://imbalanced-ensemble.readthedocs.io)/[PyPI](https://pypi.org/project/imbalanced-ensemble/)]
-- **[02/2023]** 🍻 *ICDE'23 accepted:* "UADB: Unsupervised Anomaly Detection Booster" (with Hangting Ye). [[Code](https://github.com/HangtingYe/UADB)/[PDF](https://arxiv.org/pdf/2306.01997)]
+- **[02/2023]** 🍻 *ICDE'23:* "UADB: Unsupervised Anomaly Detection Booster" (with Hangting Ye). [[Code](https://github.com/HangtingYe/UADB)/[PDF](https://arxiv.org/pdf/2306.01997)]
 - **[03/2022]** 🎓 *Ph.D. Journey:* I will join Prof. [Hanghang Tong](http://tonghanghang.org/)'s group at UIUC in 2022 Fall!
 - **[01/2022]** 💾 *Open-source:* [Awesome2ML](https://github.com/ZhiningLiu1998/awesome-awesome-machine-learning) - a curated list across all Machine Learning topics. [[ENG](https://github.com/ZhiningLiu1998/awesome-awesome-machine-learning)/[中文](https://github.com/ZhiningLiu1998/awesome-awesome-machine-learning/blob/main/README_CN.md)]
 - **[11/2021]** 📜 *Preprint:* "IMBENS: Ensemble Class-imbalanced Learning in Python" [[Code](https://github.com/ZhiningLiu1998/imbalanced-ensemble)/[PDF](https://arxiv.org/abs/2111.12776)]
 - **[06/2021]** 💾 *Open-source:* [IMBENS](https://github.com/ZhiningLiu1998/imbalanced-ensemble) - imbalanced learning toolbox [[Github](https://github.com/ZhiningLiu1998/imbalanced-ensemble)/[Docs](https://imbalanced-ensemble.readthedocs.io)/[PyPI](https://pypi.org/project/imbalanced-ensemble/)]
-- **[10/2020]** 🍻 *NeurIPS'20 accepted:* "MESA: Boost Ensemble Imbalanced Learning with MEta-SAmpler" [[Code](https://github.com/ZhiningLiu1998/mesa)/[PDF](https://proceedings.neurips.cc/paper/2020/file/a64bd53139f71961c5c31a9af03d775e-Paper.pdf)]
+- **[10/2020]** 🍻 *NeurIPS'20:* "MESA: Boost Ensemble Imbalanced Learning with MEta-SAmpler" [[Code](https://github.com/ZhiningLiu1998/mesa)/[PDF](https://proceedings.neurips.cc/paper/2020/file/a64bd53139f71961c5c31a9af03d775e-Paper.pdf)]
 - **[04/2020]** 💾 *Open-source:* [Awesome-Imbalanced-Learning](https://github.com/ZhiningLiu1998/awesome-imbalanced-learning) - a curated list of imbalanced learning resources.
-- **[10/2019]** 🍻 *ICDE'20 accepted:* "Self-paced Ensemble for Highly Imbalanced Massive Data Classification" [[Code](https://github.com/ZhiningLiu1998/self-paced-ensemble)/[PDF](https://conferences.computer.org/icde/2020/pdfs/ICDE2020-5acyuqhpJ6L9P042wmjY1p/290300a841/290300a841.pdf)]
-- **[07/2019]** 🎓*Graduation:* Recieved my B.Sc. from the Tang Aoqing Honors Program in Science.
+- **[10/2019]** 🍻 *ICDE'20:* "Self-paced Ensemble for Highly Imbalanced Massive Data Classification" [[Code](https://github.com/ZhiningLiu1998/self-paced-ensemble)/[PDF](https://conferences.computer.org/icde/2020/pdfs/ICDE2020-5acyuqhpJ6L9P042wmjY1p/290300a841/290300a841.pdf)]
+- **[07/2019]** 🎓*Graduation:* Recieved my B.Sc. from Tang Aoqing Honors Program in Science, Jilin U.
 - **[09/2018]** 🧑‍💻*Internship:* Starting my internship at Microsoft Research, supervisor: Dr. [Jiang BIAN](https://sites.google.com/view/jiangbian), Dr. [Wei CAO](https://weicao1990.github.io/).
 
 <!-- 
