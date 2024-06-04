@@ -46,8 +46,8 @@ Mail: [zhining.liu[AT]outlook.com](mailto:zhining.liu@outlook.com) or [liu326[AT
 - **[10/2020]** 🍻 *NeurIPS'20:* "MESA: Boost Ensemble Imbalanced Learning with MEta-SAmpler" [[Code](https://github.com/ZhiningLiu1998/mesa)/[PDF](https://proceedings.neurips.cc/paper/2020/file/a64bd53139f71961c5c31a9af03d775e-Paper.pdf)]
 - **[04/2020]** 💾 *Open-source:* [Awesome-Imbalanced-Learning](https://github.com/ZhiningLiu1998/awesome-imbalanced-learning) - a curated list of imbalanced learning resources.
 - **[10/2019]** 🍻 *ICDE'20:* "Self-paced Ensemble for Highly Imbalanced Massive Data Classification" [[Code](https://github.com/ZhiningLiu1998/self-paced-ensemble)/[PDF](https://conferences.computer.org/icde/2020/pdfs/ICDE2020-5acyuqhpJ6L9P042wmjY1p/290300a841/290300a841.pdf)]
-- **[07/2019]** 🎓*Graduation:* Recieved my B.Sc. from Tang Aoqing Honors Program in Science, Jilin U.
-- **[09/2018]** 🧑‍💻*Internship:* Starting my internship at Microsoft Research, supervisor: Dr. [Jiang BIAN](https://sites.google.com/view/jiangbian), Dr. [Wei CAO](https://weicao1990.github.io/).
+- **[07/2019]** 🎓 *Graduation:* Recieved my B.Sc. from Tang Aoqing Honors Program in Science, Jilin U.
+- **[09/2018]** 🧑‍💻 *Internship:* Starting my internship at Microsoft Research, supervisor: Dr. [Jiang BIAN](https://sites.google.com/view/jiangbian), Dr. [Wei CAO](https://weicao1990.github.io/).
 
 <!-- 
 - **[06/2020]** 💼 *Service:* Serving as an organizing volunteer of [ACM SIGIR'20](https://sigir.org/sigir2020/).
@@ -56,6 +56,23 @@ Mail: [zhining.liu[AT]outlook.com](mailto:zhining.liu@outlook.com) or [liu326[AT
 ## Featured Research Items :-) ([Full List](https://scholar.google.com/citations?user=3Z6Z9YQAAAAJ))
 
 <table style="width:100%;border:None;border-spacing:0px;border-collapse:separate;margin-right:0;margin-left:0;font-size:0.95em;">
+  <tr>
+    <td style="padding:8px;width:30%;vertical-align:middle;border:none;">
+      <a href="images/icml24-bat.png">
+      <img src='images/icml24-bat.png' width="300">
+      </a>
+    </td>
+    <td style="padding:20px;width:70%;vertical-align:middle;border-right:none;border:none;">
+      <b>"Class-Imbalanced Graph Learning without Class Rebalancing"</b>
+      <br>
+      <u>Zhining Liu</u>, et al. <i>In ICML'24</i>. 
+      <br>
+      [<a href="https://arxiv.org/pdf/2308.14181">PDF</a>]
+      [<a href="https://arxiv.org/abs/2308.14181">arXiv</a>]
+      [<a href="https://zhuanlan.zhihu.com/p/699526077">Zhihu/知乎</a>] 
+      [<a href="https://github.com/ZhiningLiu1998/BAT">Github</a>]
+    </td>
+  </tr>
 
   <tr>
     <td style="padding:8px;width:30%;vertical-align:middle;border:none;">
@@ -66,7 +83,7 @@ Mail: [zhining.liu[AT]outlook.com](mailto:zhining.liu@outlook.com) or [liu326[AT
     <td style="padding:20px;width:70%;vertical-align:middle;border-right:none;border:none;">
       <b>"IMBENS: Ensemble Class-imbalanced Learning in Python"</b>
       <br>
-      <u>Zhining Liu</u>, et al. <i>Preprint</i>. 
+      <u>Zhining Liu</u>, et al. <i>Open-source Python Package</i>. 
       <br>
       [<a href="https://arxiv.org/pdf/2111.12776.pdf">PDF</a>]
       [<a href="https://arxiv.org/abs/2111.12776">arXiv</a>]
@@ -87,15 +104,8 @@ Mail: [zhining.liu[AT]outlook.com](mailto:zhining.liu@outlook.com) or [liu326[AT
     <td style="padding:20px;width:70%;vertical-align:middle;border-right:none;border:none;">
       <b>"MESA: Boost Ensemble Imbalanced Learning with MEta-SAmpler"</b>
       <br>
-      <u>Zhining Liu</u>, 
-      <a href="http://pengfei-wei.com/"> Pengfei Wei</a>, 
-      <a href="https://www.uts.edu.au/staff/jing.jiang"> Jing Jiang</a>, 
-      <a href="https://weicao1990.github.io/"> Wei Cao</a>, 
-      <a href="https://sites.google.com/view/jiangbian"> Jiang Bian</a>, 
-      and 
-      <a href="http://yichang-cs.com/"> Yi Chang</a>*, 
-      <br>
-      <i>In 34th Conference on Neural Information Processing Systems (NeurIPS), 2020.</i>
+      <u>Zhining Liu</u>, et al. 
+      <i>In NeurIPS'20.</i>
       <br>
       [<a href="https://proceedings.neurips.cc/paper/2020/file/a64bd53139f71961c5c31a9af03d775e-Paper.pdf">PDF</a>]
       [<a href="https://arxiv.org/abs/2010.08830">arXiv</a>]
@@ -114,15 +124,7 @@ Mail: [zhining.liu[AT]outlook.com](mailto:zhining.liu@outlook.com) or [liu326[AT
     <td style="padding:20px;width:70%;vertical-align:middle;border-right:none;border:none;">
       <b>"Self-paced Ensemble for Highly Imbalanced Massive Data Classification"</b>
       <br>
-      <u>Zhining Liu</u>, 
-      <a href="https://weicao1990.github.io/"> Wei Cao</a>, 
-      <a href="https://scholar.google.com/citations?user=uBo3SJcAAAAJ&hl=en"> Zhifeng Gao</a>, 
-      <a href="https://sites.google.com/view/jiangbian"> Jiang Bian</a>, 
-      <a href="https://scholar.google.com/citations?user=EezEcbgAAAAJ&hl=en"> Hechang Chen</a>, 
-      <a href="http://yichang-cs.com/"> Yi Chang</a>, 
-      <a href="https://www.microsoft.com/en-us/research/people/tyliu/"> Tie-Yan Liu</a>. 
-      <br>
-      <i>In 36th IEEE International Conference on Data Engineering (ICDE), 2020.</i>
+      <u>Zhining Liu</u>, et al. <i>In IEEE ICDE'20.</i>
       <br>
       [<a href="https://conferences.computer.org/icde/2020/pdfs/ICDE2020-5acyuqhpJ6L9P042wmjY1p/290300a841/290300a841.pdf">PDF</a>]
       [<a href="https://arxiv.org/abs/1909.03500v3">arXiv</a>] 
