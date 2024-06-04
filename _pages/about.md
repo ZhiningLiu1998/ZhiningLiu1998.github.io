@@ -20,10 +20,7 @@ I'm a Ph.D. candidate at [Department of Computer Science](https://cs.illinois.ed
 Before joining UIUC, I received my B.S. and M.Eng. in Computer Science from [Jilin University](http://global.jlu.edu.cn/) in 2019 and 2022, respectively. 
 Before joining UIUC, I was fortunate to have [Prof. Yi Chang](http://yichang-cs.com/) as my advisor, and had the pleasure of working with [Dr. Jiang Bian](https://sites.google.com/view/jiangbian), [Dr. Wei Cao](https://weicao1990.github.io/), [Dr. Pengfei Wei](http://pengfei-wei.com/), and [Prof. Jing Jiang](https://profiles.uts.edu.au/jing.jiang).
 
-
-My goal is to build *practical machine learning systems* (check out my [open-source projects](https://github.com/ZhiningLiu1998)) that promote **fairness** and **equity**. I am particularly interested in developing algorithms and open-source softwares for **<u>unbiased</u>**, **<u>efficient</u>**, and **<u>robust</u>** learning from skewed data in real-world applications.
-My recent interest lies in graph data mining (ICML'24), class-imbalanced learning (ICML'24,NeurIPS'20,ICDE'20), and fairness-aware machine learning (KDD'24, FAccT'24).
-
+I'm interested in doing [research](https://scholar.google.com/citations?user=5WORAUQAAAAJ&hl=zh-CN) and developing [open-source softwares](https://github.com/ZhiningLiu1998) for **<u>unbiased</u>**, **<u>efficient</u>**, and **<u>robust</u>** learning from skewed data in real-world applications. My recent interest lies in graph data mining (ICML'24), class-imbalanced learning (ICML'24,NeurIPS'20,ICDE'20), and fairness-aware machine learning (KDD'24, FAccT'24).
  
 **Contact me via**:  
 <i class="fa fa-fw fa-envelope"></i>
