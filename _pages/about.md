@@ -22,15 +22,35 @@ Before joining UIUC, I received both my B.S. and M.Eng. in Computer Science from
 
 I enjoy doing [research](https://scholar.google.com/citations?user=5WORAUQAAAAJ&hl=zh-CN) and developing [open-source softwares](https://github.com/ZhiningLiu1998) for **<u>unbiased</u>**, **<u>efficient</u>**, and **<u>robust</u>** machine learning from **<u>skewed data</u>** in real-world applications. My recent interest lies in graph data mining (ICML'24), class-imbalanced learning (ICML'24,NeurIPS'20,ICDE'20), and fairness-aware machine learning (KDD'24, FAccT'24).
  
-**📧 Contact me via**:  
+**Contact me via**:  
 <i class="fa fa-fw fa-envelope"></i>
-Mail: [zhining.liu[AT]outlook.com](mailto:zhining.liu@outlook.com) or [liu326[AT]illinois.edu](mailto:liu326@illinois.edu)
+📧 Mail: [zhining.liu[AT]outlook.com](mailto:zhining.liu@outlook.com) or [liu326[AT]illinois.edu](mailto:liu326@illinois.edu)
 
-<h2 style="color: rgb(231, 65, 65);"><b>🌈 What's new:</b></h2>
+<h1 style="color: rgb(231, 65, 65);"><b>🌈 What's new:</b></h1>
 
 <div style="height: 250px; overflow: auto;">
 
-- **[05/2024]** 🍻🇪🇸 ***KDD'24:*** "AIM: Attributing, Interpreting, Mitigating Data-encoded Unfairness". [[Code](https://github.com/ZhiningLiu1998/AIM)/[PDF](https://arxiv.org/pdf/2406.08819)]
+<ul>
+  <li><strong>[05/2024]</strong> 🍻 <em style="color: rgb(231, 165, 65);"><b>KDD'24:</b></em> "AIM: Attributing, Interpreting, Mitigating Data-encoded Unfairness". [<a href="https://github.com/ZhiningLiu1998/AIM">Code</a>/<a href="https://arxiv.org/pdf/2406.08819">PDF</a>]</li>
+  <li><strong>[05/2024]</strong> 🧑‍💻 <em style="color: rgb(231, 165, 65);"><b>Intern@Amazon:</b></em> Starting my Applied Scientist Internship at BayArea!</li>
+  <li><strong>[04/2024]</strong> 🍻 <em style="color: rgb(231, 165, 65);"><b>ICML'24:</b></em> "Class-Imbalanced Graph Learning without Class Rebalancing". [<a href="https://github.com/ZhiningLiu1998/BAT">Code</a>/<a href="https://arxiv.org/pdf/2308.14181">PDF</a>]</li>
+  <li><strong>[03/2024]</strong> 🍻 <em style="color: rgb(231, 165, 65);"><b>FAccT'24:</b></em> "Group Fairness via Group Consensus" (with Eunice Chan). [<a href="https://dl.acm.org/doi/pdf/10.1145/3630106.3659006">PDF</a>]</li>
+  <li><strong>[05/2023]</strong> 🍻 <em style="color: rgb(231, 165, 65);"><b>KDD'23:</b></em> "Web-based Long-term Spine Treatment Outcome Forecasting" (with Hangting Ye). [<a href="https://dl.acm.org/doi/pdf/10.1145/3580305.3599545">PDF</a>]</li>
+  <li><strong>[05/2023]</strong> 🧑‍💻 <em style="color: rgb(231, 165, 65);"><b>Intern@Amazon:</b></em> Starting my Applied Scientist Internship at Seattle!</li>
+  <li><strong>[02/2023]</strong> 💾 <em style="color: rgb(231, 165, 65);"><b>Open-source:</b></em> Major release of <a href="https://github.com/ZhiningLiu1998/imbalanced-ensemble">IMBENS</a> - imbalanced learning toolbox [<a href="https://github.com/ZhiningLiu1998/imbalanced-ensemble">Github</a>/<a href="https://imbalanced-ensemble.readthedocs.io">Docs</a>/<a href="https://pypi.org/project/imbalanced-ensemble/">PyPI</a>]</li>
+  <li><strong>[02/2023]</strong> 🍻 <em style="color: rgb(231, 165, 65);"><b>ICDE'23:</b></em> "UADB: Unsupervised Anomaly Detection Booster" (with Hangting Ye). [<a href="https://github.com/HangtingYe/UADB">Code</a>/<a href="https://arxiv.org/pdf/2306.01997">PDF</a>]</li>
+  <li><strong>[03/2022]</strong> 🎓 <em style="color: rgb(231, 165, 65);"><b>Starting Ph.D.@UIUC:</b></em> I will join Prof. <a href="http://tonghanghang.org/">Hanghang Tong</a>'s group at UIUC in 2022 Fall!</li>
+  <li><strong>[01/2022]</strong> 💾 <em style="color: rgb(231, 165, 65);"><b>Open-source:</b></em> <a href="https://github.com/ZhiningLiu1998/awesome-awesome-machine-learning">Awesome2ML</a> - a curated list across all Machine Learning topics. [<a href="https://github.com/ZhiningLiu1998/awesome-awesome-machine-learning">ENG</a>/<a href="https://github.com/ZhiningLiu1998/awesome-awesome-machine-learning/blob/main/README_CN.md">中文</a>]</li>
+  <li><strong>[11/2021]</strong> 📜 <em style="color: rgb(231, 165, 65);"><b>Preprint:</b></em> "IMBENS: Ensemble Class-imbalanced Learning in Python" [<a href="https://github.com/ZhiningLiu1998/imbalanced-ensemble">Code</a>/<a href="https://arxiv.org/abs/2111.12776">PDF</a>]</li>
+  <li><strong>[06/2021]</strong> 💾 <em style="color: rgb(231, 165, 65);"><b>Open-source:</b></em> <a href="https://github.com/ZhiningLiu1998/imbalanced-ensemble">IMBENS</a> - imbalanced learning toolbox [<a href="https://github.com/ZhiningLiu1998/imbalanced-ensemble">Github</a>/<a href="https://imbalanced-ensemble.readthedocs.io">Docs</a>/<a href="https://pypi.org/project/imbalanced-ensemble/">PyPI</a>]</li>
+  <li><strong>[10/2020]</strong> 🍻 <em style="color: rgb(231, 165, 65);"><b>NeurIPS'20:</b></em> "MESA: Boost Ensemble Imbalanced Learning with MEta-SAmpler" [<a href="https://github.com/ZhiningLiu1998/mesa">Code</a>/<a href="https://proceedings.neurips.cc/paper/2020/file/a64bd53139f71961c5c31a9af03d775e-Paper.pdf">PDF</a>]</li>
+  <li><strong>[04/2020]</strong> 💾 <em style="color: rgb(231, 165, 65);"><b>Open-source:</b></em> <a href="https://github.com/ZhiningLiu1998/awesome-imbalanced-learning">Awesome-Imbalanced-Learning</a> - a curated list of imbalanced learning resources.</li>
+  <li><strong>[10/2019]</strong> 🍻 <em style="color: rgb(231, 165, 65);"><b>ICDE'20:</b></em> "Self-paced Ensemble for Highly Imbalanced Massive Data Classification" [<a href="https://github.com/ZhiningLiu1998/self-paced-ensemble">Code</a>/<a href="https://conferences.computer.org/icde/2020/pdfs/ICDE2020-5acyuqhpJ6L9P042wmjY1p/290300a841/290300a841.pdf">PDF</a>]</li>
+  <li><strong>[07/2019]</strong> 🎓 <em style="color: rgb(231, 165, 65);"><b>Graduation@JilinU:</b></em> Recieved my B.Sc. from Tang Aoqing Honors Program in Science, Jilin University.</li>
+  <li><strong>[09/2018]</strong> 🧑‍💻 <em style="color: rgb(231, 165, 65);"><b>Intern@Microsoft:</b></em> Starting my internship at Microsoft Research Asia! Supervisor: Dr. <a href="https://sites.google.com/view/jiangbian">Jiang BIAN</a>, Dr. <a href="https://weicao1990.github.io/">Wei CAO</a>.</li>
+</ul>
+
+<!-- - **[05/2024]** 🍻🇪🇸 ***KDD'24:*** "AIM: Attributing, Interpreting, Mitigating Data-encoded Unfairness". [[Code](https://github.com/ZhiningLiu1998/AIM)/[PDF](https://arxiv.org/pdf/2406.08819)]
 - **[05/2024]** 🧑‍💻 ***Intern@Amazon:*** Starting my Applied Scientist Internship at BayArea!
 - **[04/2024]** 🍻🇦🇹 ***ICML'24:*** "Class-Imbalanced Graph Learning without Class Rebalancing". [[Code](https://github.com/ZhiningLiu1998/BAT)/[PDF](https://arxiv.org/pdf/2308.14181)]
 - **[03/2024]** 🍻🇧🇷 ***FAccT'24:*** "Group Fairness via Group Consensus" (with Eunice Chan). [[PDF](https://dl.acm.org/doi/pdf/10.1145/3630106.3659006)]
@@ -46,15 +66,12 @@ Mail: [zhining.liu[AT]outlook.com](mailto:zhining.liu@outlook.com) or [liu326[AT
 - **[04/2020]** 💾 ***Open-source:*** [Awesome-Imbalanced-Learning](https://github.com/ZhiningLiu1998/awesome-imbalanced-learning) - a curated list of imbalanced learning resources.
 - **[10/2019]** 🍻🇺🇸 ***ICDE'20:*** "Self-paced Ensemble for Highly Imbalanced Massive Data Classification" [[Code](https://github.com/ZhiningLiu1998/self-paced-ensemble)/[PDF](https://conferences.computer.org/icde/2020/pdfs/ICDE2020-5acyuqhpJ6L9P042wmjY1p/290300a841/290300a841.pdf)]
 - **[07/2019]** 🎓 ***Graduation@JilinU:*** Recieved my B.Sc. from Tang Aoqing Honors Program in Science, Jilin University.
-- **[09/2018]** 🧑‍💻 ***Intern@Microsoft:*** Starting my internship at Microsoft Research Asia! Supervisor: Dr. [Jiang BIAN](https://sites.google.com/view/jiangbian), Dr. [Wei CAO](https://weicao1990.github.io/).
+- **[09/2018]** 🧑‍💻 ***Intern@Microsoft:*** Starting my internship at Microsoft Research Asia! Supervisor: Dr. [Jiang BIAN](https://sites.google.com/view/jiangbian), Dr. [Wei CAO](https://weicao1990.github.io/). -->
+
 
 </div>
 
-<!-- 
-- **[06/2020]** 💼 *Service:* Serving as an organizing volunteer of [ACM SIGIR'20](https://sigir.org/sigir2020/).
- -->
-
-## 🎓 Featured Research Items ([GoogleScholar](https://scholar.google.com/citations?user=3Z6Z9YQAAAAJ))
+# 🎓 Featured Research Items ([GoogleScholar](https://scholar.google.com/citations?user=3Z6Z9YQAAAAJ))
 
 <table style="width:100%;border:None;border-spacing:0px;border-collapse:separate;margin-right:0;margin-left:0;font-size:0.95em;">
   <tr>
@@ -139,7 +156,7 @@ Mail: [zhining.liu[AT]outlook.com](mailto:zhining.liu@outlook.com) or [liu326[AT
   
 </table>
 
-## 💾 Featured Open-source Projects ([Github](https://github.com/ZhiningLiu1998))
+# 💾 Featured Open-source Projects ([Github](https://github.com/ZhiningLiu1998))
 
 <table style="font-size:0.95em;">
   <tr>
@@ -259,7 +276,7 @@ Mail: [zhining.liu[AT]outlook.com](mailto:zhining.liu@outlook.com) or [liu326[AT
   </tr>
 </table>
 
-### 📈 My Github Stats
+## 📈 My Github Stats
 
 <table style="font-size:0.92em;">
   <tr>
@@ -274,7 +291,7 @@ Mail: [zhining.liu[AT]outlook.com](mailto:zhining.liu@outlook.com) or [liu326[AT
   </tr>
 </table>
 
-## 🕺 *Fun Facts*
+# 🕺 Fun Facts
 
 - 💃 In the Chinese context, my name "Zhi Ning" (芷: a type of vanilla; 宁: peace & tranquil) has some feminine overtones. As a result, many of my friends thought I was a cute girl before meeting me (and were a little disappointed when we finally met). 
 - 🎮 I enjoy (but am not necessarily good at) playing almost all kinds of video games, shooters, strategy, 4X, RPG, roguelike, etc. To name some of my favorites: **Battlefield 1 & 3, Civilization VI, Stellaris, GTA 4 & 5, The Witcher 3, DIRT 4, Homeworld 2, Metro 2033, Bioshock, Borderlands**, etc.
