@@ -256,7 +256,7 @@ I enjoy doing [research](https://scholar.google.com/citations?user=5WORAUQAAAAJ&
   </tr>
 </table>
 
-## 📈 My Github Stats
+# 📈 My Github Stats
 
 <table style="font-size:0.92em;">
   <tr>
@@ -274,7 +274,7 @@ I enjoy doing [research](https://scholar.google.com/citations?user=5WORAUQAAAAJ&
 # 🕺 Fun Facts
 
 - 💃 In the Chinese context, my name "Zhi Ning" (芷: a type of vanilla; 宁: peace & tranquil) has some feminine overtones. As a result, many of my friends thought I was a cute girl before meeting me (and were a little disappointed when we finally met). 
-- 🎮 I enjoy (but am not necessarily good at) playing almost all kinds of video games, shooters, strategy, 4X, RPG, roguelike, etc. To name some of my favorites: **Battlefield 1 & 3, Civilization VI, Stellaris, GTA 4 & 5, The Witcher 3, DIRT 4, Homeworld 2, Metro 2033, Bioshock, Borderlands**, etc.
+- 🎮 I enjoy (but am not necessarily good at) playing almost all kinds of video games, shooters, strategy, 4X, RPG, roguelike, etc. To name some of my favorites: **Battlefield, Civilization, Stellaris, GTA, The Witcher, DIRT, Homeworld, Metro, Bioshock, Borderlands**, etc.
 - 🎨 Making things that look nice and satisfying (like this page and illustrations in my papers) makes me happy. Drawing was also one of my favorite thing to do before my 20s. I'm probably better suited to being a designer than doing computer science LOL.
 
 --------
