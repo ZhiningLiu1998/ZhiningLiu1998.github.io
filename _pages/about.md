@@ -267,6 +267,7 @@ I enjoy doing [research](https://scholar.google.com/citations?user=5WORAUQAAAAJ&
     <td align="center">
     <img src="https://raw.githubusercontent.com/ZhiningLiu1998/github-stats/master/generated/languages.svg">
     <!-- <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ZhiningLiu1998&show_icons=true&hide_border=true&bg_color=30,4a0908,643296&hide=issues,contribs&layout=compact&theme=vision-friendly-dark"> -->
+    <!-- <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ZhiningLiu1998&size_weight=0.5&count_weight=0.5&hide=jupyter%20notebook&layout=compact"> -->
     </td>
   </tr>
 </table>
