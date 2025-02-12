@@ -9,10 +9,25 @@ redirect_from:
   - /about.html
 ---
 
-[![GitHub](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.swo.moe%2Fstats%2Fgithub%2Fzhiningliu1998&query=count&color=181717&label=GitHub&labelColor=282c34&logo=github&suffix=+Followers&cacheSeconds=3600)](https://github.com/ZhiningLiu1998)
-[![Zhihu](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.swo.moe%2Fstats%2Fzhihu%2Fliu-zhi-zhu-14&query=count&color=282c34&label=%E7%9F%A5%E4%B9%8E&labelColor=0084ff&logo=zhihu&logoColor=ffffff&suffix=+Followers&cacheSeconds=3600)](https://www.zhihu.com/people/liu-zhi-zhu-14)
-[![Steam](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.swo.moe%2Fstats%2Fsteamfriends%2F76561198283527394&query=count&color=0b1a37&label=Steam&labelColor=134375&logo=steam&suffix=+Friends&cacheSeconds=3600)](https://steamcommunity.com/id/zhiningliu1998)
-![PhD](https://img.shields.io/badge/Ph.D.-UIUC%20(2022--Now)-brightgreen?color=181717&labelColor=blueviolet)
+
+<p align="left">
+  <a href="https://scholar.google.com/citations?user=5WORAUQAAAAJ">
+    <img src="https://img.shields.io/badge/Google%20Scholar-%2320beff?color=1f1f18&logo=google-scholar&style=flat-square">
+  </a>
+  <a href="https://github.com/ZhiningLiu1998">
+    <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.swo.moe%2Fstats%2Fgithub%2Fzhiningliu1998&query=count&color=181717&label=GitHub&labelColor=282c34&logo=github&style=flat-square&suffix=+Followers&cacheSeconds=3600">
+  </a>
+  <!-- <a href="https://www.zhihu.com/people/liu-zhi-zhu-14">
+    <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.swo.moe%2Fstats%2Fzhihu%2Fliu-zhi-zhu-14&query=count&color=282c34&label=%E7%9F%A5%E4%B9%8E&labelColor=0084ff&logo=zhihu&logoColor=ffffff&style=flat-square&suffix=+Followers&cacheSeconds=3600">
+  </a> -->
+  <a href="https://www.zhihu.com/people/liu-zhi-zhu-14">
+  <img src="https://img.shields.io/badge/Zhihu-4k Followers-brightgreen?style=flat-square&color=181717&labelColor=0084ff&logo=zhihu&logoColor=ffffff">
+  </a>
+  <a href="https://steamcommunity.com/id/zhiningliu1998">
+    <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.swo.moe%2Fstats%2Fsteamfriends%2F76561198283527394&query=count&color=0b1a37&label=Steam&labelColor=134375&logo=steam&style=flat-square&suffix=+Friends&cacheSeconds=3600">
+  </a>
+  <img src="https://img.shields.io/badge/Ph.D.-UIUC%20(2022--Now)-brightgreen?style=flat-square&color=181717&labelColor=blueviolet">
+</p>
 
 **你好! / Hello! / 안녕하세요! / こんにちは! / Здравствуй! / Bonjour! / Guten Tag! / Hola! / Ciao! / السلام عليكم!**
 
