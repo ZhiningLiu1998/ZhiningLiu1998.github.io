@@ -44,24 +44,199 @@ I enjoy doing [research](https://scholar.google.com/citations?user=5WORAUQAAAAJ&
 
 <div style="height: 300px; overflow: auto; border: 1px solid #ccc; margin: 10px;">
 
+<style>
+  .date { font-family: Consolas; color: rgb(146, 255, 102); font-weight: bold; }
+  .tag  { color: rgb(231, 165, 65); font-weight: bold; }
+  .link-group a {
+    color: #1a73e8;
+    text-decoration: none;
+    margin: 0 2px;
+  }
+  .link-group a:hover {
+    text-decoration: underline;
+  }
+</style>
+
 <ul>
-  <li><strong style="font-family: Consolas;">[05/2024]</strong> 🍻<b style="color: rgb(231, 165, 65);">KDD'24:</b> "AIM: Attributing, Interpreting, Mitigating Data-encoded Unfairness". [<a href="https://github.com/ZhiningLiu1998/AIM">Code</a>/<a href="https://arxiv.org/pdf/2406.08819">PDF</a>]</li>
-  <li><strong style="font-family: Consolas;">[05/2024]</strong> 🧑‍💻<b style="color: rgb(231, 165, 65);">Intern@Amazon:</b> Starting my Applied Scientist Internship at BayArea!</li>
-  <li><strong style="font-family: Consolas;">[04/2024]</strong> 🍻<b style="color: rgb(231, 165, 65);">ICML'24:</b> "Class-Imbalanced Graph Learning without Class Rebalancing". [<a href="https://github.com/ZhiningLiu1998/BAT">Code</a>/<a href="https://arxiv.org/pdf/2308.14181">PDF</a>]</li>
-  <li><strong style="font-family: Consolas;">[03/2024]</strong> 🍻<b style="color: rgb(231, 165, 65);">FAccT'24:</b> "Group Fairness via Group Consensus" (with Eunice Chan). [<a href="https://dl.acm.org/doi/pdf/10.1145/3630106.3659006">PDF</a>]</li>
-  <li><strong style="font-family: Consolas;">[05/2023]</strong> 🍻<b style="color: rgb(231, 165, 65);">KDD'23:</b> "Web-based Long-term Spine Treatment Outcome Forecasting" (with Hangting Ye). [<a href="https://dl.acm.org/doi/pdf/10.1145/3580305.3599545">PDF</a>]</li>
-  <li><strong style="font-family: Consolas;">[05/2023]</strong> 🧑‍💻<b style="color: rgb(231, 165, 65);">Intern@Amazon:</b> Starting my Applied Scientist Internship at Seattle!</li>
-  <li><strong style="font-family: Consolas;">[02/2023]</strong> 💾<b style="color: rgb(231, 165, 65);">Open-source:</b> Major release of <a href="https://github.com/ZhiningLiu1998/imbalanced-ensemble">IMBENS</a> - imbalanced learning toolbox [<a href="https://github.com/ZhiningLiu1998/imbalanced-ensemble">Github</a>/<a href="https://imbalanced-ensemble.readthedocs.io">Docs</a>/<a href="https://pypi.org/project/imbalanced-ensemble/">PyPI</a>]</li>
-  <li><strong style="font-family: Consolas;">[02/2023]</strong> 🍻<b style="color: rgb(231, 165, 65);">ICDE'23:</b> "UADB: Unsupervised Anomaly Detection Booster" (with Hangting Ye). [<a href="https://github.com/HangtingYe/UADB">Code</a>/<a href="https://arxiv.org/pdf/2306.01997">PDF</a>]</li>
-  <li><strong style="font-family: Consolas;">[03/2022]</strong> 🎓<b style="color: rgb(231, 165, 65);">Starting Ph.D.@UIUC:</b> I will join Prof. <a href="http://tonghanghang.org/">Hanghang Tong</a>'s group at UIUC in 2022 Fall!</li>
-  <li><strong style="font-family: Consolas;">[01/2022]</strong> 💾<b style="color: rgb(231, 165, 65);">Open-source:</b> <a href="https://github.com/ZhiningLiu1998/awesome-awesome-machine-learning">Awesome2ML</a> - a curated list across all Machine Learning topics. [<a href="https://github.com/ZhiningLiu1998/awesome-awesome-machine-learning">ENG</a>/<a href="https://github.com/ZhiningLiu1998/awesome-awesome-machine-learning/blob/main/README_CN.md">中文</a>]</li>
-  <li><strong style="font-family: Consolas;">[11/2021]</strong> 📜<b style="color: rgb(231, 165, 65);">Preprint:</b> "IMBENS: Ensemble Class-imbalanced Learning in Python" [<a href="https://github.com/ZhiningLiu1998/imbalanced-ensemble">Code</a>/<a href="https://arxiv.org/abs/2111.12776">PDF</a>]</li>
-  <li><strong style="font-family: Consolas;">[06/2021]</strong> 💾<b style="color: rgb(231, 165, 65);">Open-source:</b> <a href="https://github.com/ZhiningLiu1998/imbalanced-ensemble">IMBENS</a> - imbalanced learning toolbox [<a href="https://github.com/ZhiningLiu1998/imbalanced-ensemble">Github</a>/<a href="https://imbalanced-ensemble.readthedocs.io">Docs</a>/<a href="https://pypi.org/project/imbalanced-ensemble/">PyPI</a>]</li>
-  <li><strong style="font-family: Consolas;">[10/2020]</strong> 🍻<b style="color: rgb(231, 165, 65);">NeurIPS'20:</b> "MESA: Boost Ensemble Imbalanced Learning with MEta-SAmpler" [<a href="https://github.com/ZhiningLiu1998/mesa">Code</a>/<a href="https://proceedings.neurips.cc/paper/2020/file/a64bd53139f71961c5c31a9af03d775e-Paper.pdf">PDF</a>]</li>
-  <li><strong style="font-family: Consolas;">[04/2020]</strong> 💾<b style="color: rgb(231, 165, 65);">Open-source:</b> <a href="https://github.com/ZhiningLiu1998/awesome-imbalanced-learning">Awesome-Imbalanced-Learning</a> - a curated list of imbalanced learning resources.</li>
-  <li><strong style="font-family: Consolas;">[10/2019]</strong> 🍻<b style="color: rgb(231, 165, 65);">ICDE'20:</b> "Self-paced Ensemble for Highly Imbalanced Massive Data Classification" [<a href="https://github.com/ZhiningLiu1998/self-paced-ensemble">Code</a>/<a href="https://conferences.computer.org/icde/2020/pdfs/ICDE2020-5acyuqhpJ6L9P042wmjY1p/290300a841/290300a841.pdf">PDF</a>]</li>
-  <li><strong style="font-family: Consolas;">[07/2019]</strong> 🎓<b style="color: rgb(231, 165, 65);">Graduation@JilinU:</b> Recieved my B.Sc. from Tang Aoqing Honors Program in Science, Jilin University.</li>
-  <li><strong style="font-family: Consolas;">[09/2018]</strong> 🧑‍💻<b style="color: rgb(231, 165, 65);">Intern@Microsoft:</b> Starting my internship at Microsoft Research Asia! Supervisor: Dr. <a href="https://sites.google.com/view/jiangbian">Jiang BIAN</a>, Dr. <a href="https://weicao1990.github.io/">Wei CAO</a>.</li>
+  <li>
+    <span class="date">[05/2025]</span>
+    <span class="tag">🏆 C.L. and Jane Liu Award:</span>
+    Glad to be awarded the <a href="https://siebelschool.illinois.edu/about/awards/graduate-fellowships-awards/cl-and-jane-w-s-liu-award"> C.L. and Jane Liu Award</a> for my research!
+  </li>
+  
+  <li>
+    <span class="date">[05/2025]</span>
+    <span class="tag">ACL'25:</span>
+    One paper on LLM Document Evidence Eliciting accepted.
+    <span class="link-group">
+      [<a href="https://github.com/ZhiningLiu1998/SelfElicit">Code</a>/<a href="https://arxiv.org/pdf/2502.08767">PDF</a>]
+    </span>
+  </li>
+
+  <li>
+    <span class="date">[05/2025]</span>
+    <span class="tag">ICML'25:</span>
+    One paper on Time Series Ensemble Forecasting accepted.
+  </li>
+
+  <li>
+    <span class="date">[05/2025]</span>
+    <span class="tag">🧑‍💻 Intern@Amazon:</span>
+    Back to Bay Area again🌴!
+  </li>
+
+  <li>
+    <span class="date">[01/2025]</span>
+    <span class="tag">ICLR'25:</span>
+    One co-author paper on TTA for Graph Structural Shift accepted :)
+    <span class="link-group">
+      [<a href="https://openreview.net/pdf?id=EpgoFFUM2q">PDF</a>]
+    </span>
+  </li>
+
+  <li>
+    <span class="date">[09/2024]</span>
+    <span class="tag">NeurIPS'24 Spotlight:</span>
+    One co-author paper on Time Series Backdoor Attack accepted.
+    <span class="link-group">
+      [<a href="https://github.com/xiaolin-cs/BackTime">Code</a>/<a href="https://arxiv.org/pdf/2410.02195">PDF</a>]
+    </span>
+  </li>
+
+  <li>
+    <span class="date">[05/2024]</span>
+    <span class="tag">KDD'24:</span>
+    AIM: Attributing, Interpreting, Mitigating Data-encoded Unfairness.
+    <span class="link-group">
+      [<a href="https://github.com/ZhiningLiu1998/AIM">Code</a>/<a href="https://arxiv.org/pdf/2406.08819">PDF</a>]
+    </span>
+  </li>
+
+  <li>
+    <span class="date">[05/2024]</span>
+    <span class="tag">🧑‍💻 Intern@Amazon:</span>
+    Starting my Applied Scientist Internship at BayArea!
+  </li>
+
+  <li>
+    <span class="date">[04/2024]</span>
+    <span class="tag">ICML'24:</span>
+    Class-Imbalanced Graph Learning without Class Rebalancing.
+    <span class="link-group">
+      [<a href="https://github.com/ZhiningLiu1998/BAT">Code</a>/<a href="https://arxiv.org/pdf/2308.14181">PDF</a>]
+    </span>
+  </li>
+
+  <li>
+    <span class="date">[03/2024]</span>
+    <span class="tag">FAccT'24:</span>
+    Group Fairness via Group Consensus (with Eunice Chan).
+    <span class="link-group">
+      [<a href="https://dl.acm.org/doi/pdf/10.1145/3630106.3659006">PDF</a>]
+    </span>
+  </li>
+
+  <li>
+    <span class="date">[05/2023]</span>
+    <span class="tag">🍻 KDD'23:</span>
+    Web-based Long-term Spine Treatment Outcome Forecasting (with Hangting Ye).
+    <span class="link-group">
+      [<a href="https://dl.acm.org/doi/pdf/10.1145/3580305.3599545">PDF</a>]
+    </span>
+  </li>
+
+  <li>
+    <span class="date">[05/2023]</span>
+    <span class="tag">🧑‍💻 Intern@Amazon:</span>
+    Starting my Applied Scientist Internship at Seattle!
+  </li>
+
+  <li>
+    <span class="date">[02/2023]</span>
+    <span class="tag">💾 Open-source:</span>
+    Major release of <a href="https://github.com/ZhiningLiu1998/imbalanced-ensemble">IMBENS</a> - imbalanced learning toolbox
+    <span class="link-group">
+      [<a href="https://github.com/ZhiningLiu1998/imbalanced-ensemble">Github</a>/<a href="https://imbalanced-ensemble.readthedocs.io">Docs</a>/<a href="https://pypi.org/project/imbalanced-ensemble/">PyPI</a>]
+    </span>
+  </li>
+
+  <li>
+    <span class="date">[02/2023]</span>
+    <span class="tag">🍻ICDE'23:</span>
+    UADB: Unsupervised Anomaly Detection Booster (with Hangting Ye).
+    <span class="link-group">
+      [<a href="https://github.com/HangtingYe/UADB">Code</a>/<a href="https://arxiv.org/pdf/2306.01997">PDF</a>]
+    </span>
+  </li>
+
+  <li>
+    <span class="date">[03/2022]</span>
+    <span class="tag">🎓 Starting Ph.D.@UIUC:</span>
+    I will join Prof. <a href="http://tonghanghang.org/">Hanghang Tong</a>'s group at UIUC in 2022 Fall!
+  </li>
+
+  <li>
+    <span class="date">[01/2022]</span>
+    <span class="tag">💾 Open-source:</span>
+    <a href="https://github.com/ZhiningLiu1998/awesome-awesome-machine-learning">Awesome2ML</a> - a curated list across all Machine Learning topics.
+    <span class="link-group">
+      [<a href="https://github.com/ZhiningLiu1998/awesome-awesome-machine-learning">ENG</a>/<a href="https://github.com/ZhiningLiu1998/awesome-awesome-machine-learning/blob/main/README_CN.md">中文</a>]
+    </span>
+  </li>
+
+  <li>
+    <span class="date">[11/2021]</span>
+    <span class="tag">📜 Preprint:</span>
+    IMBENS: Ensemble Class-imbalanced Learning in Python
+    <span class="link-group">
+      [<a href="https://github.com/ZhiningLiu1998/imbalanced-ensemble">Code</a>/<a href="https://arxiv.org/abs/2111.12776">PDF</a>]
+    </span>
+  </li>
+
+  <li>
+    <span class="date">[06/2021]</span>
+    <span class="tag">💾 Open-source:</span>
+    <a href="https://github.com/ZhiningLiu1998/imbalanced-ensemble">IMBENS</a> - imbalanced learning toolbox
+    <span class="link-group">
+      [<a href="https://github.com/ZhiningLiu1998/imbalanced-ensemble">Github</a>/<a href="https://imbalanced-ensemble.readthedocs.io">Docs</a>/<a href="https://pypi.org/project/imbalanced-ensemble/">PyPI</a>]
+    </span>
+  </li>
+
+  <li>
+    <span class="date">[10/2020]</span>
+    <span class="tag">NeurIPS'20:</span>
+    MESA: Boost Ensemble Imbalanced Learning with MEta-SAmpler
+    <span class="link-group">
+      [<a href="https://github.com/ZhiningLiu1998/mesa">Code</a>/<a href="https://proceedings.neurips.cc/paper/2020/file/a64bd53139f71961c5c31a9af03d775e-Paper.pdf">PDF</a>]
+    </span>
+  </li>
+
+  <li>
+    <span class="date">[04/2020]</span>
+    <span class="tag">💾 Open-source:</span>
+    <a href="https://github.com/ZhiningLiu1998/awesome-imbalanced-learning">Awesome-Imbalanced-Learning</a> - a curated list of imbalanced learning resources.
+  </li>
+
+  <li>
+    <span class="date">[10/2019]</span>
+    <span class="tag">🍻 ICDE'20:</span>
+    Self-paced Ensemble for Highly Imbalanced Massive Data Classification
+    <span class="link-group">
+      [<a href="https://github.com/ZhiningLiu1998/self-paced-ensemble">Code</a>/<a href="https://conferences.computer.org/icde/2020/pdfs/ICDE2020-5acyuqhpJ6L9P042wmjY1p/290300a841/290300a841.pdf">PDF</a>]
+    </span>
+  </li>
+
+  <li>
+    <span class="date">[07/2019]</span>
+    <span class="tag">🎓 Graduation@JilinU:</span>
+    Recieved my B.Sc. from Tang Aoqing Honors Program in Science, Jilin University.
+  </li>
+
+  <li>
+    <span class="date">[09/2018]</span>
+    <span class="tag">🧑‍💻 Intern@Microsoft:</span>
+    Starting my internship at Microsoft Research Asia! Supervisor: Dr. <a href="https://sites.google.com/view/jiangbian">Jiang BIAN</a>, Dr. <a href="https://weicao1990.github.io/">Wei CAO</a>.
+  </li>
 </ul>
 
 </div>
