@@ -250,7 +250,9 @@ Mail: [zhining.liu[AT]outlook.com](mailto:zhining.liu@outlook.com) or [liu326[AT
 
 <tr>
   <td style="padding:8px;width:30%;vertical-align:middle;border:none;">
-    <img src='https://raw.githubusercontent.com/ZhiningLiu1998/figures/refs/heads/master/selfelicit/intro.png' width="300">
+  <a href="https://raw.githubusercontent.com/ZhiningLiu1998/figures/refs/heads/master/selfelicit/intro.png">
+    <img src='https://raw.githubusercontent.com/ZhiningLiu1998/figures/refs/heads/master/selfelicit/intro.png' width="200" style="background:white;">
+  </a>
   </td>
   <td style="padding:20px;width:70%;vertical-align:middle;border-right:none;border:none;">
     <b>"SelfElicit: Your Language Model Secretly Knows Where is the Relevant Evidence"</b>
@@ -265,7 +267,9 @@ Mail: [zhining.liu[AT]outlook.com](mailto:zhining.liu@outlook.com) or [liu326[AT
 
 <tr>
   <td style="padding:8px;width:30%;vertical-align:middle;border:none;">
-    <img src='https://raw.githubusercontent.com/ZhiningLiu1998/figures/refs/heads/master/timefuse/method.png' width="300">
+  <a href="https://raw.githubusercontent.com/ZhiningLiu1998/figures/refs/heads/master/timefuse/method.png">
+    <img src='https://raw.githubusercontent.com/ZhiningLiu1998/figures/refs/heads/master/timefuse/method.png' width="300" style="background:white;">
+  </a>
   </td>
   <td style="padding:20px;width:70%;vertical-align:middle;border-right:none;border:none;">
     <b>"Breaking Silos: Adaptive Model Fusion Unlocks Better Time Series Forecasting"</b>
