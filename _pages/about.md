@@ -17,9 +17,6 @@ redirect_from:
   <a href="https://github.com/ZhiningLiu1998">
     <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.swo.moe%2Fstats%2Fgithub%2Fzhiningliu1998&query=count&color=181717&label=GitHub&labelColor=282c34&logo=github&style=flat-square&suffix=+Followers&cacheSeconds=3600">
   </a>
-  <!-- <a href="https://www.zhihu.com/people/liu-zhi-zhu-14">
-    <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.swo.moe%2Fstats%2Fzhihu%2Fliu-zhi-zhu-14&query=count&color=282c34&label=%E7%9F%A5%E4%B9%8E&labelColor=0084ff&logo=zhihu&logoColor=ffffff&style=flat-square&suffix=+Followers&cacheSeconds=3600">
-  </a> -->
   <a href="https://www.zhihu.com/people/liu-zhi-zhu-14">
   <img src="https://img.shields.io/badge/Zhihu-4k Followers-brightgreen?style=flat-square&color=181717&labelColor=0084ff&logo=zhihu&logoColor=ffffff">
   </a>
@@ -31,14 +28,19 @@ redirect_from:
 
 **你好! / Hello! / 안녕하세요! / こんにちは! / Здравствуй! / Bonjour! / Guten Tag! / Hola! / Ciao! / السلام عليكم!**
 
-I'm a Ph.D. candidate at [Department of Computer Science](https://cs.illinois.edu/), [University of Illinois at Urbana-Champaign](https://illinois.edu/), working with the very nice [Prof. Hanghang Tong](http://tonghanghang.org/). 
-Before joining UIUC, I received both my B.S. and M.Eng. in Computer Science from [Jilin University](http://global.jlu.edu.cn/) in 2019 and 2022, where I was fortunate to have [Prof. Yi Chang](http://yichang-cs.com/) as my advisor.
-I was also a research intern at MLGroup@[Microsoft Research Asia](https://www.microsoft.com/en-us/research/lab/microsoft-research-asia/) in 2018 and an Applied Scientist Intern at SearchScience@[Amazon](https://www.amazon.com/) in 2023 and 2024.
+I'm a Ph.D. candidate at [University of Illinois Urbana-Champaign (UIUC)](https://illinois.edu/), working with the very nice [Prof. Hanghang Tong](http://tonghanghang.org/). 
+Before joining UIUC, I received my B.S. and M.Eng. in Computer Science from [Jilin University](http://global.jlu.edu.cn/) in 2019 and 2022, where I was fortunate to have [Prof. Yi Chang](http://yichang-cs.com/) as my advisor.
+I also worked as a research/applied scientist intern at [Amazon](https://www.amazon.com/) and [Microsoft Research](https://www.microsoft.com/en-us/research/lab/microsoft-research-asia/).
  
-I enjoy doing [research](https://scholar.google.com/citations?user=5WORAUQAAAAJ&hl=zh-CN) and developing [open-source softwares](https://github.com/ZhiningLiu1998) for **<u>unbiased</u>**, **<u>efficient</u>**, and **<u>robust</u>** machine learning from **<u>skewed data</u>** in real-world applications. My recent interest lies in graph data mining (ICML'24), class-imbalanced learning (ICML'24,NeurIPS'20,ICDE'20), and fairness-aware machine learning (KDD'24, FAccT'24).
+I enjoy doing research ([GoogleScholar](https://scholar.google.com/citations?user=5WORAUQAAAAJ&hl=zh-CN)) and developing open-source softwares ([GitHub](https://github.com/ZhiningLiu1998)) for **Data-centric Trustworthy Machine Learning**, my interests include but not limited to:
+- Large Language Model Factuality (ACL'25)
+- Graph & Time Series Data Mining (ICML'24, ICML'25)
+- Fairness-aware ML (KDD'24, FAccT'24)
+- Class-imbalanced Learning (ICML'24, ICDE'20)
+- Meta Ensemble Learning (ICML'25, NeurIPS'20)
 
-**Contact me via**:  
-📧 Mail: [zhining.liu[AT]outlook.com](mailto:zhining.liu@outlook.com) or [liu326[AT]illinois.edu](mailto:liu326@illinois.edu)
+**📧 Contact me via**:  
+Mail: [zhining.liu[AT]outlook.com](mailto:zhining.liu@outlook.com) or [liu326[AT]illinois.edu](mailto:liu326@illinois.edu)
 
 <h1 style="color: rgb(231, 65, 65);">🌈 What's new:</h1>
 
@@ -60,8 +62,8 @@ I enjoy doing [research](https://scholar.google.com/citations?user=5WORAUQAAAAJ&
 <ul>
   <li>
     <span class="date">[05/2025]</span>
-    <span class="tag">🏆 C.L. and Jane Liu Award:</span>
-    Glad to be awarded the <a href="https://siebelschool.illinois.edu/about/awards/graduate-fellowships-awards/cl-and-jane-w-s-liu-award"> C.L. and Jane Liu Award</a> for my research!
+    <span class="tag">🏆 Award:</span>
+    Glad to be awarded the <a href="https://siebelschool.illinois.edu/about/awards/graduate-fellowships-awards/cl-and-jane-w-s-liu-award"> C.L. and Jane Liu Award</a>!
   </li>
   
   <li>
@@ -77,6 +79,7 @@ I enjoy doing [research](https://scholar.google.com/citations?user=5WORAUQAAAAJ&
     <span class="date">[05/2025]</span>
     <span class="tag">ICML'25:</span>
     One paper on Time Series Ensemble Forecasting accepted.
+    [<a href="https://github.com/ZhiningLiu1998/TimeFuse">Code</a>/<a href="https://arxiv.org/pdf/2505.18442">PDF</a>]
   </li>
 
   <li>
@@ -244,6 +247,36 @@ I enjoy doing [research](https://scholar.google.com/citations?user=5WORAUQAAAAJ&
 # 🎓 Featured Research Items ([GoogleScholar](https://scholar.google.com/citations?user=3Z6Z9YQAAAAJ))
 
 <table style="width:100%;border:None;border-spacing:0px;border-collapse:separate;margin-right:0;margin-left:0;font-size:0.95em;">
+
+<tr>
+  <td style="padding:8px;width:30%;vertical-align:middle;border:none;">
+    <img src='https://raw.githubusercontent.com/ZhiningLiu1998/figures/refs/heads/master/selfelicit/intro.png' width="300">
+  </td>
+  <td style="padding:20px;width:70%;vertical-align:middle;border-right:none;border:none;">
+    <b>"SelfElicit: Your Language Model Secretly Knows Where is the Relevant Evidence"</b>
+    <br>
+    <u>Zhining Liu</u>, et al. <i>In ACL'25</i>.
+    <br>
+    [<a href="https://arxiv.org/pdf/2502.08767">PDF</a>]
+    [<a href="https://github.com/ZhiningLiu1998/SelfElicit">Github</a>]
+    [<a href="https://zhuanlan.zhihu.com/p/1911396971299727344">Zhihu/知乎</a>]
+  </td>
+</tr>
+
+<tr>
+  <td style="padding:8px;width:30%;vertical-align:middle;border:none;">
+    <img src='https://raw.githubusercontent.com/ZhiningLiu1998/figures/refs/heads/master/timefuse/method.png' width="300">
+  </td>
+  <td style="padding:20px;width:70%;vertical-align:middle;border-right:none;border:none;">
+    <b>"Breaking Silos: Adaptive Model Fusion Unlocks Better Time Series Forecasting"</b>
+    <br>
+    <u>Zhining Liu</u>, et al. <i>In ICML'25</i>. 
+    <br>
+    [<a href="https://arxiv.org/pdf/2505.18442">PDF</a>]
+    [<a href="https://github.com/ZhiningLiu1998/TimeFuse">Github</a>]
+  </td>
+</tr>
+
   <tr>
     <td style="padding:8px;width:30%;vertical-align:middle;border:none;">
       <a href="images/icml24-bat.png">
