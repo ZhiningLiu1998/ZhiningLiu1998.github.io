@@ -63,13 +63,13 @@ Mail: [zhining.liu[AT]outlook.com](mailto:zhining.liu@outlook.com) or [liu326[AT
   <li>
     <span class="date">[05/2025]</span>
     <span class="tag">🏆 Award:</span>
-    Glad to be awarded the <a href="https://siebelschool.illinois.edu/about/awards/graduate-fellowships-awards/cl-and-jane-w-s-liu-award"> C.L. and Jane Liu Award</a>!
+    Honored to receive the <a href="https://siebelschool.illinois.edu/about/awards/graduate-fellowships-awards/cl-and-jane-w-s-liu-award"> C.L. and Jane Liu Award</a>!
   </li>
   
   <li>
     <span class="date">[05/2025]</span>
     <span class="tag">ACL'25:</span>
-    One paper on LLM Document Evidence Eliciting accepted.
+    How to prevent LLM from overlooking the evidence in your RAG?
     <span class="link-group">
       [<a href="https://github.com/ZhiningLiu1998/SelfElicit">Code</a>/<a href="https://arxiv.org/pdf/2502.08767">PDF</a>]
     </span>
@@ -78,7 +78,7 @@ Mail: [zhining.liu[AT]outlook.com](mailto:zhining.liu@outlook.com) or [liu326[AT
   <li>
     <span class="date">[05/2025]</span>
     <span class="tag">ICML'25:</span>
-    One paper on Time Series Ensemble Forecasting accepted.
+    Sample-level adaptive model fusion for time series forecasting.
     [<a href="https://github.com/ZhiningLiu1998/TimeFuse">Code</a>/<a href="https://arxiv.org/pdf/2505.18442">PDF</a>]
   </li>
 
@@ -124,7 +124,7 @@ Mail: [zhining.liu[AT]outlook.com](mailto:zhining.liu@outlook.com) or [liu326[AT
   <li>
     <span class="date">[04/2024]</span>
     <span class="tag">ICML'24:</span>
-    Class-Imbalanced Graph Learning without Class Rebalancing.
+    Class-Imbalanced Graph Learning without Class Rebalancing?
     <span class="link-group">
       [<a href="https://github.com/ZhiningLiu1998/BAT">Code</a>/<a href="https://arxiv.org/pdf/2308.14181">PDF</a>]
     </span>
@@ -244,7 +244,8 @@ Mail: [zhining.liu[AT]outlook.com](mailto:zhining.liu@outlook.com) or [liu326[AT
 
 </div>
 
-# 🎓 Featured Research Items ([GoogleScholar](https://scholar.google.com/citations?user=3Z6Z9YQAAAAJ))
+# 🎓 Featured Research
+Please check up-to-date list on [GoogleScholar](https://scholar.google.com/citations?user=3Z6Z9YQAAAAJ).
 
 <table style="width:100%;border:None;border-spacing:0px;border-collapse:separate;margin-right:0;margin-left:0;font-size:0.95em;">
 
@@ -261,6 +262,9 @@ Mail: [zhining.liu[AT]outlook.com](mailto:zhining.liu@outlook.com) or [liu326[AT
     <br>
     [<a href="https://arxiv.org/pdf/2502.08767">PDF</a>]
     [<a href="https://github.com/ZhiningLiu1998/SelfElicit">Github</a>]
+    [<a href="https://docs.google.com/presentation/d/1wA2BUafS5Qw2NKBttRTWw-XLt9JaCzskUsEMZa96da0/edit?usp=sharing">GoogleSlides</a>]
+    [<a href="https://docs.google.com/presentation/d/1fmGGdQqDCOpK0APVMVxhzRNtpZcELbsY/edit?usp=sharing&ouid=114759674423332609553&rtpof=true&sd=true">Poster</a>]
+    [<a href="https://drive.google.com/file/d/1z8DjYQnpXslXLfPwcdKqD7Sw8fAR-LfI/view?usp=sharing">Video</a>]
     [<a href="https://zhuanlan.zhihu.com/p/1911396971299727344">Zhihu/知乎</a>]
   </td>
 </tr>
@@ -278,13 +282,15 @@ Mail: [zhining.liu[AT]outlook.com](mailto:zhining.liu@outlook.com) or [liu326[AT
     <br>
     [<a href="https://arxiv.org/pdf/2505.18442">PDF</a>]
     [<a href="https://github.com/ZhiningLiu1998/TimeFuse">Github</a>]
+    [<a href="https://docs.google.com/presentation/d/1QynTcId-2Q9EtomjcWtUBCszMoR7hZhTJufU3Zx7rds/edit?usp=sharing">GoogleSlides</a>]
+    [<a href="https://docs.google.com/presentation/d/1GPhqYja2ifN0h04orvNtW38SCtJkCc02/edit?usp=sharing&ouid=114759674423332609553&rtpof=true&sd=true">Poster</a>]
   </td>
 </tr>
 
   <tr>
     <td style="padding:8px;width:30%;vertical-align:middle;border:none;">
-      <a href="images/icml24-bat.png">
-      <img src='images/icml24-bat.png' width="300">
+      <a href="https://raw.githubusercontent.com/ZhiningLiu1998/ZhiningLiu1998.github.io/refs/heads/master/images/icml24-bat.png">
+      <img src='https://raw.githubusercontent.com/ZhiningLiu1998/ZhiningLiu1998.github.io/refs/heads/master/images/icml24-bat.png' width="300">
       </a>
     </td>
     <td style="padding:20px;width:70%;vertical-align:middle;border-right:none;border:none;">
@@ -301,8 +307,8 @@ Mail: [zhining.liu[AT]outlook.com](mailto:zhining.liu@outlook.com) or [liu326[AT
 
   <tr>
     <td style="padding:8px;width:30%;vertical-align:middle;border:none;">
-      <a href="images/imbens.png">
-      <img src='images/imbens.png' width="300">
+      <a href="https://raw.githubusercontent.com/ZhiningLiu1998/ZhiningLiu1998.github.io/refs/heads/master/images/imbens.png">
+      <img src='https://raw.githubusercontent.com/ZhiningLiu1998/ZhiningLiu1998.github.io/refs/heads/master/images/imbens.png' width="300">
       </a>
     </td>
     <td style="padding:20px;width:70%;vertical-align:middle;border-right:none;border:none;">
@@ -322,8 +328,8 @@ Mail: [zhining.liu[AT]outlook.com](mailto:zhining.liu@outlook.com) or [liu326[AT
 
   <tr>
     <td style="padding:8px;width:30%;vertical-align:middle;border:none;">
-      <a href="images/mesa.png">
-      <img src='images/mesa.png' width="300">
+      <a href="https://raw.githubusercontent.com/ZhiningLiu1998/ZhiningLiu1998.github.io/refs/heads/master/images/mesa.png">
+      <img src='https://raw.githubusercontent.com/ZhiningLiu1998/ZhiningLiu1998.github.io/refs/heads/master/images/mesa.png' width="300">
       </a>
     </td>
     <td style="padding:20px;width:70%;vertical-align:middle;border-right:none;border:none;">
@@ -342,8 +348,8 @@ Mail: [zhining.liu[AT]outlook.com](mailto:zhining.liu@outlook.com) or [liu326[AT
 
   <tr>
     <td style="padding:8px;width:30%;vertical-align:middle;border:none;">
-      <a href="images/spe.png">
-      <img src='images/spe.png' width="300">
+      <a href="https://raw.githubusercontent.com/ZhiningLiu1998/ZhiningLiu1998.github.io/refs/heads/master/images/spe.png">
+      <img src='https://raw.githubusercontent.com/ZhiningLiu1998/ZhiningLiu1998.github.io/refs/heads/master/images/spe.png' width="300">
       </a>
     </td>
     <td style="padding:20px;width:70%;vertical-align:middle;border-right:none;border:none;">
