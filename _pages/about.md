@@ -62,6 +62,12 @@ Mail: [zhining.liu[AT]outlook.com](mailto:zhining.liu@outlook.com) or [liu326[AT
 <ul>
   <li>
     <span class="date">[05/2025]</span>
+    <span class="tag">NeurIPS'25:</span>
+    Check our insights from benchmarking Class-Imbalanced Tabular Learning! [<a href="https://github.com/ZhiningLiu1998/imbalanced-ensemble">Code</a>/<a href="https://arxiv.org/pdf/2505.17451">PDF</a>]
+  </li>
+
+  <li>
+    <span class="date">[05/2025]</span>
     <span class="tag">🏆 Award:</span>
     Honored to receive the <a href="https://siebelschool.illinois.edu/about/awards/graduate-fellowships-awards/cl-and-jane-w-s-liu-award"> C.L. and Jane Liu Award</a>!
   </li>
@@ -266,6 +272,7 @@ Please check up-to-date list on [GoogleScholar](https://scholar.google.com/citat
     [<a href="https://docs.google.com/presentation/d/1fmGGdQqDCOpK0APVMVxhzRNtpZcELbsY/edit?usp=sharing&ouid=114759674423332609553&rtpof=true&sd=true">Poster</a>]
     [<a href="https://drive.google.com/file/d/1z8DjYQnpXslXLfPwcdKqD7Sw8fAR-LfI/view?usp=sharing">Video</a>]
     [<a href="https://zhuanlan.zhihu.com/p/1911396971299727344">Zhihu/知乎</a>]
+    [<a href="https://x.com/zhining_liu/status/1927877990232313860">X Post</a>]
   </td>
 </tr>
 
