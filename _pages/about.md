@@ -36,8 +36,8 @@ I enjoy doing research ([GoogleScholar](https://scholar.google.com/citations?use
 - Large Language Model Factuality (ACL'25)
 - Graph & Time Series Data Mining (ICML'24, ICML'25)
 - Fairness-aware ML (KDD'24, FAccT'24)
-- Class-imbalanced Learning (ICML'24, ICDE'20)
-- Meta Ensemble Learning (ICML'25, NeurIPS'20)
+- Class-imbalanced Learning (ICDE'20, ICML'24, NeurIPS'25)
+- Meta Ensemble Learning (NeurIPS'20, ICML'25)
 
 **📧 Contact me via**:  
 Mail: [zhining.liu[AT]outlook.com](mailto:zhining.liu@outlook.com) or [liu326[AT]illinois.edu](mailto:liu326@illinois.edu)
@@ -61,15 +61,33 @@ Mail: [zhining.liu[AT]outlook.com](mailto:zhining.liu@outlook.com) or [liu326[AT
 
 <ul>
   <li>
-    <span class="date">[05/2025]</span>
+    <span class="date">[01/2026]</span>
+    <span class="tag">HF Week#1 Paper:</span>
+    All you need to know about Agentic Reasoning! [<a href="https://huggingface.co/papers/2601.12538">PDF</a>/<a href="https://github.com/weitianxin/Awesome-Agentic-Reasoning">Github</a>]
+  </li>
+
+  <li>
+    <span class="date">[01/2026]</span>
+    <span class="tag">ICLR'26:</span>
+    4 papers got accepted to ICLR 2026! See u in Brazil : )
+  </li>
+
+  <li>
+    <span class="date">[10/2025]</span>
+    <span class="tag">VLM perception:</span>
+    VLM can see the image, but still not use it 🧐 [<a href="https://arxiv.org/pdf/2510.17771">PDF</a>]
+  </li>
+
+  <li>
+    <span class="date">[08/2025]</span>
     <span class="tag">NeurIPS'25:</span>
     Check our insights from benchmarking Class-Imbalanced Tabular Learning! [<a href="https://github.com/ZhiningLiu1998/imbalanced-ensemble">Code</a>/<a href="https://arxiv.org/pdf/2505.17451">PDF</a>]
   </li>
 
   <li>
     <span class="date">[05/2025]</span>
-    <span class="tag">🏆 Award:</span>
-    Honored to receive the <a href="https://siebelschool.illinois.edu/about/awards/graduate-fellowships-awards/cl-and-jane-w-s-liu-award"> C.L. and Jane Liu Award</a>!
+    <span class="tag">Award:</span>
+    Honored to receive the <a href="https://siebelschool.illinois.edu/about/awards/graduate-fellowships-awards/cl-and-jane-w-s-liu-award"> C.L. and Jane Liu Award</a> 🏆!
   </li>
   
   <li>
