@@ -32,12 +32,12 @@ I'm a Ph.D. candidate at [University of Illinois Urbana-Champaign (UIUC)](https:
 Before joining UIUC, I received my B.S. and M.Eng. in Computer Science from [Jilin University](http://global.jlu.edu.cn/) in 2019 and 2022, where I was fortunate to have [Prof. Yi Chang](http://yichang-cs.com/) as my advisor.
 I also worked as a research/applied scientist intern at [Amazon](https://www.amazon.com/) and [Microsoft Research](https://www.microsoft.com/en-us/research/lab/microsoft-research-asia/).
  
-I enjoy doing research ([GoogleScholar](https://scholar.google.com/citations?user=5WORAUQAAAAJ&hl=zh-CN)) and developing open-source softwares ([GitHub](https://github.com/ZhiningLiu1998)) for **Data-centric Trustworthy Machine Learning**, my interests include but not limited to:
-- Large Language Model Factuality (ACL'25)
-- Graph & Time Series Data Mining (ICML'24, ICML'25)
-- Fairness-aware ML (KDD'24, FAccT'24)
-- Class-imbalanced Learning (ICDE'20, ICML'24, NeurIPS'25)
-- Meta Ensemble Learning (NeurIPS'20, ICML'25)
+I enjoy doing research ([GoogleScholar](https://scholar.google.com/citations?user=5WORAUQAAAAJ&hl=zh-CN)) and developing open-source softwares ([GitHub](https://github.com/ZhiningLiu1998)) for **Data-centric Trustworthy Machine Learning**. I have first-author publications in multiple major AI/DM research areas, including but not limited to:
+- (Vision) Language Model Reasoning Reliability ([ACL'25](https://aclanthology.org/2025.acl-long.448.pdf), [ICLR'26](https://arxiv.org/pdf/2510.17771))
+- Graph & Time Series Data Mining ([ICML'24](https://arxiv.org/pdf/2308.14181), [ICML'25](https://arxiv.org/pdf/2505.18442))
+- Class-imbalanced Learning ([ICDE'20](https://arxiv.org/pdf/1909.03500), [ICML'24](https://arxiv.org/pdf/2308.14181), [NeurIPS'25](https://arxiv.org/pdf/2505.17451))
+- Meta Ensemble Learning ([NeurIPS'20](https://proceedings.neurips.cc/paper/2020/file/a64bd53139f71961c5c31a9af03d775e-Paper.pdf), [ICML'25](https://arxiv.org/pdf/2505.18442))
+- AI Ethics, Fairness, Morality ([KDD'24](https://dl.acm.org/doi/pdf/10.1145/3637528.3671797), [FAccT'24](https://dl.acm.org/doi/pdf/10.1145/3630106.3659006))
 
 **📧 Contact me via**:  
 Mail: [zhining.liu[AT]outlook.com](mailto:zhining.liu@outlook.com) or [liu326[AT]illinois.edu](mailto:liu326@illinois.edu)
