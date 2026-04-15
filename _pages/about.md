@@ -28,11 +28,11 @@ redirect_from:
 
 **你好! / Hello! / 안녕하세요! / こんにちは! / Здравствуй! / Bonjour! / Guten Tag! / Hola! / Ciao! / السلام عليكم!**
 
-I'm a Ph.D. candidate at [University of Illinois Urbana-Champaign (UIUC)](https://illinois.edu/), working with the very nice [Prof. Hanghang Tong](http://tonghanghang.org/). 
+I'm a Ph.D. candidate at [University of Illinois Urbana-Champaign (UIUC)](https://illinois.edu/), working with the very nice [Prof. Hanghang Tong](http://tonghanghang.org/) at [IDEA-ISAIL Lab](https://www.idea-isail.com).
 Before joining UIUC, I received my B.S. and M.Eng. in Computer Science from [Jilin University](http://global.jlu.edu.cn/) in 2019 and 2022, where I was fortunate to have [Prof. Yi Chang](http://yichang-cs.com/) as my advisor.
 I also worked as a research/applied scientist intern at [Amazon](https://www.amazon.com/) and [Microsoft Research](https://www.microsoft.com/en-us/research/lab/microsoft-research-asia/).
  
-I enjoy doing research ([GoogleScholar](https://scholar.google.com/citations?user=5WORAUQAAAAJ&hl=zh-CN), 900+ citations) and developing open-source softwares ([GitHub](https://github.com/ZhiningLiu1998), 4k+ stars, 140k+ downloads) for **Data-centric Trustworthy AI**. I have first-author publications in multiple major AI/DM research areas, including but not limited to:
+I enjoy doing research ([GoogleScholar](https://scholar.google.com/citations?user=5WORAUQAAAAJ&hl=zh-CN), 1,000+ citations) and developing open-source softwares ([GitHub](https://github.com/ZhiningLiu1998), 4,000+ stars, 140k+ downloads) for **Data-centric Trustworthy AI**. I have first-author publications in multiple major AI/DM research areas, including but not limited to:
 - (Vision) Language Model Reasoning Reliability ([ACL'25](https://aclanthology.org/2025.acl-long.448.pdf), [ICLR'26](https://arxiv.org/pdf/2510.17771))
 - Graph & Time Series Data Mining ([ICML'24](https://arxiv.org/pdf/2308.14181), [ICML'25](https://arxiv.org/pdf/2505.18442))
 - Class-imbalanced Learning ([ICDE'20](https://arxiv.org/pdf/1909.03500), [ICML'24](https://arxiv.org/pdf/2308.14181), [NeurIPS'25](https://arxiv.org/pdf/2505.17451))
@@ -60,6 +60,18 @@ Mail: [zhining.liu[AT]outlook.com](mailto:zhining.liu@outlook.com) or [liu326[AT
 </style>
 
 <ul>
+  <li>
+    <span class="date">[04/2026]</span>
+    <span class="tag">Joining Amazon:</span>
+    I'm joining Amazon as an Applied Scientist starting from June 2026 at Palo Alto : )
+  </li>
+
+  <li>
+    <span class="date">[04/2026]</span>
+    <span class="tag">ACL'26:</span>
+    2 main and 1 finding papers accepted to ACL 2026.
+  </li>
+
   <li>
     <span class="date">[01/2026]</span>
     <span class="tag">HF Week#1 Paper:</span>
