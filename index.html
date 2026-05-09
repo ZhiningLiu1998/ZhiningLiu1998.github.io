@@ -1,0 +1,1453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Zhining Liu - Ph.D. candidate at UIUC working on data-centric trustworthy AI.">
+  <title>Zhining Liu</title>
+  <link rel="icon" type="image/jpeg" href="images/profile/zhiningliu.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    :root {
+      --ink: #17202a;
+      --text: #2f3a45;
+      --muted: #687789;
+      --line: #dfe7ef;
+      --panel: #f7fafc;
+      --blue: #124f8f;
+      --blue-soft: #e8f1fb;
+      --orange: #c85f24;
+      --green: #1f7a5b;
+      --red: #b83232;
+      --gold: #a36a12;
+      --bg: #ffffff;
+      --shadow: 0 10px 28px rgba(23, 32, 42, 0.08);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 16px;
+      line-height: 1.72;
+    }
+
+    a {
+      color: var(--blue);
+      text-decoration: none;
+      transition: color 0.2s ease, border-color 0.2s ease, background 0.2s ease, transform 0.2s ease;
+    }
+
+    a:hover { color: var(--orange); }
+
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      border-bottom: 1px solid var(--line);
+      background: rgba(255, 255, 255, 0.92);
+      backdrop-filter: blur(14px);
+    }
+
+    .nav-inner {
+      align-items: center;
+      display: flex;
+      height: 62px;
+      justify-content: space-between;
+      margin: 0 auto;
+      max-width: 1020px;
+      padding: 0 34px;
+    }
+
+    .nav-name {
+      color: var(--ink);
+      font-family: "Crimson Pro", Georgia, serif;
+      font-size: 22px;
+      font-weight: 700;
+    }
+
+    .nav-links {
+      align-items: center;
+      display: flex;
+      gap: 24px;
+      white-space: nowrap;
+    }
+
+    .nav-links a {
+      color: var(--muted);
+      font-size: 14px;
+      font-weight: 600;
+      position: relative;
+    }
+
+    .nav-links a::after {
+      background: var(--orange);
+      bottom: -7px;
+      content: "";
+      height: 2px;
+      left: 0;
+      position: absolute;
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.2s ease;
+      width: 100%;
+    }
+
+    .nav-links a:hover,
+    .nav-links a.active {
+      color: var(--ink);
+    }
+
+    .nav-links a:hover::after,
+    .nav-links a.active::after {
+      transform: scaleX(1);
+    }
+
+    .container {
+      margin: 0 auto;
+      max-width: 1020px;
+      padding: 0 34px;
+    }
+
+    section { padding-top: 48px; }
+
+    .hero {
+      align-items: flex-start;
+      display: grid;
+      gap: 54px;
+      grid-template-columns: 220px 1fr;
+      padding: 62px 0 20px;
+    }
+
+    .hero-photo img {
+      border: 3px solid var(--line);
+      border-radius: 50%;
+      box-shadow: var(--shadow);
+      height: 220px;
+      object-fit: cover;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      width: 220px;
+    }
+
+    .hero-photo img:hover {
+      box-shadow: 0 14px 34px rgba(18, 79, 143, 0.18);
+      transform: translateY(-3px) scale(1.02);
+    }
+
+    .eyebrow {
+      color: var(--orange);
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      margin-bottom: 4px;
+      text-transform: uppercase;
+    }
+
+    h1,
+    .section-title {
+      color: var(--ink);
+      font-family: "Crimson Pro", Georgia, serif;
+      font-weight: 700;
+      line-height: 1.12;
+    }
+
+    h1 {
+      font-size: 46px;
+      margin-bottom: 8px;
+    }
+
+    .subtitle {
+      color: var(--muted);
+      font-size: 16px;
+      margin-bottom: 18px;
+    }
+
+    .hero-bio {
+      max-width: 690px;
+      margin-bottom: 18px;
+    }
+
+    .hello {
+      color: var(--muted);
+      font-family: "Crimson Pro", Georgia, serif;
+      font-size: 19px;
+      margin-bottom: 12px;
+    }
+
+    .hero-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 18px 0 14px;
+    }
+
+    .pill-link,
+    .pub-link,
+    .filter-btn {
+      align-items: center;
+      border: 1.5px solid var(--blue);
+      border-radius: 999px;
+      display: inline-flex;
+      font-weight: 700;
+      gap: 7px;
+    }
+
+    .pill-link {
+      color: var(--blue);
+      font-size: 13px;
+      padding: 7px 14px;
+    }
+
+    .pill-link:hover,
+    .pub-link:hover,
+    .filter-btn:hover,
+    .filter-btn.active {
+      background: var(--blue);
+      color: #fff;
+      transform: translateY(-1px);
+    }
+
+    .status-banner {
+      background: linear-gradient(135deg, #fff8ec, #fff1df);
+      border-left: 4px solid var(--orange);
+      border-radius: 7px;
+      color: #7a3c12;
+      display: inline-block;
+      font-size: 14px;
+      font-weight: 700;
+      padding: 9px 16px;
+    }
+
+    .interest-grid {
+      display: grid;
+      gap: 10px;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      padding-top: 28px;
+    }
+
+    .interest-card {
+      background: var(--panel);
+      border-left: 3px solid var(--blue);
+      border-radius: 7px;
+      padding: 13px 16px;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .interest-card:hover,
+    .timeline-item:hover,
+    .pub-item:hover,
+    .award-item:hover,
+    .fun-fact:hover {
+      box-shadow: var(--shadow);
+      transform: translateY(-2px);
+    }
+
+    .interest-card strong { color: var(--ink); }
+
+    .section-title {
+      border-bottom: 2px solid var(--ink);
+      display: inline-block;
+      font-size: 30px;
+      margin-bottom: 24px;
+      padding-bottom: 8px;
+    }
+
+    .timeline {
+      display: grid;
+      gap: 0;
+    }
+
+    .timeline-item {
+      align-items: center;
+      border-bottom: 1px solid var(--line);
+      border-radius: 8px;
+      display: grid;
+      gap: 22px;
+      grid-template-columns: 86px 1fr;
+      padding: 18px 12px;
+      transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+    }
+
+    .timeline-item:hover { background: var(--panel); }
+
+    .timeline-logo {
+      align-items: center;
+      display: flex;
+      height: 74px;
+      justify-content: center;
+      width: 74px;
+    }
+
+    .timeline-logo img {
+      max-height: 68px;
+      max-width: 76px;
+      object-fit: contain;
+    }
+
+    .timeline-content h3 {
+      color: var(--ink);
+      font-size: 17px;
+      line-height: 1.35;
+      margin-bottom: 3px;
+    }
+
+    .timeline-entry + .timeline-entry {
+      margin-top: 7px;
+      padding-top: 7px;
+      position: relative;
+    }
+
+    .timeline-entry + .timeline-entry::before {
+      background: #edf2f7;
+      content: "";
+      height: 1px;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: min(220px, 42%);
+    }
+
+    .timeline-date {
+      color: var(--muted);
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .timeline-detail {
+      font-size: 14.5px;
+      margin-top: 5px;
+    }
+
+    .news-container {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      max-height: 330px;
+      overflow-y: auto;
+      padding: 8px;
+    }
+
+    .news-item {
+      border-bottom: 1px solid #edf2f7;
+      border-radius: 6px;
+      display: grid;
+      font-size: 15px;
+      gap: 20px;
+      grid-template-columns: 96px 1fr;
+      padding: 10px 10px;
+    }
+
+    .news-item:last-child { border-bottom: 0; }
+    .news-item:hover { background: var(--panel); }
+
+    .news-date {
+      color: var(--muted);
+      font-size: 14px;
+      font-weight: 800;
+    }
+
+    .pub-note {
+      color: var(--muted);
+      font-size: 14px;
+      font-style: italic;
+      margin: -8px 0 18px;
+    }
+
+    .pub-filter {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 20px;
+    }
+
+    .filter-btn {
+      background: #fff;
+      color: var(--blue);
+      cursor: pointer;
+      font-family: inherit;
+      font-size: 13px;
+      padding: 6px 13px;
+    }
+
+    .filter-count {
+      font-size: 11px;
+      opacity: 0.75;
+    }
+
+    .pub-list {
+      list-style: none;
+    }
+
+    .pub-item {
+      border-bottom: 1px solid #edf2f7;
+      border-radius: 8px;
+      display: block;
+      padding: 18px 12px;
+      transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease, opacity 0.2s ease;
+    }
+
+    .pub-item.hidden { display: none; }
+
+    .pub-show-all {
+      background: var(--ink);
+      border: 0;
+      border-radius: 999px;
+      color: #fff;
+      cursor: pointer;
+      display: none;
+      font-size: 14px;
+      font-weight: 700;
+      margin: 18px auto 0;
+      padding: 10px 18px;
+      transition: background 0.2s ease, transform 0.2s ease;
+    }
+
+    .pub-show-all:hover {
+      background: var(--blue);
+      transform: translateY(-1px);
+    }
+
+    .pub-show-all.visible { display: block; }
+
+    .pub-title {
+      color: var(--ink);
+      font-size: 16px;
+      font-weight: 800;
+      line-height: 1.45;
+    }
+
+    .pub-title:hover { color: var(--blue); }
+
+    .pub-authors,
+    .pub-venue,
+    .pub-insight {
+      font-size: 14px;
+      margin-top: 5px;
+    }
+
+    .pub-authors {
+      color: var(--muted);
+    }
+
+    .me {
+      color: var(--ink);
+      font-weight: 800;
+      text-decoration: underline;
+      text-decoration-color: var(--orange);
+      text-underline-offset: 2px;
+    }
+
+    .pub-venue em {
+      color: var(--text);
+      font-style: normal;
+      font-weight: 700;
+    }
+
+    .pub-insight {
+      background: var(--blue-soft);
+      border-left: 3px solid var(--blue);
+      border-radius: 0 5px 5px 0;
+      color: #405368;
+      padding: 6px 10px;
+    }
+
+    .pub-links,
+    .pub-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: 9px;
+    }
+
+    .pub-link {
+      color: var(--blue);
+      font-size: 12px;
+      padding: 3px 10px;
+    }
+
+    .tag {
+      border-radius: 999px;
+      display: inline-block;
+      font-size: 12px;
+      font-weight: 800;
+      padding: 2px 9px;
+    }
+
+    .tag-llm { background: #fff7d6; color: #705400; }
+    .tag-vlm { background: #fff2e8; color: #9f4a14; }
+    .tag-multimodal { background: #f6eafb; color: #6d347c; }
+    .tag-graph { background: #e6f4ff; color: #124f8f; }
+    .tag-time-series { background: #e8f6ef; color: #1f7a5b; }
+    .tag-tabular-data { background: #fff0e6; color: #9a4a16; }
+    .tag-ensemble { background: #f7ecff; color: #6b2da1; }
+    .tag-meta-learning { background: #edf0f7; color: #41506a; }
+    .tag-trustworthy-ai { background: #e9f8f7; color: #136c68; }
+    .tag-safety { background: #fff0ed; color: #a33f2f; }
+    .tag-fairness { background: #fdeff7; color: #9a3569; }
+    .tag-ethics { background: #fff6db; color: #7b5b00; }
+    .tag-interpretability { background: #fdf0f3; color: #a23b5c; }
+    .tag-class-imbalance { background: #fff3e0; color: #935214; }
+    .tag-benchmarking { background: #eef7e8; color: #456b16; }
+    .tag-network-alignment { background: #eaf0ff; color: #284f9b; }
+    .tag-reasoning { background: #fff8d9; color: #725800; }
+    .tag-retrieval { background: #e9fbf6; color: #146a54; }
+    .tag-recommender-systems { background: #edf5ff; color: #2c5f99; }
+    .tag-model-adaptation { background: #f0f5ff; color: #31599a; }
+    .tag-anomaly-detection { background: #fff0ed; color: #a33f2f; }
+    .tag-healthcare { background: #edf9f3; color: #1d7a58; }
+    .tag-gnn { background: #eef4ff; color: #234f8f; }
+    .tag-optimal-transport { background: #f3f1ff; color: #5442a6; }
+    .tag-survey { background: #f5f1ff; color: #5a3ca0; }
+    .tag-biology { background: #eaf8ee; color: #2b6b3f; }
+    .tag-climate { background: #e8f8ff; color: #1d667f; }
+    .tag-reward-modeling { background: #fff0f6; color: #98345f; }
+    .tag-watermarking { background: #f1f6ff; color: #375b96; }
+    .tag-temporal-graph { background: #eef7fb; color: #245f76; }
+
+    .awards-grid,
+    .fun-facts-grid {
+      display: grid;
+      gap: 10px;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .award-item,
+    .fun-fact {
+      background: var(--panel);
+      border-left: 3px solid var(--orange);
+      border-radius: 8px;
+      font-size: 15px;
+      padding: 14px 16px;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .award-item strong,
+    .fun-fact strong {
+      color: var(--ink);
+    }
+
+    .fun-facts-grid {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .fun-fact {
+      border-left-color: var(--green);
+      line-height: 1.65;
+    }
+
+    .gallery-grid {
+      display: grid;
+      gap: 10px;
+      grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+      padding-top: 2px;
+    }
+
+    .gallery-item {
+      aspect-ratio: 1;
+      background: transparent;
+      border: 2px solid var(--line);
+      border-radius: 8px;
+      cursor: pointer;
+      overflow: hidden;
+      padding: 0;
+      position: relative;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .gallery-item:hover {
+      box-shadow: var(--shadow);
+      transform: scale(1.03);
+    }
+
+    .gallery-item img {
+      display: block;
+      height: 100%;
+      object-fit: cover;
+      width: 100%;
+    }
+
+    .gallery-item span {
+      align-items: end;
+      background: linear-gradient(transparent, rgba(0, 0, 0, 0.58));
+      color: #fff;
+      display: flex;
+      font-size: 12px;
+      font-weight: 700;
+      inset: 0;
+      opacity: 0;
+      padding: 10px;
+      position: absolute;
+      transition: opacity 0.2s ease;
+    }
+
+    .gallery-item:hover span { opacity: 1; }
+
+    .gallery-show-more {
+      background: var(--ink);
+      border: 0;
+      border-radius: 999px;
+      color: #fff;
+      cursor: pointer;
+      display: none;
+      font-size: 14px;
+      font-weight: 700;
+      margin: 18px auto 0;
+      padding: 10px 18px;
+      transition: background 0.2s ease, transform 0.2s ease;
+    }
+
+    .gallery-show-more:hover {
+      background: var(--blue);
+      transform: translateY(-1px);
+    }
+
+    .gallery-show-more.visible { display: block; }
+
+    .lightbox {
+      align-items: center;
+      background: rgba(0, 0, 0, 0.92);
+      display: none;
+      flex-direction: column;
+      inset: 0;
+      justify-content: center;
+      position: fixed;
+      z-index: 999;
+    }
+
+    .lightbox.active { display: flex; }
+
+    .lightbox img {
+      border-radius: 6px;
+      max-height: 84vh;
+      max-width: 90vw;
+      object-fit: contain;
+    }
+
+    .lightbox button {
+      background: transparent;
+      border: 0;
+      color: #fff;
+      cursor: pointer;
+      font-size: 34px;
+      opacity: 0.78;
+      position: absolute;
+      transition: opacity 0.2s ease;
+    }
+
+    .lightbox button:hover { opacity: 1; }
+
+    .lightbox-close {
+      right: 22px;
+      top: 14px;
+    }
+
+    .lightbox-prev {
+      left: 18px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    .lightbox-next {
+      right: 18px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    .lightbox-caption {
+      color: rgba(255, 255, 255, 0.72);
+      font-size: 14px;
+      margin-top: 12px;
+    }
+
+    .back-to-top {
+      align-items: center;
+      background: var(--blue);
+      border: 0;
+      border-radius: 50%;
+      bottom: 28px;
+      box-shadow: 0 8px 20px rgba(18, 79, 143, 0.28);
+      color: #fff;
+      cursor: pointer;
+      display: flex;
+      height: 42px;
+      justify-content: center;
+      opacity: 0;
+      position: fixed;
+      right: 28px;
+      transform: translateY(8px);
+      transition: opacity 0.2s ease, transform 0.2s ease;
+      width: 42px;
+      z-index: 45;
+    }
+
+    .back-to-top.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    footer {
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 14px;
+      margin-top: 54px;
+      padding: 34px 0 40px;
+      text-align: center;
+    }
+
+    .site-analytics {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-bottom: 24px;
+    }
+
+    @media (max-width: 860px) {
+      .nav-inner {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 8px;
+        height: auto;
+        padding-bottom: 12px;
+        padding-top: 12px;
+      }
+
+      .nav-links {
+        gap: 14px;
+        overflow-x: auto;
+        padding-bottom: 3px;
+        width: 100%;
+      }
+
+      .hero {
+        grid-template-columns: 1fr;
+        gap: 24px;
+        justify-items: center;
+        text-align: center;
+      }
+
+      .hero-links { justify-content: center; }
+      .interest-grid,
+      .awards-grid,
+      .fun-facts-grid { grid-template-columns: 1fr; }
+      .timeline-item { grid-template-columns: 70px 1fr; }
+    }
+
+    @media (max-width: 560px) {
+      body { font-size: 15px; }
+      .container,
+      .nav-inner { padding-left: 20px; padding-right: 20px; }
+      h1 { font-size: 38px; }
+      .hero-photo img { height: 180px; width: 180px; }
+      .news-item { grid-template-columns: 1fr; gap: 2px; }
+      .gallery-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .back-to-top { bottom: 18px; right: 18px; }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="nav-inner">
+      <a class="nav-name" href="#about">Zhining Liu</a>
+      <div class="nav-links" aria-label="Primary navigation">
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#experience">Experience</a>
+        <a href="#news">News</a>
+        <a href="#publications">Publications</a>
+        <a href="#awards">Awards</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#fun-facts">Fun Facts</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container">
+    <section class="hero" id="about">
+      <div class="hero-photo">
+        <img src="images/profile/zhiningliu.jpg" alt="Zhining Liu">
+      </div>
+      <div class="hero-info">
+        <!-- <div class="eyebrow">Data-centric Trustworthy AI</div> -->
+        <h1>Zhi-ning Liu <span aria-hidden="true">(刘芷宁)</span></h1>
+        <p class="hello">你好 / Hello / 안녕하세요 / こんにちは / Bonjour / Hola (and more)!</p>
+        <div class="subtitle">
+          Ph.D. Candidate &middot; <a href="https://illinois.edu/">University of Illinois Urbana-Champaign (UIUC)</a><br>
+          Advised by <a href="http://tonghanghang.org/">Prof. Hanghang Tong</a> at <a href="https://www.idea-isail.com">IDEA-ISAIL Lab</a>
+        </div>
+        <p class="hero-bio">
+          I do research and build open-source systems for <strong>Data-centric Trustworthy AI</strong>, with a focus on reliable LLM/VLM reasoning, graph and time-series data mining, class-imbalanced learning, meta ensemble learning, and AI ethics/fairness.
+        </p>
+        <div class="hero-links">
+          <a class="pill-link" href="files/Resume_ZhiningLiu.pdf"><i class="fas fa-file-lines"></i> CV</a>
+          <a class="pill-link" href="mailto:zhining.liu@outlook.com"><i class="fas fa-envelope"></i> Email</a>
+          <a class="pill-link" href="https://scholar.google.com/citations?user=5WORAUQAAAAJ&hl=zh-CN"><i class="fas fa-graduation-cap"></i> Scholar</a>
+          <a class="pill-link" href="https://github.com/ZhiningLiu1998"><i class="fab fa-github"></i> GitHub</a>
+          <a class="pill-link" href="https://www.linkedin.com/in/zhiningliu/"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+          <a class="pill-link" href="https://www.zhihu.com/people/liu-zhi-zhu-14"><i class="fa-solid fa-z"></i> Zhihu</a>
+        </div>
+        <!-- <div class="status-banner">Joining Amazon as an Applied Scientist in June 2026.</div> -->
+      </div>
+    </section>
+
+    <div class="interest-grid" aria-label="Research interests">
+      <div class="interest-card"><strong>LLM/VLM Reasoning</strong>: agentic reasoning, evidence grounding, mechanistic interpretability</div>
+      <div class="interest-card"><strong>Graph & Time Series Mining</strong>: scalable model fusion, graph neural networks, temporal forecasting</div>
+      <div class="interest-card"><strong>Class-imbalanced Learning</strong>: data curation, efficient ensemble methods, few-shot learning</div>
+      <div class="interest-card"><strong>Trustworthy AI</strong>: data-encoded unfairness, bias attribution, AI ethics and morality</div>
+    </div>
+
+    <section id="education">
+      <h2 class="section-title">Education</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-logo"><img src="images/logos/uiuc.png" alt="UIUC"></div>
+          <div class="timeline-content">
+            <h3>University of Illinois Urbana-Champaign</h3>
+            <div class="timeline-date">Ph.D. in Computer Science &middot; 2022 - 2026 (expected)</div>
+            <div class="timeline-detail"><strong>Department of Computer Science</strong> &middot; Advisor: <a href="http://tonghanghang.org/">Prof. Hanghang Tong</a></div>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-logo"><img src="images/logos/jlu.png" alt="Jilin University"></div>
+          <div class="timeline-content">
+            <h3>Jilin University</h3>
+            <div class="timeline-entry">
+              <div class="timeline-date">M.Eng. in Computer Science &middot; 2019 - 2022</div>
+              <div class="timeline-detail"><strong>School of Artificial Intelligence</strong> &middot; Advisor: <a href="http://yichang-cs.com/">Prof. Yi Chang</a></div>
+            </div>
+            <div class="timeline-entry">
+              <div class="timeline-date">B.Sc. in Computer Science &middot; 2015 - 2019</div>
+              <div class="timeline-detail"><strong>Tang-Aoqing Honors Program</strong> &middot; Computer Science</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience">
+      <h2 class="section-title">Experience</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-logo"><img src="images/logos/amazon.png" alt="Amazon"></div>
+          <div class="timeline-content">
+            <h3>Amazon</h3>
+            <div class="timeline-entry">
+              <div class="timeline-date">Applied Scientist II &middot; Palo Alto, CA &middot; starting June 2026</div>
+              <div class="timeline-detail"><strong>Amazon Ads</strong> &middot; LLM for recommendation</div>
+            </div>
+            <div class="timeline-entry">
+              <div class="timeline-date">Applied Scientist Intern &middot; Palo Alto, CA &middot; May - Dec 2025</div>
+              <div class="timeline-detail"><strong>Amazon Ads</strong> &middot; Vision language model reasoning reliability -> ICLR 2026, ICML 2026, ACL 2026</div>
+            </div>
+            <div class="timeline-entry">
+              <div class="timeline-date">Applied Scientist Intern &middot; Palo Alto, CA &middot; May - Aug 2024</div>
+              <div class="timeline-detail"><strong>Amazon Rufus</strong> &middot; RAG-based language model reasoning -> ACL 2025</div>
+            </div>
+            <div class="timeline-entry">
+              <div class="timeline-date">Applied Scientist Intern &middot; Seattle, WA &middot; May - Aug 2023</div>
+              <div class="timeline-detail"><strong>Amazon Search</strong> &middot; Multi-task learning for partially ordered entity ranking</div>
+            </div>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-logo"><img src="images/logos/microsoft.svg" alt="Microsoft Research"></div>
+          <div class="timeline-content">
+            <h3>Microsoft Research</h3>
+            <div class="timeline-date">Research Intern &middot; Beijing &middot; Aug 2018 - June 2019</div>
+            <div class="timeline-detail"><strong>Machine Learning Group</strong> &middot; Extreme class-imbalanced learning -> ICDE 2020, NeurIPS 2020</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="news">
+      <h2 class="section-title">News</h2>
+      <div class="news-container">
+        <div class="news-item"><div class="news-date">Apr 2026</div><div class="news-text">💼 <strong>Joining Amazon:</strong> I will join Amazon as an Applied Scientist starting June 2026 : )</div></div>
+        <div class="news-item"><div class="news-date">Apr 2026</div><div class="news-text">🎉 <strong>ACL'26:</strong> Two main papers and one findings paper accepted to ACL 2026.</div></div>
+        <div class="news-item"><div class="news-date">Jan 2026</div><div class="news-text">🔥 <strong>HF Week #1 Paper:</strong> All you need to know about Agentic Reasoning! [<a href="https://huggingface.co/papers/2601.12538">HF</a>/<a href="https://github.com/weitianxin/Awesome-Agentic-Reasoning">GitHub</a>]</div></div>
+        <div class="news-item"><div class="news-date">Jan 2026</div><div class="news-text">🇧🇷 <strong>ICLR'26:</strong> Four papers accepted to ICLR 2026. See you in Brazil.</div></div>
+        <div class="news-item"><div class="news-date">Oct 2025</div><div class="news-text">👀 <strong>VLM Perception:</strong> VLMs can see the image, but still may not use it. [<a href="https://arxiv.org/pdf/2510.17771">PDF</a>]</div></div>
+        <div class="news-item"><div class="news-date">Aug 2025</div><div class="news-text">📊 <strong>NeurIPS'25:</strong> Check our insights from benchmarking class-imbalanced tabular learning. [<a href="https://github.com/ZhiningLiu1998/imbalanced-ensemble">Code</a>/<a href="https://arxiv.org/pdf/2505.17451">PDF</a>]</div></div>
+        <div class="news-item"><div class="news-date">May 2025</div><div class="news-text">🏆 <strong>Award:</strong> Honored to receive the <a href="https://siebelschool.illinois.edu/about/awards/graduate-fellowships-awards/cl-and-jane-w-s-liu-award">C.L. and Jane Liu Award</a>.</div></div>
+        <div class="news-item"><div class="news-date">May 2025</div><div class="news-text">🔎 <strong>ACL'25:</strong> How to prevent LLMs from overlooking the evidence in your RAG? [<a href="https://github.com/ZhiningLiu1998/SelfElicit">Code</a>/<a href="https://arxiv.org/pdf/2502.08767">PDF</a>]</div></div>
+        <div class="news-item"><div class="news-date">May 2025</div><div class="news-text">📈 <strong>ICML'25:</strong> Sample-level adaptive model fusion for time series forecasting. [<a href="https://github.com/ZhiningLiu1998/TimeFuse">Code</a>/<a href="https://arxiv.org/pdf/2505.18442">PDF</a>]</div></div>
+        <div class="news-item"><div class="news-date">May 2025</div><div class="news-text">💼 <strong>Intern@Amazon:</strong> Back to the Bay Area again.</div></div>
+        <div class="news-item"><div class="news-date">Jan 2025</div><div class="news-text">🎉 <strong>ICLR'25:</strong> One co-author paper on test-time adaptation for graph structural shift accepted. [<a href="https://openreview.net/pdf?id=EpgoFFUM2q">PDF</a>]</div></div>
+        <div class="news-item"><div class="news-date">Sep 2024</div><div class="news-text">🌟 <strong>NeurIPS'24 Spotlight:</strong> One co-author paper on time-series backdoor attacks accepted. [<a href="https://github.com/xiaolin-cs/BackTime">Code</a>/<a href="https://arxiv.org/pdf/2410.02195">PDF</a>]</div></div>
+        <div class="news-item"><div class="news-date">May 2024</div><div class="news-text">⚖️ <strong>KDD'24:</strong> AIM: Attributing, Interpreting, Mitigating Data-encoded Unfairness. [<a href="https://github.com/ZhiningLiu1998/AIM">Code</a>/<a href="https://arxiv.org/pdf/2406.08819">PDF</a>]</div></div>
+        <div class="news-item"><div class="news-date">May 2024</div><div class="news-text">💼 <strong>Intern@Amazon:</strong> Starting my Applied Scientist Internship in the Bay Area.</div></div>
+        <div class="news-item"><div class="news-date">Apr 2024</div><div class="news-text">🧩 <strong>ICML'24:</strong> Class-imbalanced graph learning without class rebalancing? [<a href="https://github.com/ZhiningLiu1998/BAT">Code</a>/<a href="https://arxiv.org/pdf/2308.14181">PDF</a>]</div></div>
+        <div class="news-item"><div class="news-date">Mar 2024</div><div class="news-text">⚖️ <strong>FAccT'24:</strong> Group Fairness via Group Consensus, with Eunice Chan. [<a href="https://dl.acm.org/doi/pdf/10.1145/3630106.3659006">PDF</a>]</div></div>
+        <div class="news-item"><div class="news-date">May 2023</div><div class="news-text">🏥 <strong>KDD'23:</strong> Web-based Long-term Spine Treatment Outcome Forecasting, with Hangting Ye. [<a href="https://dl.acm.org/doi/pdf/10.1145/3580305.3599545">PDF</a>]</div></div>
+        <div class="news-item"><div class="news-date">May 2023</div><div class="news-text">💼 <strong>Intern@Amazon:</strong> Starting my Applied Scientist Internship in Seattle.</div></div>
+        <div class="news-item"><div class="news-date">Feb 2023</div><div class="news-text">📦 <strong>Open-source:</strong> Major release of <a href="https://github.com/ZhiningLiu1998/imbalanced-ensemble">IMBENS</a>, an imbalanced learning toolbox. [<a href="https://github.com/ZhiningLiu1998/imbalanced-ensemble">GitHub</a>/<a href="https://imbalanced-ensemble.readthedocs.io">Docs</a>/<a href="https://pypi.org/project/imbalanced-ensemble/">PyPI</a>]</div></div>
+        <div class="news-item"><div class="news-date">Feb 2023</div><div class="news-text">🔬 <strong>ICDE'23:</strong> UADB: Unsupervised Anomaly Detection Booster, with Hangting Ye. [<a href="https://github.com/HangtingYe/UADB">Code</a>/<a href="https://arxiv.org/pdf/2306.01997">PDF</a>]</div></div>
+        <div class="news-item"><div class="news-date">Mar 2022</div><div class="news-text">🎓 <strong>Starting Ph.D.@UIUC:</strong> I will join Prof. <a href="http://tonghanghang.org/">Hanghang Tong</a>'s group at UIUC in Fall 2022.</div></div>
+        <div class="news-item"><div class="news-date">Jan 2022</div><div class="news-text">📦 <strong>Open-source:</strong> <a href="https://github.com/ZhiningLiu1998/awesome-awesome-machine-learning">Awesome2ML</a>, a curated list across machine learning topics. [<a href="https://github.com/ZhiningLiu1998/awesome-awesome-machine-learning">ENG</a>/<a href="https://github.com/ZhiningLiu1998/awesome-awesome-machine-learning/blob/main/README_CN.md">中文</a>]</div></div>
+        <div class="news-item"><div class="news-date">Nov 2021</div><div class="news-text">📝 <strong>Preprint:</strong> IMBENS: Ensemble Class-imbalanced Learning in Python. [<a href="https://github.com/ZhiningLiu1998/imbalanced-ensemble">Code</a>/<a href="https://arxiv.org/abs/2111.12776">PDF</a>]</div></div>
+        <div class="news-item"><div class="news-date">Jun 2021</div><div class="news-text">📦 <strong>Open-source:</strong> <a href="https://github.com/ZhiningLiu1998/imbalanced-ensemble">IMBENS</a>, an imbalanced learning toolbox. [<a href="https://github.com/ZhiningLiu1998/imbalanced-ensemble">GitHub</a>/<a href="https://imbalanced-ensemble.readthedocs.io">Docs</a>/<a href="https://pypi.org/project/imbalanced-ensemble/">PyPI</a>]</div></div>
+        <div class="news-item"><div class="news-date">Oct 2020</div><div class="news-text">🧠 <strong>NeurIPS'20:</strong> MESA: Boost Ensemble Imbalanced Learning with MEta-SAmpler. [<a href="https://github.com/ZhiningLiu1998/mesa">Code</a>/<a href="https://proceedings.neurips.cc/paper/2020/file/a64bd53139f71961c5c31a9af03d775e-Paper.pdf">PDF</a>]</div></div>
+        <div class="news-item"><div class="news-date">Apr 2020</div><div class="news-text">📦 <strong>Open-source:</strong> <a href="https://github.com/ZhiningLiu1998/awesome-imbalanced-learning">Awesome-Imbalanced-Learning</a>, a curated list of imbalanced learning resources.</div></div>
+        <div class="news-item"><div class="news-date">Oct 2019</div><div class="news-text">🔬 <strong>ICDE'20:</strong> Self-paced Ensemble for Highly Imbalanced Massive Data Classification. [<a href="https://github.com/ZhiningLiu1998/self-paced-ensemble">Code</a>/<a href="https://conferences.computer.org/icde/2020/pdfs/ICDE2020-5acyuqhpJ6L9P042wmjY1p/290300a841/290300a841.pdf">PDF</a>]</div></div>
+        <div class="news-item"><div class="news-date">Jul 2019</div><div class="news-text">🎓 <strong>Graduation@JilinU:</strong> Received my B.Sc. from Tang Aoqing Honors Program in Science, Jilin University.</div></div>
+        <div class="news-item"><div class="news-date">Sep 2018</div><div class="news-text">💼 <strong>Intern@Microsoft:</strong> Starting my internship at Microsoft Research Asia. Supervisors: Dr. <a href="https://sites.google.com/view/jiangbian">Jiang Bian</a> and Dr. <a href="https://weicao1990.github.io/">Wei Cao</a>.</div></div>
+      </div>
+    </section>
+
+    <section id="publications">
+      <h2 class="section-title">Publications</h2>
+      <p class="pub-note">Publications, preprints, and submissions, sorted by year. See the full list on <a href="https://scholar.google.com/citations?user=5WORAUQAAAAJ">Google Scholar</a>.</p>
+      <div class="pub-filter" id="pubFilter">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="llm">LLM</button>
+        <button class="filter-btn" data-filter="trustworthy-ai">Trustworthy-AI</button>
+        <button class="filter-btn" data-filter="graph">Graph</button>
+        <button class="filter-btn" data-filter="ensemble">Ensemble</button>
+        <button class="filter-btn" data-filter="benchmarking">Benchmarking</button>
+        <button class="filter-btn" data-filter="gnn">GNN</button>
+        <button class="filter-btn" data-filter="model-adaptation">Model-Adaptation</button>
+        <button class="filter-btn" data-filter="multimodal">Multimodal</button>
+        <button class="filter-btn" data-filter="reasoning">Reasoning</button>
+        <button class="filter-btn" data-filter="class-imbalance">Class-Imbalance</button>
+        <button class="filter-btn" data-filter="fairness">Fairness</button>
+        <button class="filter-btn" data-filter="time-series">Time-Series</button>
+        <button class="filter-btn" data-filter="recommender-systems">Recommender-Systems</button>
+        <button class="filter-btn" data-filter="safety">Safety</button>
+        <button class="filter-btn" data-filter="vlm">VLM</button>
+        <button class="filter-btn" data-filter="interpretability">Interpretability</button>
+        <button class="filter-btn" data-filter="survey">Survey</button>
+        <button class="filter-btn" data-filter="tabular-data">Tabular-Data</button>
+        <button class="filter-btn" data-filter="ethics">Ethics</button>
+        <button class="filter-btn" data-filter="meta-learning">Meta-Learning</button>
+        <button class="filter-btn" data-filter="network-alignment">Network-Alignment</button>
+        <button class="filter-btn" data-filter="optimal-transport">Optimal-Transport</button>
+        <button class="filter-btn" data-filter="anomaly-detection">Anomaly-Detection</button>
+        <button class="filter-btn" data-filter="biology">Biology</button>
+        <button class="filter-btn" data-filter="climate">Climate</button>
+        <button class="filter-btn" data-filter="healthcare">Healthcare</button>
+        <button class="filter-btn" data-filter="retrieval">Retrieval</button>
+        <button class="filter-btn" data-filter="reward-modeling">Reward-Modeling</button>
+        <button class="filter-btn" data-filter="temporal-graph">Temporal-Graph</button>
+        <button class="filter-btn" data-filter="watermarking">Watermarking</button>
+      </div>
+
+      <ul class="pub-list" id="pubList">
+        <li class="pub-item" data-tags="vlm multimodal ethics trustworthy-ai safety">
+          <a class="pub-title" href="https://arxiv.org/abs/2601.17082">Do VLMs Have a Moral Backbone? A Study on the Fragile Morality of Vision-Language Models</a>
+          <div class="pub-authors"><span class="me">Zhining Liu*</span>, Tianyi Wang*, Xiao Lin, Penghao Ouyang, Gaotang Li, Ze Yang, Hui Liu, Sumit Keswani, Vishwa Pardeshi, Huijun Zhao, Wei Fan, Hanghang Tong</div>
+          <div class="pub-venue"><em>ACL Findings 2026</em></div>
+          <div class="pub-insight"><strong>Key Insight:</strong> VLM moral judgments are fragile when visual evidence and textual cues create subtle ethical tension.</div>
+          <div class="pub-links"><a class="pub-link" href="https://arxiv.org/abs/2601.17082"><i class="fas fa-file-alt"></i> Paper</a></div>
+          <div class="pub-tags"><span class="tag tag-vlm">VLM</span><span class="tag tag-multimodal">Multimodal</span><span class="tag tag-ethics">Ethics</span><span class="tag tag-trustworthy-ai">Trustworthy-AI</span><span class="tag tag-safety">Safety</span></div>
+        </li>
+        <li class="pub-item" data-tags="vlm multimodal ethics trustworthy-ai benchmarking">
+          <a class="pub-title" href="https://arxiv.org/abs/2505.14728">MORALISE: A Structured Benchmark for Moral Alignment in Visual Language Models</a>
+          <div class="pub-authors"><span class="me">Zhining Liu*</span>, Xiao Lin*, Ze Yang*, Gaotang Li, Ruizhong Qiu, Shuke Wang, Hui Liu, Haotian Li, Sumit Keswani, Vishwa Pardeshi, Huijun Zhao, Wei Fan, Hanghang Tong</div>
+          <div class="pub-venue"><em>ICML 2026</em></div>
+          <div class="pub-insight"><strong>Key Insight:</strong> Structured visual moral scenarios reveal alignment failures hidden by coarse benchmark scores.</div>
+          <div class="pub-links"><a class="pub-link" href="https://arxiv.org/abs/2505.14728"><i class="fas fa-file-alt"></i> Paper</a><a class="pub-link" href="https://huggingface.co/datasets/Ze1025/MORALISE"><i class="fas fa-database"></i> Dataset</a></div>
+          <div class="pub-tags"><span class="tag tag-vlm">VLM</span><span class="tag tag-multimodal">Multimodal</span><span class="tag tag-ethics">Ethics</span><span class="tag tag-trustworthy-ai">Trustworthy-AI</span><span class="tag tag-benchmarking">Benchmarking</span></div>
+        </li>
+        <li class="pub-item" data-tags="llm reasoning survey">
+          <a class="pub-title" href="https://arxiv.org/abs/2601.12538">Agentic Reasoning for Large Language Models</a>
+          <div class="pub-authors">Tianxin Wei*, Ting-Wei Li*, <span class="me">Zhining Liu*</span>, Xuying Ning, Ze Yang, Jiaru Zou, Zhichen Zeng, Ruizhong Qiu, Xiao Lin, et al.</div>
+          <div class="pub-venue"><em>arXiv preprint, 2026</em></div>
+          <div class="pub-insight"><strong>Key Insight:</strong> A unified taxonomy connects planning, tool use, memory, reflection, and self-improvement in agentic reasoning.</div>
+          <div class="pub-links"><a class="pub-link" href="https://arxiv.org/abs/2601.12538"><i class="fas fa-file-alt"></i> Paper</a><a class="pub-link" href="https://github.com/weitianxin/Awesome-Agentic-Reasoning"><i class="fab fa-github"></i> Project</a><a class="pub-link" href="https://huggingface.co/papers/2601.12538"><i class="fas fa-fire"></i> HF Paper</a></div>
+          <div class="pub-tags"><span class="tag tag-llm">LLM</span><span class="tag tag-reasoning">Reasoning</span><span class="tag tag-survey">Survey</span></div>
+        </li>
+        <li class="pub-item" data-tags="recommender-systems ensemble model-adaptation">
+          <a class="pub-title" href="https://arxiv.org/abs/2604.20858">Mixture of Sequence: Theme-aware Mixture-of-Experts for Long-Sequence Recommendation</a>
+          <div class="pub-authors">Xiao Lin, Zhicheng Tang, Weilin Cong, Mengyue Hang, Kai Wang, Yajuan Wang, Zhichen Zeng, Ting-Wei Li, Hyunsik Yoo, <span class="me">Zhining Liu</span>, Xuying Ning, Ruizhong Qiu, Wen-Yen Chen, Shuo Chang, Rong Jin, Huayu Li, Hanghang Tong</div>
+          <div class="pub-venue"><em>WebConf 2026 Oral</em></div>
+          <div class="pub-insight"><strong>Key Insight:</strong> Theme-aware experts let recommender models specialize over long, shifting user behavior sequences.</div>
+          <div class="pub-links"><a class="pub-link" href="https://arxiv.org/abs/2604.20858"><i class="fas fa-file-alt"></i> Paper</a><a class="pub-link" href="https://github.com/xiaolin-cs/MoS"><i class="fab fa-github"></i> Code</a></div>
+          <div class="pub-tags"><span class="tag tag-recommender-systems">Recommender-Systems</span><span class="tag tag-ensemble">Ensemble</span><span class="tag tag-model-adaptation">Model-Adaptation</span></div>
+        </li>
+        <li class="pub-item" data-tags="vlm multimodal interpretability trustworthy-ai">
+          <a class="pub-title" href="https://arxiv.org/abs/2510.17771">Seeing but Not Believing: Probing the Disconnect Between Visual Attention and Answer Correctness in VLMs</a>
+          <div class="pub-authors"><span class="me">Zhining Liu</span>, Ziyi Chen, Hui Liu, Chen Luo, Xianfeng Tang, Suhang Wang, Jingying Zeng, Zhenwei Dai, Zhan Shi, Tianxin Wei, Hanqing Lu, Benoit Dumoulin, Hanghang Tong</div>
+          <div class="pub-venue"><em>ICLR 2026</em></div>
+          <div class="pub-insight"><strong>Key Insight:</strong> Correct visual attention does not guarantee correct visual-language reasoning.</div>
+          <div class="pub-links"><a class="pub-link" href="https://arxiv.org/abs/2510.17771"><i class="fas fa-file-alt"></i> Paper</a></div>
+          <div class="pub-tags"><span class="tag tag-vlm">VLM</span><span class="tag tag-multimodal">Multimodal</span><span class="tag tag-interpretability">Interpretability</span><span class="tag tag-trustworthy-ai">Trustworthy-AI</span></div>
+        </li>
+        <li class="pub-item" data-tags="llm recommender-systems model-adaptation">
+          <a class="pub-title" href="https://arxiv.org/abs/2510.25093">Continual Low-Rank Adapters for LLM-based Generative Recommender Systems</a>
+          <div class="pub-authors">Hyunsik Yoo, Ting-Wei Li, SeongKu Kang, <span class="me">Zhining Liu</span>, Charlie Xu, Qilin Qi, Hanghang Tong</div>
+          <div class="pub-venue"><em>ICLR 2026</em></div>
+          <div class="pub-insight"><strong>Key Insight:</strong> Continually evolving LoRA adapters preserve generative recommendation quality as user data shifts.</div>
+          <div class="pub-links"><a class="pub-link" href="https://arxiv.org/abs/2510.25093"><i class="fas fa-file-alt"></i> Paper</a><a class="pub-link" href="https://github.com/hsyoo32/peso"><i class="fab fa-github"></i> Code</a></div>
+          <div class="pub-tags"><span class="tag tag-llm">LLM</span><span class="tag tag-recommender-systems">Recommender-Systems</span><span class="tag tag-model-adaptation">Model-Adaptation</span></div>
+        </li>
+        <li class="pub-item" data-tags="time-series llm multimodal">
+          <a class="pub-title" href="https://arxiv.org/abs/2502.08942">Language in the Flow of Time: Time-Series-Paired Texts Weaved into a Unified Temporal Narrative</a>
+          <div class="pub-authors">Zihao Li, Xiao Lin, <span class="me">Zhining Liu</span>, Jiaru Zou, Ziwei Wu, Lecheng Zheng, Dongqi Fu, Yada Zhu, Hendrik Hamann, Hanghang Tong, Jingrui He</div>
+          <div class="pub-venue"><em>ICLR 2026</em></div>
+          <div class="pub-insight"><strong>Key Insight:</strong> Time-series and paired text can be aligned into unified temporal narratives for multimodal reasoning.</div>
+          <div class="pub-links"><a class="pub-link" href="https://arxiv.org/abs/2502.08942"><i class="fas fa-file-alt"></i> Paper</a><a class="pub-link" href="https://github.com/iDEA-iSAIL-Lab-UIUC/TaTS"><i class="fab fa-github"></i> Code</a></div>
+          <div class="pub-tags"><span class="tag tag-time-series">Time-Series</span><span class="tag tag-llm">LLM</span><span class="tag tag-multimodal">Multimodal</span></div>
+        </li>
+        <li class="pub-item" data-tags="time-series reasoning benchmarking">
+          <a class="pub-title" href="https://openreview.net/forum?id=ULQt51DRug">TRQA: Time Series Reasoning Question And Answering Benchmark</a>
+          <div class="pub-authors">Baoyu Jing, Sanhorn Chen, Lecheng Zheng, Boyu Liu, Zihao Li, Jiaru Zou, Tianxin Wei, <span class="me">Zhining Liu</span>, Zhichen Zeng, Ruizhong Qiu, Xiao Lin, Yuchen Yan, Qi Yu, Dongqi Fu, Jingrui He, Hanghang Tong</div>
+          <div class="pub-venue"><em>In submission, 2026</em></div>
+          <div class="pub-insight"><strong>Key Insight:</strong> Time-series QA should test compositional reasoning over temporal patterns, not just forecasting accuracy.</div>
+          <div class="pub-links"><a class="pub-link" href="https://openreview.net/forum?id=ULQt51DRug"><i class="fas fa-file-alt"></i> Paper</a></div>
+          <div class="pub-tags"><span class="tag tag-time-series">Time-Series</span><span class="tag tag-reasoning">Reasoning</span><span class="tag tag-benchmarking">Benchmarking</span></div>
+        </li>
+        <li class="pub-item" data-tags="graph network-alignment benchmarking">
+          <a class="pub-title" href="https://arxiv.org/abs/2505.21366">PLANETALIGN: A Comprehensive Python Library for Benchmarking Network Alignment</a>
+          <div class="pub-authors">Qi Yu, Zhichen Zeng, Yuchen Yan, <span class="me">Zhining Liu</span>, Baoyu Jing, Ruizhong Qiu, Ariful Azad, Hanghang Tong</div>
+          <div class="pub-venue"><em>ICLR 2026</em></div>
+          <div class="pub-insight"><strong>Key Insight:</strong> A unified Python library makes network alignment algorithms easier to compare, reproduce, and extend.</div>
+          <div class="pub-links"><a class="pub-link" href="https://arxiv.org/abs/2505.21366"><i class="fas fa-file-alt"></i> Paper</a><a class="pub-link" href="https://github.com/yq-leo/PlanetAlign"><i class="fab fa-github"></i> Code</a></div>
+          <div class="pub-tags"><span class="tag tag-graph">Graph</span><span class="tag tag-network-alignment">Network-Alignment</span><span class="tag tag-benchmarking">Benchmarking</span></div>
+        </li>
+        <li class="pub-item" data-tags="biology survey">
+          <a class="pub-title" href="https://www.nature.com/articles/s44387-025-00066-y">Flow Matching Meets Biology and Life Science: A Survey</a>
+          <div class="pub-authors">Zihao Li, Zhichen Zeng, Xiao Lin, Feihao Fang, Yanru Qu, Zhe Xu, <span class="me">Zhining Liu</span>, Xuying Ning, Tianxin Wei, Ge Liu, Hanghang Tong, Jingrui He</div>
+          <div class="pub-venue"><em>npj Artificial Intelligence 2026</em></div>
+          <div class="pub-insight"><strong>Key Insight:</strong> Flow matching provides a flexible generative lens for molecular, cellular, and biological modeling tasks.</div>
+          <div class="pub-links"><a class="pub-link" href="https://www.nature.com/articles/s44387-025-00066-y"><i class="fas fa-file-alt"></i> Paper</a><a class="pub-link" href="https://arxiv.org/abs/2507.17731"><i class="fas fa-file-alt"></i> arXiv</a></div>
+          <div class="pub-tags"><span class="tag tag-biology">Biology</span><span class="tag tag-survey">Survey</span></div>
+        </li>
+        <li class="pub-item" data-tags="llm ensemble reasoning model-adaptation">
+          <a class="pub-title" href="https://arxiv.org/abs/2603.10160">ReMix: Reinforcement Routing for Mixtures of LoRAs in LLM Finetuning</a>
+          <div class="pub-authors">Ruizhong Qiu, Hanqing Zeng, Yinglong Xia, Yiwen Meng, Ren Chen, Jiarui Feng, Dongqi Fu, Qifan Wang, Jiayi Liu, Jun Xiao, Xiangjun Fan, Benyu Zhang, Hong Li, <span class="me">Zhining Liu</span>, Hyunsik Yoo, Hanghang Tong</div>
+          <div class="pub-venue"><em>arXiv preprint, 2026</em></div>
+          <div class="pub-insight"><strong>Key Insight:</strong> Reinforcement routing learns how to select and combine LoRA experts during LLM finetuning.</div>
+          <div class="pub-links"><a class="pub-link" href="https://arxiv.org/abs/2603.10160"><i class="fas fa-file-alt"></i> Paper</a></div>
+          <div class="pub-tags"><span class="tag tag-llm">LLM</span><span class="tag tag-ensemble">Ensemble</span><span class="tag tag-reasoning">Reasoning</span><span class="tag tag-model-adaptation">Model-Adaptation</span></div>
+        </li>
+        <li class="pub-item" data-tags="llm ensemble reasoning">
+          <a class="pub-title" href="https://openreview.net/forum?id=2bPyuL6Cda">Inference Scaling of LLM Ensembling: Bridging Token Spaces with Token Translation</a>
+          <div class="pub-authors">Tianxin Wei, Zhichen Zeng, Ruizhong Qiu, <span class="me">Zhining Liu</span>, Xuying Ning, Xinrui He, Wenxuan Bao, Qi He, Xianfeng Tang, Hanghang Tong, Jingrui He</div>
+          <div class="pub-venue"><em>In submission, 2026</em></div>
+          <div class="pub-insight"><strong>Key Insight:</strong> Token translation bridges heterogeneous vocabularies so LLM ensembles can scale at inference time.</div>
+          <div class="pub-links"><a class="pub-link" href="https://openreview.net/forum?id=2bPyuL6Cda"><i class="fas fa-file-alt"></i> Paper</a></div>
+          <div class="pub-tags"><span class="tag tag-llm">LLM</span><span class="tag tag-ensemble">Ensemble</span><span class="tag tag-reasoning">Reasoning</span></div>
+        </li>
+        <li class="pub-item" data-tags="llm watermarking safety model-adaptation">
+          <a class="pub-title" href="https://arxiv.org/abs/2410.06467">WAPITI: A Watermark for Finetuned Open-Source LLMs</a>
+          <div class="pub-authors">Lingjie Chen, Ruizhong Qiu, Siyu Yuan, <span class="me">Zhining Liu</span>, Tianxin Wei, Hyunsik Yoo, Zhichen Zeng, Deqing Yang</div>
+          <div class="pub-venue"><em>In submission, 2026</em></div>
+          <div class="pub-insight"><strong>Key Insight:</strong> Finetuned open-source LLMs can retain detectable ownership signals without sacrificing utility.</div>
+          <div class="pub-links"><a class="pub-link" href="https://arxiv.org/abs/2410.06467"><i class="fas fa-file-alt"></i> Paper</a></div>
+          <div class="pub-tags"><span class="tag tag-llm">LLM</span><span class="tag tag-watermarking">Watermarking</span><span class="tag tag-safety">Safety</span><span class="tag tag-model-adaptation">Model-Adaptation</span></div>
+        </li>
+        <li class="pub-item" data-tags="llm ensemble reasoning model-adaptation">
+          <a class="pub-title" href="https://arxiv.org/abs/2601.06022">AdaFuse: Adaptive Ensemble Decoding for Large Language Models</a>
+          <div class="pub-authors">Chengming Cui, Tianxin Wei, Ziyi Chen, Ruizhong Qiu, Zhichen Zeng, <span class="me">Zhining Liu</span>, Xuying Ning, Duo Zhou, Jingrui He</div>
+          <div class="pub-venue"><em>ACL 2026 Main</em></div>
+          <div class="pub-insight"><strong>Key Insight:</strong> Adaptive ensemble decoding fuses multiple LLM outputs during generation for stronger test-time reasoning.</div>
+          <div class="pub-links"><a class="pub-link" href="https://arxiv.org/abs/2601.06022"><i class="fas fa-file-alt"></i> Paper</a><a class="pub-link" href="https://github.com/CCM0111/AdaFuse"><i class="fab fa-github"></i> Code</a></div>
+          <div class="pub-tags"><span class="tag tag-llm">LLM</span><span class="tag tag-ensemble">Ensemble</span><span class="tag tag-reasoning">Reasoning</span><span class="tag tag-model-adaptation">Model-Adaptation</span></div>
+        </li>
+        <li class="pub-item" data-tags="llm vlm multimodal benchmarking">
+          <a class="pub-title" href="https://arxiv.org/abs/2601.03515">Mem-Gallery: Benchmarking Multimodal Long-Term Conversational Memory for MLLM Agents</a>
+          <div class="pub-authors">Yuanchen Bei, Tianxin Wei, Xuying Ning, Yanjun Zhao, <span class="me">Zhining Liu</span>, Xiao Lin, Yada Zhu, Hendrik Hamann, Jingrui He, Hanghang Tong</div>
+          <div class="pub-venue"><em>ACL 2026 Main</em></div>
+          <div class="pub-insight"><strong>Key Insight:</strong> Multimodal agents still struggle to store, retrieve, and use long-term conversational memory.</div>
+          <div class="pub-links"><a class="pub-link" href="https://arxiv.org/abs/2601.03515"><i class="fas fa-file-alt"></i> Paper</a><a class="pub-link" href="https://github.com/YuanchenBei/Mem-Gallery"><i class="fab fa-github"></i> Code</a></div>
+          <div class="pub-tags"><span class="tag tag-llm">LLM</span><span class="tag tag-vlm">VLM</span><span class="tag tag-multimodal">Multimodal</span><span class="tag tag-benchmarking">Benchmarking</span></div>
+        </li>
+        <li class="pub-item" data-tags="class-imbalance tabular-data benchmarking">
+          <a class="pub-title" href="https://arxiv.org/abs/2505.17451">CLIMB: Class-imbalanced Learning Benchmark on Tabular Data</a>
+          <div class="pub-authors"><span class="me">Zhining Liu</span>, Zihao Li, Ze Yang, Tianxin Wei, Jian Kang, Yada Zhu, Hendrik Hamann, Jingrui He, Hanghang Tong</div>
+          <div class="pub-venue"><em>NeurIPS 2025</em></div>
+          <div class="pub-insight"><strong>Key Insight:</strong> A standardized benchmark exposes when class-imbalanced tabular methods actually generalize.</div>
+          <div class="pub-links"><a class="pub-link" href="https://arxiv.org/abs/2505.17451"><i class="fas fa-file-alt"></i> Paper</a><a class="pub-link" href="https://github.com/ZhiningLiu1998/imbalanced-ensemble"><i class="fab fa-github"></i> Code</a><a class="pub-link" href="https://imbalanced-ensemble.readthedocs.io/en/latest/"><i class="fas fa-book"></i> Docs</a></div>
+          <div class="pub-tags"><span class="tag tag-class-imbalance">Class-Imbalance</span><span class="tag tag-tabular-data">Tabular-Data</span><span class="tag tag-benchmarking">Benchmarking</span></div>
+        </li>
+        <li class="pub-item" data-tags="time-series ensemble meta-learning">
+          <a class="pub-title" href="https://arxiv.org/abs/2505.18442">Breaking Silos: Adaptive Model Fusion Unlocks Better Time Series Forecasting</a>
+          <div class="pub-authors"><span class="me">Zhining Liu</span>, Ze Yang, Xiao Lin, Ruizhong Qiu, Tianxin Wei, Yada Zhu, Hendrik Hamann, Jingrui He, Hanghang Tong</div>
+          <div class="pub-venue"><em>ICML 2025</em></div>
+          <div class="pub-insight"><strong>Key Insight:</strong> Sample-level adaptive fusion lets heterogeneous forecasters complement each other instead of competing in silos.</div>
+          <div class="pub-links"><a class="pub-link" href="https://arxiv.org/abs/2505.18442"><i class="fas fa-file-alt"></i> Paper</a><a class="pub-link" href="https://github.com/ZhiningLiu1998/TimeFuse"><i class="fab fa-github"></i> Code</a></div>
+          <div class="pub-tags"><span class="tag tag-time-series">Time-Series</span><span class="tag tag-ensemble">Ensemble</span><span class="tag tag-meta-learning">Meta-Learning</span></div>
+        </li>
+        <li class="pub-item" data-tags="llm reasoning retrieval">
+          <a class="pub-title" href="https://arxiv.org/abs/2502.08767">SelfElicit: Your Language Model Secretly Knows Where the Relevant Evidence is</a>
+          <div class="pub-authors"><span class="me">Zhining Liu</span>, Rana Ali Amjad, Ravinarayana Adkathimar, Tianxin Wei, Hanghang Tong</div>
+          <div class="pub-venue"><em>ACL 2025 Main</em></div>
+          <div class="pub-insight"><strong>Key Insight:</strong> LLMs can self-elicit where relevant evidence lies, reducing reliance on external retrieval heuristics.</div>
+          <div class="pub-links"><a class="pub-link" href="https://arxiv.org/abs/2502.08767"><i class="fas fa-file-alt"></i> Paper</a><a class="pub-link" href="https://github.com/ZhiningLiu1998/SelfElicit"><i class="fab fa-github"></i> Code</a></div>
+          <div class="pub-tags"><span class="tag tag-llm">LLM</span><span class="tag tag-reasoning">Reasoning</span><span class="tag tag-retrieval">Retrieval</span></div>
+        </li>
+        <li class="pub-item" data-tags="multimodal climate benchmarking">
+          <a class="pub-title" href="https://arxiv.org/abs/2504.07394">ClimateBench-M: A Multi-Modal Climate Data Benchmark with a Simple Generative Method</a>
+          <div class="pub-authors">Dongqi Fu, Yada Zhu, <span class="me">Zhining Liu</span>, Lecheng Zheng, Xiao Lin, Zihao Li, Liri Fang, Katherine Tieu, Onkar Bhardwaj, Kommy Weldemariam, Hanghang Tong, Hendrik Hamann, Jingrui He</div>
+          <div class="pub-venue"><em>CIKM 2025</em></div>
+          <div class="pub-insight"><strong>Key Insight:</strong> Climate modeling benefits from benchmarks that jointly test time-series, image, and generative signals.</div>
+          <div class="pub-links"><a class="pub-link" href="https://arxiv.org/abs/2504.07394"><i class="fas fa-file-alt"></i> Paper</a><a class="pub-link" href="https://github.com/iDEA-iSAIL-Lab-UIUC/ClimateBench-M"><i class="fab fa-github"></i> Code</a><a class="pub-link" href="https://huggingface.co/datasets/Violet24K/ClimateBench-M-TS"><i class="fas fa-database"></i> Dataset-TS</a><a class="pub-link" href="https://huggingface.co/datasets/Violet24K/ClimateBench-M-IMG"><i class="fas fa-database"></i> Dataset-IMG</a></div>
+          <div class="pub-tags"><span class="tag tag-multimodal">Multimodal</span><span class="tag tag-climate">Climate</span><span class="tag tag-benchmarking">Benchmarking</span></div>
+        </li>
+        <li class="pub-item" data-tags="llm reward-modeling fairness trustworthy-ai">
+          <a class="pub-title" href="https://aclanthology.org/2025.findings-emnlp.183/">Not All Voices Are Rewarded Equally: Probing and Repairing Reward Models across Human Diversity</a>
+          <div class="pub-authors">Zihao Li, Feihao Fang, Xitong Zhang, Jiaru Zou, <span class="me">Zhining Liu</span>, Wei Xiong, Ziwei Wu, Baoyu Jing, Jingrui He</div>
+          <div class="pub-venue"><em>EMNLP Findings 2025</em></div>
+          <div class="pub-insight"><strong>Key Insight:</strong> Reward models can encode demographic preference gaps, and targeted repair can reduce those disparities.</div>
+          <div class="pub-links"><a class="pub-link" href="https://aclanthology.org/2025.findings-emnlp.183/"><i class="fas fa-file-alt"></i> Paper</a><a class="pub-link" href="https://github.com/Violet24K/FaRM"><i class="fab fa-github"></i> Code</a></div>
+          <div class="pub-tags"><span class="tag tag-llm">LLM</span><span class="tag tag-reward-modeling">Reward-Modeling</span><span class="tag tag-fairness">Fairness</span><span class="tag tag-trustworthy-ai">Trustworthy-AI</span></div>
+        </li>
+        <li class="pub-item" data-tags="llm recommender-systems fairness">
+          <a class="pub-title" href="https://arxiv.org/abs/2501.19232">LLM-RecG: A Semantic Bias-Aware Framework for Zero-Shot Sequential Recommendation</a>
+          <div class="pub-authors">Yunzhe Li, Junting Wang, Hari Sundaram, <span class="me">Zhining Liu</span></div>
+          <div class="pub-venue"><em>RecSys 2025</em></div>
+          <div class="pub-insight"><strong>Key Insight:</strong> Semantic group information helps LLM recommenders recognize and reduce bias in zero-shot settings.</div>
+          <div class="pub-links"><a class="pub-link" href="https://arxiv.org/abs/2501.19232"><i class="fas fa-file-alt"></i> Paper</a><a class="pub-link" href="https://doi.org/10.1145/3705328.3748077"><i class="fas fa-file-alt"></i> ACM</a></div>
+          <div class="pub-tags"><span class="tag tag-llm">LLM</span><span class="tag tag-recommender-systems">Recommender-Systems</span><span class="tag tag-fairness">Fairness</span></div>
+        </li>
+        <li class="pub-item" data-tags="graph gnn model-adaptation">
+          <a class="pub-title" href="https://openreview.net/forum?id=EpgoFFUM2q">Matcha: Mitigating Graph Structure Shifts with Test-Time Adaptation</a>
+          <div class="pub-authors">Wenxuan Bao, Zhichen Zeng, <span class="me">Zhining Liu</span>, Hanghang Tong, Jingrui He</div>
+          <div class="pub-venue"><em>ICLR 2025</em></div>
+          <div class="pub-insight"><strong>Key Insight:</strong> Test-time adaptation can mitigate graph structure shifts without retraining on the target graph.</div>
+          <div class="pub-links"><a class="pub-link" href="https://openreview.net/forum?id=EpgoFFUM2q"><i class="fas fa-file-alt"></i> Paper</a><a class="pub-link" href="https://arxiv.org/abs/2410.06976"><i class="fas fa-file-alt"></i> arXiv</a><a class="pub-link" href="https://github.com/baowenxuan/Matcha"><i class="fab fa-github"></i> Code</a></div>
+          <div class="pub-tags"><span class="tag tag-graph">Graph</span><span class="tag tag-gnn">GNN</span><span class="tag tag-model-adaptation">Model-Adaptation</span></div>
+        </li>
+        <li class="pub-item" data-tags="graph gnn temporal-graph">
+          <a class="pub-title" href="https://arxiv.org/abs/2412.16435">THeGCN: Temporal Heterophilic Graph Convolutional Network</a>
+          <div class="pub-authors">Yuchen Yan, Yuzhong Chen, Huiyuan Chen, Xiaoting Li, Zhe Xu, Zhichen Zeng, Lihui Liu, <span class="me">Zhining Liu</span>, Hanghang Tong</div>
+          <div class="pub-venue"><em>In submission, 2026</em></div>
+          <div class="pub-insight"><strong>Key Insight:</strong> Temporal heterophily requires graph convolutions that model changing cross-class neighborhood patterns.</div>
+          <div class="pub-links"><a class="pub-link" href="https://arxiv.org/abs/2412.16435"><i class="fas fa-file-alt"></i> Paper</a></div>
+          <div class="pub-tags"><span class="tag tag-graph">Graph</span><span class="tag tag-gnn">GNN</span><span class="tag tag-temporal-graph">Temporal-Graph</span></div>
+        </li>
+        <li class="pub-item" data-tags="time-series safety trustworthy-ai">
+          <a class="pub-title" href="https://arxiv.org/abs/2410.02195">BackTime: Backdoor Attacks on Multivariate Time Series Forecasting</a>
+          <div class="pub-authors">Xiao Lin, <span class="me">Zhining Liu</span>, Dongqi Fu, Ruizhong Qiu, Hanghang Tong</div>
+          <div class="pub-venue"><em>NeurIPS 2024 Spotlight</em></div>
+          <div class="pub-insight"><strong>Key Insight:</strong> Time-series forecasters can be compromised by backdoor triggers embedded in multivariate temporal patterns.</div>
+          <div class="pub-links"><a class="pub-link" href="https://arxiv.org/abs/2410.02195"><i class="fas fa-file-alt"></i> Paper</a><a class="pub-link" href="https://github.com/xiaolin-cs/BackTime"><i class="fab fa-github"></i> Code</a></div>
+          <div class="pub-tags"><span class="tag tag-time-series">Time-Series</span><span class="tag tag-safety">Safety</span><span class="tag tag-trustworthy-ai">Trustworthy-AI</span></div>
+        </li>
+        <li class="pub-item" data-tags="fairness interpretability trustworthy-ai">
+          <a class="pub-title" href="https://arxiv.org/abs/2406.08819">AIM: Attributing, Interpreting, Mitigating Data-encoded Unfairness</a>
+          <div class="pub-authors"><span class="me">Zhining Liu</span>, Ruizhong Qiu, Zhichen Zeng, Yada Zhu, Hendrik Hamann, Hanghang Tong</div>
+          <div class="pub-venue"><em>KDD 2024</em></div>
+          <div class="pub-insight"><strong>Key Insight:</strong> Data-encoded unfairness can be attributed, interpreted, and mitigated before it becomes model behavior.</div>
+          <div class="pub-links"><a class="pub-link" href="https://arxiv.org/abs/2406.08819"><i class="fas fa-file-alt"></i> Paper</a><a class="pub-link" href="https://github.com/ZhiningLiu1998/AIM"><i class="fab fa-github"></i> Code</a></div>
+          <div class="pub-tags"><span class="tag tag-fairness">Fairness</span><span class="tag tag-interpretability">Interpretability</span><span class="tag tag-trustworthy-ai">Trustworthy-AI</span></div>
+        </li>
+        <li class="pub-item" data-tags="graph gnn class-imbalance">
+          <a class="pub-title" href="https://arxiv.org/abs/2308.14181">Class-Imbalanced Graph Learning without Class Rebalancing</a>
+          <div class="pub-authors"><span class="me">Zhining Liu</span>, Zhichen Zeng, Ruizhong Qiu, Hyunsik Yoo, David Zhou, Zhe Xu, Yada Zhu, Kommy Weldemariam, Jingrui He, Hanghang Tong</div>
+          <div class="pub-venue"><em>ICML 2024</em></div>
+          <div class="pub-insight"><strong>Key Insight:</strong> Bias-aware graph learning can handle class imbalance without naive resampling or class reweighting.</div>
+          <div class="pub-links"><a class="pub-link" href="https://arxiv.org/abs/2308.14181"><i class="fas fa-file-alt"></i> Paper</a><a class="pub-link" href="https://github.com/ZhiningLiu1998/BAT"><i class="fab fa-github"></i> Code</a></div>
+          <div class="pub-tags"><span class="tag tag-graph">Graph</span><span class="tag tag-gnn">GNN</span><span class="tag tag-class-imbalance">Class-Imbalance</span></div>
+        </li>
+        <li class="pub-item" data-tags="fairness trustworthy-ai">
+          <a class="pub-title" href="https://dl.acm.org/doi/10.1145/3630106.3659006">Group Fairness via Group Consensus</a>
+          <div class="pub-authors"><span class="me">Zhining Liu*</span>, Eunice Chan*, Ruizhong Qiu, Yuheng Zhang, Ross Maciejewski, Hanghang Tong</div>
+          <div class="pub-venue"><em>FAccT 2024</em></div>
+          <div class="pub-insight"><strong>Key Insight:</strong> Group consensus offers a practical fairness signal when protected groups disagree in complex ways.</div>
+          <div class="pub-links"><a class="pub-link" href="https://dl.acm.org/doi/10.1145/3630106.3659006"><i class="fas fa-file-alt"></i> Paper</a><a class="pub-link" href="https://facctconference.org/static/papers24/facct24-121.pdf"><i class="fas fa-file-pdf"></i> PDF</a></div>
+          <div class="pub-tags"><span class="tag tag-fairness">Fairness</span><span class="tag tag-trustworthy-ai">Trustworthy-AI</span></div>
+        </li>
+        <li class="pub-item" data-tags="graph gnn optimal-transport">
+          <a class="pub-title" href="https://openreview.net/forum?id=uwoG7uKJT6">Graph Mixup on Approximate Gromov-Wasserstein Geodesics</a>
+          <div class="pub-authors">Zhichen Zeng, Ruizhong Qiu, Zhe Xu, <span class="me">Zhining Liu</span>, Yuchen Yan, Tianxin Wei, Lei Ying, Jingrui He, Hanghang Tong</div>
+          <div class="pub-venue"><em>ICML 2024</em></div>
+          <div class="pub-insight"><strong>Key Insight:</strong> Gromov-Wasserstein geodesics create topology-aware graph mixup paths for stronger augmentation.</div>
+          <div class="pub-links"><a class="pub-link" href="https://openreview.net/forum?id=uwoG7uKJT6"><i class="fas fa-file-alt"></i> Paper</a><a class="pub-link" href="https://proceedings.mlr.press/v235/zeng24e.html"><i class="fas fa-file-alt"></i> PMLR</a><a class="pub-link" href="https://github.com/zhichenz98/GeoMix-ICML24"><i class="fab fa-github"></i> Code</a></div>
+          <div class="pub-tags"><span class="tag tag-graph">Graph</span><span class="tag tag-gnn">GNN</span><span class="tag tag-optimal-transport">Optimal-Transport</span></div>
+        </li>
+        <li class="pub-item" data-tags="fairness recommender-systems trustworthy-ai">
+          <a class="pub-title" href="https://dl.acm.org/doi/10.1145/3589334.3645536">Ensuring User-side Fairness in Dynamic Recommender Systems</a>
+          <div class="pub-authors">Hyunsik Yoo, Zhichen Zeng, Jian Kang, Ruizhong Qiu, David Zhou, <span class="me">Zhining Liu</span>, Fei Wang, Charlie Xu, Eunice Chan, Hanghang Tong</div>
+          <div class="pub-venue"><em>WWW 2024</em></div>
+          <div class="pub-insight"><strong>Key Insight:</strong> Dynamic recommenders need fairness constraints that evolve with users, items, and exposure patterns.</div>
+          <div class="pub-links"><a class="pub-link" href="https://dl.acm.org/doi/10.1145/3589334.3645536"><i class="fas fa-file-alt"></i> Paper</a><a class="pub-link" href="https://arxiv.org/abs/2308.15651"><i class="fas fa-file-alt"></i> arXiv</a><a class="pub-link" href="https://github.com/hsyoo32/fade"><i class="fab fa-github"></i> Code</a></div>
+          <div class="pub-tags"><span class="tag tag-fairness">Fairness</span><span class="tag tag-recommender-systems">Recommender-Systems</span><span class="tag tag-trustworthy-ai">Trustworthy-AI</span></div>
+        </li>
+        <li class="pub-item" data-tags="graph network-alignment optimal-transport">
+          <a class="pub-title" href="https://ojs.aaai.org/index.php/AAAI/article/view/29621">Hierarchical Multi-Marginal Optimal Transport for Network Alignment</a>
+          <div class="pub-authors">Zhichen Zeng, Boxin Du, Si Zhang, Yinglong Xia, <span class="me">Zhining Liu</span>, Hanghang Tong</div>
+          <div class="pub-venue"><em>AAAI 2024</em></div>
+          <div class="pub-insight"><strong>Key Insight:</strong> Hierarchical multi-marginal optimal transport aligns multiple networks through shared structural signals.</div>
+          <div class="pub-links"><a class="pub-link" href="https://ojs.aaai.org/index.php/AAAI/article/view/29621"><i class="fas fa-file-alt"></i> Paper</a><a class="pub-link" href="https://arxiv.org/abs/2310.04470"><i class="fas fa-file-alt"></i> arXiv</a></div>
+          <div class="pub-tags"><span class="tag tag-graph">Graph</span><span class="tag tag-network-alignment">Network-Alignment</span><span class="tag tag-optimal-transport">Optimal-Transport</span></div>
+        </li>
+        <li class="pub-item" data-tags="graph gnn trustworthy-ai">
+          <a class="pub-title" href="https://doi.org/10.1016/j.ins.2023.119463">Taming Over-Smoothing Representation on Heterophilic Graphs</a>
+          <div class="pub-authors">Kai Guo, Xiaofeng Cao, <span class="me">Zhining Liu</span>, Yi Chang</div>
+          <div class="pub-venue"><em>Information Sciences, 2023</em></div>
+          <div class="pub-insight"><strong>Key Insight:</strong> Heterophilic graphs require representation smoothing to be controlled rather than blindly increased.</div>
+          <div class="pub-links"><a class="pub-link" href="https://doi.org/10.1016/j.ins.2023.119463"><i class="fas fa-file-alt"></i> Paper</a></div>
+          <div class="pub-tags"><span class="tag tag-graph">Graph</span><span class="tag tag-gnn">GNN</span><span class="tag tag-trustworthy-ai">Trustworthy-AI</span></div>
+        </li>
+        <li class="pub-item" data-tags="healthcare time-series">
+          <a class="pub-title" href="https://dl.acm.org/doi/10.1145/3580305.3599545">Web-based Long-term Spine Treatment Outcome Forecasting</a>
+          <div class="pub-authors"><span class="me">Zhining Liu*</span>, Hangting Ye*, Wei Cao, Amir Mohammad Amiri, Jiang Bian, Yi Chang, Jon D. Lurie, Jim Weinstein, Tie-Yan Liu</div>
+          <div class="pub-venue"><em>KDD 2023</em></div>
+          <div class="pub-insight"><strong>Key Insight:</strong> Web-based modeling can support long-term spine treatment outcome forecasting from real clinical data.</div>
+          <div class="pub-links"><a class="pub-link" href="https://dl.acm.org/doi/10.1145/3580305.3599545"><i class="fas fa-file-alt"></i> Paper</a></div>
+          <div class="pub-tags"><span class="tag tag-healthcare">Healthcare</span><span class="tag tag-time-series">Time-Series</span></div>
+        </li>
+        <li class="pub-item" data-tags="anomaly-detection class-imbalance tabular-data">
+          <a class="pub-title" href="https://doi.org/10.1109/ICDE55515.2023.00200">UADB: Unsupervised Anomaly Detection Booster</a>
+          <div class="pub-authors"><span class="me">Zhining Liu*</span>, Hangting Ye*, Xinyi Shen, Wei Cao, Shun Zheng, Xiaofan Gui, Huishuai Zhang, Yi Chang, Jiang Bian</div>
+          <div class="pub-venue"><em>ICDE 2023</em></div>
+          <div class="pub-insight"><strong>Key Insight:</strong> A boosting wrapper can improve unsupervised anomaly detectors without relying on anomaly labels.</div>
+          <div class="pub-links"><a class="pub-link" href="https://doi.org/10.1109/ICDE55515.2023.00200"><i class="fas fa-file-alt"></i> Paper</a><a class="pub-link" href="https://arxiv.org/abs/2306.01997"><i class="fas fa-file-alt"></i> arXiv</a><a class="pub-link" href="https://github.com/HangtingYe/UADB"><i class="fab fa-github"></i> Code</a></div>
+          <div class="pub-tags"><span class="tag tag-anomaly-detection">Anomaly-Detection</span><span class="tag tag-class-imbalance">Class-Imbalance</span><span class="tag tag-tabular-data">Tabular-Data</span></div>
+        </li>
+        <li class="pub-item" data-tags="graph gnn interpretability survey">
+          <a class="pub-title" href="https://doi.org/10.1109/BigData55660.2022.10020943">A Survey of Explainable Graph Neural Networks for Cyber Malware Analysis</a>
+          <div class="pub-authors">Dana Warmsley, Alex Waagen, Jiejun Xu, <span class="me">Zhining Liu</span>, Hanghang Tong</div>
+          <div class="pub-venue"><em>IEEE BigData 2022</em></div>
+          <div class="pub-insight"><strong>Key Insight:</strong> Explainable GNN techniques can make cyber malware analysis more transparent and actionable.</div>
+          <div class="pub-links"><a class="pub-link" href="https://doi.org/10.1109/BigData55660.2022.10020943"><i class="fas fa-file-alt"></i> Paper</a><a class="pub-link" href="https://experts.illinois.edu/en/publications/a-survey-of-explainable-graph-neural-networks-for-cyber-malware-a/"><i class="fas fa-link"></i> Info</a></div>
+          <div class="pub-tags"><span class="tag tag-graph">Graph</span><span class="tag tag-gnn">GNN</span><span class="tag tag-interpretability">Interpretability</span><span class="tag tag-survey">Survey</span></div>
+        </li>
+        <li class="pub-item" data-tags="class-imbalance ensemble meta-learning">
+          <a class="pub-title" href="https://arxiv.org/abs/2010.08830">MESA: Boost Ensemble Imbalanced Learning with Meta-sampler</a>
+          <div class="pub-authors"><span class="me">Zhining Liu</span>, Pengfei Wei, Jing Jiang, Wei Cao, Jiang Bian, Yi Chang</div>
+          <div class="pub-venue"><em>NeurIPS 2020</em></div>
+          <div class="pub-insight"><strong>Key Insight:</strong> A meta-sampler can learn how to construct better ensemble training sets for imbalanced data.</div>
+          <div class="pub-links"><a class="pub-link" href="https://arxiv.org/abs/2010.08830"><i class="fas fa-file-alt"></i> Paper</a><a class="pub-link" href="https://github.com/ZhiningLiu1998/mesa"><i class="fab fa-github"></i> Code</a><a class="pub-link" href="https://zhuanlan.zhihu.com/p/268539195"><i class="fas fa-pen"></i> Zhihu</a></div>
+          <div class="pub-tags"><span class="tag tag-class-imbalance">Class-Imbalance</span><span class="tag tag-ensemble">Ensemble</span><span class="tag tag-meta-learning">Meta-Learning</span></div>
+        </li>
+        <li class="pub-item" data-tags="class-imbalance ensemble tabular-data">
+          <a class="pub-title" href="https://arxiv.org/abs/1909.03500">Self-paced Ensemble for Highly Imbalanced Massive Data Classification</a>
+          <div class="pub-authors"><span class="me">Zhining Liu</span>, Wei Cao, Zhifeng Gao, Jiang Bian, Hechang Chen, Yi Chang, Tie-Yan Liu</div>
+          <div class="pub-venue"><em>ICDE 2020</em></div>
+          <div class="pub-insight"><strong>Key Insight:</strong> Self-paced sampling lets ensembles learn from massive imbalanced data from easy cases to harder ones.</div>
+          <div class="pub-links"><a class="pub-link" href="https://arxiv.org/abs/1909.03500"><i class="fas fa-file-alt"></i> Paper</a><a class="pub-link" href="https://github.com/ZhiningLiu1998/self-paced-ensemble"><i class="fab fa-github"></i> Code</a><a class="pub-link" href="https://zhuanlan.zhihu.com/p/86891438"><i class="fas fa-pen"></i> Zhihu</a></div>
+          <div class="pub-tags"><span class="tag tag-class-imbalance">Class-Imbalance</span><span class="tag tag-ensemble">Ensemble</span><span class="tag tag-tabular-data">Tabular-Data</span></div>
+        </li>
+      </ul>
+      <button class="pub-show-all" id="pubShowAll" type="button"></button>
+    </section>
+
+    <section id="awards">
+      <h2 class="section-title">Selected Awards & Honors</h2>
+      <div class="awards-grid">
+        <div class="award-item"><strong>C.L. and Jane Liu Award</strong><br>UIUC, 2025</div>
+        <div class="award-item"><strong>Top 10 Honorary Graduates (Highest Honor)</strong><br>Jilin University, 2022</div>
+        <div class="award-item"><strong>National Scholarship</strong><br>Ministry of Education of China, 2020</div>
+        <div class="award-item"><strong>National Scholarship</strong><br>Ministry of Education of China, 2019</div>
+      </div>
+    </section>
+
+    <section id="gallery">
+      <h2 class="section-title">Gallery</h2>
+      <div class="gallery-grid" id="galleryGrid"></div>
+      <button class="gallery-show-more" id="galleryShowMore" type="button"></button>
+    </section>
+
+    <section id="fun-facts">
+      <h2 class="section-title">Fun Facts</h2>
+      <div class="fun-facts-grid">
+        <div class="fun-fact"><strong>🌿 My Name</strong><br>In Chinese, "Zhi Ning" has a gently feminine feeling: Zhi (芷) means fragrant herb, and ning (宁) means peace and tranquility. Many friends once expected to meet a cute girl because of the name, and were mildly disappointed when we actually met.</div>
+        <div class="fun-fact"><strong>🎮 Games</strong><br>I enjoy nearly every kind of video game (but not necessarily good at them): shooters, strategy, 4X, RPGs, roguelikes, and more. Favorites include Battlefield, Civilization, Stellaris, GTA, The Witcher, DiRT, Homeworld, Metro, BioShock, and Borderlands.</div>
+        <div class="fun-fact"><strong>🎨 Making Things</strong><br>Making things look nice and satisfying, from this page to paper figures, makes me happy. Drawing was one of my favorite things before my twenties, and I may have been better suited to design than computer science.</div>
+      </div>
+    </section>
+  </main>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
+
+  <div class="lightbox" id="lightbox" aria-modal="true" role="dialog">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close">&times;</button>
+    <button class="lightbox-prev" id="lightboxPrev" aria-label="Previous photo">&#8249;</button>
+    <img id="lightboxImg" src="" alt="">
+    <button class="lightbox-next" id="lightboxNext" aria-label="Next photo">&#8250;</button>
+    <div class="lightbox-caption" id="lightboxCaption"></div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="site-analytics">
+        <strong>Site Analytics</strong>
+        <script type="text/javascript" id="clustrmaps" src="https://cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=386&t=tt&d=s7da3uibCWrEACtenkU2Dnw2AuuAP4rk7LBtrM3J70k&co=2c3e50"></script>
+        <noscript><a href="https://clustrmaps.com/site/1c3dc" title="Visit tracker">View visitor map</a></noscript>
+      </div>
+      <div>© <span id="year"></span> Zhining Liu. Built as a lightweight static homepage.</div>
+    </div>
+  </footer>
+
+  <script>
+    const sections = Array.from(document.querySelectorAll("main section[id]"));
+    const navLinks = Array.from(document.querySelectorAll(".nav-links a"));
+    const backToTop = document.getElementById("backToTop");
+
+    function setActiveNav() {
+      const scrollPosition = window.scrollY + 120;
+      let activeId = sections[0].id;
+      sections.forEach(section => {
+        if (section.offsetTop <= scrollPosition) activeId = section.id;
+      });
+      navLinks.forEach(link => {
+        link.classList.toggle("active", link.getAttribute("href") === "#" + activeId);
+      });
+      backToTop.classList.toggle("visible", window.scrollY > 500);
+    }
+
+    window.addEventListener("scroll", setActiveNav, { passive: true });
+    setActiveNav();
+
+    backToTop.addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    const filterButtons = Array.from(document.querySelectorAll(".filter-btn"));
+    const pubItems = Array.from(document.querySelectorAll(".pub-item"));
+    const pubShowAll = document.getElementById("pubShowAll");
+    const maxCollapsedPapers = 10;
+    let activePublicationFilter = "all";
+    let publicationsExpanded = false;
+
+    function getFilteredPublications(filter) {
+      return filter === "all"
+        ? pubItems
+        : pubItems.filter(item => item.dataset.tags.split(" ").includes(filter));
+    }
+
+    function applyPublicationFilter() {
+      const filteredItems = getFilteredPublications(activePublicationFilter);
+      const visibleLimit = publicationsExpanded ? filteredItems.length : maxCollapsedPapers;
+
+      pubItems.forEach(item => item.classList.add("hidden"));
+      filteredItems.forEach((item, index) => {
+        item.classList.toggle("hidden", index >= visibleLimit);
+      });
+
+      const shouldCollapse = filteredItems.length > maxCollapsedPapers && !publicationsExpanded;
+      pubShowAll.classList.toggle("visible", shouldCollapse);
+      pubShowAll.textContent = `Show all ${filteredItems.length} papers`;
+    }
+
+    filterButtons.forEach(button => {
+      const filter = button.dataset.filter;
+      const count = getFilteredPublications(filter).length;
+      button.insertAdjacentHTML("beforeend", ` <span class="filter-count">(${count})</span>`);
+      button.addEventListener("click", () => {
+        filterButtons.forEach(item => item.classList.remove("active"));
+        button.classList.add("active");
+        activePublicationFilter = filter;
+        publicationsExpanded = false;
+        applyPublicationFilter();
+      });
+    });
+
+    pubShowAll.addEventListener("click", () => {
+      publicationsExpanded = true;
+      applyPublicationFilter();
+    });
+    applyPublicationFilter();
+
+    const galleryPhotos = [
+      { src: "images/gallery/2026 Aomori.JPG", caption: "Aomori, 2026" },
+      { src: "images/gallery/2026 Hachinohe.jpg", caption: "Hachinohe, 2026" },
+      { src: "images/gallery/2025 Budapest (2).JPG", caption: "Budapest, 2025" },
+      { src: "images/gallery/2025 Budapest.JPG", caption: "Budapest, 2025" },
+      { src: "images/gallery/2025 Champaign.jpg", caption: "Champaign, 2025" },
+      { src: "images/gallery/2025 San Diego (2).JPG", caption: "San Diego, 2025" },
+      { src: "images/gallery/2025 San Diego.JPG", caption: "San Diego, 2025" },
+      { src: "images/gallery/2025 San Francisco (2).JPG", caption: "San Francisco, 2025" },
+      { src: "images/gallery/2025 San Francisco (3).JPG", caption: "San Francisco, 2025" },
+      { src: "images/gallery/2025 San Francisco.jpg", caption: "San Francisco, 2025" },
+      { src: "images/gallery/2025 San Jose.JPG", caption: "San Jose, 2025" },
+      { src: "images/gallery/2025 Vancouver (2).JPG", caption: "Vancouver, 2025" },
+      { src: "images/gallery/2025 Vancouver.JPG", caption: "Vancouver, 2025" },
+      { src: "images/gallery/2024 Champaign , IL.JPG", caption: "Champaign, IL, 2024" },
+      { src: "images/gallery/2024 Kyoto.JPG", caption: "Kyoto, 2024" },
+      { src: "images/gallery/2024 Lake Tahoe.jpg", caption: "Lake Tahoe, 2024" },
+      { src: "images/gallery/2024 Osaka.JPG", caption: "Osaka, 2024" },
+      { src: "images/gallery/2024 Prague (2).JPG", caption: "Prague, 2024" },
+      { src: "images/gallery/2024 Prague.JPG", caption: "Prague, 2024" },
+      { src: "images/gallery/2024 Tokyo (2).JPG", caption: "Tokyo, 2024" },
+      { src: "images/gallery/2024 Tokyo (3).jpg", caption: "Tokyo, 2024" },
+      { src: "images/gallery/2022 Chengdu.JPG", caption: "Chengdu, 2022" },
+      { src: "images/gallery/2022 Chongqing (2).JPG", caption: "Chongqing, 2022" },
+      { src: "images/gallery/2022 Shangri-La.JPG", caption: "Shangri-La, 2022" },
+      { src: "images/gallery/2022 Shenzhen (2).jpg", caption: "Shenzhen, 2022" },
+      { src: "images/gallery/2022 Shenzhen (3).JPG", caption: "Shenzhen, 2022" },
+      { src: "images/gallery/2022 Shenzhen.jpg", caption: "Shenzhen, 2022" },
+      { src: "images/gallery/2021 Chongqing.JPG", caption: "Chongqing, 2021" },
+      { src: "images/gallery/2021 Suzhou.JPG", caption: "Suzhou, 2021" },
+      { src: "images/gallery/2020 Changchun.JPG", caption: "Changchun, 2020" },
+      { src: "images/gallery/2019 Beijing Friends at MSRA.jpg", caption: "Beijing, Friends at MSRA, 2019" },
+      { src: "images/gallery/2019 Changchun.JPG", caption: "Changchun, 2019" },
+      { src: "images/gallery/2019 Phuket Thailand.JPG", caption: "Phuket, Thailand, 2019" }
+    ];
+
+    const galleryGrid = document.getElementById("galleryGrid");
+    const galleryShowMore = document.getElementById("galleryShowMore");
+    const lightbox = document.getElementById("lightbox");
+    const lightboxImg = document.getElementById("lightboxImg");
+    const lightboxCaption = document.getElementById("lightboxCaption");
+    const initialGalleryCount = 15;
+    const galleryBatchSize = 10;
+    let visibleGalleryCount = Math.min(initialGalleryCount, galleryPhotos.length);
+    let currentPhoto = 0;
+
+    function openLightbox(index) {
+      currentPhoto = index;
+      const photo = galleryPhotos[currentPhoto];
+      lightboxImg.src = photo.src;
+      lightboxImg.alt = photo.caption;
+      lightboxCaption.textContent = `${currentPhoto + 1} / ${visibleGalleryCount} - ${photo.caption}`;
+      lightbox.classList.add("active");
+      document.body.style.overflow = "hidden";
+    }
+
+    function closeLightbox() {
+      lightbox.classList.remove("active");
+      lightboxImg.src = "";
+      document.body.style.overflow = "";
+    }
+
+    function moveLightbox(direction) {
+      currentPhoto = (currentPhoto + direction + visibleGalleryCount) % visibleGalleryCount;
+      openLightbox(currentPhoto);
+    }
+
+    function renderGallery() {
+      galleryGrid.innerHTML = "";
+      galleryPhotos.slice(0, visibleGalleryCount).forEach((photo, index) => {
+        const item = document.createElement("button");
+        item.className = "gallery-item";
+        item.type = "button";
+        item.innerHTML = `<img src="${photo.src}" alt="${photo.caption}" loading="lazy"><span>${photo.caption}</span>`;
+        item.addEventListener("click", () => openLightbox(index));
+        galleryGrid.appendChild(item);
+      });
+      const remainingImages = galleryPhotos.length - visibleGalleryCount;
+      galleryShowMore.classList.toggle("visible", remainingImages > 0);
+      galleryShowMore.textContent = `Show 10 more (${remainingImages} remaining)`;
+    }
+
+    galleryShowMore.addEventListener("click", () => {
+      visibleGalleryCount = Math.min(visibleGalleryCount + galleryBatchSize, galleryPhotos.length);
+      renderGallery();
+    });
+    renderGallery();
+
+    document.getElementById("lightboxClose").addEventListener("click", closeLightbox);
+    document.getElementById("lightboxPrev").addEventListener("click", () => moveLightbox(-1));
+    document.getElementById("lightboxNext").addEventListener("click", () => moveLightbox(1));
+    lightbox.addEventListener("click", event => {
+      if (event.target === lightbox) closeLightbox();
+    });
+    document.addEventListener("keydown", event => {
+      if (!lightbox.classList.contains("active")) return;
+      if (event.key === "Escape") closeLightbox();
+      if (event.key === "ArrowLeft") moveLightbox(-1);
+      if (event.key === "ArrowRight") moveLightbox(1);
+    });
+  </script>
+</body>
+</html>
