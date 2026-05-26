@@ -557,12 +557,12 @@
       overflow: hidden;
       padding: 0;
       position: relative;
-      transition: transform 0.25s ease, box-shadow 0.25s ease;
+      transition: border-color 0.18s ease, transform 0.18s ease;
     }
 
     .gallery-item:hover {
-      box-shadow: var(--shadow);
-      transform: scale(1.03);
+      border-color: rgba(18, 79, 143, 0.45);
+      transform: translateY(-1px);
     }
 
     .gallery-item img {
@@ -583,7 +583,7 @@
       opacity: 0;
       padding: 10px;
       position: absolute;
-      transition: opacity 0.2s ease;
+      transition: opacity 0.18s ease;
     }
 
     .gallery-item:hover span { opacity: 1; }
@@ -787,7 +787,7 @@
         <div class="hero-links">
           <a class="pill-link" href="files/Resume_ZhiningLiu.pdf"><i class="fas fa-file-lines"></i> CV</a>
           <a class="pill-link" href="mailto:zhining.liu@outlook.com"><i class="fas fa-envelope"></i> Email</a>
-          <a class="pill-link" href="https://scholar.google.com/citations?user=5WORAUQAAAAJ&hl=zh-CN"><i class="fas fa-graduation-cap"></i> Scholar</a>
+          <a class="pill-link" href="https://scholar.google.com/citations?user=5WORAUQAAAAJ"><i class="fas fa-graduation-cap"></i> Scholar</a>
           <a class="pill-link" href="https://github.com/ZhiningLiu1998"><i class="fab fa-github"></i> GitHub</a>
           <a class="pill-link" href="https://www.linkedin.com/in/zhiningliu/"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
           <a class="pill-link" href="https://www.zhihu.com/people/liu-zhi-zhu-14"><i class="fa-solid fa-z"></i> Zhihu</a>
@@ -1417,13 +1417,17 @@
       openLightbox(currentPhoto);
     }
 
+    function thumbnailSrc(src) {
+      return src.replace("images/gallery/", "images/gallery/thumbs/").replace(/\.[^.]+$/, ".jpg");
+    }
+
     function renderGallery() {
       galleryGrid.innerHTML = "";
       galleryPhotos.slice(0, visibleGalleryCount).forEach((photo, index) => {
         const item = document.createElement("button");
         item.className = "gallery-item";
         item.type = "button";
-        item.innerHTML = `<img src="${photo.src}" alt="${photo.caption}" loading="lazy"><span>${photo.caption}</span>`;
+        item.innerHTML = `<img src="${thumbnailSrc(photo.src)}" data-full-src="${photo.src}" alt="${photo.caption}" loading="lazy" decoding="async"><span>${photo.caption}</span>`;
         item.addEventListener("click", () => openLightbox(index));
         galleryGrid.appendChild(item);
       });
