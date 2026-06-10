@@ -639,6 +639,45 @@
       padding-top: 2px;
     }
 
+    .gallery-heading {
+      align-items: center;
+      display: flex;
+      gap: 14px;
+      justify-content: space-between;
+      margin-bottom: 24px;
+    }
+
+    .gallery-heading .section-title {
+      margin-bottom: 0;
+    }
+
+    .gallery-view-toggle {
+      background: #f4f8fc;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      display: flex;
+      gap: 2px;
+      padding: 3px;
+    }
+
+    .gallery-view-toggle button {
+      background: transparent;
+      border: 0;
+      border-radius: 999px;
+      color: var(--muted);
+      cursor: pointer;
+      font-family: inherit;
+      font-size: 13px;
+      font-weight: 700;
+      padding: 6px 12px;
+    }
+
+    .gallery-view-toggle button.active {
+      background: #fff;
+      color: var(--blue);
+      box-shadow: 0 2px 8px rgba(12, 44, 77, 0.08);
+    }
+
     .gallery-item {
       aspect-ratio: 1;
       background: transparent;
@@ -681,26 +720,137 @@
 
     .gallery-item:hover span { opacity: 1; }
 
-    .gallery-show-more {
+    .gallery-city-card {
+      --city-overlay-opacity: 0.28;
+      background: #f5f9fc;
+      border-color: rgba(18, 79, 143, 0.18);
+      color: var(--ink);
+    }
+
+    .gallery-city-card::after {
+      background: rgba(0, 0, 0, var(--city-overlay-opacity));
+      content: "";
+      inset: 0;
+      position: absolute;
+      transition: background 0.2s ease;
+    }
+
+    .gallery-city-card .gallery-city-label {
+      align-items: center;
+      background: transparent;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 17px;
+      font-weight: 800;
+      gap: 3px;
+      inset: 0;
+      justify-content: center;
+      line-height: 1.2;
+      opacity: 1;
+      padding: 18px;
+      position: absolute;
+      text-align: center;
+      text-shadow: 0 1px 3px rgba(0, 0, 0, 0.72), 0 4px 18px rgba(0, 0, 0, 0.70), 0 0 42px rgba(0, 0, 0, 0.46);
+      transition: transform 0.18s ease;
+      z-index: 2;
+    }
+
+    .gallery-city-card .gallery-city-region {
+      background: transparent;
+      display: block;
+      font-size: 12px;
+      font-weight: 700;
+      inset: auto;
+      opacity: 1;
+      padding: 0;
+      position: static;
+      transition: none;
+    }
+
+    .gallery-city-card .gallery-city-title {
+      font-size: 17px;
+      font-weight: 800;
+    }
+
+    .gallery-city-card .gallery-city-label span {
+      background: transparent;
+      display: block;
+      inset: auto;
+      opacity: 1;
+      padding: 0;
+      position: static;
+      transition: none;
+    }
+
+    .gallery-city-card .gallery-city-meta {
+      align-items: center;
+      background: transparent;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      font-size: 12px;
+      font-weight: 700;
+      gap: 2px;
+      inset: 0;
+      justify-content: center;
+      opacity: 0;
+      padding: 64px 10px 10px;
+      position: absolute;
+      text-align: center;
+      text-shadow: 0 1px 3px rgba(0, 0, 0, 0.76), 0 4px 16px rgba(0, 0, 0, 0.70), 0 0 38px rgba(0, 0, 0, 0.44);
+      transition: opacity 0.18s ease, transform 0.18s ease;
+      transform: translateY(8px);
+      z-index: 2;
+    }
+
+    .gallery-city-card .gallery-city-meta span {
+      background: transparent;
+      display: block;
+      inset: auto;
+      opacity: 1;
+      padding: 0;
+      position: static;
+      transition: none;
+    }
+
+    .gallery-city-card:hover .gallery-city-label { transform: translateY(-18px); }
+
+    .gallery-city-card:hover .gallery-city-meta {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .gallery-actions {
+      display: none;
+      gap: 10px;
+      justify-content: center;
+      margin-top: 18px;
+    }
+
+    .gallery-actions.visible { display: flex; }
+
+    .gallery-show-more,
+    .gallery-show-all,
+    .gallery-show-all-locations {
       background: var(--ink);
       border: 0;
       border-radius: 999px;
       color: #fff;
       cursor: pointer;
-      display: none;
       font-size: 14px;
       font-weight: 700;
-      margin: 18px auto 0;
       padding: 10px 18px;
       transition: background 0.2s ease, transform 0.2s ease;
     }
 
-    .gallery-show-more:hover {
+    .gallery-show-more:hover,
+    .gallery-show-all:hover,
+    .gallery-show-all-locations:hover {
       background: var(--blue);
       transform: translateY(-1px);
     }
-
-    .gallery-show-more.visible { display: block; }
 
     .lightbox {
       align-items: center;
@@ -866,6 +1016,11 @@
       .container,
       .nav-inner { padding-left: 20px; padding-right: 20px; }
       h1 { font-size: 38px; }
+      .gallery-heading {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 8px;
+      }
       .hero-photo > img { height: 180px; width: 180px; }
       .hero-badges {
         gap: 6px;
@@ -1393,9 +1548,19 @@
     </section>
 
     <section id="gallery">
-      <h2 class="section-title">Gallery</h2>
+      <div class="gallery-heading">
+        <h2 class="section-title">Gallery</h2>
+        <div class="gallery-view-toggle" aria-label="Gallery view">
+          <button class="active" type="button" data-gallery-view="location">Location</button>
+          <button type="button" data-gallery-view="time">Time</button>
+        </div>
+      </div>
       <div class="gallery-grid" id="galleryGrid"></div>
-      <button class="gallery-show-more" id="galleryShowMore" type="button"></button>
+      <div class="gallery-actions" id="galleryActions">
+        <button class="gallery-show-more" id="galleryShowMore" type="button"></button>
+        <button class="gallery-show-all" id="galleryShowAll" type="button">Show all</button>
+        <button class="gallery-show-all-locations" id="galleryShowAllLocations" type="button">Show all locations</button>
+      </div>
     </section>
 
     <section id="fun-facts">
@@ -1578,38 +1743,105 @@
       { src: "images/gallery/processed/202407 Prague (2).JPG", caption: "Prague, Czech Republic, 2024" },
       { src: "images/gallery/processed/202407 Prague.JPG", caption: "Prague, Czech Republic, 2024" },
       { src: "images/gallery/processed/202407 Lake Tahoe.jpg", caption: "Lake Tahoe, CA, 2024" },
+      { src: "images/gallery/processed/202407 Lake Tahoe (2).jpg", caption: "Lake Tahoe, CA, 2024" },
+      { src: "images/gallery/processed/202406 Half Moon Bay.jpg", caption: "Half Moon Bay, CA, 2024" },
+      { src: "images/gallery/processed/202406 Half Moon Bay (2).jpg", caption: "Half Moon Bay, CA, 2024" },
+      { src: "images/gallery/processed/202406 Monterey (2).jpg", caption: "Monterey, CA, 2024" },
+      { src: "images/gallery/processed/202406 Monterey.jpg", caption: "Monterey, CA, 2024" },
+      { src: "images/gallery/processed/202406 Santa Clara.jpg", caption: "Santa Clara, CA, 2024" },
+      { src: "images/gallery/processed/202406 Monterey (3).jpg", caption: "Monterey, CA, 2024" },
       { src: "images/gallery/processed/202405 Half Moon Bay.JPG", caption: "Half Moon Bay, CA, 2024" },
+      { src: "images/gallery/processed/202312 Istanbul (3).jpg", caption: "Istanbul, Turkey, 2023" },
+      { src: "images/gallery/processed/202312 Istanbul (2).jpg", caption: "Istanbul, Turkey, 2023" },
+      { src: "images/gallery/processed/202312 Istanbul.jpg", caption: "Istanbul, Turkey, 2023" },
+      { src: "images/gallery/processed/202308 Seattle.jpg", caption: "Seattle, WA, 2023" },
+      { src: "images/gallery/processed/202308 Los Angeles.jpg", caption: "Los Angeles, CA, 2023" },
+      { src: "images/gallery/processed/202308 Los Angeles (2).jpg", caption: "Los Angeles, CA, 2023" },
+      { src: "images/gallery/processed/202307 Seattle.jpg", caption: "Seattle, WA, 2023" },
+      { src: "images/gallery/processed/202306 Seattle.jpg", caption: "Seattle, WA, 2023" },
+      { src: "images/gallery/processed/202306 Seattle (2).jpg", caption: "Seattle, WA, 2023" },
+      { src: "images/gallery/processed/202305 Seattle.jpg", caption: "Seattle, WA, 2023" },
+      { src: "images/gallery/processed/202210 Champaign.JPG", caption: "Champaign, IL, 2022" },
+      { src: "images/gallery/processed/202210 Champaign (2).JPG", caption: "Champaign, IL, 2022" },
+      { src: "images/gallery/processed/202207 Chengdu (2).JPG", caption: "Chengdu, China, 2022" },
+      { src: "images/gallery/processed/202207 Chongqing (3).JPG", caption: "Chongqing, China, 2022" },
+      { src: "images/gallery/processed/202207 Shangri-La.JPG", caption: "Shangri-La, China, 2022" },
+      { src: "images/gallery/processed/202207 Shangri-La (2).JPG", caption: "Shangri-La, China, 2022" },
+      { src: "images/gallery/processed/202207 Shangri-La (3).JPG", caption: "Shangri-La, China, 2022" },
+      { src: "images/gallery/processed/202207 Shangri-La (4).JPG", caption: "Shangri-La, China, 2022" },
       { src: "images/gallery/processed/202207 Chengdu.JPG", caption: "Chengdu, China, 2022" },
       { src: "images/gallery/processed/202207 Chongqing (2).JPG", caption: "Chongqing, China, 2022" },
-      { src: "images/gallery/processed/202207 Shangri-La.JPG", caption: "Shangri-La, China, 2022" },
+      { src: "images/gallery/processed/202206 Dali (2).JPG", caption: "Dali, China, 2022" },
+      { src: "images/gallery/processed/202206 Dali.jpg", caption: "Dali, China, 2022" },
+      { src: "images/gallery/processed/202206 Handan.jpg", caption: "Handan, China, 2022" },
+      { src: "images/gallery/processed/202205 Wuhan.JPG", caption: "Wuhan, China, 2022" },
+      { src: "images/gallery/processed/202205 Wuhan (2).jpg", caption: "Wuhan, China, 2022" },
+      { src: "images/gallery/processed/202205 Shenzhen (4).jpg", caption: "Shenzhen, China, 2022" },
+      { src: "images/gallery/processed/202205 Shenzhen (5).JPG", caption: "Shenzhen, China, 2022" },
       { src: "images/gallery/processed/202205 Shenzhen.jpg", caption: "Shenzhen, China, 2022" },
       { src: "images/gallery/processed/202205 Shenzhen (3).JPG", caption: "Shenzhen, China, 2022" },
       { src: "images/gallery/processed/202205 Shenzhen (2).jpg", caption: "Shenzhen, China, 2022" },
+      { src: "images/gallery/processed/202200 Chicago.jpeg", caption: "Chicago, IL, 2022" },
+      { src: "images/gallery/processed/202112 Changchun.jpg", caption: "Changchun, China, 2021" },
+      { src: "images/gallery/processed/202106 Chongqing (2).JPG", caption: "Chongqing, China, 2021" },
+      { src: "images/gallery/processed/202106 Chongqing (3).JPG", caption: "Chongqing, China, 2021" },
+      { src: "images/gallery/processed/202106 Chongqing (4).JPG", caption: "Chongqing, China, 2021" },
       { src: "images/gallery/processed/202106 Chongqing.JPG", caption: "Chongqing, China, 2021" },
+      { src: "images/gallery/processed/202106 Chengdu.JPG", caption: "Chengdu, China, 2021" },
+      { src: "images/gallery/processed/202106 Chengdu (2).JPG", caption: "Chengdu, China, 2021" },
+      { src: "images/gallery/processed/202103 Shanghai.JPG", caption: "Shanghai, China, 2021" },
+      { src: "images/gallery/processed/202103 Shanghai (2).JPG", caption: "Shanghai, China, 2021" },
+      { src: "images/gallery/processed/202103 Shanghai (3).JPG", caption: "Shanghai, China, 2021" },
       { src: "images/gallery/processed/202103 Suzhou.JPG", caption: "Suzhou, China, 2021" },
+      { src: "images/gallery/processed/202103 Suzhou (2).JPG", caption: "Suzhou, China, 2021" },
+      { src: "images/gallery/processed/202103 Suzhou (3).JPG", caption: "Suzhou, China, 2021" },
+      { src: "images/gallery/processed/202103 Nanjing.JPG", caption: "Nanjing, China, 2021" },
+      { src: "images/gallery/processed/202103 Nanjing (2).JPG", caption: "Nanjing, China, 2021" },
+      { src: "images/gallery/processed/202103 Nanjing (3).jpg", caption: "Nanjing, China, 2021" },
+      { src: "images/gallery/processed/202101 Changchun.JPG", caption: "Changchun, China, 2021" },
+      { src: "images/gallery/processed/202011 Changchun (2).JPG", caption: "Changchun, China, 2020" },
       { src: "images/gallery/processed/202011 Changchun.JPG", caption: "Changchun, China, 2020" },
+      { src: "images/gallery/processed/202011 Changchun (3).JPG", caption: "Changchun, China, 2020" },
+      { src: "images/gallery/processed/202004 Handan.JPG", caption: "Handan, China, 2020" },
+      { src: "images/gallery/processed/201912 Changchun (2).JPG", caption: "Changchun, China, 2019" },
       { src: "images/gallery/processed/201912 Changchun.JPG", caption: "Changchun, China, 2019" },
       { src: "images/gallery/processed/201907 Phuket Thailand.JPG", caption: "Phuket, Thailand, 2019" },
-      { src: "images/gallery/processed/201906 Beijing.jpg", caption: "Beijing, China, 2019" }
+      { src: "images/gallery/processed/201907 Phuket Thailand (2).JPG", caption: "Phuket, Thailand, 2019" },
+      { src: "images/gallery/processed/201907 Phuket Thailand (3).JPG", caption: "Phuket, Thailand, 2019" },
+      { src: "images/gallery/processed/201907 Phuket Thailand (4).JPG", caption: "Phuket, Thailand, 2019" },
+      { src: "images/gallery/processed/201907 Phuket Thailand (5).JPG", caption: "Phuket, Thailand, 2019" },
+      { src: "images/gallery/processed/201906 Beijing.jpg", caption: "Beijing, China, 2019" },
+      { src: "images/gallery/processed/201905 Beijing.jpg", caption: "Beijing, China, 2019" },
+      { src: "images/gallery/processed/201904 Beijing.JPG", caption: "Beijing, China, 2019" },
+      { src: "images/gallery/processed/201808 Beijing.jpg", caption: "Beijing, China, 2018" }
     ];
 
     const galleryGrid = document.getElementById("galleryGrid");
+    const galleryActions = document.getElementById("galleryActions");
     const galleryShowMore = document.getElementById("galleryShowMore");
+    const galleryShowAll = document.getElementById("galleryShowAll");
+    const galleryShowAllLocations = document.getElementById("galleryShowAllLocations");
+    const galleryViewButtons = Array.from(document.querySelectorAll("[data-gallery-view]"));
     const lightbox = document.getElementById("lightbox");
     const lightboxImg = document.getElementById("lightboxImg");
     const lightboxCaption = document.getElementById("lightboxCaption");
     const initialGalleryCount = 15;
     const galleryBatchSize = 10;
+    const initialLocationCount = 15;
     let visibleGalleryCount = Math.min(initialGalleryCount, galleryPhotos.length);
+    let visibleLocationCount = initialLocationCount;
     let renderedGalleryCount = 0;
-    let currentPhoto = 0;
+    let activeGalleryView = "time";
+    let activeLightboxIndexes = [];
+    let currentPhotoPosition = 0;
 
-    function openLightbox(index) {
-      currentPhoto = index;
-      const photo = galleryPhotos[currentPhoto];
+    function openLightbox(position, indexes) {
+      activeLightboxIndexes = indexes;
+      currentPhotoPosition = position;
+      const photo = galleryPhotos[activeLightboxIndexes[currentPhotoPosition]];
       lightboxImg.src = photo.src;
       lightboxImg.alt = photo.caption;
-      lightboxCaption.textContent = `${currentPhoto + 1} / ${visibleGalleryCount} - ${photo.caption}`;
+      lightboxCaption.textContent = `${currentPhotoPosition + 1} / ${activeLightboxIndexes.length} - ${photo.caption}`;
       lightbox.classList.add("active");
       document.body.style.overflow = "hidden";
     }
@@ -1621,8 +1853,8 @@
     }
 
     function moveLightbox(direction) {
-      currentPhoto = (currentPhoto + direction + visibleGalleryCount) % visibleGalleryCount;
-      openLightbox(currentPhoto);
+      currentPhotoPosition = (currentPhotoPosition + direction + activeLightboxIndexes.length) % activeLightboxIndexes.length;
+      openLightbox(currentPhotoPosition, activeLightboxIndexes);
     }
 
     function thumbnailSrc(src) {
@@ -1631,8 +1863,25 @@
 
     function updateGalleryButton() {
       const remainingImages = galleryPhotos.length - visibleGalleryCount;
-      galleryShowMore.classList.toggle("visible", remainingImages > 0);
+      galleryActions.classList.toggle("visible", remainingImages > 0);
+      galleryShowMore.style.display = "";
+      galleryShowAll.style.display = "";
+      galleryShowAllLocations.style.display = "none";
       galleryShowMore.textContent = `Show 10 more (${remainingImages} remaining)`;
+      galleryShowAll.textContent = `Show all ${galleryPhotos.length} images`;
+    }
+
+    function updateLocationButton(totalLocations) {
+      const hasHiddenLocations = visibleLocationCount < totalLocations;
+      galleryActions.classList.toggle("visible", hasHiddenLocations);
+      galleryShowMore.style.display = "none";
+      galleryShowAll.style.display = "none";
+      galleryShowAllLocations.style.display = "";
+      galleryShowAllLocations.textContent = `Show all ${totalLocations} locations`;
+    }
+
+    function visibleTimeIndexes() {
+      return galleryPhotos.slice(0, visibleGalleryCount).map((_, index) => index);
     }
 
     function appendGalleryItems() {
@@ -1643,18 +1892,164 @@
         item.type = "button";
         const loading = index < 2 ? "eager" : "lazy";
         item.innerHTML = `<img src="${thumbnailSrc(photo.src)}" data-full-src="${photo.src}" alt="${photo.caption}" width="260" height="260" loading="${loading}" decoding="async" fetchpriority="${index === 0 ? "high" : "low"}"><span>${photo.caption}</span>`;
-        item.addEventListener("click", () => openLightbox(index));
+        item.addEventListener("click", () => openLightbox(index, visibleTimeIndexes()));
         galleryGrid.appendChild(item);
       });
       renderedGalleryCount = visibleGalleryCount;
       updateGalleryButton();
     }
 
+    function locationNameFromCaption(caption) {
+      const location = caption.replace(/,\s*\d{4}$/, "");
+      const place = location.split(",")[0].trim();
+      const aliases = {
+        "Badlands National Park": "Badlands NP",
+        Champaign: "Champaign",
+        "Grand Teton National Park": "Grand Teton NP",
+        "Half Moon Bay": "San Mateo",
+        Roppongi: "Tokyo",
+        "San Jose": "Santa Clara",
+        Shibuya: "Tokyo",
+        Shinjuku: "Tokyo",
+        "Yellowstone National Park": "Yellowstone NP"
+      };
+      return aliases[place] || place;
+    }
+
+    function yearFromCaption(caption) {
+      const match = caption.match(/(\d{4})$/);
+      return match ? Number(match[1]) : null;
+    }
+
+    function regionFromCaption(caption) {
+      const parts = caption.replace(/,\s*\d{4}$/, "").split(",").map(part => part.trim());
+      if (parts.length < 2) return "";
+      const regionNames = {
+        CA: "California",
+        IL: "Illinois",
+        SD: "South Dakota",
+        WA: "Washington",
+        WY: "Wyoming"
+      };
+      return regionNames[parts[1]] || parts[1];
+    }
+
+    function galleryLocationGroups() {
+      const groups = new Map();
+      galleryPhotos.forEach((photo, index) => {
+        const location = locationNameFromCaption(photo.caption);
+        if (!groups.has(location)) groups.set(location, { location, indexes: [], years: [], regions: [] });
+        const group = groups.get(location);
+        group.indexes.push(index);
+        const year = yearFromCaption(photo.caption);
+        if (year && !group.years.includes(year)) group.years.push(year);
+        const region = regionFromCaption(photo.caption);
+        if (region && !group.regions.includes(region)) group.regions.push(region);
+      });
+      return Array.from(groups.values());
+    }
+
+    function locationLightboxIndexes(locationGroups) {
+      return locationGroups.flatMap(group => group.indexes);
+    }
+
+    function formatYearRange(years) {
+      const sortedYears = years.slice().sort((a, b) => a - b);
+      if (sortedYears.length === 1) return String(sortedYears[0]);
+      return `${sortedYears[0]} - ${sortedYears[sortedYears.length - 1]}`;
+    }
+
+    function tuneLocationOverlay(item, image) {
+      const applyOverlay = () => {
+        try {
+          const canvas = document.createElement("canvas");
+          const context = canvas.getContext("2d", { willReadFrequently: true });
+          if (!context || !image.naturalWidth || !image.naturalHeight) return;
+
+          const sampleSize = 64;
+          const sourceSize = Math.min(image.naturalWidth, image.naturalHeight) * 0.5;
+          const sourceX = (image.naturalWidth - sourceSize) / 2;
+          const sourceY = (image.naturalHeight - sourceSize) / 2;
+          canvas.width = sampleSize;
+          canvas.height = sampleSize;
+          context.drawImage(image, sourceX, sourceY, sourceSize, sourceSize, 0, 0, sampleSize, sampleSize);
+
+          const pixels = context.getImageData(0, 0, sampleSize, sampleSize).data;
+          let luminance = 0;
+          for (let index = 0; index < pixels.length; index += 4) {
+            luminance += 0.2126 * pixels[index] + 0.7152 * pixels[index + 1] + 0.0722 * pixels[index + 2];
+          }
+          luminance /= pixels.length / 4;
+          const overlayOpacity = Math.min(0.58, Math.max(0.16, 0.12 + (luminance / 255) * 0.54));
+          item.style.setProperty("--city-overlay-opacity", overlayOpacity.toFixed(2));
+        } catch (error) {
+          item.style.setProperty("--city-overlay-opacity", "0.34");
+        }
+      };
+
+      if (image.complete) {
+        applyOverlay();
+      } else {
+        image.addEventListener("load", applyOverlay, { once: true });
+        image.addEventListener("error", () => item.style.setProperty("--city-overlay-opacity", "0.34"), { once: true });
+      }
+    }
+
+    function renderLocationGallery() {
+      galleryGrid.innerHTML = "";
+      const locationGroups = galleryLocationGroups();
+      const visibleLocationGroups = locationGroups.slice(0, visibleLocationCount);
+      const lightboxIndexes = locationLightboxIndexes(visibleLocationGroups);
+      visibleLocationGroups.forEach(group => {
+        const item = document.createElement("button");
+        item.className = "gallery-item gallery-city-card";
+        item.type = "button";
+        const coverPhoto = galleryPhotos[group.indexes[0]];
+        const imageText = group.indexes.length === 1 ? "1 image" : `${group.indexes.length} images`;
+        const regionText = group.regions.length > 0 ? `<span class="gallery-city-region">${group.regions.join(" / ")}</span>` : "";
+        item.innerHTML = `<img src="${thumbnailSrc(coverPhoto.src)}" alt="${group.location}" width="260" height="260" loading="lazy" decoding="async"><span class="gallery-city-label"><span class="gallery-city-title">${group.location}</span>${regionText}</span><span class="gallery-city-meta"><span>${imageText} &middot; ${formatYearRange(group.years)}</span></span>`;
+        item.addEventListener("click", () => openLightbox(lightboxIndexes.indexOf(group.indexes[0]), lightboxIndexes));
+        galleryGrid.appendChild(item);
+        tuneLocationOverlay(item, item.querySelector("img"));
+      });
+      updateLocationButton(locationGroups.length);
+    }
+
+    function renderTimeGallery() {
+      galleryGrid.innerHTML = "";
+      renderedGalleryCount = 0;
+      appendGalleryItems();
+    }
+
+    function setGalleryView(view) {
+      activeGalleryView = view;
+      galleryViewButtons.forEach(button => {
+        button.classList.toggle("active", button.dataset.galleryView === activeGalleryView);
+      });
+      if (activeGalleryView === "location") {
+        visibleLocationCount = initialLocationCount;
+        renderLocationGallery();
+      } else {
+        renderTimeGallery();
+      }
+    }
+
     galleryShowMore.addEventListener("click", () => {
       visibleGalleryCount = Math.min(visibleGalleryCount + galleryBatchSize, galleryPhotos.length);
       appendGalleryItems();
     });
-    appendGalleryItems();
+    galleryShowAll.addEventListener("click", () => {
+      visibleGalleryCount = galleryPhotos.length;
+      appendGalleryItems();
+    });
+    galleryShowAllLocations.addEventListener("click", () => {
+      visibleLocationCount = galleryLocationGroups().length;
+      renderLocationGallery();
+    });
+    galleryViewButtons.forEach(button => {
+      button.addEventListener("click", () => setGalleryView(button.dataset.galleryView));
+    });
+    setGalleryView("location");
 
     document.getElementById("lightboxClose").addEventListener("click", closeLightbox);
     document.getElementById("lightboxPrev").addEventListener("click", () => moveLightbox(-1));
