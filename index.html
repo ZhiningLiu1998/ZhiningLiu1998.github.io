@@ -867,12 +867,27 @@
 
     .lightbox img {
       background: #fff;
-      border: clamp(14px, 4.8vw, 36px) solid #fff;
+      border: clamp(18px, 4.8vw, 36px) solid #fff;
       border-radius: 8px;
       box-shadow: 0 18px 48px rgba(0, 0, 0, 0.36);
       max-height: 80vh;
       max-width: 86vw;
       object-fit: contain;
+    }
+
+    .lightbox img.portrait {
+      border-width: clamp(8px, 2.4vw, 18px);
+      max-height: 84vh;
+      max-width: 82vw;
+    }
+
+    @media (max-width: 640px) {
+      .lightbox img,
+      .lightbox img.portrait {
+        border-width: 0;
+        max-height: 84vh;
+        max-width: 94vw;
+      }
     }
 
     .lightbox button {
@@ -1709,39 +1724,78 @@
     document.documentElement.classList.add("js-ready");
 
     const galleryPhotos = [
+      { src: "images/gallery/processed/202605 Grand Teton (3).JPG", caption: "Grand Teton National Park, WY, 2026" },
       { src: "images/gallery/processed/202605 Grand Teton (2).JPG", caption: "Grand Teton National Park, WY, 2026" },
       { src: "images/gallery/processed/202605 Grand Teton.JPG", caption: "Grand Teton National Park, WY, 2026" },
+      { src: "images/gallery/processed/202605 Grand Teton (4).JPG", caption: "Grand Teton National Park, WY, 2026" },
+      { src: "images/gallery/processed/202605 Yellowstone (3).JPG", caption: "Yellowstone National Park, WY, 2026" },
       { src: "images/gallery/processed/202605 Yellowstone (2).JPG", caption: "Yellowstone National Park, WY, 2026" },
       { src: "images/gallery/processed/202605 Yellowstone.JPG", caption: "Yellowstone National Park, WY, 2026" },
+      { src: "images/gallery/processed/202605 Badlands NP (3).JPG", caption: "Badlands National Park, SD, 2026" },
       { src: "images/gallery/processed/202605 Badlands NP (2).JPG", caption: "Badlands National Park, SD, 2026" },
       { src: "images/gallery/processed/202605 Champaign.JPG", caption: "Champaign, IL, 2026" },
       { src: "images/gallery/processed/202605 BadLands NP.jpg", caption: "Badlands National Park, SD, 2026" },
+      { src: "images/gallery/processed/202604 Rio de Janeiro (3).jpg", caption: "Rio de Janeiro, Brazil, 2026" },
       { src: "images/gallery/processed/202604 Rio de Janeiro.jpg", caption: "Rio de Janeiro, Brazil, 2026" },
       { src: "images/gallery/processed/202604 Rio de Janeiro (2).jpg", caption: "Rio de Janeiro, Brazil, 2026" },
+      { src: "images/gallery/processed/202604 Rio de Janeiro (4).jpg", caption: "Rio de Janeiro, Brazil, 2026" },
+      { src: "images/gallery/processed/202602 Handan.jpg", caption: "Handan, China, 2026" },
       { src: "images/gallery/processed/202601 Sendai.JPG", caption: "Sendai, Japan, 2026" },
       { src: "images/gallery/processed/202601 Aomori.JPG", caption: "Aomori, Japan, 2026" },
+      { src: "images/gallery/processed/202601 Aomori (4).JPG", caption: "Aomori, Japan, 2026" },
       { src: "images/gallery/processed/202601 Aomori (2).JPG", caption: "Aomori, Japan, 2026" },
       { src: "images/gallery/processed/202601 Hachinohe.jpg", caption: "Hachinohe, Japan, 2026" },
+      { src: "images/gallery/processed/202601 Hachinohe (2).jpg", caption: "Hachinohe, Japan, 2026" },
+      { src: "images/gallery/processed/202601 Yokohama (3).jpg", caption: "Yokohama, Japan, 2026" },
+      { src: "images/gallery/processed/202601 Yokohama.jpg", caption: "Yokohama, Japan, 2026" },
+      { src: "images/gallery/processed/202601 Yokohama (2).jpg", caption: "Yokohama, Japan, 2026" },
+      { src: "images/gallery/processed/202512 San Diego (3).JPG", caption: "San Diego, CA, 2025" },
+      { src: "images/gallery/processed/202512 San Diego (4).jpg", caption: "San Diego, CA, 2025" },
+      { src: "images/gallery/processed/202512 San Diego (5).jpg", caption: "San Diego, CA, 2025" },
       { src: "images/gallery/processed/202512 San Diego (2).JPG", caption: "San Diego, CA, 2025" },
       { src: "images/gallery/processed/202512 San Diego.JPG", caption: "San Diego, CA, 2025" },
-      { src: "images/gallery/processed/202508 Budapest (2).JPG", caption: "Budapest, Hungary, 2025" },
+      { src: "images/gallery/processed/202508 Budapest (4).JPG", caption: "Budapest, Hungary, 2025" },
+      { src: "images/gallery/processed/202508 Budapest (3).JPG", caption: "Budapest, Hungary, 2025" },
+      { src: "images/gallery/processed/202508 Budapest.JPG", caption: "Budapest, Hungary, 2025" },
+      { src: "images/gallery/processed/202507 Vienna.JPG", caption: "Vienna, Austria, 2025" },
       { src: "images/gallery/processed/202507 Budapest.JPG", caption: "Budapest, Hungary, 2025" },
       { src: "images/gallery/processed/202507 Vancouver (2).JPG", caption: "Vancouver, Canada, 2025" },
       { src: "images/gallery/processed/202507 Vancouver.JPG", caption: "Vancouver, Canada, 2025" },
+      { src: "images/gallery/processed/202507 San Francisco (4).JPG", caption: "San Francisco, CA, 2025" },
       { src: "images/gallery/processed/202507 San Francisco (3).JPG", caption: "San Francisco, CA, 2025" },
       { src: "images/gallery/processed/202507 San Francisco (2).JPG", caption: "San Francisco, CA, 2025" },
       { src: "images/gallery/processed/202507 San Fransisco.JPG", caption: "San Francisco, CA, 2025" },
+      { src: "images/gallery/processed/202506 San Francisco (2).jpg", caption: "San Francisco, CA, 2025" },
+      { src: "images/gallery/processed/202506 Russian Ridge.JPG", caption: "Russian Ridge, CA, 2025" },
+      { src: "images/gallery/processed/202506 Mission Peak.jpg", caption: "Mission Peak, CA, 2025" },
       { src: "images/gallery/processed/202506 San Francisco.jpg", caption: "San Francisco, CA, 2025" },
       { src: "images/gallery/processed/202506 San Jose.JPG", caption: "San Jose, CA, 2025" },
       { src: "images/gallery/processed/202503 Champaign.jpg", caption: "Champaign, IL, 2025" },
+      { src: "images/gallery/processed/202412 Nara (2).jpg", caption: "Nara, Japan, 2024" },
+      { src: "images/gallery/processed/202412 Kyoto (2).jpg", caption: "Kyoto, Japan, 2024" },
+      { src: "images/gallery/processed/202412 Kyoto (3).jpg", caption: "Kyoto, Japan, 2024" },
+      { src: "images/gallery/processed/202412 Osaka (2).JPG", caption: "Osaka, Japan, 2024" },
+      { src: "images/gallery/processed/202412 Osaka (3).JPG", caption: "Osaka, Japan, 2024" },
       { src: "images/gallery/processed/202412 Osaka.JPG", caption: "Osaka, Japan, 2024" },
+      { src: "images/gallery/processed/202412 Osaka (4).JPG", caption: "Osaka, Japan, 2024" },
+      { src: "images/gallery/processed/202412 Nara.JPG", caption: "Nara, Japan, 2024" },
       { src: "images/gallery/processed/202412 Kyoto.JPG", caption: "Kyoto, Japan, 2024" },
+      { src: "images/gallery/processed/202412 Kyoto (5).JPG", caption: "Kyoto, Japan, 2024" },
+      { src: "images/gallery/processed/202412 Kyoto (4).JPG", caption: "Kyoto, Japan, 2024" },
       { src: "images/gallery/processed/202502 Roppongi.jpg", caption: "Roppongi, Japan, 2025" },
       { src: "images/gallery/processed/202412 Tokyo (3).jpg", caption: "Tokyo, Japan, 2024" },
       { src: "images/gallery/processed/202412 Shinjuku.JPG", caption: "Shinjuku, Japan, 2024" },
       { src: "images/gallery/processed/202502 Shibuya.jpg", caption: "Shibuya, Japan, 2025" },
+      { src: "images/gallery/processed/202412 Tokyo.JPG", caption: "Tokyo, Japan, 2024" },
+      { src: "images/gallery/processed/202412 Tokyo Asakusa.JPG", caption: "Tokyo, Japan, 2024" },
+      { src: "images/gallery/processed/202412 Champaign.JPG", caption: "Champaign, IL, 2024" },
+      { src: "images/gallery/processed/202412 Champaign (2).jpg", caption: "Champaign, IL, 2024" },
+      { src: "images/gallery/processed/202407 Prague (3).JPG", caption: "Prague, Czech Republic, 2024" },
       { src: "images/gallery/processed/202407 Prague (2).JPG", caption: "Prague, Czech Republic, 2024" },
       { src: "images/gallery/processed/202407 Prague.JPG", caption: "Prague, Czech Republic, 2024" },
+      { src: "images/gallery/processed/202407 Prague (4).jpg", caption: "Prague, Czech Republic, 2024" },
+      { src: "images/gallery/processed/202407 Vienna.JPG", caption: "Vienna, Austria, 2024" },
+      { src: "images/gallery/processed/202407 Lake Tahoe (3).jpg", caption: "Lake Tahoe, CA, 2024" },
       { src: "images/gallery/processed/202407 Lake Tahoe.jpg", caption: "Lake Tahoe, CA, 2024" },
       { src: "images/gallery/processed/202407 Lake Tahoe (2).jpg", caption: "Lake Tahoe, CA, 2024" },
       { src: "images/gallery/processed/202406 Half Moon Bay.jpg", caption: "Half Moon Bay, CA, 2024" },
@@ -1761,8 +1815,8 @@
       { src: "images/gallery/processed/202306 Seattle.jpg", caption: "Seattle, WA, 2023" },
       { src: "images/gallery/processed/202306 Seattle (2).jpg", caption: "Seattle, WA, 2023" },
       { src: "images/gallery/processed/202305 Seattle.jpg", caption: "Seattle, WA, 2023" },
+      { src: "images/gallery/processed/202300 Seattle (2).jpg", caption: "Seattle, WA, 2023" },
       { src: "images/gallery/processed/202210 Champaign.JPG", caption: "Champaign, IL, 2022" },
-      { src: "images/gallery/processed/202210 Champaign (2).JPG", caption: "Champaign, IL, 2022" },
       { src: "images/gallery/processed/202207 Chengdu (2).JPG", caption: "Chengdu, China, 2022" },
       { src: "images/gallery/processed/202207 Chongqing (3).JPG", caption: "Chongqing, China, 2022" },
       { src: "images/gallery/processed/202207 Shangri-La.JPG", caption: "Shangri-La, China, 2022" },
@@ -1776,7 +1830,6 @@
       { src: "images/gallery/processed/202206 Handan.jpg", caption: "Handan, China, 2022" },
       { src: "images/gallery/processed/202205 Wuhan.JPG", caption: "Wuhan, China, 2022" },
       { src: "images/gallery/processed/202205 Wuhan (2).jpg", caption: "Wuhan, China, 2022" },
-      { src: "images/gallery/processed/202205 Shenzhen (4).jpg", caption: "Shenzhen, China, 2022" },
       { src: "images/gallery/processed/202205 Shenzhen (5).JPG", caption: "Shenzhen, China, 2022" },
       { src: "images/gallery/processed/202205 Shenzhen.jpg", caption: "Shenzhen, China, 2022" },
       { src: "images/gallery/processed/202205 Shenzhen (3).JPG", caption: "Shenzhen, China, 2022" },
@@ -1812,8 +1865,7 @@
       { src: "images/gallery/processed/201907 Phuket Thailand (5).JPG", caption: "Phuket, Thailand, 2019" },
       { src: "images/gallery/processed/201906 Beijing.jpg", caption: "Beijing, China, 2019" },
       { src: "images/gallery/processed/201905 Beijing.jpg", caption: "Beijing, China, 2019" },
-      { src: "images/gallery/processed/201904 Beijing.JPG", caption: "Beijing, China, 2019" },
-      { src: "images/gallery/processed/201808 Beijing.jpg", caption: "Beijing, China, 2018" }
+      { src: "images/gallery/processed/201904 Beijing.JPG", caption: "Beijing, China, 2019" }
     ];
 
     const galleryGrid = document.getElementById("galleryGrid");
@@ -1839,6 +1891,7 @@
       activeLightboxIndexes = indexes;
       currentPhotoPosition = position;
       const photo = galleryPhotos[activeLightboxIndexes[currentPhotoPosition]];
+      lightboxImg.classList.remove("portrait", "landscape");
       lightboxImg.src = photo.src;
       lightboxImg.alt = photo.caption;
       lightboxCaption.textContent = `${currentPhotoPosition + 1} / ${activeLightboxIndexes.length} - ${photo.caption}`;
@@ -1856,6 +1909,11 @@
       currentPhotoPosition = (currentPhotoPosition + direction + activeLightboxIndexes.length) % activeLightboxIndexes.length;
       openLightbox(currentPhotoPosition, activeLightboxIndexes);
     }
+
+    lightboxImg.addEventListener("load", () => {
+      lightboxImg.classList.toggle("portrait", lightboxImg.naturalHeight > lightboxImg.naturalWidth);
+      lightboxImg.classList.toggle("landscape", lightboxImg.naturalWidth >= lightboxImg.naturalHeight);
+    });
 
     function thumbnailSrc(src) {
       return src.replace("images/gallery/processed/", "images/gallery/thumbs/").replace(/\.[^.]+$/, ".jpg");
@@ -1906,9 +1964,12 @@
         "Badlands National Park": "Badlands NP",
         Champaign: "Champaign",
         "Grand Teton National Park": "Grand Teton NP",
-        "Half Moon Bay": "San Mateo",
+        "Half Moon Bay": "Bay Area",
+        "Mission Peak": "Bay Area",
         Roppongi: "Tokyo",
-        "San Jose": "Santa Clara",
+        "Russian Ridge": "Bay Area",
+        "San Jose": "Bay Area",
+        "Santa Clara": "Bay Area",
         Shibuya: "Tokyo",
         Shinjuku: "Tokyo",
         "Yellowstone National Park": "Yellowstone NP"
@@ -1934,19 +1995,61 @@
       return regionNames[parts[1]] || parts[1];
     }
 
+    const preferredLocationCovers = {
+      Aomori: "images/gallery/processed/202601 Aomori.JPG",
+      "Badlands NP": "images/gallery/processed/202605 Badlands NP (2).JPG",
+      "Bay Area": "images/gallery/processed/202506 Mission Peak.jpg",
+      Budapest: "images/gallery/processed/202507 Budapest.JPG",
+      Changchun: "images/gallery/processed/202011 Changchun (3).JPG",
+      Chengdu: "images/gallery/processed/202106 Chengdu (2).JPG",
+      Chongqing: "images/gallery/processed/202106 Chongqing.JPG",
+      "Grand Teton NP": "images/gallery/processed/202605 Grand Teton (2).JPG",
+      Istanbul: "images/gallery/processed/202312 Istanbul (2).jpg",
+      Kyoto: "images/gallery/processed/202412 Kyoto.JPG",
+      "Lake Tahoe": "images/gallery/processed/202407 Lake Tahoe.jpg",
+      "Los Angeles": "images/gallery/processed/202308 Los Angeles (2).jpg",
+      Monterey: "images/gallery/processed/202406 Monterey.jpg",
+      Prague: "images/gallery/processed/202407 Prague (4).jpg",
+      "Rio de Janeiro": "images/gallery/processed/202604 Rio de Janeiro.jpg",
+      "San Diego": "images/gallery/processed/202512 San Diego.JPG",
+      "San Francisco": "images/gallery/processed/202507 San Fransisco.JPG",
+      Seattle: "images/gallery/processed/202306 Seattle.jpg",
+      Shenzhen: "images/gallery/processed/202205 Shenzhen (2).jpg",
+      Yokohama: "images/gallery/processed/202601 Yokohama (2).jpg",
+      "Yellowstone NP": "images/gallery/processed/202605 Yellowstone (2).JPG"
+    };
+
+    function photoDateKey(photo) {
+      const match = photo.src.match(/\/(\d{6})\s/);
+      return match ? Number(match[1]) : 0;
+    }
+
     function galleryLocationGroups() {
       const groups = new Map();
       galleryPhotos.forEach((photo, index) => {
         const location = locationNameFromCaption(photo.caption);
-        if (!groups.has(location)) groups.set(location, { location, indexes: [], years: [], regions: [] });
+        if (!groups.has(location)) groups.set(location, { location, indexes: [], years: [], regions: [], dateKeys: [], order: groups.size });
         const group = groups.get(location);
         group.indexes.push(index);
         const year = yearFromCaption(photo.caption);
         if (year && !group.years.includes(year)) group.years.push(year);
         const region = regionFromCaption(photo.caption);
         if (region && !group.regions.includes(region)) group.regions.push(region);
+        const dateKey = photoDateKey(photo);
+        if (dateKey) group.dateKeys.push(dateKey);
       });
-      return Array.from(groups.values());
+      return Array.from(groups.values()).sort((a, b) => {
+        const earliestA = a.dateKeys.length ? Math.min(...a.dateKeys) : 0;
+        const earliestB = b.dateKeys.length ? Math.min(...b.dateKeys) : 0;
+        return earliestB - earliestA || a.order - b.order;
+      }).map(group => {
+        const preferredSrc = preferredLocationCovers[group.location];
+        if (!preferredSrc) return group;
+        const preferredIndex = group.indexes.findIndex(index => galleryPhotos[index].src === preferredSrc);
+        if (preferredIndex <= 0) return group;
+        group.indexes.unshift(group.indexes.splice(preferredIndex, 1)[0]);
+        return group;
+      });
     }
 
     function locationLightboxIndexes(locationGroups) {
