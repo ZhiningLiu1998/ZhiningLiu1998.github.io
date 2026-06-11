@@ -1999,20 +1999,20 @@
       Aomori: "images/gallery/processed/202601 Aomori.JPG",
       "Badlands NP": "images/gallery/processed/202605 Badlands NP (2).JPG",
       "Bay Area": "images/gallery/processed/202506 Mission Peak.jpg",
-      Budapest: "images/gallery/processed/202507 Budapest.JPG",
+      Budapest: "images/gallery/processed/202508 Budapest (3).JPG",
       Changchun: "images/gallery/processed/202011 Changchun (3).JPG",
       Chengdu: "images/gallery/processed/202106 Chengdu (2).JPG",
       Chongqing: "images/gallery/processed/202106 Chongqing.JPG",
       "Grand Teton NP": "images/gallery/processed/202605 Grand Teton (2).JPG",
-      Istanbul: "images/gallery/processed/202312 Istanbul (2).jpg",
+      Istanbul: "images/gallery/processed/202312 Istanbul.jpg",
       Kyoto: "images/gallery/processed/202412 Kyoto.JPG",
       "Lake Tahoe": "images/gallery/processed/202407 Lake Tahoe.jpg",
       "Los Angeles": "images/gallery/processed/202308 Los Angeles (2).jpg",
       Monterey: "images/gallery/processed/202406 Monterey.jpg",
-      Prague: "images/gallery/processed/202407 Prague (4).jpg",
+      Prague: "images/gallery/processed/202407 Prague (2).JPG",
       "Rio de Janeiro": "images/gallery/processed/202604 Rio de Janeiro.jpg",
-      "San Diego": "images/gallery/processed/202512 San Diego.JPG",
-      "San Francisco": "images/gallery/processed/202507 San Fransisco.JPG",
+      "San Diego": "images/gallery/processed/202512 San Diego (2).JPG",
+      "San Francisco": "images/gallery/processed/202507 San Francisco (3).JPG",
       Seattle: "images/gallery/processed/202306 Seattle.jpg",
       Shenzhen: "images/gallery/processed/202205 Shenzhen (2).jpg",
       Yokohama: "images/gallery/processed/202601 Yokohama (2).jpg",
@@ -2039,9 +2039,9 @@
         if (dateKey) group.dateKeys.push(dateKey);
       });
       return Array.from(groups.values()).sort((a, b) => {
-        const earliestA = a.dateKeys.length ? Math.min(...a.dateKeys) : 0;
-        const earliestB = b.dateKeys.length ? Math.min(...b.dateKeys) : 0;
-        return earliestB - earliestA || a.order - b.order;
+        const latestA = a.dateKeys.length ? Math.max(...a.dateKeys) : 0;
+        const latestB = b.dateKeys.length ? Math.max(...b.dateKeys) : 0;
+        return latestB - latestA || a.order - b.order;
       }).map(group => {
         const preferredSrc = preferredLocationCovers[group.location];
         if (!preferredSrc) return group;
