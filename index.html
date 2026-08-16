@@ -564,35 +564,17 @@
     }
 
     .tag-llm { background: #fff7d6; color: #705400; }
-    .tag-vlm { background: #fff2e8; color: #9f4a14; }
-    .tag-multimodal { background: #f6eafb; color: #6d347c; }
+    .tag-agent { background: #f0ecff; color: #5b3aa4; }
+    .tag-harness { background: #eaf7ff; color: #21617f; }
+    .tag-trustworthy-ai { background: #e9f8f7; color: #136c68; }
     .tag-graph { background: #e6f4ff; color: #124f8f; }
     .tag-time-series { background: #e8f6ef; color: #1f7a5b; }
-    .tag-tabular-data { background: #fff0e6; color: #9a4a16; }
+    .tag-multimodal { background: #f6eafb; color: #6d347c; }
     .tag-ensemble { background: #f7ecff; color: #6b2da1; }
-    .tag-meta-learning { background: #edf0f7; color: #41506a; }
-    .tag-trustworthy-ai { background: #e9f8f7; color: #136c68; }
-    .tag-safety { background: #fff0ed; color: #a33f2f; }
-    .tag-fairness { background: #fdeff7; color: #9a3569; }
-    .tag-ethics { background: #fff6db; color: #7b5b00; }
-    .tag-interpretability { background: #fdf0f3; color: #a23b5c; }
-    .tag-class-imbalance { background: #fff3e0; color: #935214; }
     .tag-benchmarking { background: #eef7e8; color: #456b16; }
-    .tag-network-alignment { background: #eaf0ff; color: #284f9b; }
-    .tag-reasoning { background: #fff8d9; color: #725800; }
-    .tag-retrieval { background: #e9fbf6; color: #146a54; }
+    .tag-class-imbalance { background: #fff3e0; color: #935214; }
+    .tag-fairness { background: #fdeff7; color: #9a3569; }
     .tag-recommender-systems { background: #edf5ff; color: #2c5f99; }
-    .tag-model-adaptation { background: #f0f5ff; color: #31599a; }
-    .tag-anomaly-detection { background: #fff0ed; color: #a33f2f; }
-    .tag-healthcare { background: #edf9f3; color: #1d7a58; }
-    .tag-gnn { background: #eef4ff; color: #234f8f; }
-    .tag-optimal-transport { background: #f3f1ff; color: #5442a6; }
-    .tag-survey { background: #f5f1ff; color: #5a3ca0; }
-    .tag-biology { background: #eaf8ee; color: #2b6b3f; }
-    .tag-climate { background: #e8f8ff; color: #1d667f; }
-    .tag-reward-modeling { background: #fff0f6; color: #98345f; }
-    .tag-watermarking { background: #f1f6ff; color: #375b96; }
-    .tag-temporal-graph { background: #eef7fb; color: #245f76; }
 
     .awards-grid,
     .fun-facts-grid {
@@ -1014,20 +996,22 @@
       margin-bottom: 24px;
     }
 
-    #clustrmapsMount,
-    #clustrmapsMount img,
-    #clustrmapsMount canvas,
-    #clustrmapsMount iframe {
+    #visitorMapMount,
+    #visitorMapMount img,
+    #visitorMapMount canvas,
+    #visitorMapMount iframe {
       max-width: min(512px, 100%);
     }
 
-    #clustrmapsMount img {
+    #visitorMapMount img,
+    #visitorMapMount iframe {
+      border: 1px solid var(--line);
       border-radius: 8px;
       display: block;
       height: auto;
     }
 
-    .clustrmaps-fallback {
+    .visitor-map-fallback {
       color: var(--muted);
       font-size: 13px;
     }
@@ -1272,325 +1256,332 @@
       <div class="pub-filter" id="pubFilter">
         <button class="filter-btn active" data-filter="all">All</button>
         <button class="filter-btn" data-filter="llm">LLM</button>
+        <button class="filter-btn" data-filter="agent">Agent</button>
+        <button class="filter-btn" data-filter="harness">Harness</button>
         <button class="filter-btn" data-filter="trustworthy-ai">Trustworthy-AI</button>
         <button class="filter-btn" data-filter="graph">Graph</button>
+        <button class="filter-btn" data-filter="time-series">Time-Series</button>
+        <button class="filter-btn" data-filter="multimodal">Multimodal</button>
         <button class="filter-btn" data-filter="ensemble">Ensemble</button>
         <button class="filter-btn" data-filter="benchmarking">Benchmarking</button>
-        <button class="filter-btn" data-filter="gnn">GNN</button>
-        <button class="filter-btn" data-filter="model-adaptation">Model-Adaptation</button>
-        <button class="filter-btn" data-filter="multimodal">Multimodal</button>
-        <button class="filter-btn" data-filter="reasoning">Reasoning</button>
         <button class="filter-btn" data-filter="class-imbalance">Class-Imbalance</button>
         <button class="filter-btn" data-filter="fairness">Fairness</button>
-        <button class="filter-btn" data-filter="time-series">Time-Series</button>
         <button class="filter-btn" data-filter="recommender-systems">Recommender-Systems</button>
-        <button class="filter-btn" data-filter="safety">Safety</button>
-        <button class="filter-btn" data-filter="vlm">VLM</button>
-        <button class="filter-btn" data-filter="interpretability">Interpretability</button>
-        <button class="filter-btn" data-filter="survey">Survey</button>
-        <button class="filter-btn" data-filter="tabular-data">Tabular-Data</button>
-        <button class="filter-btn" data-filter="ethics">Ethics</button>
-        <button class="filter-btn" data-filter="meta-learning">Meta-Learning</button>
-        <button class="filter-btn" data-filter="network-alignment">Network-Alignment</button>
-        <button class="filter-btn" data-filter="optimal-transport">Optimal-Transport</button>
-        <button class="filter-btn" data-filter="anomaly-detection">Anomaly-Detection</button>
-        <button class="filter-btn" data-filter="biology">Biology</button>
-        <button class="filter-btn" data-filter="climate">Climate</button>
-        <button class="filter-btn" data-filter="healthcare">Healthcare</button>
-        <button class="filter-btn" data-filter="retrieval">Retrieval</button>
-        <button class="filter-btn" data-filter="reward-modeling">Reward-Modeling</button>
-        <button class="filter-btn" data-filter="temporal-graph">Temporal-Graph</button>
-        <button class="filter-btn" data-filter="watermarking">Watermarking</button>
       </div>
 
       <ul class="pub-list" id="pubList">
-        <li class="pub-item" data-tags="vlm multimodal ethics trustworthy-ai safety">
-          <a class="pub-title" href="https://arxiv.org/abs/2601.17082">Do VLMs Have a Moral Backbone? A Study on the Fragile Morality of Vision-Language Models</a>
-          <div class="pub-authors"><span class="me">Zhining Liu*</span>, Tianyi Wang*, Xiao Lin, Penghao Ouyang, Gaotang Li, Ze Yang, Hui Liu, Sumit Keswani, Vishwa Pardeshi, Huijun Zhao, Wei Fan, Hanghang Tong</div>
-          <div class="pub-venue"><em>ACL Findings 2026</em></div>
-          <div class="pub-insight"><strong>Key Insight:</strong> VLM moral judgments are fragile when visual evidence and textual cues create subtle ethical tension.</div>
-          <div class="pub-links"><a class="pub-link" href="https://arxiv.org/abs/2601.17082"><i class="fas fa-file-alt"></i> Paper</a></div>
-          <div class="pub-tags"><span class="tag tag-vlm">VLM</span><span class="tag tag-multimodal">Multimodal</span><span class="tag tag-ethics">Ethics</span><span class="tag tag-trustworthy-ai">Trustworthy-AI</span><span class="tag tag-safety">Safety</span></div>
+        <li class="pub-item" data-tags="llm harness">
+          <a class="pub-title" href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=5WORAUQAAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=5WORAUQAAAAJ:LO7wyVUgiFcC">ReContext: Recursive Evidence Replay as LLM Harness for Long-Context Reasoning</a>
+          <div class="pub-authors">Y Zhao, R Qiu, T Wei, Y Bei, <span class="me">Z Liu</span>, L Chen, I Lourentzou, H Tong, J He</div>
+          <div class="pub-venue"><em>arXiv preprint arXiv:2607.02509, 2026</em></div>
+          <div class="pub-links"><a class="pub-link" href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=5WORAUQAAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=5WORAUQAAAAJ:LO7wyVUgiFcC"><i class="fas fa-graduation-cap"></i> Scholar</a></div>
+          <div class="pub-tags"><span class="tag tag-llm">LLM</span><span class="tag tag-harness">Harness</span></div>
         </li>
-        <li class="pub-item" data-tags="vlm multimodal ethics trustworthy-ai benchmarking">
-          <a class="pub-title" href="https://arxiv.org/abs/2505.14728">MORALISE: A Structured Benchmark for Moral Alignment in Visual Language Models</a>
-          <div class="pub-authors"><span class="me">Zhining Liu*</span>, Xiao Lin*, Ze Yang*, Gaotang Li, Ruizhong Qiu, Shuke Wang, Hui Liu, Haotian Li, Sumit Keswani, Vishwa Pardeshi, Huijun Zhao, Wei Fan, Hanghang Tong</div>
-          <div class="pub-venue"><em>ICML 2026</em></div>
-          <div class="pub-insight"><strong>Key Insight:</strong> Structured visual moral scenarios reveal alignment failures hidden by coarse benchmark scores.</div>
-          <div class="pub-links"><a class="pub-link" href="https://arxiv.org/abs/2505.14728"><i class="fas fa-file-alt"></i> Paper</a><a class="pub-link" href="https://huggingface.co/datasets/Ze1025/MORALISE"><i class="fas fa-database"></i> Dataset</a></div>
-          <div class="pub-tags"><span class="tag tag-vlm">VLM</span><span class="tag tag-multimodal">Multimodal</span><span class="tag tag-ethics">Ethics</span><span class="tag tag-trustworthy-ai">Trustworthy-AI</span><span class="tag tag-benchmarking">Benchmarking</span></div>
+        <li class="pub-item" data-tags="llm ensemble">
+          <a class="pub-title" href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=5WORAUQAAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=5WORAUQAAAAJ:anf4URPfarAC">AdaFuse: Adaptive Ensemble Decoding for Large Language Models</a>
+          <div class="pub-authors">C Cui, T Wei, Z Chen, R Qiu, Z Zeng, <span class="me">Z Liu</span>, X Ning, D Zhou, J He</div>
+          <div class="pub-venue"><em>Proceedings of the 64th Annual Meeting of the Association for Computational …, 2026</em></div>
+          <div class="pub-links"><a class="pub-link" href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=5WORAUQAAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=5WORAUQAAAAJ:anf4URPfarAC"><i class="fas fa-graduation-cap"></i> Scholar</a></div>
+          <div class="pub-tags"><span class="tag tag-llm">LLM</span><span class="tag tag-ensemble">Ensemble</span></div>
         </li>
-        <li class="pub-item" data-tags="llm reasoning survey">
-          <a class="pub-title" href="https://arxiv.org/abs/2601.12538">Agentic Reasoning for Large Language Models</a>
-          <div class="pub-authors">Tianxin Wei*, Ting-Wei Li*, <span class="me">Zhining Liu*</span>, Xuying Ning, Ze Yang, Jiaru Zou, Zhichen Zeng, Ruizhong Qiu, Xiao Lin, et al.</div>
-          <div class="pub-venue"><em>arXiv preprint, 2026</em></div>
-          <div class="pub-insight"><strong>Key Insight:</strong> A unified taxonomy connects planning, tool use, memory, reflection, and self-improvement in agentic reasoning.</div>
-          <div class="pub-links"><a class="pub-link" href="https://arxiv.org/abs/2601.12538"><i class="fas fa-file-alt"></i> Paper</a><a class="pub-link" href="https://github.com/weitianxin/Awesome-Agentic-Reasoning"><i class="fab fa-github"></i> Project</a><a class="pub-link" href="https://huggingface.co/papers/2601.12538"><i class="fas fa-fire"></i> HF Paper</a></div>
-          <div class="pub-tags"><span class="tag tag-llm">LLM</span><span class="tag tag-reasoning">Reasoning</span><span class="tag tag-survey">Survey</span></div>
+        <li class="pub-item" data-tags="llm agent multimodal benchmarking">
+          <a class="pub-title" href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=5WORAUQAAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=5WORAUQAAAAJ:xtoqd-5pKcoC">Mem-gallery: Benchmarking multimodal long-term conversational memory for mllm agents</a>
+          <div class="pub-authors">Y Bei, T Wei, X Ning, Y Zhao, <span class="me">Z Liu</span>, X Lin, Y Zhu, H Hamann, J He, ...</div>
+          <div class="pub-venue"><em>Proceedings of the 64th Annual Meeting of the Association for Computational …, 2026</em></div>
+          <div class="pub-links"><a class="pub-link" href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=5WORAUQAAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=5WORAUQAAAAJ:xtoqd-5pKcoC"><i class="fas fa-graduation-cap"></i> Scholar</a></div>
+          <div class="pub-tags"><span class="tag tag-llm">LLM</span><span class="tag tag-agent">Agent</span><span class="tag tag-multimodal">Multimodal</span><span class="tag tag-benchmarking">Benchmarking</span></div>
         </li>
-        <li class="pub-item" data-tags="recommender-systems ensemble model-adaptation">
-          <a class="pub-title" href="https://arxiv.org/abs/2604.20858">Mixture of Sequence: Theme-aware Mixture-of-Experts for Long-Sequence Recommendation</a>
-          <div class="pub-authors">Xiao Lin, Zhicheng Tang, Weilin Cong, Mengyue Hang, Kai Wang, Yajuan Wang, Zhichen Zeng, Ting-Wei Li, Hyunsik Yoo, <span class="me">Zhining Liu</span>, Xuying Ning, Ruizhong Qiu, Wen-Yen Chen, Shuo Chang, Rong Jin, Huayu Li, Hanghang Tong</div>
-          <div class="pub-venue"><em>WebConf 2026 Oral</em></div>
-          <div class="pub-insight"><strong>Key Insight:</strong> Theme-aware experts let recommender models specialize over long, shifting user behavior sequences.</div>
-          <div class="pub-links"><a class="pub-link" href="https://arxiv.org/abs/2604.20858"><i class="fas fa-file-alt"></i> Paper</a><a class="pub-link" href="https://github.com/xiaolin-cs/MoS"><i class="fab fa-github"></i> Code</a></div>
-          <div class="pub-tags"><span class="tag tag-recommender-systems">Recommender-Systems</span><span class="tag tag-ensemble">Ensemble</span><span class="tag tag-model-adaptation">Model-Adaptation</span></div>
+        <li class="pub-item" data-tags="llm agent harness">
+          <a class="pub-title" href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=5WORAUQAAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=5WORAUQAAAAJ:FAceZFleit8C">Code as agent harness</a>
+          <div class="pub-authors">X Ning, K Tieu, D Fu, T Wei, Z Li, Y Bei, J Zou, M Ai, <span class="me">Z Liu</span>, TW Li, L Chen, ...</div>
+          <div class="pub-venue"><em>arXiv preprint arXiv:2605.18747, 2026</em></div>
+          <div class="pub-links"><a class="pub-link" href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=5WORAUQAAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=5WORAUQAAAAJ:FAceZFleit8C"><i class="fas fa-graduation-cap"></i> Scholar</a></div>
+          <div class="pub-tags"><span class="tag tag-llm">LLM</span><span class="tag tag-agent">Agent</span><span class="tag tag-harness">Harness</span></div>
         </li>
-        <li class="pub-item" data-tags="vlm multimodal interpretability trustworthy-ai">
-          <a class="pub-title" href="https://arxiv.org/abs/2510.17771">Seeing but Not Believing: Probing the Disconnect Between Visual Attention and Answer Correctness in VLMs</a>
-          <div class="pub-authors"><span class="me">Zhining Liu</span>, Ziyi Chen, Hui Liu, Chen Luo, Xianfeng Tang, Suhang Wang, Jingying Zeng, Zhenwei Dai, Zhan Shi, Tianxin Wei, Hanqing Lu, Benoit Dumoulin, Hanghang Tong</div>
-          <div class="pub-venue"><em>ICLR 2026</em></div>
-          <div class="pub-insight"><strong>Key Insight:</strong> Correct visual attention does not guarantee correct visual-language reasoning.</div>
-          <div class="pub-links"><a class="pub-link" href="https://arxiv.org/abs/2510.17771"><i class="fas fa-file-alt"></i> Paper</a></div>
-          <div class="pub-tags"><span class="tag tag-vlm">VLM</span><span class="tag tag-multimodal">Multimodal</span><span class="tag tag-interpretability">Interpretability</span><span class="tag tag-trustworthy-ai">Trustworthy-AI</span></div>
+        <li class="pub-item" data-tags="llm recommender-systems">
+          <a class="pub-title" href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=5WORAUQAAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=5WORAUQAAAAJ:edDO8Oi4QzsC">Continual low-rank adapters for llm-based generative recommender systems</a>
+          <div class="pub-authors">H Yoo, TW Li, SK Kang, <span class="me">Z Liu</span>, CC Xu, Q Qi, H Tong</div>
+          <div class="pub-venue"><em>International Conference on Learning Representations 2026, 6618-6642, 2026</em></div>
+          <div class="pub-links"><a class="pub-link" href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=5WORAUQAAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=5WORAUQAAAAJ:edDO8Oi4QzsC"><i class="fas fa-graduation-cap"></i> Scholar</a></div>
+          <div class="pub-tags"><span class="tag tag-llm">LLM</span><span class="tag tag-recommender-systems">Recommender-Systems</span></div>
         </li>
-        <li class="pub-item" data-tags="llm recommender-systems model-adaptation">
-          <a class="pub-title" href="https://arxiv.org/abs/2510.25093">Continual Low-Rank Adapters for LLM-based Generative Recommender Systems</a>
-          <div class="pub-authors">Hyunsik Yoo, Ting-Wei Li, SeongKu Kang, <span class="me">Zhining Liu</span>, Charlie Xu, Qilin Qi, Hanghang Tong</div>
-          <div class="pub-venue"><em>ICLR 2026</em></div>
-          <div class="pub-insight"><strong>Key Insight:</strong> Continually evolving LoRA adapters preserve generative recommendation quality as user data shifts.</div>
-          <div class="pub-links"><a class="pub-link" href="https://arxiv.org/abs/2510.25093"><i class="fas fa-file-alt"></i> Paper</a><a class="pub-link" href="https://github.com/hsyoo32/peso"><i class="fab fa-github"></i> Code</a></div>
-          <div class="pub-tags"><span class="tag tag-llm">LLM</span><span class="tag tag-recommender-systems">Recommender-Systems</span><span class="tag tag-model-adaptation">Model-Adaptation</span></div>
+        <li class="pub-item" data-tags="trustworthy-ai multimodal">
+          <a class="pub-title" href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=5WORAUQAAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=5WORAUQAAAAJ:S16KYo8Pm5AC">Seeing but not believing: Probing the disconnect between visual attention and answer correctness in vlms</a>
+          <div class="pub-authors"><span class="me">Z Liu</span>, Z Chen, H Liu, C Luo, X Tang, S Wang, J Zeng, Z Dai, Z Shi, T Wei, ...</div>
+          <div class="pub-venue"><em>International Conference on Learning Representations 2026, 72849-72876, 2026</em></div>
+          <div class="pub-links"><a class="pub-link" href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=5WORAUQAAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=5WORAUQAAAAJ:S16KYo8Pm5AC"><i class="fas fa-graduation-cap"></i> Scholar</a></div>
+          <div class="pub-tags"><span class="tag tag-trustworthy-ai">Trustworthy-AI</span><span class="tag tag-multimodal">Multimodal</span></div>
         </li>
-        <li class="pub-item" data-tags="time-series llm multimodal">
-          <a class="pub-title" href="https://arxiv.org/abs/2502.08942">Language in the Flow of Time: Time-Series-Paired Texts Weaved into a Unified Temporal Narrative</a>
-          <div class="pub-authors">Zihao Li, Xiao Lin, <span class="me">Zhining Liu</span>, Jiaru Zou, Ziwei Wu, Lecheng Zheng, Dongqi Fu, Yada Zhu, Hendrik Hamann, Hanghang Tong, Jingrui He</div>
-          <div class="pub-venue"><em>ICLR 2026</em></div>
-          <div class="pub-insight"><strong>Key Insight:</strong> Time-series and paired text can be aligned into unified temporal narratives for multimodal reasoning.</div>
-          <div class="pub-links"><a class="pub-link" href="https://arxiv.org/abs/2502.08942"><i class="fas fa-file-alt"></i> Paper</a><a class="pub-link" href="https://github.com/iDEA-iSAIL-Lab-UIUC/TaTS"><i class="fab fa-github"></i> Code</a></div>
-          <div class="pub-tags"><span class="tag tag-time-series">Time-Series</span><span class="tag tag-llm">LLM</span><span class="tag tag-multimodal">Multimodal</span></div>
+        <li class="pub-item" data-tags="trustworthy-ai graph benchmarking fairness">
+          <a class="pub-title" href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=5WORAUQAAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=5WORAUQAAAAJ:z_wVstp3MssC">Planetalign: A comprehensive python library for benchmarking network alignment</a>
+          <div class="pub-authors">Q Yu, Z Zeng, Y Yan, <span class="me">Z Liu</span>, B Jing, R Qiu, A Azad, H Tong</div>
+          <div class="pub-venue"><em>International Conference on Learning Representations 2026, 66087-66115, 2026</em></div>
+          <div class="pub-links"><a class="pub-link" href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=5WORAUQAAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=5WORAUQAAAAJ:z_wVstp3MssC"><i class="fas fa-graduation-cap"></i> Scholar</a></div>
+          <div class="pub-tags"><span class="tag tag-trustworthy-ai">Trustworthy-AI</span><span class="tag tag-graph">Graph</span><span class="tag tag-benchmarking">Benchmarking</span><span class="tag tag-fairness">Fairness</span></div>
         </li>
-        <li class="pub-item" data-tags="time-series reasoning benchmarking">
-          <a class="pub-title" href="https://openreview.net/forum?id=ULQt51DRug">TRQA: Time Series Reasoning Question And Answering Benchmark</a>
-          <div class="pub-authors">Baoyu Jing, Sanhorn Chen, Lecheng Zheng, Boyu Liu, Zihao Li, Jiaru Zou, Tianxin Wei, <span class="me">Zhining Liu</span>, Zhichen Zeng, Ruizhong Qiu, Xiao Lin, Yuchen Yan, Qi Yu, Dongqi Fu, Jingrui He, Hanghang Tong</div>
-          <div class="pub-venue"><em>In submission, 2026</em></div>
-          <div class="pub-insight"><strong>Key Insight:</strong> Time-series QA should test compositional reasoning over temporal patterns, not just forecasting accuracy.</div>
-          <div class="pub-links"><a class="pub-link" href="https://openreview.net/forum?id=ULQt51DRug"><i class="fas fa-file-alt"></i> Paper</a></div>
-          <div class="pub-tags"><span class="tag tag-time-series">Time-Series</span><span class="tag tag-reasoning">Reasoning</span><span class="tag tag-benchmarking">Benchmarking</span></div>
+        <li class="pub-item" data-tags="time-series">
+          <a class="pub-title" href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=5WORAUQAAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=5WORAUQAAAAJ:bnK-pcrLprsC">Language in the flow of time: Time-series-paired texts weaved into a unified temporal narrative</a>
+          <div class="pub-authors">Z Li, X Lin, <span class="me">Z Liu</span>, J Zou, Z Wu, L Zheng, D Fu, Y Zhu, H Hamann, H Tong, ...</div>
+          <div class="pub-venue"><em>International Conference on Learning Representations 2026, 24437-24484, 2026</em></div>
+          <div class="pub-links"><a class="pub-link" href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=5WORAUQAAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=5WORAUQAAAAJ:bnK-pcrLprsC"><i class="fas fa-graduation-cap"></i> Scholar</a></div>
+          <div class="pub-tags"><span class="tag tag-time-series">Time-Series</span></div>
         </li>
-        <li class="pub-item" data-tags="graph network-alignment benchmarking">
-          <a class="pub-title" href="https://arxiv.org/abs/2505.21366">PLANETALIGN: A Comprehensive Python Library for Benchmarking Network Alignment</a>
-          <div class="pub-authors">Qi Yu, Zhichen Zeng, Yuchen Yan, <span class="me">Zhining Liu</span>, Baoyu Jing, Ruizhong Qiu, Ariful Azad, Hanghang Tong</div>
-          <div class="pub-venue"><em>ICLR 2026</em></div>
-          <div class="pub-insight"><strong>Key Insight:</strong> A unified Python library makes network alignment algorithms easier to compare, reproduce, and extend.</div>
-          <div class="pub-links"><a class="pub-link" href="https://arxiv.org/abs/2505.21366"><i class="fas fa-file-alt"></i> Paper</a><a class="pub-link" href="https://github.com/yq-leo/PlanetAlign"><i class="fab fa-github"></i> Code</a></div>
-          <div class="pub-tags"><span class="tag tag-graph">Graph</span><span class="tag tag-network-alignment">Network-Alignment</span><span class="tag tag-benchmarking">Benchmarking</span></div>
+        <li class="pub-item" data-tags="ensemble recommender-systems">
+          <a class="pub-title" href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=5WORAUQAAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=5WORAUQAAAAJ:86PQX7AUzd4C">Mixture of Sequence: Theme-Aware Mixture-of-Experts for Long-Sequence Recommendation</a>
+          <div class="pub-authors">X Lin, Z Tang, W Cong, M Hang, K Wang, Y Wang, Z Zeng, TW Li, H Yoo, ...</div>
+          <div class="pub-venue"><em>Proceedings of the ACM Web Conference 2026, 6469-6480, 2026</em></div>
+          <div class="pub-links"><a class="pub-link" href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=5WORAUQAAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=5WORAUQAAAAJ:86PQX7AUzd4C"><i class="fas fa-graduation-cap"></i> Scholar</a></div>
+          <div class="pub-tags"><span class="tag tag-ensemble">Ensemble</span><span class="tag tag-recommender-systems">Recommender-Systems</span></div>
         </li>
-        <li class="pub-item" data-tags="biology survey">
-          <a class="pub-title" href="https://www.nature.com/articles/s44387-025-00066-y">Flow Matching Meets Biology and Life Science: A Survey</a>
-          <div class="pub-authors">Zihao Li, Zhichen Zeng, Xiao Lin, Feihao Fang, Yanru Qu, Zhe Xu, <span class="me">Zhining Liu</span>, Xuying Ning, Tianxin Wei, Ge Liu, Hanghang Tong, Jingrui He</div>
-          <div class="pub-venue"><em>npj Artificial Intelligence 2026</em></div>
-          <div class="pub-insight"><strong>Key Insight:</strong> Flow matching provides a flexible generative lens for molecular, cellular, and biological modeling tasks.</div>
-          <div class="pub-links"><a class="pub-link" href="https://www.nature.com/articles/s44387-025-00066-y"><i class="fas fa-file-alt"></i> Paper</a><a class="pub-link" href="https://arxiv.org/abs/2507.17731"><i class="fas fa-file-alt"></i> arXiv</a></div>
-          <div class="pub-tags"><span class="tag tag-biology">Biology</span><span class="tag tag-survey">Survey</span></div>
+        <li class="pub-item" data-tags="llm ensemble">
+          <a class="pub-title" href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=5WORAUQAAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=5WORAUQAAAAJ:rmuvC79q63oC">ReMix: Reinforcement routing for mixtures of LoRAs in LLM finetuning</a>
+          <div class="pub-authors">R Qiu, H Zeng, Y Xia, Y Meng, R Chen, J Feng, D Fu, Q Wang, J Liu, ...</div>
+          <div class="pub-venue"><em>arXiv preprint arXiv:2603.10160, 2026</em></div>
+          <div class="pub-links"><a class="pub-link" href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=5WORAUQAAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=5WORAUQAAAAJ:rmuvC79q63oC"><i class="fas fa-graduation-cap"></i> Scholar</a></div>
+          <div class="pub-tags"><span class="tag tag-llm">LLM</span><span class="tag tag-ensemble">Ensemble</span></div>
         </li>
-        <li class="pub-item" data-tags="llm ensemble reasoning model-adaptation">
-          <a class="pub-title" href="https://arxiv.org/abs/2603.10160">ReMix: Reinforcement Routing for Mixtures of LoRAs in LLM Finetuning</a>
-          <div class="pub-authors">Ruizhong Qiu, Hanqing Zeng, Yinglong Xia, Yiwen Meng, Ren Chen, Jiarui Feng, Dongqi Fu, Qifan Wang, Jiayi Liu, Jun Xiao, Xiangjun Fan, Benyu Zhang, Hong Li, <span class="me">Zhining Liu</span>, Hyunsik Yoo, Hanghang Tong</div>
-          <div class="pub-venue"><em>arXiv preprint, 2026</em></div>
-          <div class="pub-insight"><strong>Key Insight:</strong> Reinforcement routing learns how to select and combine LoRA experts during LLM finetuning.</div>
-          <div class="pub-links"><a class="pub-link" href="https://arxiv.org/abs/2603.10160"><i class="fas fa-file-alt"></i> Paper</a></div>
-          <div class="pub-tags"><span class="tag tag-llm">LLM</span><span class="tag tag-ensemble">Ensemble</span><span class="tag tag-reasoning">Reasoning</span><span class="tag tag-model-adaptation">Model-Adaptation</span></div>
+        <li class="pub-item" data-tags="">
+          <a class="pub-title" href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=5WORAUQAAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=5WORAUQAAAAJ:L7CI7m0gUJcC">Flow matching meets biology and life science: a survey</a>
+          <div class="pub-authors">Z Li, Z Zeng, X Lin, F Fang, Y Qu, Z Xu, <span class="me">Z Liu</span>, X Ning, T Wei, G Liu, H Tong, ...</div>
+          <div class="pub-venue"><em>npj Artificial Intelligence 2 (1), 17, 2026</em></div>
+          <div class="pub-links"><a class="pub-link" href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=5WORAUQAAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=5WORAUQAAAAJ:L7CI7m0gUJcC"><i class="fas fa-graduation-cap"></i> Scholar</a></div>
         </li>
-        <li class="pub-item" data-tags="llm ensemble reasoning">
-          <a class="pub-title" href="https://openreview.net/forum?id=2bPyuL6Cda">Inference Scaling of LLM Ensembling: Bridging Token Spaces with Token Translation</a>
-          <div class="pub-authors">Tianxin Wei, Zhichen Zeng, Ruizhong Qiu, <span class="me">Zhining Liu</span>, Xuying Ning, Xinrui He, Wenxuan Bao, Qi He, Xianfeng Tang, Hanghang Tong, Jingrui He</div>
-          <div class="pub-venue"><em>In submission, 2026</em></div>
-          <div class="pub-insight"><strong>Key Insight:</strong> Token translation bridges heterogeneous vocabularies so LLM ensembles can scale at inference time.</div>
-          <div class="pub-links"><a class="pub-link" href="https://openreview.net/forum?id=2bPyuL6Cda"><i class="fas fa-file-alt"></i> Paper</a></div>
-          <div class="pub-tags"><span class="tag tag-llm">LLM</span><span class="tag tag-ensemble">Ensemble</span><span class="tag tag-reasoning">Reasoning</span></div>
+        <li class="pub-item" data-tags="llm agent">
+          <a class="pub-title" href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=5WORAUQAAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=5WORAUQAAAAJ:foquWX3nUaYC">Agentic reasoning for large language models</a>
+          <div class="pub-authors">T Wei*, TW Li*, <span class="me">Z Liu*</span>, X Ning, Z Yang, J Zou, Z Zeng, R Qiu, X Lin, D Fu, ...</div>
+          <div class="pub-venue"><em>arXiv preprint arXiv:2601.12538, 2026</em></div>
+          <div class="pub-links"><a class="pub-link" href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=5WORAUQAAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=5WORAUQAAAAJ:foquWX3nUaYC"><i class="fas fa-graduation-cap"></i> Scholar</a></div>
+          <div class="pub-tags"><span class="tag tag-llm">LLM</span><span class="tag tag-agent">Agent</span></div>
         </li>
-        <li class="pub-item" data-tags="llm watermarking safety model-adaptation">
-          <a class="pub-title" href="https://arxiv.org/abs/2410.06467">WAPITI: A Watermark for Finetuned Open-Source LLMs</a>
-          <div class="pub-authors">Lingjie Chen, Ruizhong Qiu, Siyu Yuan, <span class="me">Zhining Liu</span>, Tianxin Wei, Hyunsik Yoo, Zhichen Zeng, Deqing Yang</div>
-          <div class="pub-venue"><em>In submission, 2026</em></div>
-          <div class="pub-insight"><strong>Key Insight:</strong> Finetuned open-source LLMs can retain detectable ownership signals without sacrificing utility.</div>
-          <div class="pub-links"><a class="pub-link" href="https://arxiv.org/abs/2410.06467"><i class="fas fa-file-alt"></i> Paper</a></div>
-          <div class="pub-tags"><span class="tag tag-llm">LLM</span><span class="tag tag-watermarking">Watermarking</span><span class="tag tag-safety">Safety</span><span class="tag tag-model-adaptation">Model-Adaptation</span></div>
+        <li class="pub-item" data-tags="llm ensemble">
+          <a class="pub-title" href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=5WORAUQAAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=5WORAUQAAAAJ:HbR8gkJAVGIC">Adafuse: Adaptive ensemble decoding with test-time scaling for llms</a>
+          <div class="pub-authors">C Cui, T Wei, Z Chen, R Qiu, Z Zeng, <span class="me">Z Liu</span>, X Ning, D Zhou, J He</div>
+          <div class="pub-venue"><em>arXiv preprint arXiv:2601.06022, 2026</em></div>
+          <div class="pub-links"><a class="pub-link" href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=5WORAUQAAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=5WORAUQAAAAJ:HbR8gkJAVGIC"><i class="fas fa-graduation-cap"></i> Scholar</a></div>
+          <div class="pub-tags"><span class="tag tag-llm">LLM</span><span class="tag tag-ensemble">Ensemble</span></div>
         </li>
-        <li class="pub-item" data-tags="llm ensemble reasoning model-adaptation">
-          <a class="pub-title" href="https://arxiv.org/abs/2601.06022">AdaFuse: Adaptive Ensemble Decoding for Large Language Models</a>
-          <div class="pub-authors">Chengming Cui, Tianxin Wei, Ziyi Chen, Ruizhong Qiu, Zhichen Zeng, <span class="me">Zhining Liu</span>, Xuying Ning, Duo Zhou, Jingrui He</div>
-          <div class="pub-venue"><em>ACL 2026 Main</em></div>
-          <div class="pub-insight"><strong>Key Insight:</strong> Adaptive ensemble decoding fuses multiple LLM outputs during generation for stronger test-time reasoning.</div>
-          <div class="pub-links"><a class="pub-link" href="https://arxiv.org/abs/2601.06022"><i class="fas fa-file-alt"></i> Paper</a><a class="pub-link" href="https://github.com/CCM0111/AdaFuse"><i class="fab fa-github"></i> Code</a></div>
-          <div class="pub-tags"><span class="tag tag-llm">LLM</span><span class="tag tag-ensemble">Ensemble</span><span class="tag tag-reasoning">Reasoning</span><span class="tag tag-model-adaptation">Model-Adaptation</span></div>
+        <li class="pub-item" data-tags="llm trustworthy-ai multimodal fairness">
+          <a class="pub-title" href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=5WORAUQAAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=5WORAUQAAAAJ:Ug5p-4gJ2f0C">Do VLMs Have a Moral Backbone? A Study on the Fragile Morality of Vision-Language Models</a>
+          <div class="pub-authors"><span class="me">Z Liu</span>, T Wang, X Lin, P Ouyang, G Li, Z Yang, H Liu, S Keswani, ...</div>
+          <div class="pub-venue"><em>Findings of the Association for Computational Linguistics: ACL 2026, 2026</em></div>
+          <div class="pub-links"><a class="pub-link" href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=5WORAUQAAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=5WORAUQAAAAJ:Ug5p-4gJ2f0C"><i class="fas fa-graduation-cap"></i> Scholar</a></div>
+          <div class="pub-tags"><span class="tag tag-llm">LLM</span><span class="tag tag-trustworthy-ai">Trustworthy-AI</span><span class="tag tag-multimodal">Multimodal</span><span class="tag tag-fairness">Fairness</span></div>
         </li>
-        <li class="pub-item" data-tags="llm vlm multimodal benchmarking">
-          <a class="pub-title" href="https://arxiv.org/abs/2601.03515">Mem-Gallery: Benchmarking Multimodal Long-Term Conversational Memory for MLLM Agents</a>
-          <div class="pub-authors">Yuanchen Bei, Tianxin Wei, Xuying Ning, Yanjun Zhao, <span class="me">Zhining Liu</span>, Xiao Lin, Yada Zhu, Hendrik Hamann, Jingrui He, Hanghang Tong</div>
-          <div class="pub-venue"><em>ACL 2026 Main</em></div>
-          <div class="pub-insight"><strong>Key Insight:</strong> Multimodal agents still struggle to store, retrieve, and use long-term conversational memory.</div>
-          <div class="pub-links"><a class="pub-link" href="https://arxiv.org/abs/2601.03515"><i class="fas fa-file-alt"></i> Paper</a><a class="pub-link" href="https://github.com/YuanchenBei/Mem-Gallery"><i class="fab fa-github"></i> Code</a></div>
-          <div class="pub-tags"><span class="tag tag-llm">LLM</span><span class="tag tag-vlm">VLM</span><span class="tag tag-multimodal">Multimodal</span><span class="tag tag-benchmarking">Benchmarking</span></div>
+        <li class="pub-item" data-tags="multimodal benchmarking">
+          <a class="pub-title" href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=5WORAUQAAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=5WORAUQAAAAJ:NJ774b8OgUMC">ClimateBench-M: a multi-modal climate data benchmark with a simple generative method</a>
+          <div class="pub-authors">D Fu, Y Zhu, <span class="me">Z Liu</span>, L Zheng, X Lin, Z Li, L Fang, K Tieu, O Bhardwaj, ...</div>
+          <div class="pub-venue"><em>Proceedings of the 34th ACM International Conference on Information and …, 2025</em></div>
+          <div class="pub-links"><a class="pub-link" href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=5WORAUQAAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=5WORAUQAAAAJ:NJ774b8OgUMC"><i class="fas fa-graduation-cap"></i> Scholar</a></div>
+          <div class="pub-tags"><span class="tag tag-multimodal">Multimodal</span><span class="tag tag-benchmarking">Benchmarking</span></div>
         </li>
-        <li class="pub-item" data-tags="class-imbalance tabular-data benchmarking">
-          <a class="pub-title" href="https://arxiv.org/abs/2505.17451">CLIMB: Class-imbalanced Learning Benchmark on Tabular Data</a>
-          <div class="pub-authors"><span class="me">Zhining Liu</span>, Zihao Li, Ze Yang, Tianxin Wei, Jian Kang, Yada Zhu, Hendrik Hamann, Jingrui He, Hanghang Tong</div>
-          <div class="pub-venue"><em>NeurIPS 2025</em></div>
-          <div class="pub-insight"><strong>Key Insight:</strong> A standardized benchmark exposes when class-imbalanced tabular methods actually generalize.</div>
-          <div class="pub-links"><a class="pub-link" href="https://arxiv.org/abs/2505.17451"><i class="fas fa-file-alt"></i> Paper</a><a class="pub-link" href="https://github.com/ZhiningLiu1998/imbalanced-ensemble"><i class="fab fa-github"></i> Code</a><a class="pub-link" href="https://imbalanced-ensemble.readthedocs.io/en/latest/"><i class="fas fa-book"></i> Docs</a></div>
-          <div class="pub-tags"><span class="tag tag-class-imbalance">Class-Imbalance</span><span class="tag tag-tabular-data">Tabular-Data</span><span class="tag tag-benchmarking">Benchmarking</span></div>
+        <li class="pub-item" data-tags="llm trustworthy-ai fairness">
+          <a class="pub-title" href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=5WORAUQAAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=5WORAUQAAAAJ:XoXfffV-tXoC">Not All Voices Are Rewarded Equally: Probing and Repairing Reward Models across Human Diversity.</a>
+          <div class="pub-authors">Z Li, F Fang, X Zhang, J Zou, <span class="me">Z Liu</span>, W Xiong, Z Wu, B Jing, J He</div>
+          <div class="pub-venue"><em>EMNLP (Findings), 3426-3455, 2025</em></div>
+          <div class="pub-links"><a class="pub-link" href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=5WORAUQAAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=5WORAUQAAAAJ:XoXfffV-tXoC"><i class="fas fa-graduation-cap"></i> Scholar</a></div>
+          <div class="pub-tags"><span class="tag tag-llm">LLM</span><span class="tag tag-trustworthy-ai">Trustworthy-AI</span><span class="tag tag-fairness">Fairness</span></div>
         </li>
-        <li class="pub-item" data-tags="time-series ensemble meta-learning">
-          <a class="pub-title" href="https://arxiv.org/abs/2505.18442">Breaking Silos: Adaptive Model Fusion Unlocks Better Time Series Forecasting</a>
-          <div class="pub-authors"><span class="me">Zhining Liu</span>, Ze Yang, Xiao Lin, Ruizhong Qiu, Tianxin Wei, Yada Zhu, Hendrik Hamann, Jingrui He, Hanghang Tong</div>
-          <div class="pub-venue"><em>ICML 2025</em></div>
-          <div class="pub-insight"><strong>Key Insight:</strong> Sample-level adaptive fusion lets heterogeneous forecasters complement each other instead of competing in silos.</div>
-          <div class="pub-links"><a class="pub-link" href="https://arxiv.org/abs/2505.18442"><i class="fas fa-file-alt"></i> Paper</a><a class="pub-link" href="https://github.com/ZhiningLiu1998/TimeFuse"><i class="fab fa-github"></i> Code</a></div>
-          <div class="pub-tags"><span class="tag tag-time-series">Time-Series</span><span class="tag tag-ensemble">Ensemble</span><span class="tag tag-meta-learning">Meta-Learning</span></div>
+        <li class="pub-item" data-tags="llm ensemble">
+          <a class="pub-title" href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=5WORAUQAAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=5WORAUQAAAAJ:g3aElNc5_aQC">Hierarchical lora moe for efficient ctr model scaling</a>
+          <div class="pub-authors">Z Zeng, M Hang, X Liu, X Liu, X Lin, R Qiu, T Wei, <span class="me">Z Liu</span>, S Yuan, C Yang, ...</div>
+          <div class="pub-venue"><em>arXiv preprint arXiv:2510.10432, 2025</em></div>
+          <div class="pub-links"><a class="pub-link" href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=5WORAUQAAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=5WORAUQAAAAJ:g3aElNc5_aQC"><i class="fas fa-graduation-cap"></i> Scholar</a></div>
+          <div class="pub-tags"><span class="tag tag-llm">LLM</span><span class="tag tag-ensemble">Ensemble</span></div>
         </li>
-        <li class="pub-item" data-tags="llm reasoning retrieval">
-          <a class="pub-title" href="https://arxiv.org/abs/2502.08767">SelfElicit: Your Language Model Secretly Knows Where the Relevant Evidence is</a>
-          <div class="pub-authors"><span class="me">Zhining Liu</span>, Rana Ali Amjad, Ravinarayana Adkathimar, Tianxin Wei, Hanghang Tong</div>
-          <div class="pub-venue"><em>ACL 2025 Main</em></div>
-          <div class="pub-insight"><strong>Key Insight:</strong> LLMs can self-elicit where relevant evidence lies, reducing reliance on external retrieval heuristics.</div>
-          <div class="pub-links"><a class="pub-link" href="https://arxiv.org/abs/2502.08767"><i class="fas fa-file-alt"></i> Paper</a><a class="pub-link" href="https://github.com/ZhiningLiu1998/SelfElicit"><i class="fab fa-github"></i> Code</a></div>
-          <div class="pub-tags"><span class="tag tag-llm">LLM</span><span class="tag tag-reasoning">Reasoning</span><span class="tag tag-retrieval">Retrieval</span></div>
+        <li class="pub-item" data-tags="llm trustworthy-ai fairness recommender-systems">
+          <a class="pub-title" href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=5WORAUQAAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=5WORAUQAAAAJ:ILKRHgRFtOwC">Llm-recg: A semantic bias-aware framework for zero-shot sequential recommendation</a>
+          <div class="pub-authors">Y Li, J Wang, H Sundaram, <span class="me">Z Liu</span></div>
+          <div class="pub-venue"><em>Proceedings of the nineteenth ACM conference on recommender systems, 237-246, 2025</em></div>
+          <div class="pub-links"><a class="pub-link" href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=5WORAUQAAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=5WORAUQAAAAJ:ILKRHgRFtOwC"><i class="fas fa-graduation-cap"></i> Scholar</a></div>
+          <div class="pub-tags"><span class="tag tag-llm">LLM</span><span class="tag tag-trustworthy-ai">Trustworthy-AI</span><span class="tag tag-fairness">Fairness</span><span class="tag tag-recommender-systems">Recommender-Systems</span></div>
         </li>
-        <li class="pub-item" data-tags="multimodal climate benchmarking">
-          <a class="pub-title" href="https://arxiv.org/abs/2504.07394">ClimateBench-M: A Multi-Modal Climate Data Benchmark with a Simple Generative Method</a>
-          <div class="pub-authors">Dongqi Fu, Yada Zhu, <span class="me">Zhining Liu</span>, Lecheng Zheng, Xiao Lin, Zihao Li, Liri Fang, Katherine Tieu, Onkar Bhardwaj, Kommy Weldemariam, Hanghang Tong, Hendrik Hamann, Jingrui He</div>
-          <div class="pub-venue"><em>CIKM 2025</em></div>
-          <div class="pub-insight"><strong>Key Insight:</strong> Climate modeling benefits from benchmarks that jointly test time-series, image, and generative signals.</div>
-          <div class="pub-links"><a class="pub-link" href="https://arxiv.org/abs/2504.07394"><i class="fas fa-file-alt"></i> Paper</a><a class="pub-link" href="https://github.com/iDEA-iSAIL-Lab-UIUC/ClimateBench-M"><i class="fab fa-github"></i> Code</a><a class="pub-link" href="https://huggingface.co/datasets/Violet24K/ClimateBench-M-TS"><i class="fas fa-database"></i> Dataset-TS</a><a class="pub-link" href="https://huggingface.co/datasets/Violet24K/ClimateBench-M-IMG"><i class="fas fa-database"></i> Dataset-IMG</a></div>
-          <div class="pub-tags"><span class="tag tag-multimodal">Multimodal</span><span class="tag tag-climate">Climate</span><span class="tag tag-benchmarking">Benchmarking</span></div>
+        <li class="pub-item" data-tags="time-series ensemble">
+          <a class="pub-title" href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=5WORAUQAAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=5WORAUQAAAAJ:fEOibwPWpKIC">Breaking Silos: Adaptive Model Fusion Unlocks Better Time Series Forecasting</a>
+          <div class="pub-authors"><span class="me">Z Liu</span>, Z Yang, X Lin, R Qiu, T Wei, Y Zhu, H Hamann, J He, H Tong</div>
+          <div class="pub-venue"><em>Proceedings of the 42nd International Conference on Machine Learning 267 …, 2025</em></div>
+          <div class="pub-links"><a class="pub-link" href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=5WORAUQAAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=5WORAUQAAAAJ:fEOibwPWpKIC"><i class="fas fa-graduation-cap"></i> Scholar</a></div>
+          <div class="pub-tags"><span class="tag tag-time-series">Time-Series</span><span class="tag tag-ensemble">Ensemble</span></div>
         </li>
-        <li class="pub-item" data-tags="llm reward-modeling fairness trustworthy-ai">
-          <a class="pub-title" href="https://aclanthology.org/2025.findings-emnlp.183/">Not All Voices Are Rewarded Equally: Probing and Repairing Reward Models across Human Diversity</a>
-          <div class="pub-authors">Zihao Li, Feihao Fang, Xitong Zhang, Jiaru Zou, <span class="me">Zhining Liu</span>, Wei Xiong, Ziwei Wu, Baoyu Jing, Jingrui He</div>
-          <div class="pub-venue"><em>EMNLP Findings 2025</em></div>
-          <div class="pub-insight"><strong>Key Insight:</strong> Reward models can encode demographic preference gaps, and targeted repair can reduce those disparities.</div>
-          <div class="pub-links"><a class="pub-link" href="https://aclanthology.org/2025.findings-emnlp.183/"><i class="fas fa-file-alt"></i> Paper</a><a class="pub-link" href="https://github.com/Violet24K/FaRM"><i class="fab fa-github"></i> Code</a></div>
-          <div class="pub-tags"><span class="tag tag-llm">LLM</span><span class="tag tag-reward-modeling">Reward-Modeling</span><span class="tag tag-fairness">Fairness</span><span class="tag tag-trustworthy-ai">Trustworthy-AI</span></div>
+        <li class="pub-item" data-tags="llm trustworthy-ai multimodal benchmarking fairness">
+          <a class="pub-title" href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=5WORAUQAAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=5WORAUQAAAAJ:tzM49s52ZIMC">MORALISE: A Structured Benchmark for Moral Alignment in Visual Language Models</a>
+          <div class="pub-authors">X Lin*, <span class="me">Z Liu*</span>, Z Yang*, G Li, R Qiu, S Wang, H Liu, H Li, S Keswani, ...</div>
+          <div class="pub-venue"><em>arXiv preprint arXiv:2505.14728, 2025</em></div>
+          <div class="pub-links"><a class="pub-link" href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=5WORAUQAAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=5WORAUQAAAAJ:tzM49s52ZIMC"><i class="fas fa-graduation-cap"></i> Scholar</a></div>
+          <div class="pub-tags"><span class="tag tag-llm">LLM</span><span class="tag tag-trustworthy-ai">Trustworthy-AI</span><span class="tag tag-multimodal">Multimodal</span><span class="tag tag-benchmarking">Benchmarking</span><span class="tag tag-fairness">Fairness</span></div>
         </li>
-        <li class="pub-item" data-tags="llm recommender-systems fairness">
-          <a class="pub-title" href="https://arxiv.org/abs/2501.19232">LLM-RecG: A Semantic Bias-Aware Framework for Zero-Shot Sequential Recommendation</a>
-          <div class="pub-authors">Yunzhe Li, Junting Wang, Hari Sundaram, <span class="me">Zhining Liu</span></div>
-          <div class="pub-venue"><em>RecSys 2025</em></div>
-          <div class="pub-insight"><strong>Key Insight:</strong> Semantic group information helps LLM recommenders recognize and reduce bias in zero-shot settings.</div>
-          <div class="pub-links"><a class="pub-link" href="https://arxiv.org/abs/2501.19232"><i class="fas fa-file-alt"></i> Paper</a><a class="pub-link" href="https://doi.org/10.1145/3705328.3748077"><i class="fas fa-file-alt"></i> ACM</a></div>
-          <div class="pub-tags"><span class="tag tag-llm">LLM</span><span class="tag tag-recommender-systems">Recommender-Systems</span><span class="tag tag-fairness">Fairness</span></div>
+        <li class="pub-item" data-tags="time-series">
+          <a class="pub-title" href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=5WORAUQAAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=5WORAUQAAAAJ:ZfRJV9d4-WMC">Cats: Mitigating correlation shift for multivariate time series classification</a>
+          <div class="pub-authors">X Lin, Z Zeng, T Wei, <span class="me">Z Liu</span>, H Tong</div>
+          <div class="pub-venue"><em>arXiv preprint arXiv:2504.04283, 2025</em></div>
+          <div class="pub-links"><a class="pub-link" href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=5WORAUQAAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=5WORAUQAAAAJ:ZfRJV9d4-WMC"><i class="fas fa-graduation-cap"></i> Scholar</a></div>
+          <div class="pub-tags"><span class="tag tag-time-series">Time-Series</span></div>
         </li>
-        <li class="pub-item" data-tags="graph gnn model-adaptation">
-          <a class="pub-title" href="https://openreview.net/forum?id=EpgoFFUM2q">Matcha: Mitigating Graph Structure Shifts with Test-Time Adaptation</a>
-          <div class="pub-authors">Wenxuan Bao, Zhichen Zeng, <span class="me">Zhining Liu</span>, Hanghang Tong, Jingrui He</div>
-          <div class="pub-venue"><em>ICLR 2025</em></div>
-          <div class="pub-insight"><strong>Key Insight:</strong> Test-time adaptation can mitigate graph structure shifts without retraining on the target graph.</div>
-          <div class="pub-links"><a class="pub-link" href="https://openreview.net/forum?id=EpgoFFUM2q"><i class="fas fa-file-alt"></i> Paper</a><a class="pub-link" href="https://arxiv.org/abs/2410.06976"><i class="fas fa-file-alt"></i> arXiv</a><a class="pub-link" href="https://github.com/baowenxuan/Matcha"><i class="fab fa-github"></i> Code</a></div>
-          <div class="pub-tags"><span class="tag tag-graph">Graph</span><span class="tag tag-gnn">GNN</span><span class="tag tag-model-adaptation">Model-Adaptation</span></div>
+        <li class="pub-item" data-tags="llm">
+          <a class="pub-title" href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=5WORAUQAAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=5WORAUQAAAAJ:XiVPGOgt02cC">SelfElicit: Your language model secretly knows where is the relevant evidence</a>
+          <div class="pub-authors"><span class="me">Z Liu</span>, RA Amjad, R Adkathimar, T Wei, H Tong</div>
+          <div class="pub-venue"><em>Proceedings of the 63rd Annual Meeting of the Association for Computational …, 2025</em></div>
+          <div class="pub-links"><a class="pub-link" href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=5WORAUQAAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=5WORAUQAAAAJ:XiVPGOgt02cC"><i class="fas fa-graduation-cap"></i> Scholar</a></div>
+          <div class="pub-tags"><span class="tag tag-llm">LLM</span></div>
         </li>
-        <li class="pub-item" data-tags="graph gnn temporal-graph">
-          <a class="pub-title" href="https://arxiv.org/abs/2412.16435">THeGCN: Temporal Heterophilic Graph Convolutional Network</a>
-          <div class="pub-authors">Yuchen Yan, Yuzhong Chen, Huiyuan Chen, Xiaoting Li, Zhe Xu, Zhichen Zeng, Lihui Liu, <span class="me">Zhining Liu</span>, Hanghang Tong</div>
-          <div class="pub-venue"><em>In submission, 2026</em></div>
-          <div class="pub-insight"><strong>Key Insight:</strong> Temporal heterophily requires graph convolutions that model changing cross-class neighborhood patterns.</div>
-          <div class="pub-links"><a class="pub-link" href="https://arxiv.org/abs/2412.16435"><i class="fas fa-file-alt"></i> Paper</a></div>
-          <div class="pub-tags"><span class="tag tag-graph">Graph</span><span class="tag tag-gnn">GNN</span><span class="tag tag-temporal-graph">Temporal-Graph</span></div>
+        <li class="pub-item" data-tags="time-series benchmarking">
+          <a class="pub-title" href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=5WORAUQAAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=5WORAUQAAAAJ:FPJr55Dyh1AC">TRQA: time series reasoning question and answering benchmark</a>
+          <div class="pub-authors">B Jing, S Chen, L Zheng, B Liu, Z Li, J Zou, T Wei, <span class="me">Z Liu</span>, Z Zeng, R Qiu, ...</div>
+          <div class="pub-venue"><em>Google Scholar entry, 2025</em></div>
+          <div class="pub-links"><a class="pub-link" href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=5WORAUQAAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=5WORAUQAAAAJ:FPJr55Dyh1AC"><i class="fas fa-graduation-cap"></i> Scholar</a></div>
+          <div class="pub-tags"><span class="tag tag-time-series">Time-Series</span><span class="tag tag-benchmarking">Benchmarking</span></div>
         </li>
-        <li class="pub-item" data-tags="time-series safety trustworthy-ai">
-          <a class="pub-title" href="https://arxiv.org/abs/2410.02195">BackTime: Backdoor Attacks on Multivariate Time Series Forecasting</a>
-          <div class="pub-authors">Xiao Lin, <span class="me">Zhining Liu</span>, Dongqi Fu, Ruizhong Qiu, Hanghang Tong</div>
-          <div class="pub-venue"><em>NeurIPS 2024 Spotlight</em></div>
-          <div class="pub-insight"><strong>Key Insight:</strong> Time-series forecasters can be compromised by backdoor triggers embedded in multivariate temporal patterns.</div>
-          <div class="pub-links"><a class="pub-link" href="https://arxiv.org/abs/2410.02195"><i class="fas fa-file-alt"></i> Paper</a><a class="pub-link" href="https://github.com/xiaolin-cs/BackTime"><i class="fab fa-github"></i> Code</a></div>
-          <div class="pub-tags"><span class="tag tag-time-series">Time-Series</span><span class="tag tag-safety">Safety</span><span class="tag tag-trustworthy-ai">Trustworthy-AI</span></div>
+        <li class="pub-item" data-tags="benchmarking class-imbalance">
+          <a class="pub-title" href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=5WORAUQAAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=5WORAUQAAAAJ:j8SEvjWlNXcC">CLIMB: Class-imbalanced learning benchmark on tabular data</a>
+          <div class="pub-authors"><span class="me">Z Liu</span>, Z Li, Z Yang, T Wei, J Kang, Y Zhu, H Hamann, J He, H Tong</div>
+          <div class="pub-venue"><em>Advances in Neural Information Processing Systems 38, 2025</em></div>
+          <div class="pub-links"><a class="pub-link" href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=5WORAUQAAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=5WORAUQAAAAJ:j8SEvjWlNXcC"><i class="fas fa-graduation-cap"></i> Scholar</a></div>
+          <div class="pub-tags"><span class="tag tag-benchmarking">Benchmarking</span><span class="tag tag-class-imbalance">Class-Imbalance</span></div>
         </li>
-        <li class="pub-item" data-tags="fairness interpretability trustworthy-ai">
-          <a class="pub-title" href="https://arxiv.org/abs/2406.08819">AIM: Attributing, Interpreting, Mitigating Data-encoded Unfairness</a>
-          <div class="pub-authors"><span class="me">Zhining Liu</span>, Ruizhong Qiu, Zhichen Zeng, Yada Zhu, Hendrik Hamann, Hanghang Tong</div>
-          <div class="pub-venue"><em>KDD 2024</em></div>
-          <div class="pub-insight"><strong>Key Insight:</strong> Data-encoded unfairness can be attributed, interpreted, and mitigated before it becomes model behavior.</div>
-          <div class="pub-links"><a class="pub-link" href="https://arxiv.org/abs/2406.08819"><i class="fas fa-file-alt"></i> Paper</a><a class="pub-link" href="https://github.com/ZhiningLiu1998/AIM"><i class="fab fa-github"></i> Code</a></div>
-          <div class="pub-tags"><span class="tag tag-fairness">Fairness</span><span class="tag tag-interpretability">Interpretability</span><span class="tag tag-trustworthy-ai">Trustworthy-AI</span></div>
+        <li class="pub-item" data-tags="graph">
+          <a class="pub-title" href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=5WORAUQAAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=5WORAUQAAAAJ:W5xh706n7nkC">Matcha: Mitigating Graph Structure Shifts with Test-Time Adaptation</a>
+          <div class="pub-authors">W Bao, Z Zeng, <span class="me">Z Liu</span>, H Tong, J He</div>
+          <div class="pub-venue"><em>The Thirteenth International Conference on Learning Representations, 2025</em></div>
+          <div class="pub-links"><a class="pub-link" href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=5WORAUQAAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=5WORAUQAAAAJ:W5xh706n7nkC"><i class="fas fa-graduation-cap"></i> Scholar</a></div>
+          <div class="pub-tags"><span class="tag tag-graph">Graph</span></div>
         </li>
-        <li class="pub-item" data-tags="graph gnn class-imbalance">
-          <a class="pub-title" href="https://arxiv.org/abs/2308.14181">Class-Imbalanced Graph Learning without Class Rebalancing</a>
-          <div class="pub-authors"><span class="me">Zhining Liu</span>, Zhichen Zeng, Ruizhong Qiu, Hyunsik Yoo, David Zhou, Zhe Xu, Yada Zhu, Kommy Weldemariam, Jingrui He, Hanghang Tong</div>
-          <div class="pub-venue"><em>ICML 2024</em></div>
-          <div class="pub-insight"><strong>Key Insight:</strong> Bias-aware graph learning can handle class imbalance without naive resampling or class reweighting.</div>
-          <div class="pub-links"><a class="pub-link" href="https://arxiv.org/abs/2308.14181"><i class="fas fa-file-alt"></i> Paper</a><a class="pub-link" href="https://github.com/ZhiningLiu1998/BAT"><i class="fab fa-github"></i> Code</a></div>
-          <div class="pub-tags"><span class="tag tag-graph">Graph</span><span class="tag tag-gnn">GNN</span><span class="tag tag-class-imbalance">Class-Imbalance</span></div>
+        <li class="pub-item" data-tags="graph time-series">
+          <a class="pub-title" href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=5WORAUQAAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=5WORAUQAAAAJ:_Re3VWB3Y0AC">Thegcn: Temporal heterophilic graph convolutional network</a>
+          <div class="pub-authors">Y Yan, Y Chen, H Chen, X Li, Z Xu, Z Zeng, L Liu, <span class="me">Z Liu</span>, H Tong</div>
+          <div class="pub-venue"><em>arXiv preprint arXiv:2412.16435, 2024</em></div>
+          <div class="pub-links"><a class="pub-link" href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=5WORAUQAAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=5WORAUQAAAAJ:_Re3VWB3Y0AC"><i class="fas fa-graduation-cap"></i> Scholar</a></div>
+          <div class="pub-tags"><span class="tag tag-graph">Graph</span><span class="tag tag-time-series">Time-Series</span></div>
         </li>
-        <li class="pub-item" data-tags="fairness trustworthy-ai">
-          <a class="pub-title" href="https://dl.acm.org/doi/10.1145/3630106.3659006">Group Fairness via Group Consensus</a>
-          <div class="pub-authors"><span class="me">Zhining Liu*</span>, Eunice Chan*, Ruizhong Qiu, Yuheng Zhang, Ross Maciejewski, Hanghang Tong</div>
-          <div class="pub-venue"><em>FAccT 2024</em></div>
-          <div class="pub-insight"><strong>Key Insight:</strong> Group consensus offers a practical fairness signal when protected groups disagree in complex ways.</div>
-          <div class="pub-links"><a class="pub-link" href="https://dl.acm.org/doi/10.1145/3630106.3659006"><i class="fas fa-file-alt"></i> Paper</a><a class="pub-link" href="https://facctconference.org/static/papers24/facct24-121.pdf"><i class="fas fa-file-pdf"></i> PDF</a></div>
-          <div class="pub-tags"><span class="tag tag-fairness">Fairness</span><span class="tag tag-trustworthy-ai">Trustworthy-AI</span></div>
+        <li class="pub-item" data-tags="trustworthy-ai time-series">
+          <a class="pub-title" href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=5WORAUQAAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=5WORAUQAAAAJ:eJXPG6dFmWUC">Backtime: Backdoor attacks on multivariate time series forecasting</a>
+          <div class="pub-authors">X Lin, <span class="me">Z Liu</span>, D Fu, R Qiu, H Tong</div>
+          <div class="pub-venue"><em>Advances in Neural Information Processing Systems 37, 131344-131368, 2024</em></div>
+          <div class="pub-links"><a class="pub-link" href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=5WORAUQAAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=5WORAUQAAAAJ:eJXPG6dFmWUC"><i class="fas fa-graduation-cap"></i> Scholar</a></div>
+          <div class="pub-tags"><span class="tag tag-trustworthy-ai">Trustworthy-AI</span><span class="tag tag-time-series">Time-Series</span></div>
         </li>
-        <li class="pub-item" data-tags="graph gnn optimal-transport">
-          <a class="pub-title" href="https://openreview.net/forum?id=uwoG7uKJT6">Graph Mixup on Approximate Gromov-Wasserstein Geodesics</a>
-          <div class="pub-authors">Zhichen Zeng, Ruizhong Qiu, Zhe Xu, <span class="me">Zhining Liu</span>, Yuchen Yan, Tianxin Wei, Lei Ying, Jingrui He, Hanghang Tong</div>
-          <div class="pub-venue"><em>ICML 2024</em></div>
-          <div class="pub-insight"><strong>Key Insight:</strong> Gromov-Wasserstein geodesics create topology-aware graph mixup paths for stronger augmentation.</div>
-          <div class="pub-links"><a class="pub-link" href="https://openreview.net/forum?id=uwoG7uKJT6"><i class="fas fa-file-alt"></i> Paper</a><a class="pub-link" href="https://proceedings.mlr.press/v235/zeng24e.html"><i class="fas fa-file-alt"></i> PMLR</a><a class="pub-link" href="https://github.com/zhichenz98/GeoMix-ICML24"><i class="fab fa-github"></i> Code</a></div>
-          <div class="pub-tags"><span class="tag tag-graph">Graph</span><span class="tag tag-gnn">GNN</span><span class="tag tag-optimal-transport">Optimal-Transport</span></div>
+        <li class="pub-item" data-tags="llm trustworthy-ai">
+          <a class="pub-title" href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=5WORAUQAAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=5WORAUQAAAAJ:BrmTIyaxlBUC">Wapiti: A watermark for finetuned open-source llms</a>
+          <div class="pub-authors">L Chen, R Qiu, S Yuan, <span class="me">Z Liu</span>, T Wei, H Yoo, Z Zeng, D Yang, H Tong</div>
+          <div class="pub-venue"><em>arXiv preprint arXiv:2410.06467, 2024</em></div>
+          <div class="pub-links"><a class="pub-link" href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=5WORAUQAAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=5WORAUQAAAAJ:BrmTIyaxlBUC"><i class="fas fa-graduation-cap"></i> Scholar</a></div>
+          <div class="pub-tags"><span class="tag tag-llm">LLM</span><span class="tag tag-trustworthy-ai">Trustworthy-AI</span></div>
         </li>
-        <li class="pub-item" data-tags="fairness recommender-systems trustworthy-ai">
-          <a class="pub-title" href="https://dl.acm.org/doi/10.1145/3589334.3645536">Ensuring User-side Fairness in Dynamic Recommender Systems</a>
-          <div class="pub-authors">Hyunsik Yoo, Zhichen Zeng, Jian Kang, Ruizhong Qiu, David Zhou, <span class="me">Zhining Liu</span>, Fei Wang, Charlie Xu, Eunice Chan, Hanghang Tong</div>
-          <div class="pub-venue"><em>WWW 2024</em></div>
-          <div class="pub-insight"><strong>Key Insight:</strong> Dynamic recommenders need fairness constraints that evolve with users, items, and exposure patterns.</div>
-          <div class="pub-links"><a class="pub-link" href="https://dl.acm.org/doi/10.1145/3589334.3645536"><i class="fas fa-file-alt"></i> Paper</a><a class="pub-link" href="https://arxiv.org/abs/2308.15651"><i class="fas fa-file-alt"></i> arXiv</a><a class="pub-link" href="https://github.com/hsyoo32/fade"><i class="fab fa-github"></i> Code</a></div>
-          <div class="pub-tags"><span class="tag tag-fairness">Fairness</span><span class="tag tag-recommender-systems">Recommender-Systems</span><span class="tag tag-trustworthy-ai">Trustworthy-AI</span></div>
+        <li class="pub-item" data-tags="trustworthy-ai fairness">
+          <a class="pub-title" href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=5WORAUQAAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=5WORAUQAAAAJ:eflP2zaiRacC">AIM: Attributing, interpreting, mitigating data unfairness</a>
+          <div class="pub-authors"><span class="me">Z Liu</span>, R Qiu, Z Zeng, Y Zhu, H Hamann, H Tong</div>
+          <div class="pub-venue"><em>Proceedings of the 30th ACM SIGKDD Conference on Knowledge Discovery and …, 2024</em></div>
+          <div class="pub-links"><a class="pub-link" href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=5WORAUQAAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=5WORAUQAAAAJ:eflP2zaiRacC"><i class="fas fa-graduation-cap"></i> Scholar</a></div>
+          <div class="pub-tags"><span class="tag tag-trustworthy-ai">Trustworthy-AI</span><span class="tag tag-fairness">Fairness</span></div>
         </li>
-        <li class="pub-item" data-tags="graph network-alignment optimal-transport">
-          <a class="pub-title" href="https://ojs.aaai.org/index.php/AAAI/article/view/29621">Hierarchical Multi-Marginal Optimal Transport for Network Alignment</a>
-          <div class="pub-authors">Zhichen Zeng, Boxin Du, Si Zhang, Yinglong Xia, <span class="me">Zhining Liu</span>, Hanghang Tong</div>
-          <div class="pub-venue"><em>AAAI 2024</em></div>
-          <div class="pub-insight"><strong>Key Insight:</strong> Hierarchical multi-marginal optimal transport aligns multiple networks through shared structural signals.</div>
-          <div class="pub-links"><a class="pub-link" href="https://ojs.aaai.org/index.php/AAAI/article/view/29621"><i class="fas fa-file-alt"></i> Paper</a><a class="pub-link" href="https://arxiv.org/abs/2310.04470"><i class="fas fa-file-alt"></i> arXiv</a></div>
-          <div class="pub-tags"><span class="tag tag-graph">Graph</span><span class="tag tag-network-alignment">Network-Alignment</span><span class="tag tag-optimal-transport">Optimal-Transport</span></div>
+        <li class="pub-item" data-tags="graph">
+          <a class="pub-title" href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=5WORAUQAAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=5WORAUQAAAAJ:mvPsJ3kp5DgC">Graph mixup on approximate gromov–wasserstein geodesics</a>
+          <div class="pub-authors">Z Zeng, R Qiu, Z Xu, <span class="me">Z Liu</span>, Y Yan, T Wei, L Ying, J He, H Tong</div>
+          <div class="pub-venue"><em>Forty-first International Conference on Machine Learning, 2024</em></div>
+          <div class="pub-links"><a class="pub-link" href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=5WORAUQAAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=5WORAUQAAAAJ:mvPsJ3kp5DgC"><i class="fas fa-graduation-cap"></i> Scholar</a></div>
+          <div class="pub-tags"><span class="tag tag-graph">Graph</span></div>
         </li>
-        <li class="pub-item" data-tags="graph gnn trustworthy-ai">
-          <a class="pub-title" href="https://doi.org/10.1016/j.ins.2023.119463">Taming Over-Smoothing Representation on Heterophilic Graphs</a>
-          <div class="pub-authors">Kai Guo, Xiaofeng Cao, <span class="me">Zhining Liu</span>, Yi Chang</div>
-          <div class="pub-venue"><em>Information Sciences, 2023</em></div>
-          <div class="pub-insight"><strong>Key Insight:</strong> Heterophilic graphs require representation smoothing to be controlled rather than blindly increased.</div>
-          <div class="pub-links"><a class="pub-link" href="https://doi.org/10.1016/j.ins.2023.119463"><i class="fas fa-file-alt"></i> Paper</a></div>
-          <div class="pub-tags"><span class="tag tag-graph">Graph</span><span class="tag tag-gnn">GNN</span><span class="tag tag-trustworthy-ai">Trustworthy-AI</span></div>
+        <li class="pub-item" data-tags="trustworthy-ai fairness">
+          <a class="pub-title" href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=5WORAUQAAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=5WORAUQAAAAJ:LPZeul_q3PIC">Group fairness via group consensus</a>
+          <div class="pub-authors">E Chan*, <span class="me">Z Liu*</span>, R Qiu, Y Zhang, R Maciejewski, H Tong</div>
+          <div class="pub-venue"><em>Proceedings of the 2024 ACM Conference on Fairness, Accountability, and …, 2024</em></div>
+          <div class="pub-links"><a class="pub-link" href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=5WORAUQAAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=5WORAUQAAAAJ:LPZeul_q3PIC"><i class="fas fa-graduation-cap"></i> Scholar</a></div>
+          <div class="pub-tags"><span class="tag tag-trustworthy-ai">Trustworthy-AI</span><span class="tag tag-fairness">Fairness</span></div>
         </li>
-        <li class="pub-item" data-tags="healthcare time-series">
-          <a class="pub-title" href="https://dl.acm.org/doi/10.1145/3580305.3599545">Web-based Long-term Spine Treatment Outcome Forecasting</a>
-          <div class="pub-authors"><span class="me">Zhining Liu*</span>, Hangting Ye*, Wei Cao, Amir Mohammad Amiri, Jiang Bian, Yi Chang, Jon D. Lurie, Jim Weinstein, Tie-Yan Liu</div>
-          <div class="pub-venue"><em>KDD 2023</em></div>
-          <div class="pub-insight"><strong>Key Insight:</strong> Web-based modeling can support long-term spine treatment outcome forecasting from real clinical data.</div>
-          <div class="pub-links"><a class="pub-link" href="https://dl.acm.org/doi/10.1145/3580305.3599545"><i class="fas fa-file-alt"></i> Paper</a></div>
-          <div class="pub-tags"><span class="tag tag-healthcare">Healthcare</span><span class="tag tag-time-series">Time-Series</span></div>
+        <li class="pub-item" data-tags="trustworthy-ai fairness recommender-systems">
+          <a class="pub-title" href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=5WORAUQAAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=5WORAUQAAAAJ:kRWSkSYxWN8C">Ensuring user-side fairness in dynamic recommender systems</a>
+          <div class="pub-authors">H Yoo, Z Zeng, J Kang, R Qiu, D Zhou, <span class="me">Z Liu</span>, F Wang, C Xu, E Chan, ...</div>
+          <div class="pub-venue"><em>Proceedings of the ACM web conference 2024, 3667-3678, 2024</em></div>
+          <div class="pub-links"><a class="pub-link" href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=5WORAUQAAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=5WORAUQAAAAJ:kRWSkSYxWN8C"><i class="fas fa-graduation-cap"></i> Scholar</a></div>
+          <div class="pub-tags"><span class="tag tag-trustworthy-ai">Trustworthy-AI</span><span class="tag tag-fairness">Fairness</span><span class="tag tag-recommender-systems">Recommender-Systems</span></div>
         </li>
-        <li class="pub-item" data-tags="anomaly-detection class-imbalance tabular-data">
-          <a class="pub-title" href="https://doi.org/10.1109/ICDE55515.2023.00200">UADB: Unsupervised Anomaly Detection Booster</a>
-          <div class="pub-authors"><span class="me">Zhining Liu*</span>, Hangting Ye*, Xinyi Shen, Wei Cao, Shun Zheng, Xiaofan Gui, Huishuai Zhang, Yi Chang, Jiang Bian</div>
-          <div class="pub-venue"><em>ICDE 2023</em></div>
-          <div class="pub-insight"><strong>Key Insight:</strong> A boosting wrapper can improve unsupervised anomaly detectors without relying on anomaly labels.</div>
-          <div class="pub-links"><a class="pub-link" href="https://doi.org/10.1109/ICDE55515.2023.00200"><i class="fas fa-file-alt"></i> Paper</a><a class="pub-link" href="https://arxiv.org/abs/2306.01997"><i class="fas fa-file-alt"></i> arXiv</a><a class="pub-link" href="https://github.com/HangtingYe/UADB"><i class="fab fa-github"></i> Code</a></div>
-          <div class="pub-tags"><span class="tag tag-anomaly-detection">Anomaly-Detection</span><span class="tag tag-class-imbalance">Class-Imbalance</span><span class="tag tag-tabular-data">Tabular-Data</span></div>
+        <li class="pub-item" data-tags="trustworthy-ai graph fairness">
+          <a class="pub-title" href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=5WORAUQAAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=5WORAUQAAAAJ:1qzjygNMrQYC">Hierarchical multi-marginal optimal transport for network alignment</a>
+          <div class="pub-authors">Z Zeng, B Du, S Zhang, Y Xia, <span class="me">Z Liu</span>, H Tong</div>
+          <div class="pub-venue"><em>Proceedings of the AAAI Conference on Artificial Intelligence 38 (15), 16660 …, 2024</em></div>
+          <div class="pub-links"><a class="pub-link" href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=5WORAUQAAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=5WORAUQAAAAJ:1qzjygNMrQYC"><i class="fas fa-graduation-cap"></i> Scholar</a></div>
+          <div class="pub-tags"><span class="tag tag-trustworthy-ai">Trustworthy-AI</span><span class="tag tag-graph">Graph</span><span class="tag tag-fairness">Fairness</span></div>
         </li>
-        <li class="pub-item" data-tags="graph gnn interpretability survey">
-          <a class="pub-title" href="https://doi.org/10.1109/BigData55660.2022.10020943">A Survey of Explainable Graph Neural Networks for Cyber Malware Analysis</a>
-          <div class="pub-authors">Dana Warmsley, Alex Waagen, Jiejun Xu, <span class="me">Zhining Liu</span>, Hanghang Tong</div>
-          <div class="pub-venue"><em>IEEE BigData 2022</em></div>
-          <div class="pub-insight"><strong>Key Insight:</strong> Explainable GNN techniques can make cyber malware analysis more transparent and actionable.</div>
-          <div class="pub-links"><a class="pub-link" href="https://doi.org/10.1109/BigData55660.2022.10020943"><i class="fas fa-file-alt"></i> Paper</a><a class="pub-link" href="https://experts.illinois.edu/en/publications/a-survey-of-explainable-graph-neural-networks-for-cyber-malware-a/"><i class="fas fa-link"></i> Info</a></div>
-          <div class="pub-tags"><span class="tag tag-graph">Graph</span><span class="tag tag-gnn">GNN</span><span class="tag tag-interpretability">Interpretability</span><span class="tag tag-survey">Survey</span></div>
+        <li class="pub-item" data-tags="graph class-imbalance">
+          <a class="pub-title" href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=5WORAUQAAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=5WORAUQAAAAJ:8AbLer7MMksC">Class-Imbalanced Graph Learning without Class Rebalancing</a>
+          <div class="pub-authors"><span class="me">Z Liu</span>, R Qiu, Z Zeng, H Yoo, D Zhou, Z Xu, Y Zhu, K Weldemariam, J He, ...</div>
+          <div class="pub-venue"><em>Forty-first International Conference on Machine Learning, 2024</em></div>
+          <div class="pub-links"><a class="pub-link" href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=5WORAUQAAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=5WORAUQAAAAJ:8AbLer7MMksC"><i class="fas fa-graduation-cap"></i> Scholar</a></div>
+          <div class="pub-tags"><span class="tag tag-graph">Graph</span><span class="tag tag-class-imbalance">Class-Imbalance</span></div>
         </li>
-        <li class="pub-item" data-tags="class-imbalance ensemble meta-learning">
-          <a class="pub-title" href="https://arxiv.org/abs/2010.08830">MESA: Boost Ensemble Imbalanced Learning with Meta-sampler</a>
-          <div class="pub-authors"><span class="me">Zhining Liu</span>, Pengfei Wei, Jing Jiang, Wei Cao, Jiang Bian, Yi Chang</div>
-          <div class="pub-venue"><em>NeurIPS 2020</em></div>
-          <div class="pub-insight"><strong>Key Insight:</strong> A meta-sampler can learn how to construct better ensemble training sets for imbalanced data.</div>
-          <div class="pub-links"><a class="pub-link" href="https://arxiv.org/abs/2010.08830"><i class="fas fa-file-alt"></i> Paper</a><a class="pub-link" href="https://github.com/ZhiningLiu1998/mesa"><i class="fab fa-github"></i> Code</a><a class="pub-link" href="https://zhuanlan.zhihu.com/p/268539195"><i class="fas fa-pen"></i> Zhihu</a></div>
-          <div class="pub-tags"><span class="tag tag-class-imbalance">Class-Imbalance</span><span class="tag tag-ensemble">Ensemble</span><span class="tag tag-meta-learning">Meta-Learning</span></div>
+        <li class="pub-item" data-tags="graph">
+          <a class="pub-title" href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=5WORAUQAAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=5WORAUQAAAAJ:geHnlv5EZngC">Taming over-smoothing representation on heterophilic graphs</a>
+          <div class="pub-authors">K Guo, X Cao, <span class="me">Z Liu</span>, Y Chang</div>
+          <div class="pub-venue"><em>Information Sciences 647, 119463, 2023</em></div>
+          <div class="pub-links"><a class="pub-link" href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=5WORAUQAAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=5WORAUQAAAAJ:geHnlv5EZngC"><i class="fas fa-graduation-cap"></i> Scholar</a></div>
+          <div class="pub-tags"><span class="tag tag-graph">Graph</span></div>
         </li>
-        <li class="pub-item" data-tags="class-imbalance ensemble tabular-data">
-          <a class="pub-title" href="https://arxiv.org/abs/1909.03500">Self-paced Ensemble for Highly Imbalanced Massive Data Classification</a>
-          <div class="pub-authors"><span class="me">Zhining Liu</span>, Wei Cao, Zhifeng Gao, Jiang Bian, Hechang Chen, Yi Chang, Tie-Yan Liu</div>
-          <div class="pub-venue"><em>ICDE 2020</em></div>
-          <div class="pub-insight"><strong>Key Insight:</strong> Self-paced sampling lets ensembles learn from massive imbalanced data from easy cases to harder ones.</div>
-          <div class="pub-links"><a class="pub-link" href="https://arxiv.org/abs/1909.03500"><i class="fas fa-file-alt"></i> Paper</a><a class="pub-link" href="https://github.com/ZhiningLiu1998/self-paced-ensemble"><i class="fab fa-github"></i> Code</a><a class="pub-link" href="https://zhuanlan.zhihu.com/p/86891438"><i class="fas fa-pen"></i> Zhihu</a></div>
-          <div class="pub-tags"><span class="tag tag-class-imbalance">Class-Imbalance</span><span class="tag tag-ensemble">Ensemble</span><span class="tag tag-tabular-data">Tabular-Data</span></div>
+        <li class="pub-item" data-tags="time-series">
+          <a class="pub-title" href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=5WORAUQAAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=5WORAUQAAAAJ:q3oQSFYPqjQC">Web-based long-term spine treatment outcome forecasting</a>
+          <div class="pub-authors">H Ye*, <span class="me">Z Liu*</span>, W Cao, AM Amiri, J Bian, Y Chang, JD Lurie, J Weinstein, ...</div>
+          <div class="pub-venue"><em>Proceedings of the 29th ACM SIGKDD Conference on Knowledge Discovery and …, 2023</em></div>
+          <div class="pub-links"><a class="pub-link" href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=5WORAUQAAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=5WORAUQAAAAJ:q3oQSFYPqjQC"><i class="fas fa-graduation-cap"></i> Scholar</a></div>
+          <div class="pub-tags"><span class="tag tag-time-series">Time-Series</span></div>
+        </li>
+        <li class="pub-item" data-tags="">
+          <a class="pub-title" href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=5WORAUQAAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=5WORAUQAAAAJ:VOx2b1Wkg3QC">Uadb: Unsupervised anomaly detection booster</a>
+          <div class="pub-authors">H Ye*, <span class="me">Z Liu*</span>, X Shen, W Cao, S Zheng, X Gui, H Zhang, Y Chang, J Bian</div>
+          <div class="pub-venue"><em>2023 IEEE 39th International Conference on Data Engineering (ICDE), 2593-2606, 2023</em></div>
+          <div class="pub-links"><a class="pub-link" href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=5WORAUQAAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=5WORAUQAAAAJ:VOx2b1Wkg3QC"><i class="fas fa-graduation-cap"></i> Scholar</a></div>
+        </li>
+        <li class="pub-item" data-tags="trustworthy-ai graph">
+          <a class="pub-title" href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=5WORAUQAAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=5WORAUQAAAAJ:V3AGJWp-ZtQC">A survey of explainable graph neural networks for cyber malware analysis</a>
+          <div class="pub-authors">D Warmsley, A Waagen, J Xu, <span class="me">Z Liu</span>, H Tong</div>
+          <div class="pub-venue"><em>2022 IEEE international conference on big data (Big Data), 2932-2939, 2022</em></div>
+          <div class="pub-links"><a class="pub-link" href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=5WORAUQAAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=5WORAUQAAAAJ:V3AGJWp-ZtQC"><i class="fas fa-graduation-cap"></i> Scholar</a></div>
+          <div class="pub-tags"><span class="tag tag-trustworthy-ai">Trustworthy-AI</span><span class="tag tag-graph">Graph</span></div>
+        </li>
+        <li class="pub-item" data-tags="graph">
+          <a class="pub-title" href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=5WORAUQAAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=5WORAUQAAAAJ:kzcrU_BdoSEC">Towards Unified Representations of Knowledge Graph and Expert Rules for Machine Learning and Reasoning</a>
+          <div class="pub-authors">Z Wei, Y Wang, J Li, <span class="me">Z Liu</span>, E Yu, Y Tian, X Wang, Y Chang</div>
+          <div class="pub-venue"><em>Proceedings of the 2nd Conference of the Asia-Pacific Chapter of the …, 2022</em></div>
+          <div class="pub-links"><a class="pub-link" href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=5WORAUQAAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=5WORAUQAAAAJ:kzcrU_BdoSEC"><i class="fas fa-graduation-cap"></i> Scholar</a></div>
+          <div class="pub-tags"><span class="tag tag-graph">Graph</span></div>
+        </li>
+        <li class="pub-item" data-tags="class-imbalance">
+          <a class="pub-title" href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=5WORAUQAAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=5WORAUQAAAAJ:fQNAKQ3IYiAC">Handling inter-class and intra-class imbalance in class-imbalanced learning</a>
+          <div class="pub-authors"><span class="me">Z Liu</span>, P Wei, Z Wei, B Yu, J Jiang, W Cao, J Bian, Y Chang</div>
+          <div class="pub-venue"><em>arXiv preprint arXiv:2111.12791, 2021</em></div>
+          <div class="pub-links"><a class="pub-link" href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=5WORAUQAAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=5WORAUQAAAAJ:fQNAKQ3IYiAC"><i class="fas fa-graduation-cap"></i> Scholar</a></div>
+          <div class="pub-tags"><span class="tag tag-class-imbalance">Class-Imbalance</span></div>
+        </li>
+        <li class="pub-item" data-tags="ensemble class-imbalance">
+          <a class="pub-title" href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=5WORAUQAAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=5WORAUQAAAAJ:vRqMK49ujn8C">IMBENS: Ensemble class-imbalanced learning in Python</a>
+          <div class="pub-authors"><span class="me">Z Liu</span>, J Kang, H Tong, Y Chang</div>
+          <div class="pub-venue"><em>arXiv preprint arXiv:2111.12776, 2021</em></div>
+          <div class="pub-links"><a class="pub-link" href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=5WORAUQAAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=5WORAUQAAAAJ:vRqMK49ujn8C"><i class="fas fa-graduation-cap"></i> Scholar</a></div>
+          <div class="pub-tags"><span class="tag tag-ensemble">Ensemble</span><span class="tag tag-class-imbalance">Class-Imbalance</span></div>
+        </li>
+        <li class="pub-item" data-tags="ensemble class-imbalance">
+          <a class="pub-title" href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=5WORAUQAAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=5WORAUQAAAAJ:tS2w5q8j5-wC">Self-paced ensemble for highly imbalanced massive data classification</a>
+          <div class="pub-authors"><span class="me">Z Liu</span>, W Cao, Z Gao, J Bian, H Chen, Y Chang, TY Liu</div>
+          <div class="pub-venue"><em>2020 IEEE 36th international conference on data engineering (ICDE), 841-852, 2020</em></div>
+          <div class="pub-links"><a class="pub-link" href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=5WORAUQAAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=5WORAUQAAAAJ:tS2w5q8j5-wC"><i class="fas fa-graduation-cap"></i> Scholar</a></div>
+          <div class="pub-tags"><span class="tag tag-ensemble">Ensemble</span><span class="tag tag-class-imbalance">Class-Imbalance</span></div>
+        </li>
+        <li class="pub-item" data-tags="ensemble class-imbalance">
+          <a class="pub-title" href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=5WORAUQAAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=5WORAUQAAAAJ:4fKUyHm3Qg0C">MESA: boost ensemble imbalanced learning with meta-sampler</a>
+          <div class="pub-authors"><span class="me">Z Liu</span>, P Wei, J Jiang, W Cao, J Bian, Y Chang</div>
+          <div class="pub-venue"><em>Advances in neural information processing systems 33, 14463-14474, 2020</em></div>
+          <div class="pub-links"><a class="pub-link" href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=5WORAUQAAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=5WORAUQAAAAJ:4fKUyHm3Qg0C"><i class="fas fa-graduation-cap"></i> Scholar</a></div>
+          <div class="pub-tags"><span class="tag tag-ensemble">Ensemble</span><span class="tag tag-class-imbalance">Class-Imbalance</span></div>
+        </li>
+        <li class="pub-item" data-tags="llm ensemble">
+          <a class="pub-title" href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=5WORAUQAAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=5WORAUQAAAAJ:0izLItjtcgwC">Reinforcement Routing for Mixtures of LoRAs in Parameter-Efficient LLM Finetuning</a>
+          <div class="pub-authors">R Qiu, H Zeng, Y Xia, J Feng, Y Meng, R Chen, D Fu, Q Wang, J Liu, ...</div>
+          <div class="pub-venue"><em>Google Scholar entry</em></div>
+          <div class="pub-links"><a class="pub-link" href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=5WORAUQAAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=5WORAUQAAAAJ:0izLItjtcgwC"><i class="fas fa-graduation-cap"></i> Scholar</a></div>
+          <div class="pub-tags"><span class="tag tag-llm">LLM</span><span class="tag tag-ensemble">Ensemble</span></div>
+        </li>
+        <li class="pub-item" data-tags="llm">
+          <a class="pub-title" href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=5WORAUQAAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=5WORAUQAAAAJ:hCrLmN-GePgC">Inference Scaling of LLM Ensembling: Bridging Token Spaces with Token Translation</a>
+          <div class="pub-authors">T Wei, Z Zeng, R Qiu, <span class="me">Z Liu</span>, X Ning, X He, W Bao, Q He, X Tang, H Tong, ...</div>
+          <div class="pub-venue"><em>Google Scholar entry</em></div>
+          <div class="pub-links"><a class="pub-link" href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=5WORAUQAAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=5WORAUQAAAAJ:hCrLmN-GePgC"><i class="fas fa-graduation-cap"></i> Scholar</a></div>
+          <div class="pub-tags"><span class="tag tag-llm">LLM</span></div>
         </li>
       </ul>
       <button class="pub-show-all" id="pubShowAll" type="button">Show all papers</button>
@@ -1647,10 +1638,10 @@
     <div class="container">
       <div class="site-analytics">
         <strong>Site Analytics</strong>
-        <div id="clustrmapsMount" aria-live="polite">
-          <a class="clustrmaps-fallback" href="https://clustrmaps.com/site/1c3dc" title="Visit tracker">Loading visitor map...</a>
+        <div id="visitorMapMount" aria-live="polite">
+          <a class="visitor-map-fallback" href="https://whos.amung.us/stats/zhiningliu/" title="Visit tracker">Loading visitor map...</a>
         </div>
-        <noscript><a class="clustrmaps-fallback" href="https://clustrmaps.com/site/1c3dc" title="Visit tracker">View visitor map</a></noscript>
+        <noscript><a class="visitor-map-fallback" href="https://whos.amung.us/stats/zhiningliu/" title="Visit tracker">View visitor map</a></noscript>
       </div>
       <div>© <span id="year"></span> Zhining Liu. Built as a lightweight static homepage.</div>
     </div>
@@ -2301,16 +2292,22 @@
       if (event.key === "ArrowRight") moveLightbox(1);
     });
 
-    function loadClustrMaps() {
-      const mount = document.getElementById("clustrmapsMount");
+    function loadVisitorMap() {
+      const mount = document.getElementById("visitorMapMount");
       if (!mount) return;
 
-      const fallback = mount.querySelector(".clustrmaps-fallback");
+      const fallback = mount.querySelector(".visitor-map-fallback");
+      const siteKey = "zhiningliu";
+      const widgetId = "zhiningliumap";
+
+      window._wau = window._wau || [];
+      window._wau.push(["map", siteKey, widgetId, "512", "256", "night", "star-yellow"]);
+
       const script = document.createElement("script");
       script.type = "text/javascript";
-      script.id = "clustrmaps";
+      script.id = `_wau${widgetId}`;
       script.async = true;
-      script.src = "https://clustrmaps.com/map_v2.js?cl=6e97d1&w=512&t=tt&d=s7da3uibCWrEACtenkU2Dnw2AuuAP4rk7LBtrM3J70k&co=ffffff";
+      script.src = "https://waust.at/m.js";
 
       function showFallback() {
         if (!fallback) return;
@@ -2320,7 +2317,7 @@
 
       script.addEventListener("load", () => {
         window.setTimeout(() => {
-          const hasWidget = mount.querySelector("img, canvas, iframe, .clustrmaps-map, .clustrmaps-map-container");
+          const hasWidget = mount.querySelector("img, canvas, iframe, object, embed");
           if (hasWidget && fallback) fallback.style.display = "none";
         }, 500);
       });
@@ -2328,14 +2325,14 @@
       mount.appendChild(script);
 
       window.setTimeout(() => {
-        const hasWidget = mount.querySelector("img, canvas, iframe, .clustrmaps-map, .clustrmaps-map-container");
+        const hasWidget = mount.querySelector("img, canvas, iframe, object, embed");
         if (!hasWidget) {
           showFallback();
         }
       }, 8000);
     }
 
-    loadClustrMaps();
+    loadVisitorMap();
   </script>
 </body>
 </html>
