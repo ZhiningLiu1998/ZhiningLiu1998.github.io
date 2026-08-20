@@ -996,19 +996,13 @@
       margin-bottom: 24px;
     }
 
-    #visitorMapMount,
-    #visitorMapMount img,
-    #visitorMapMount canvas,
-    #visitorMapMount iframe {
-      max-width: min(512px, 100%);
+    #visitorMapMount {
+      max-width: 100%;
+      width: 600px;
     }
 
-    #visitorMapMount img,
-    #visitorMapMount iframe {
-      border: 1px solid var(--line);
-      border-radius: 8px;
-      display: block;
-      height: auto;
+    #visitorMapMount #mapmyvisitors-widget {
+      max-width: 100%;
     }
 
     .visitor-map-fallback {
@@ -1639,9 +1633,9 @@
       <div class="site-analytics">
         <strong>Site Analytics</strong>
         <div id="visitorMapMount" aria-live="polite">
-          <a class="visitor-map-fallback" href="https://whos.amung.us/stats/zhiningliu/" title="Visit tracker">Loading visitor map...</a>
+          <a class="visitor-map-fallback" href="https://mapmyvisitors.com/web/1c7ld" title="Visitor map stats">Loading visitor map...</a>
         </div>
-        <noscript><a class="visitor-map-fallback" href="https://whos.amung.us/stats/zhiningliu/" title="Visit tracker">View visitor map</a></noscript>
+        <noscript><a class="visitor-map-fallback" href="https://mapmyvisitors.com/web/1c7ld" title="Visitor map stats">View visitor map</a></noscript>
       </div>
       <div>© <span id="year"></span> Zhining Liu. Built as a lightweight static homepage.</div>
     </div>
@@ -2297,17 +2291,11 @@
       if (!mount) return;
 
       const fallback = mount.querySelector(".visitor-map-fallback");
-      const siteKey = "zhiningliu";
-      const widgetId = "zhiningliumap";
-
-      window._wau = window._wau || [];
-      window._wau.push(["map", siteKey, widgetId, "512", "256", "night", "star-yellow"]);
-
       const script = document.createElement("script");
       script.type = "text/javascript";
-      script.id = `_wau${widgetId}`;
+      script.id = "mapmyvisitors";
       script.async = true;
-      script.src = "https://waust.at/m.js";
+      script.src = "https://mapmyvisitors.com/map.js?cl=4c778e&w=a&t=tt&d=JaY55H1cvUyEKvmJh_8DQoXBW_Owoc6JErSgoPA1uhg&co=fcfeff&ct=808080&cmo=3acc3a&cmn=ff5353";
 
       function showFallback() {
         if (!fallback) return;
@@ -2315,20 +2303,22 @@
         fallback.style.display = "";
       }
 
-      script.addEventListener("load", () => {
-        window.setTimeout(() => {
-          const hasWidget = mount.querySelector("img, canvas, iframe, object, embed");
-          if (hasWidget && fallback) fallback.style.display = "none";
-        }, 500);
+      const observer = new MutationObserver(() => {
+        if (!mount.querySelector("#mapmyvisitors-widget")) return;
+        if (fallback) fallback.style.display = "none";
+        observer.disconnect();
       });
-      script.addEventListener("error", showFallback);
+      observer.observe(mount, { childList: true, subtree: true });
+
+      script.addEventListener("error", () => {
+        observer.disconnect();
+        showFallback();
+      });
       mount.appendChild(script);
 
       window.setTimeout(() => {
-        const hasWidget = mount.querySelector("img, canvas, iframe, object, embed");
-        if (!hasWidget) {
-          showFallback();
-        }
+        observer.disconnect();
+        if (!mount.querySelector("#mapmyvisitors-widget")) showFallback();
       }, 8000);
     }
 
