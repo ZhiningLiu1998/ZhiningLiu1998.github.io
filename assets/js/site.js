@@ -55,53 +55,155 @@ if (zhihuFollowersBadge) {
     .catch(() => {});
 }
 
-const interestCards = Array.from(document.querySelectorAll(".interest-card"));
+const researchPaperTriggers = Array.from(document.querySelectorAll(".research-paper-trigger"));
+const researchPaperData = window.researchPaperData || {};
 
-function showTopicPapers(card, activeButton) {
-  const panelId = activeButton.dataset.topicPanel;
-  const topicButtons = Array.from(card.querySelectorAll(".interest-topic"));
-  const topicPanels = Array.from(card.querySelectorAll(".topic-paper-panel"));
+if (researchPaperTriggers.length) {
+  const popover = document.createElement("aside");
+  popover.className = "research-paper-popover";
+  popover.id = "researchPaperPopover";
+  popover.hidden = true;
+  popover.tabIndex = 0;
+  popover.setAttribute("role", "dialog");
+  popover.setAttribute("aria-labelledby", "researchPaperTitle");
+  popover.innerHTML = `
+    <button class="research-paper-close" type="button" aria-label="Close paper details">
+      <i class="fas fa-times" aria-hidden="true"></i>
+    </button>
+    <div class="research-paper-venue"></div>
+    <h3 id="researchPaperTitle"></h3>
+    <div class="research-paper-topics" aria-label="Paper topics"></div>
+    <p class="research-paper-insight"><strong>Core insight</strong><span></span></p>
+    <div class="research-paper-resources">
+      <strong>Resources</strong>
+      <div class="research-paper-links"></div>
+    </div>
+  `;
+  document.body.appendChild(popover);
 
-  topicButtons.forEach(button => {
-    const isActive = button === activeButton;
-    button.classList.toggle("active", isActive);
-    button.setAttribute("aria-expanded", String(isActive));
-  });
-  topicPanels.forEach(panel => {
-    panel.hidden = panel.id !== panelId;
-  });
-}
+  const closeButton = popover.querySelector(".research-paper-close");
+  const venue = popover.querySelector(".research-paper-venue");
+  const title = popover.querySelector("h3");
+  const topics = popover.querySelector(".research-paper-topics");
+  const insight = popover.querySelector(".research-paper-insight span");
+  const resourceLinks = popover.querySelector(".research-paper-links");
+  let activeTrigger = null;
+  let closeTimer = null;
 
-function hideTopicPapers(card) {
-  card.querySelectorAll(".interest-topic").forEach(button => {
-    button.classList.remove("active");
-    button.setAttribute("aria-expanded", "false");
-  });
-  card.querySelectorAll(".topic-paper-panel").forEach(panel => {
-    panel.hidden = true;
-  });
-}
+  function positionResearchPaperPopover() {
+    if (!activeTrigger || popover.hidden) return;
 
-interestCards.forEach(card => {
-  card.querySelectorAll(".interest-topic").forEach(button => {
-    button.addEventListener("pointerenter", event => {
-      if (event.pointerType !== "touch") showTopicPapers(card, button);
+    const triggerRect = activeTrigger.getBoundingClientRect();
+    const width = Math.min(360, window.innerWidth - 20);
+    popover.style.width = `${width}px`;
+
+    const popoverHeight = popover.offsetHeight;
+    const preferredLeft = triggerRect.left + triggerRect.width / 2 - width / 2;
+    const left = Math.max(10, Math.min(preferredLeft, window.innerWidth - width - 10));
+    const below = triggerRect.bottom + 10;
+    const above = triggerRect.top - popoverHeight - 10;
+    const showBelow = below + popoverHeight <= window.innerHeight - 10;
+    const top = showBelow ? below : Math.max(10, above);
+    const arrowLeft = Math.max(14, Math.min(
+      triggerRect.left + triggerRect.width / 2 - left,
+      width - 14,
+    ));
+
+    popover.style.left = `${left}px`;
+    popover.style.top = `${top}px`;
+    popover.style.setProperty("--research-paper-arrow-left", `${arrowLeft}px`);
+    popover.classList.toggle("is-below", showBelow);
+    popover.classList.toggle("is-above", !showBelow);
+  }
+
+  function renderResourceLinks(links) {
+    resourceLinks.replaceChildren();
+    links.forEach(link => {
+      const anchor = document.createElement("a");
+      const icon = document.createElement("i");
+      icon.className = link.icon;
+      icon.setAttribute("aria-hidden", "true");
+      anchor.href = link.url;
+      anchor.target = "_blank";
+      anchor.rel = "noopener noreferrer";
+      anchor.append(icon, ` ${link.label}`);
+      resourceLinks.appendChild(anchor);
     });
-    button.addEventListener("focus", () => showTopicPapers(card, button));
-    button.addEventListener("click", () => showTopicPapers(card, button));
+  }
+
+  function showResearchPaper(trigger) {
+    const paper = researchPaperData[trigger.dataset.paperId];
+    const topicInsight = paper?.insights[trigger.dataset.topicId];
+    if (!paper || !topicInsight) return;
+
+    clearTimeout(closeTimer);
+    activeTrigger?.setAttribute("aria-expanded", "false");
+    activeTrigger = trigger;
+
+    venue.textContent = paper.venue;
+    title.textContent = paper.title;
+    insight.textContent = topicInsight;
+    topics.replaceChildren(...paper.topics.map(topic => {
+      const tag = document.createElement("span");
+      tag.textContent = topic;
+      return tag;
+    }));
+    renderResourceLinks(paper.links);
+
+    popover.hidden = false;
+    trigger.setAttribute("aria-expanded", "true");
+    positionResearchPaperPopover();
+  }
+
+  function closeResearchPaper() {
+    clearTimeout(closeTimer);
+    activeTrigger?.setAttribute("aria-expanded", "false");
+    activeTrigger = null;
+    popover.hidden = true;
+  }
+
+  function scheduleResearchPaperClose() {
+    clearTimeout(closeTimer);
+    closeTimer = setTimeout(closeResearchPaper, 240);
+  }
+
+  researchPaperTriggers.forEach(trigger => {
+    trigger.setAttribute("aria-controls", popover.id);
+    trigger.setAttribute("aria-expanded", "false");
+    trigger.setAttribute("aria-haspopup", "dialog");
+
+    trigger.addEventListener("pointerenter", event => {
+      if (event.pointerType !== "touch") showResearchPaper(trigger);
+    });
+    trigger.addEventListener("pointerleave", scheduleResearchPaperClose);
+    trigger.addEventListener("focus", () => showResearchPaper(trigger));
+    trigger.addEventListener("blur", event => {
+      if (!popover.contains(event.relatedTarget)) scheduleResearchPaperClose();
+    });
+    trigger.addEventListener("click", event => {
+      event.stopPropagation();
+      showResearchPaper(trigger);
+    });
   });
-  card.addEventListener("pointerleave", event => {
-    if (event.pointerType !== "touch") hideTopicPapers(card);
+
+  popover.addEventListener("pointerenter", () => clearTimeout(closeTimer));
+  popover.addEventListener("pointerleave", scheduleResearchPaperClose);
+  closeButton.addEventListener("click", closeResearchPaper);
+  document.addEventListener("click", event => {
+    if (!popover.contains(event.target) && !event.target.closest(".research-paper-trigger")) {
+      closeResearchPaper();
+    }
   });
-  card.addEventListener("focusout", event => {
-    if (!card.contains(event.relatedTarget)) hideTopicPapers(card);
+  document.addEventListener("keydown", event => {
+    if (event.key === "Escape" && !popover.hidden) {
+      const trigger = activeTrigger;
+      closeResearchPaper();
+      trigger?.focus();
+    }
   });
-  card.addEventListener("keydown", event => {
-    if (event.key !== "Escape") return;
-    hideTopicPapers(card);
-    card.querySelector(".interest-topic")?.focus();
-  });
-});
+  window.addEventListener("resize", closeResearchPaper);
+  window.addEventListener("scroll", closeResearchPaper, { passive: true });
+}
 
 const pubFilter = document.getElementById("pubFilter");
 const filterButtons = Array.from(document.querySelectorAll(".filter-btn"));
