@@ -350,7 +350,7 @@ h1 {
 }
 
 .interest-topics li {
-  font-size: 14px;
+  font-size: 15px;
   min-width: 0;
   white-space: nowrap;
 }
@@ -1402,7 +1402,7 @@ footer {
     height: auto;
   }
   .interest-topics li {
-    font-size: 13px;
+    font-size: 14px;
     white-space: normal;
   }
   .topic-papers {
