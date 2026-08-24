@@ -55,6 +55,54 @@ if (zhihuFollowersBadge) {
     .catch(() => {});
 }
 
+const interestCards = Array.from(document.querySelectorAll(".interest-card"));
+
+function showTopicPapers(card, activeButton) {
+  const panelId = activeButton.dataset.topicPanel;
+  const topicButtons = Array.from(card.querySelectorAll(".interest-topic"));
+  const topicPanels = Array.from(card.querySelectorAll(".topic-paper-panel"));
+
+  topicButtons.forEach(button => {
+    const isActive = button === activeButton;
+    button.classList.toggle("active", isActive);
+    button.setAttribute("aria-expanded", String(isActive));
+  });
+  topicPanels.forEach(panel => {
+    panel.hidden = panel.id !== panelId;
+  });
+}
+
+function hideTopicPapers(card) {
+  card.querySelectorAll(".interest-topic").forEach(button => {
+    button.classList.remove("active");
+    button.setAttribute("aria-expanded", "false");
+  });
+  card.querySelectorAll(".topic-paper-panel").forEach(panel => {
+    panel.hidden = true;
+  });
+}
+
+interestCards.forEach(card => {
+  card.querySelectorAll(".interest-topic").forEach(button => {
+    button.addEventListener("pointerenter", event => {
+      if (event.pointerType !== "touch") showTopicPapers(card, button);
+    });
+    button.addEventListener("focus", () => showTopicPapers(card, button));
+    button.addEventListener("click", () => showTopicPapers(card, button));
+  });
+  card.addEventListener("pointerleave", event => {
+    if (event.pointerType !== "touch") hideTopicPapers(card);
+  });
+  card.addEventListener("focusout", event => {
+    if (!card.contains(event.relatedTarget)) hideTopicPapers(card);
+  });
+  card.addEventListener("keydown", event => {
+    if (event.key !== "Escape") return;
+    hideTopicPapers(card);
+    card.querySelector(".interest-topic")?.focus();
+  });
+});
+
 const pubFilter = document.getElementById("pubFilter");
 const filterButtons = Array.from(document.querySelectorAll(".filter-btn"));
 const pubItems = Array.from(document.querySelectorAll(".pub-item"));
