@@ -8,7 +8,6 @@
   --blue-soft: #e8f1fb;
   --orange: #c85f24;
   --green: #1f7a5b;
-  --red: #b83232;
   --gold: #a36a12;
   --bg: #ffffff;
   --shadow: 0 10px 28px rgba(23, 32, 42, 0.08);
@@ -132,15 +131,6 @@ section { padding-top: 48px; }
 .hero-photo > img:hover {
   box-shadow: 0 14px 34px rgba(18, 79, 143, 0.18);
   transform: translateY(-3px) scale(1.02);
-}
-
-.eyebrow {
-  color: var(--orange);
-  font-size: 13px;
-  font-weight: 800;
-  letter-spacing: 0.08em;
-  margin-bottom: 4px;
-  text-transform: uppercase;
 }
 
 h1,
@@ -270,17 +260,6 @@ h1 {
 
 .pill-link:hover .pill-logo {
   filter: brightness(0) invert(1);
-}
-
-.status-banner {
-  background: linear-gradient(135deg, #fff8ec, #fff1df);
-  border-left: 4px solid var(--orange);
-  border-radius: 7px;
-  color: #7a3c12;
-  display: inline-block;
-  font-size: 14px;
-  font-weight: 700;
-  padding: 9px 16px;
 }
 
 .interest-grid {
@@ -478,8 +457,11 @@ h1 {
 }
 
 .research-paper-insight {
+  background: var(--blue-soft);
+  border-left: 3px solid var(--blue);
   font-size: 12px;
   margin-top: 9px;
+  padding: 6px 8px;
 }
 
 .research-paper-insight strong,
@@ -505,12 +487,6 @@ h1 {
   font-size: 9px;
   font-weight: 700;
   padding: 1px 5px;
-}
-
-.research-paper-insight {
-  background: var(--blue-soft);
-  border-left: 3px solid var(--blue);
-  padding: 6px 8px;
 }
 
 .research-paper-resources {
@@ -743,8 +719,7 @@ html:not(.js-ready) .pub-show-all { display: block; }
 .pub-title:hover { color: var(--blue); }
 
 .pub-authors,
-.pub-venue,
-.pub-insight {
+.pub-venue {
   font-size: 14px;
   margin-top: 5px;
 }
@@ -765,14 +740,6 @@ html:not(.js-ready) .pub-show-all { display: block; }
   color: var(--text);
   font-style: normal;
   font-weight: 700;
-}
-
-.pub-insight {
-  background: var(--blue-soft);
-  border-left: 3px solid var(--blue);
-  border-radius: 0 5px 5px 0;
-  color: #405368;
-  padding: 6px 10px;
 }
 
 .paper-highlights {
@@ -870,17 +837,15 @@ html:not(.js-ready) .pub-show-all { display: block; }
 .fun-facts-grid {
   display: grid;
   gap: 10px;
-}
-
-.fun-facts-grid {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .fun-fact {
   background: var(--panel);
-  border-left: 3px solid var(--orange);
+  border-left: 3px solid var(--green);
   border-radius: 8px;
   font-size: 15px;
+  line-height: 1.65;
   padding: 14px 16px;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
@@ -970,15 +935,6 @@ html:not(.js-ready) .pub-show-all { display: block; }
   text-align: right;
 }
 
-.fun-facts-grid {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-
-.fun-fact {
-  border-left-color: var(--green);
-  line-height: 1.65;
-}
-
 .gallery-grid {
   display: grid;
   gap: 10px;
@@ -1049,7 +1005,7 @@ html:not(.js-ready) .pub-show-all { display: block; }
   width: 100%;
 }
 
-.gallery-item span {
+.gallery-caption {
   align-items: end;
   background: linear-gradient(transparent, rgba(0, 0, 0, 0.58));
   color: #fff;
@@ -1064,8 +1020,6 @@ html:not(.js-ready) .pub-show-all { display: block; }
   text-align: center;
   transition: opacity 0.18s ease;
 }
-
-.gallery-item:hover span { opacity: 1; }
 
 .gallery-city-card {
   --city-overlay-opacity: 0.28;
@@ -1105,30 +1059,13 @@ html:not(.js-ready) .pub-show-all { display: block; }
 }
 
 .gallery-city-card .gallery-city-region {
-  background: transparent;
-  display: block;
   font-size: 12px;
   font-weight: 700;
-  inset: auto;
-  opacity: 1;
-  padding: 0;
-  position: static;
-  transition: none;
 }
 
 .gallery-city-card .gallery-city-title {
   font-size: 17px;
   font-weight: 800;
-}
-
-.gallery-city-card .gallery-city-label span {
-  background: transparent;
-  display: block;
-  inset: auto;
-  opacity: 1;
-  padding: 0;
-  position: static;
-  transition: none;
 }
 
 .gallery-city-card .gallery-city-meta {
@@ -1150,16 +1087,6 @@ html:not(.js-ready) .pub-show-all { display: block; }
   transition: opacity 0.18s ease, transform 0.18s ease;
   transform: translateY(8px);
   z-index: 2;
-}
-
-.gallery-city-card .gallery-city-meta span {
-  background: transparent;
-  display: block;
-  inset: auto;
-  opacity: 1;
-  padding: 0;
-  position: static;
-  transition: none;
 }
 
 .gallery-city-card:hover .gallery-city-label { transform: translateY(-18px); }

@@ -1,0 +1,510 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Professional CV
+% LaTeX Template
+% Version 2.0 (8/5/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Trey Hunner (http://www.treyhunner.com/)
+%
+% Important note:
+% This template requires the resume.cls file to be in the same directory as the
+% .tex file. The resume.cls file provides the resume style used for structuring the
+% document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{resume} % Use the custom resume.cls style
+\usepackage[dvipsnames]{xcolor}
+
+\usepackage{fontawesome}
+% \usepackage{tikz}
+% \usepackage{fontawesome5}
+\usepackage{contour}
+\usepackage{ulem}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{datetime}
+
+
+% Shorthand.
+\renewcommand{\ULdepth}{1.8pt}
+\contourlength{0.8pt}
+
+\newcommand{\bit}[1]{\textit{#1}}
+
+\newcommand{\ul}[1]{%
+  \uline{\phantom{#1}}%
+  \llap{\contour{white}{#1}}%
+}
+\newcommand{\Code}[1]{\mbox{\textbf{#1}}}
+\newcommand{\CodeCommand}[1]{\mbox{\textbf{\textbackslash{#1}}}}
+% \newcommand{\buhref}[2]{\href{#1}{\color{blue}\ul{#2}}}
+\newcommand{\buhref}[2]{\href{#1}{\ul{#2}}}
+
+
+\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.75in]{geometry} % Document margins
+\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+\name{{\sffamily\LARGE Zhining Liu}} % Your name
+\address{201 N. Goodwin Ave, Urbana, IL 61801} % Your address
+\address{
+% \scriptsize
+% \faEnvelope\ 
+% \buhref{mailto:zhining.liu@outlook.com}{{\bf Contact}:zhining.liu@outlook.com}\
+% \faGlobe\ 
+% \buhref{https://zhiningliu.com/}{{\bf Homepage}:zhiningliu.com} \ 
+\faGithub\ 
+\href{https://github.com/ZhiningLiu1998}{{\bf Github}:ZhiningLiu1998} \ 
+\faGraduationCap\ 
+\href{https://scholar.google.com/citations?user=5WORAUQAAAAJ&hl=zh-CN}{{\bf GoogleScholar}} \ 
+\faLinkedinSquare\ 
+\href{http://www.linkedin.com/in/zhiningliu/}{{\bf Linkedin}}
+}
+\address{Email: liu326@illinois.edu \\ Homepage: \buhref{https://zhiningliu.com}{https://zhiningliu.com}}
+
+
+\renewenvironment{rSection}[1]{
+\sectionskip
+% \textcolor{RoyalPurple}{\MakeUppercase{#1}}
+\textbf{\MakeUppercase{#1}}
+\sectionlineskip
+\hrule
+% \begin{itemize}{}{
+% \setlength{\leftmargin}{1.5em}
+% }
+% \item[]
+% }{
+% \end{itemize}
+}
+
+\begin{document}
+
+\small
+Researcher in \textbf{data-centric trustworthy AI}. Developing data-centric techniques to support reliable long-context LLM/VLM reasoning and data-efficient learning under real-world challenges such as noisy context and limited training data. Authored 30+ papers at top-tier venues like ICML/NeurIPS/ICLR with 1,000+ citations. Build and maintain research-driven open-source projects and software with 4,000+ GitHub stars and 140k+ downloads.
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Education}
+
+\begin{itemize}[leftmargin=1.5em]
+
+\item 
+{\bf University of Illinois Urbana-Champaign} \hfill Urbana, IL
+\\ \textbf{Ph.D. in Computer Science} \hfill 08/2022 - Expected 08/2026
+\\ Advisor: Prof. \buhref{http://tonghanghang.org/}{Hanghang Tong} \hfill
+
+\item
+{\bf Jilin University} \hfill Changchun, China
+\\ \textbf{M.Eng. in Computer Science} - Advisor: Prof. \buhref{http://yichang-cs.com/}{Yi Chang}\hfill 08/2019 - 06/2022
+% \\ Advisor: Prof. \buhref{http://yichang-cs.com/}{Yi Chang} \hfill
+\\ \textbf{B.Sc. in Computer Science} - Honor Program (Top 0.3\%) \hfill 08/2015 - 06/2019
+% \\ Tang Ao-Qing Honor Program (Top 0.3\%) \hfill
+
+\end{itemize}
+
+%Minor in Linguistics \smallskip \\
+%Member of Eta Kappa Nu \\
+%Member of Upsilon Pi Epsilon \\
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	RESEARCH EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Experience}
+
+\begin{itemize}[leftmargin=1.5em]
+
+\item 
+{\bf University of Illinois Urbana-Champaign}
+\\ \textbf{Research Assistant} @Computer Science Dept.\hfill 08/2022 - Present, Urbana, IL
+
+\item 
+{\bf Amazon.com, Inc.} % \hfill Palo Alto, CA \& Seattle, WA
+\\ \textbf{Applied Scientist Intern} @Ads\hfill 05/2025 - 12/2025, Palo Alto, CA
+\begin{itemize}[leftmargin=1.5em,topsep=-10pt,noitemsep]
+    \item Improve the visual grounding of Vision Language Models, paper in ICLR'26.
+    \item Mentor: Dr. \buhref{https://layneins.github.io/}{Hui Liu}
+\end{itemize}
+\vspace{5mm}
+\textbf{Applied Scientist Intern} @Rufus\hfill 05/2024 - 08/2024, Palo Alto, CA
+\begin{itemize}[leftmargin=1.5em,topsep=-10pt,noitemsep]
+    \item Improve the factuality of LLMs in context-based QA and RAG, paper in ACL'25 main.
+    \item Mentor: Dr. \buhref{https://www.linkedin.com/in/rana-ali-amjad/}{Rana Ali Amjad}
+\end{itemize}
+\vspace{5mm}
+\textbf{Applied Scientist Intern} @Search\hfill 05/2023 - 08/2023, Seattle, WA
+\begin{itemize}[leftmargin=1.5em,topsep=-10pt,noitemsep]
+    \item Multi-task learning for partially ordered entity ranking in shopping funnel.
+    \item Mentors: Dr. \buhref{https://www.linkedin.com/in/minmin-shen-ph-d-4206b468}{Minmin Shen}, Dr. \buhref{https://www.linkedin.com/in/vassilis-n-ioannidis-3448b0b2/}{Vassilis N. Ioannidis}, Dr. \buhref{https://www.linkedin.com/in/changhe-yuan/}{Changhe Yuan} \hfill
+\end{itemize}
+
+\item 
+{\bf Microsoft Research Asia}
+\\ \textbf{Research Intern} @Machine Learning Group \hfill 08/2018 - 06/2019, Beijing, China
+\begin{itemize}[leftmargin=1.5em,topsep=-10pt,noitemsep]
+    \item Explore large-scale, highly-imbalanced classification for intelligent logistics. Our proposed solution was adopted by an industry-leading logistics company and published on ICDE'20 and NeurIPS'20.
+    \item Mentors: Dr. \buhref{https://weicao1990.github.io/}{Wei Cao}, Dr. \buhref{https://sites.google.com/view/jiangbian}{Jiang Bian}
+\end{itemize}
+
+\end{itemize}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	Publications
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Publications}
+
+\textbf{First/Co-first Author}
+% \textbf{Conference Paper}\vspace{-5pt}
+\begin{enumerate}[leftmargin=1.5em]
+
+    \item \textbf{Zhining Liu}, Ziyi Chen, Hui Liu, Chen Luo, Xianfeng Tang, Suhang Wang, Jingying Zeng, Zhenwei Dai, Zhan Shi, Tianxin Wei, Hanqing Lu, Benoit Dumoulin, Hanghang Tong. 
+    \bit{Seeing but Not Believing: Probing the Disconnect Between Visual Attention and Answer Correctness in VLMs.} (\textbf{ICLR 2026}).
+
+    \item \textbf{Zhining Liu}*, Xiao Lin*, Ze Yang*, Gaotang Li, Ruizhong Qiu, Shuke Wang, Hui Liu, Haotian Li, Sumit Keswani, Vishwa Pardeshi, Huijun Zhao, Wei Fan, Hanghang Tong. \textit{MORALISE: A Structured Benchmark for Moral Alignment in Visual Language Models.} (\textbf{ICML 2026}).
+
+    \item \textbf{Zhining Liu}*, Tianyi Wang*, Xiao Lin, Penghao Ouyang, Gaotang Li, Ze Yang, Hui Liu, Sumit Keswani, Vishwa Pardeshi, Huijun Zhao, Wei Fan, Hanghang Tong.
+    \bit{Do VLMs Have a Moral Backbone? A Study on the Fragile Morality of Vision-Language Models.} (\textbf{ACL Findings 2026}).
+
+    \item \textbf{Zhining Liu}, Zihao Li, Ze Yang, Tianxin Wei, Jian Kang, Yada Zhu, Hendrik Hamann, Jingrui He, Hanghang Tong.
+    \bit{CLIMB: Class-imbalanced Learning Benchmark on Tabular Data.} (\textbf{NeurIPS 2025}).
+    [\buhref{https://arxiv.org/pdf/2505.17451}{Paper}]
+    [\buhref{https://github.com/ZhiningLiu1998/imbalanced-ensemble}{Code}]
+
+    \item \textbf{Zhining Liu}, Rana Ali Amjad, Ravinarayana Adkathimar, Tianxin Wei, Hanghang Tong. \bit{SelfElicit: Your Language Model Secretly Knows Where the Relevant Evidence is.} (\textbf{ACL Main 2025}).
+    [\buhref{https://arxiv.org/pdf/2502.08767}{Paper}]
+    [\buhref{https://github.com/ZhiningLiu1998/SelfElicit}{Code}]
+
+    \item \textbf{Zhining Liu}, Ze Yang, Xiao Lin, Ruizhong Qiu, Tianxin Wei, Yada Zhu, Hendrik Hamann, Jingrui He, Hanghang Tong. \bit{Breaking Silos: Adaptive Model Fusion Unlocks Better Time Series Forecasting.} 
+    In 42nd International Conference on Machine Learning (\textbf{ICML 2025}).
+    [\buhref{https://arxiv.org/pdf/2505.18442}{Paper}]
+    [\buhref{https://github.com/ZhiningLiu1998/TimeFuse}{Code}]
+
+    \item \textbf{Zhining Liu}, Ruizhong Qiu, Zhichen Zeng, Yada Zhu, Hendrik Hamann, Hanghang Tong. \bit{AIM: Attributing, Interpreting, Mitigating Data-encoded Unfairness.} In 30th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining (\textbf{KDD 2024}).
+    [\buhref{https://dl.acm.org/doi/pdf/10.1145/3637528.3671797}{Paper}]
+    [\buhref{https://github.com/ZhiningLiu1998/AIM}{Code}]
+    
+    \item \textbf{Zhining Liu}, Zhichen Zeng, Ruizhong Qiu, Hyunsik Yoo, David Zhou, Zhe Xu, Yada Zhu, Kommy Weldemariam, Jingrui He, and Hanghang Tong. \bit{Class-Imbalanced Graph Learning without Class Rebalancing.} In 41st International Conference on Machine Learning (\textbf{ICML 2024}).
+    [\buhref{https://openreview.net/pdf?id=pPnkpvBeZN}{Paper}]
+    [\buhref{https://github.com/ZhiningLiu1998/BAT}{Code}]
+    
+    \item \textbf{Zhining Liu}*, Eunice Chan*, Ruizhong Qiu, Yuheng Zhang, Ross Maciejewski, Hanghang Tong. \bit{Group Fairness via Group Consensus.} In ACM Conference on Fairness, Accountability, and Transparency (\textbf{FAccT 2024}).
+    [\buhref{https://dl.acm.org/doi/pdf/10.1145/3630106.3659006}{Paper}]
+    
+    \item \textbf{Zhining Liu}*, Hangting Ye*, Wei Cao, Amir Mohammad Amiri, Jiang Bian, Yi Chang, Jon D. Lurie, Jim Weinstein, Tie-Yan Liu. \bit{Web-based Long-term Spine Treatment Outcome Forecasting.} In 29th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining (\textbf{KDD 2023}).
+    [\buhref{https://dl.acm.org/doi/pdf/10.1145/3580305.3599545}{Paper}]
+    
+    \item \textbf{Zhining Liu}*, Hangting Ye*, Xinyi Shen, Wei Cao, Shun Zheng, Xiaofan Gui, Huishuai Zhang, Yi Chang, Jiang Bian. \bit{UADB: Unsupervised Anomaly Detection Booster.} In IEEE 39th International Conference on Data Engineering (\textbf{ICDE 2023}).
+    [\buhref{https://zhiningliu.com/files/ICDE_2023_UADB.pdf}{Paper}]
+    [\buhref{https://github.com/HangtingYe/UADB}{Code}]
+    
+    \item \textbf{Zhining Liu}, Pengfei Wei, Jing Jiang, Wei Cao, Jiang Bian, and Yi Chang. \bit{MESA: Boost Ensemble Imbalanced Learning with Meta-sampler.} In Proceedings of the 33rd Advances in Neural Information Processing Systems (\textbf{NeurIPS 2020}).
+    [\buhref{https://arxiv.org/pdf/2010.08830.pdf}{Paper}]
+    [\buhref{https://github.com/ZhiningLiu1998/mesa}{Code}]
+    
+    \item \textbf{Zhining Liu}, Wei Cao, Zhifeng Gao, Jiang Bian, Hechang Chen, Yi Chang, and Tie-Yan Liu. \bit{Self-paced ensemble for highly imbalanced massive data classification.} In Proceedings of the IEEE 36th International Conference on Data Engineering (\textbf{ICDE 2020}).
+    [\buhref{https://arxiv.org/pdf/1909.03500v3.pdf}{Paper}]
+    [\buhref{https://github.com/ZhiningLiu1998/self-paced-ensemble}{Code}]
+    
+\end{enumerate}
+
+\textbf{Co-author Papers}
+
+\begin{enumerate}[leftmargin=1.5em]
+
+    \item Xiao Lin, Zhicheng Tang, Weilin Cong, Mengyue Hang, Kai Wang, Yajuan Wang, Zhichen Zeng, Ting-Wei Li, Hyunsik Yoo, \textbf{Zhining Liu}, Xuying Ning, Ruizhong Qiu, Wen-Yen Chen, Shuo Chang, Rong Jin, Huayu Li, Hanghang Tong. 
+    \bit{Mixture of sequence: Theme-aware mixture-of-experts for long-sequence recommendation.} \textbf{WebConf 2026 (Oral)}.
+    
+    \item Yuanchen Bei, Tianxin Wei, Xuying Ning, Yanjun Zhao, \textbf{Zhining Liu}, Xiao Lin, Yada Zhu, Hendrik Hamann, Jingrui He, Hanghang Tong. 
+    \bit{Mem-Gallery: Benchmarking Multimodal Long-Term Conversational Memory for MLLM Agents.} \textbf{ACL Main 2026}.
+
+    \item Chengming Cui, Tianxin Wei, Ziyi Chen, Ruizhong Qiu, Zhichen Zeng, \textbf{Zhining Liu}, Xuying Ning, Duo Zhou, Jingrui He.
+    \bit{AdaFuse: Adaptive Ensemble Decoding for Large Language Models.} \textbf{ACL Main 2026}.
+
+    \item Hyunsik Yoo, Ting-Wei Li, SeongKu Kang, \textbf{Zhining Liu}, Charlie Xu, Qilin Qi, Hanghang Tong. \textit{Continual Low-Rank Adapters for LLM-based Generative Recommender Systems.} \textbf{ICLR 2026}.
+    
+    \item Zihao Li, Xiao Lin, \textbf{Zhining Liu}, Jiaru Zou, Ziwei Wu, Lecheng Zheng, Dongqi Fu, Yada Zhu, Hendrik Hamann, Hanghang Tong, Jingrui He. \textit{Language in the Flow of Time: Time-Series-Paired Texts Weaved into a Unified Temporal Narrative.} \textbf{ICLR 2026}.
+
+    \item Qi Yu, Zhichen Zeng, Yuchen Yan, \textbf{Zhining Liu}, Baoyu Jing, Ruizhong Qiu, Ariful Azad, Hanghang Tong. \textit{PLANETALIGN: A Comprehensive Python Library for Benchmarking Network Alignment.} \textbf{ICLR 2026}.
+
+    \item Zihao Li, Zhichen Zeng, Xiao Lin, Feihao Fang, Yanru Qu, Zhe Xu, \textbf{Zhining Liu}, Xuying Ning, Tianxin Wei, Ge Liu, Hanghang Tong, Jingrui He. \textit{Flow Matching Meets Biology and Life Science: A Survey.} \textbf{npj Artificial Intelligence 2026}.
+
+    \item Dongqi Fu, Yada Zhu, \textbf{Zhining Liu}, Lecheng Zheng, Xiao Lin, Zihao Li, Liri Fang, Katherine Tieu, Onkar Bhardwaj, Kommy Weldemariam, Hanghang Tong, Hendrik Hamann, Jingrui He \textit{ClimateBench-M: A Multi-Modal Climate Data Benchmark with a Simple Generative Method.} \textbf{CIKM 2025}.
+    
+    \item Zihao Li, Feihao Fang, Xitong Zhang, Jiaru Zou, \textbf{Zhining Liu}, Wei Xiong, Ziwei Wu, Baoyu Jing, Jingrui He \textit{Not All Voices Are Rewarded Equally: Probing and Repairing Reward Models across Human Diversity.} \textbf{EMNLP Findings 2025}.
+    
+    \item Yunzhe Li, Junting Wang, Hari Sundaram, \textbf{Zhining Liu}. \textit{LLM-RecG: A Semantic Bias-Aware Framework for Zero-Shot Sequential Recommendation.} \textbf{RecSys 2025}.
+
+    \item Wenxuan Bao, Zhichen Zeng, \textbf{Zhining Liu}, Hanghang Tong, Jingrui He. \textit{Matcha: Mitigating Graph Structure Shifts with Test-Time Adaptation.} \textbf{ICLR 2025}.
+    [\buhref{https://openreview.net/pdf?id=EpgoFFUM2q}{Paper}]
+
+    \item Xiao Lin, \textbf{Zhining Liu}, Dongqi Fu, Ruizhong Qiu, Hanghang Tong. \textit{BackTime: Backdoor Attacks on Multivariate Time Series Forecasting.} In Proceedings of the 38th Advances in Neural Information Processing Systems (\textbf{NeurIPS 2024 Spotlight})
+    [\buhref{https://arxiv.org/pdf/2410.02195}{Paper}]
+    
+    \item Zhichen Zeng, Ruizhong Qiu, Zhe Xu, \textbf{Zhining Liu}, Yuchen Yan, Tianxin Wei, Lei Ying, Jingrui He, Hanghang Tong. \textit{Graph Mixup on Approximate Gromov–Wasserstein Geodesics.} In 41st International Conference on Machine Learning (\textbf{ICML 2024}).
+    [\buhref{https://openreview.net/pdf?id=PKdege0U6Z}{Paper}]
+    
+    \item Hyunsik Yoo, Zhichen Zeng, Jian Kang, Ruizhong Qiu, David Zhou, \textbf{Zhining Liu}, Fei Wang, Charlie Xu, Eunice Chan, Hanghang Tong. \textit{Ensuring User-side Fairness in Dynamic Recommender Systems.} In 2024 ACM Web Conference (\textbf{Web 2024}).
+    [\buhref{https://dl.acm.org/doi/pdf/10.1145/3589334.3645536}{Paper}]
+    
+    \item Zhichen Zeng, Boxin Du, Si Zhang, Yinglong Xia, \textbf{Zhining Liu}, Hanghang Tong. \textit{Hierarchical Multi-Marginal Optimal Transport for Network Alignment.} In 38th AAAI Conference on Artificial Intelligence (\textbf{AAAI 2024}).
+    [\buhref{https://assets.amazon.science/86/b2/38314d07496984fb888e8a97ca5d/hierarchical-multi-marginal-optimal-transport-for-network-alignment.pdf}{Paper}]
+    
+    \item Guo, Kai, Xiaofeng Cao, \textbf{Zhining Liu}, and Yi Chang. \textit{Taming Over-Smoothing Representation on Heterophilic Graphs.} \textbf{Information Sciences (2023)}: 119463.
+    [\buhref{https://ieeexplore.ieee.org/abstract/document/10020943}{Paper}]
+    
+    \item Warmsley, Dana, Alex Waagen, Jiejun Xu, \textbf{Zhining Liu}, and Hanghang Tong. \textit{A Survey of Explainable Graph Neural Networks for Cyber Malware Analysis.} In Proceedings of the 2022 IEEE International Conference on Big Data (\textbf{Big Data 2022}).[\buhref{https://ieeexplore.ieee.org/document/10020943}{Paper}]
+
+\end{enumerate}
+
+% \textbf{Journal Paper}
+% \begin{itemize}[leftmargin=1.5em]
+% \item Guo, Kai, Xiaofeng Cao, \textbf{Zhining Liu}, and Yi Chang. \textit{Taming Over-Smoothing Representation on Heterophilic Graphs.} Information Sciences (2023): 119463.
+% \end{itemize}
+
+\textbf{Under Review}
+\begin{enumerate}[leftmargin=1.5em]
+
+    \item Tianxin Wei*, Ting-Wei Li*, \textbf{Zhining Liu}*, Xuying Ning, Ze Yang, Jiaru Zou, Zhichen Zeng, Ruizhong Qiu, Xiao Lin, Dongqi Fu, Zihao Li, Mengting Ai, Duo Zhou, Wenxuan Bao, Yunzhe Li, Gaotang Li, Cheng Qian, Yu Wang, Xiangru Tang, Yin Xiao, Liri Fang, Hui Liu, Xianfeng Tang, Yuji Zhang, Chi Wang, Jiaxuan You, Heng Ji, Hanghang Tong, Jingrui He. \bit{Agentic Reasoning for Large Language Models.} arXiv preprint arXiv:2601.12538 (2026).
+        
+    \item Baoyu Jing, Sanhorn Chen, Lecheng Zheng, Boyu Liu, Zihao Li, Jiaru Zou, Tianxin Wei, \textbf{Zhining Liu}, Zhichen Zeng, Ruizhong Qiu, Xiao Lin, Yuchen Yan, Qi Yu, Dongqi Fu, Jingrui He, Hanghang Tong. \textit{TRQA: Time Series Reasoning Question And Answering Benchmark.} In submission.
+    
+    \item Tianxin Wei, Zhichen Zeng, Ruizhong Qiu, \textbf{Zhining Liu}, Xuying Ning, Xinrui He, Wenxuan Bao, Qi He, Xianfeng Tang, Hanghang Tong, Jingrui He. \textit{Inference Scaling of LLM Ensembling: Bridging Token Spaces with Token Translation.} In submission.
+    
+    \item Lingjie Chen, Ruizhong Qiu, Siyu Yuan, \textbf{Zhining Liu}, Tianxin Wei, Hyunsik Yoo, Zhichen Zeng, Deqing Yang. \textit{WAPITI: A Watermark for Finetuned Open-Source LLMs.} In submission.
+    
+    \item Ruizhong Qiu, Hanqing Zeng, Yinglong Xia, Yiwen Meng, Ren Chen, Jiarui Feng, Dongqi Fu, Qifan Wang, Jiayi Liu, Jun Xiao, Xiangjun Fan, Benyu Zhang, Hong Li, \textbf{Zhining Liu}, Hyunsik Yoo, Hanghang Tong. \textit{ReMix: Reinforcement Routing for Mixtures of LoRAs in LLM Finetuning.} In submission.
+    
+    \item Yuchen Yan, Yuzhong Chen, Huiyuan Chen, Xiaoting Li, Zhe Xu, Zhichen Zeng, Lihui Liu, \textbf{Zhining Liu}, Hanghang Tong. \textit{THeGCN: Temporal Heterophilic Graph Convolutional Network.} In submission.
+
+\end{enumerate}
+
+% \textbf{Preprints}
+% \begin{enumerate}[leftmargin=1.5em]
+
+%     \item \textbf{Zhining Liu}, Jian Kang, Hanghang Tong, and Yi Chang. \textit{IMBENS: ensemble class-imbalanced learning in python.} arXiv:2111.12776.
+%     [\buhref{https://arxiv.org/pdf/2111.12776.pdf}{Paper}]
+%     [\buhref{https://github.com/ZhiningLiu1998/imbalanced-ensemble}{Github Repository}]
+%     [\buhref{https://imbalanced-ensemble.readthedocs.io/en/latest/}{Documentation}]
+    
+%     \item \textbf{Zhining Liu}, Pengfei Wei, Zhepei Wei, Boyang Yu, Yuan Tian, Jing Jiang, Wei Cao, Jiang Bian, Yi Chang. \textit{Handling Inter-class and Intra-class Imbalance in Class-imbalanced Learning.} arXiv:2111.12791.
+
+% \end{enumerate}
+(*indicates equal contribution)
+
+\end{rSection}
+
+
+%----------------------------------------------------------------------------------------
+%	Open-source Projects
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Selected Open-source Projects}
+\textbf{4,000+ stars in total on \buhref{https://github.com/ZhiningLiu1998}{Github} by \monthname[\the\month] \the\year}
+
+\begin{itemize}[leftmargin=1.5em,itemsep=0pt]
+
+    \item \textbf{(400+ stars) IMBENS: Class-imbalanced Ensemble Learning in Python} \hfill 2022
+    \begin{itemize}[leftmargin=1.5em,topsep=-5pt,noitemsep]
+    \item \textbf{3K+ downloads/month} Python toolbox for class-imbalanced ensemble learning
+    \item Links:
+    [\buhref{https://github.com/ZhiningLiu1998/imbalanced-ensemble}{Github}] 
+    [\buhref{https://imbalanced-ensemble.readthedocs.io/en/latest/}{Documentation}]
+    [\buhref{https://imbalanced-ensemble.readthedocs.io/en/latest/auto_examples/index.html\#}{Gallery}]
+    [\buhref{https://pypi.org/project/imbalanced-ensemble/}{PyPI}]
+    \end{itemize}
+    
+    \item \textbf{(1,500+ stars) Awesome Imbalanced Learning} \hfill 2022
+    \begin{itemize}[leftmargin=1.5em,topsep=-5pt,noitemsep]
+    \item Curated list of imbalanced learning papers, codes, libraries, and other learning resources.
+    \item Links:
+    [\buhref{https://github.com/ZhiningLiu1998/awesome-imbalanced-learning}{English}] 
+    [\buhref{https://github.com/ZhiningLiu1998/awesome-imbalanced-learning/blob/master/README_CN.md}{Chinese}]
+    \end{itemize}
+    
+    \item \textbf{(600+ stars) Awesome Machine Learning Resources} \hfill 2020
+    \begin{itemize}[leftmargin=1.5em,topsep=-5pt,noitemsep]
+    \item Curated list of awesome resources across various machine learning topics.
+    \item Links:
+    [\buhref{https://github.com/ZhiningLiu1998/awesome-machine-learning-resources}{English}] 
+    [\buhref{https://github.com/ZhiningLiu1998/awesome-machine-learning-resources/blob/main/README_CN.md}{Chinese}]
+    \end{itemize}
+
+\end{itemize}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	Awards and Honors
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Selected Awards \& Honors}
+
+\begin{itemize}[leftmargin=1.5em,noitemsep]
+    \item \textbf{\href{https://siebelschool.illinois.edu/about/awards/graduate-fellowships-awards/cw-gear-outstanding-graduate-student}{C.W. Gear Outstanding Graduate Student} (1 winner in UIUC CS)}, University of Illinois \hfill 2026
+    \item \textbf{\href{https://siebelschool.illinois.edu/about/awards/graduate-fellowships-awards/cl-and-jane-w-s-liu-award}{C.L. and Jane W.-S. Liu Award} (2 winners in UIUC CS)}, University of Illinois \hfill 2025
+    \item \textbf{Top 10 Honorary Graduates (University's Highest Honor)}, Jilin University \hfill 2022
+    \item \textbf{National Scholarship (Top 0.2\% Nationally)}, Ministry of Education of China \hfill 2020
+    \item \textbf{National Scholarship (Top 0.2\% Nationally)}, Ministry of Education of China \hfill 2019
+    \item \textbf{National Endeavor Scholarship (Top 2\% Nationally)}, Ministry of Education of China \hfill 2017
+    \item Academic Performance Scholarship, Jilin University \hfill 2019,2020,2021
+    \item Undergraduate Research Scholarship, Jilin University \hfill 2018
+    \item Outstanding Student Leader Service Award, Jilin University \hfill 2016,2017,2018,2019
+\end{itemize}
+
+\end{rSection}
+
+
+%----------------------------------------------------------------------------------------
+%	Talks
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Talks}
+
+\begin{itemize}[leftmargin=1.5em,noitemsep]
+    \item 06/2025: \textbf{Fidelity Investments} - Your Language Model Secretly Knows the Evidence [\buhref{https://docs.google.com/presentation/d/1PpyX1igmWO0wsVG0qSzyrm1Q5PSoc2ggcveyq4AH9a4/edit?usp=sharing}{Slides}]
+    
+\end{itemize}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	Professional Services
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Professional Services}
+
+\begin{itemize}[leftmargin=1.5em]
+
+\item \textbf{Conference Program Committee/Reviewer}
+\begin{itemize}[leftmargin=1.5em,topsep=-5pt,noitemsep]
+\item The Fourteenth International Conference on Learning Representations (ICLR) \hfill 2026
+\item The 63rd Annual Meeting of the Association for Computational Linguistics (ACL) \hfill 2025
+\item Forty-Second International Conference on Machine Learning (ICML) \hfill 2025
+\item ACM SIGKDD International Conference on Knowledge Discovery and Data Mining (KDD) \hfill 2024
+% \item The Workshop on Trustworthy Learning on Graphs (TrustLOG) \hfill 2022,2024
+% \item The 2nd Workshop on Trustworthy Learning on Graphs (TrustLOG) \hfill 2024
+% \item The 1st Workshop on Trustworthy Learning on Graphs (TrustLOG) \hfill 2022
+\item IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS) \hfill 2022
+\end{itemize}
+
+\item \textbf{Journal Reviewer}
+\begin{itemize}[leftmargin=1.5em,topsep=-5pt,noitemsep]
+\item Transactions on Machine Learning Research (TMLR) \hfill 2025
+\item IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI) \hfill 2024-2025
+\item IEEE Transactions on Knowledge and Data Engineering (TKDE) \hfill 2019-2024
+\item IEEE Transactions on Cybernetics (TCyb) \hfill 2020
+\item Elsevier Neurocomputing (Neurocomputing) \hfill 2019-2020
+\end{itemize}
+
+\item \textbf{External Reviewer}
+\begin{itemize}[leftmargin=1.5em,topsep=-5pt,noitemsep]
+\item ACM International Conference on Information and Knowledge Management (CIKM) \hfill 2022
+\item ACM SIGKDD International Conference on Knowledge Discovery and Data Mining (KDD) \hfill 2020
+\item IEEE International Conference on Data Mining (ICDM) \hfill 2019
+\end{itemize}
+
+\item \textbf{Conference Organizing Volunteer}
+\begin{itemize}[leftmargin=1.5em,topsep=-5pt,noitemsep]
+\item ACM SIGIR Conference on Research and Development in Information Retrieval (SIGIR) \hfill 2020
+\end{itemize}
+
+\end{itemize}
+
+\end{rSection}
+
+
+
+%----------------------------------------------------------------------------------------
+%	Mentoring Experience
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Mentoring Experience}
+
+\begin{itemize}[leftmargin=1.5em]
+
+\item \textbf{Mr. Tianyi Wang (M.S. Student, UIUC CS)} \hfill 2025 - Now
+\begin{itemize}[leftmargin=1.5em,topsep=-5pt,noitemsep]
+    \item Improving VLM reasoning and reflection efficiency. Paper published in \textbf{ACL 2026}.
+\end{itemize}
+
+\item \textbf{Mr. Haopeng Ouyang (Senior, UIUC CS)} \hfill 2025 - Now
+\begin{itemize}[leftmargin=1.5em,topsep=-5pt,noitemsep]
+    \item VLM moral value alignment, jailbreaking, and defense. Paper published in \textbf{ACL 2026}.
+\end{itemize}
+
+\item \textbf{Ms. Shuke Wang (Junior, UIUC ECE)} \hfill 2024 – 2025
+\begin{itemize}[leftmargin=1.5em,topsep=-5pt,noitemsep]
+    \item Mentoring her on research in dynamic fairness and LLM moral value alignment evaluation. We produced an extensive multi-modal moral benchmark. The paper is currently under submission.
+\end{itemize}
+
+\item \textbf{Mr. Xiao Lin (Ph.D. student, UIUC CS)} \hfill 2024 – 2025
+\begin{itemize}[leftmargin=1.5em,topsep=-5pt,noitemsep]
+    \item Guided academic writing, including structuring arguments, refining storytelling, and designing experiments. Helped him build a solid foundation in academic writing and scientific communication. Our collaboration led to a first-authored paper published in \textbf{NeurIPS 2024 (Spotlight)}.
+\end{itemize}
+
+\item \textbf{Ms. Eunice Chan (Ph.D. student, UIUC CS)} \hfill 2023 – 2024
+\begin{itemize}[leftmargin=1.5em,topsep=-5pt,noitemsep]
+    \item Closely guided her throughout the entire research cycle of a project on group algorithmic fairness, including ideation, experimental design, code implementation, and paper writing. Helped her gain independence in conducting research and strengthened her ability to communicate effectively. Our collaboration resulted in a co-first-authored paper published in \textbf{ACM FAccT 2024}.
+\end{itemize}
+
+\item \textbf{Mr. Hangting Ye (B.Sc. then Ph.D. student, Jilin University)} \hfill 2021 – 2022
+\begin{itemize}[leftmargin=1.5em,topsep=-5pt,noitemsep]
+    \item Provided extensive guidance on research in intelligent healthcare and anomaly detection, assisting with problem formulation, experiment design, and manuscript preparation. Supported his transition from undergraduate to Ph.D.-level research by refining his analytical and problem-solving skills. We made two co-first-authored publications in \textbf{IEEE ICDE 2023} and \textbf{ACM SIGKDD 2023}.
+\end{itemize}
+
+\end{itemize}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	Teaching Experience
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Teaching Experience}
+
+\begin{itemize}[leftmargin=1.5em]
+
+\item UIUC CS 512 Data Mining Principle (Lead Teaching Assistant) \hfill Spring, 2024
+% \begin{itemize}[leftmargin=1.5em,topsep=-5pt,noitemsep]
+%     \item Lecturer: Prof. Hanghang Tong
+% \end{itemize}
+
+\end{itemize}
+
+\end{rSection}
+
+
+%----------------------------------------------------------------------------------------
+%	Miscellaneous
+%----------------------------------------------------------------------------------------
+
+% \begin{rSection}{Miscellaneous}
+
+% \begin{itemize}[leftmargin=1.5em,noitemsep]
+% \item I share my knowledge and blog on \buhref{https://www.zhihu.com/people/liu-zhi-zhu-14}{ZhiHu} (a Chinese platform like Quora) and have \textbf{4K+ followers} and \textbf{1M+ reads}.
+% \end{itemize}
+
+% \end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	End of Document
+%----------------------------------------------------------------------------------------
+
+\null\hfill
+[\textit{CV compiled on {\today}}]
+
+\end{document}

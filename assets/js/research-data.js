@@ -2,9 +2,9 @@ window.researchPaperData = {
   "code-harness": {
     title: "Code as Agent Harness",
     venue: "arXiv 2026",
-    topics: ["Agent Harnesses", "Tool Use", "Context Engineering"],
+    topics: ["Agent Harness", "Tool Use", "Context Engineering"],
     insights: {
-      "agent-harnesses": "Code gives agents compositional tools, persistent state, and verifiable execution.",
+      "agent-harness": "Code gives agents compositional tools, persistent state, and verifiable execution.",
     },
     links: [
       { label: "PDF", url: "https://arxiv.org/pdf/2605.18747", icon: "fas fa-file-pdf" },
@@ -15,9 +15,9 @@ window.researchPaperData = {
   recontext: {
     title: "ReContext: Recursive Evidence Replay as LLM Harness for Long-Context Reasoning",
     venue: "EMNLP 2026 Findings",
-    topics: ["Long-Context Reasoning", "Agent Harnesses", "Evidence Replay"],
+    topics: ["Long-Context Reasoning", "Agent Harness", "Evidence Replay"],
     insights: {
-      "agent-harnesses": "Recursive evidence replay improves long-context reasoning without retraining.",
+      "agent-harness": "Recursive evidence replay improves long-context reasoning without retraining.",
       "context-grounding": "Recursive replay turns long-context grounding into an iterative evidence-seeking process.",
     },
     links: [
