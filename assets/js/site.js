@@ -72,8 +72,8 @@ if (researchPaperTriggers.length) {
     </button>
     <div class="research-paper-venue"></div>
     <h3 id="researchPaperTitle"></h3>
-    <div class="research-paper-topics" aria-label="Paper topics"></div>
     <p class="research-paper-insight"><strong>Core insight</strong><span></span></p>
+    <div class="research-paper-topics" aria-label="Paper topics"></div>
     <div class="research-paper-resources">
       <strong>Resources</strong>
       <div class="research-paper-links"></div>
@@ -126,7 +126,7 @@ if (researchPaperTriggers.length) {
       anchor.href = link.url;
       anchor.target = "_blank";
       anchor.rel = "noopener noreferrer";
-      anchor.append(icon, ` ${link.label}`);
+      anchor.append(icon, link.label);
       resourceLinks.appendChild(anchor);
     });
   }

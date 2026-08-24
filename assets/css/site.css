@@ -350,13 +350,14 @@ h1 {
 }
 
 .interest-topics li {
-  font-size: 13px;
+  font-size: 14px;
   min-width: 0;
   white-space: nowrap;
 }
 
 .interest-topic-label {
-  color: var(--text);
+  color: var(--ink);
+  font-weight: 400;
 }
 
 .topic-papers {
@@ -529,6 +530,7 @@ h1 {
   display: inline-flex;
   font-size: 10px;
   font-weight: 700;
+  gap: 5px;
   padding: 3px 6px;
 }
 
@@ -934,6 +936,14 @@ html:not(.js-ready) .pub-show-all { display: block; }
   color: var(--muted);
   font-size: 11px;
   line-height: 1.4;
+}
+
+.awards-note {
+  color: var(--muted);
+  font-size: 10px;
+  line-height: 1.45;
+  margin-top: 7px;
+  text-align: right;
 }
 
 .fun-facts-grid {
@@ -1384,8 +1394,21 @@ footer {
   .container,
   .nav-inner { padding-left: 20px; padding-right: 20px; }
   h1 { font-size: 38px; }
-  .interest-topics li { font-size: 12px; }
-  .topic-papers { font-size: 9px; }
+  .interest-grid { grid-auto-rows: auto; }
+  .interest-window-content { height: auto; }
+  .interest-topics {
+    gap: 5px;
+    grid-template-rows: none;
+    height: auto;
+  }
+  .interest-topics li {
+    font-size: 13px;
+    white-space: normal;
+  }
+  .topic-papers {
+    display: block;
+    font-size: 9px;
+  }
   .gallery-heading {
     align-items: flex-start;
     flex-direction: column;
@@ -1417,6 +1440,7 @@ footer {
   .award-selectivity strong,
   .award-selectivity span { font-size: 11px; }
   .award-selectivity span::before { content: "· "; }
+  .awards-note { text-align: left; }
   .gallery-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .back-to-top { bottom: 18px; right: 18px; }
 }
