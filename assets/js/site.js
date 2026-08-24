@@ -20,6 +20,41 @@ setActiveNav();
 backToTop.addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
 document.getElementById("year").textContent = new Date().getFullYear();
 
+const zhihuFollowersBadge = document.getElementById("zhihuFollowersBadge");
+
+if (zhihuFollowersBadge) {
+  fetch(zhihuFollowersBadge.src)
+    .then(response => {
+      if (!response.ok) throw new Error(`Zhihu badge request failed: ${response.status}`);
+      return response.text();
+    })
+    .then(svg => {
+      const badgeLabel = new DOMParser()
+        .parseFromString(svg, "image/svg+xml")
+        .documentElement
+        .getAttribute("aria-label");
+      const followerCount = Number(badgeLabel?.match(/^Zhihu:\s*([\d,]+)\s+Followers$/i)?.[1].replaceAll(",", ""));
+      if (!Number.isFinite(followerCount)) return;
+
+      const compactCount = new Intl.NumberFormat("en-US", {
+        notation: "compact",
+        maximumFractionDigits: 1,
+      }).format(followerCount);
+      const compactBadgeUrl = new URL("https://img.shields.io/static/v1");
+      compactBadgeUrl.search = new URLSearchParams({
+        label: "Zhihu",
+        message: `${compactCount} Followers`,
+        labelColor: "d8ecff",
+        color: "f4f7fa",
+        logo: "zhihu",
+        logoColor: "0084ff",
+        style: "flat",
+      });
+      zhihuFollowersBadge.src = compactBadgeUrl;
+    })
+    .catch(() => {});
+}
+
 const pubFilter = document.getElementById("pubFilter");
 const filterButtons = Array.from(document.querySelectorAll(".filter-btn"));
 const pubItems = Array.from(document.querySelectorAll(".pub-item"));
