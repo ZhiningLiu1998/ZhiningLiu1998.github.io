@@ -200,12 +200,14 @@ h1 {
 }
 
 .badge-github { border-color: rgba(24, 23, 23, 0.38); }
+.badge-scholar { border-color: rgba(66, 133, 244, 0.42); }
 .badge-zhihu { border-color: rgba(0, 132, 255, 0.42); }
 .badge-rednote { border-color: rgba(255, 36, 66, 0.42); }
 .badge-bilibili { border-color: rgba(0, 174, 236, 0.42); }
 .badge-steam { border-color: rgba(19, 67, 117, 0.42); }
 
 .badge-github:hover { border-color: #181717; }
+.badge-scholar:hover { border-color: #4285f4; }
 .badge-zhihu:hover { border-color: #0084ff; }
 .badge-rednote:hover { border-color: #ff2442; }
 .badge-bilibili:hover { border-color: #00aeec; }
@@ -231,6 +233,7 @@ h1 {
   color: var(--blue);
   font-size: 13px;
   padding: 7px 14px;
+  position: relative;
 }
 
 .pill-logo {
@@ -260,6 +263,79 @@ h1 {
 
 .pill-link:hover .pill-logo {
   filter: brightness(0) invert(1);
+}
+
+.profile-tooltip {
+  --tooltip-x: -50%;
+  align-items: center;
+  background: var(--ink);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 5px;
+  bottom: calc(100% + 9px);
+  box-shadow: 0 7px 18px rgba(23, 32, 42, 0.18);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  font-size: 10px;
+  font-weight: 400;
+  gap: 5px;
+  left: 50%;
+  line-height: 1.2;
+  max-width: min(210px, calc(100vw - 24px));
+  opacity: 0;
+  padding: 6px 8px;
+  pointer-events: none;
+  position: absolute;
+  text-align: center;
+  transform: translate(var(--tooltip-x), 5px);
+  transition: opacity 0.16s ease, transform 0.16s ease, visibility 0.16s;
+  visibility: hidden;
+  white-space: normal;
+  width: max-content;
+  z-index: 60;
+}
+
+.profile-tooltip::after {
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid var(--ink);
+  content: "";
+  left: 50%;
+  position: absolute;
+  top: 100%;
+  transform: translateX(-50%);
+}
+
+.profile-tooltip strong {
+  color: #fff;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 18px;
+  white-space: nowrap;
+}
+
+.profile-tooltip.has-badge {
+  flex-direction: row;
+}
+
+.profile-tooltip-badge {
+  display: block;
+  flex: 0 0 auto;
+  height: 18px;
+  max-width: 100%;
+  width: auto;
+}
+
+.pill-link:hover .profile-tooltip,
+.pill-link:focus-visible .profile-tooltip {
+  opacity: 1;
+  transform: translate(var(--tooltip-x), 0);
+  visibility: visible;
+}
+
+.pill-link:focus-visible {
+  outline: 2px solid var(--orange);
+  outline-offset: 2px;
 }
 
 .interest-grid {
@@ -1371,6 +1447,13 @@ footer {
     max-width: 100%;
   }
   .hero-badges img { height: 19px; }
+  .profile-tooltip {
+    overflow-wrap: anywhere;
+  }
+  .profile-tooltip.has-badge {
+    align-items: flex-start;
+    flex-direction: column;
+  }
   .news-item { grid-template-columns: 1fr; gap: 2px; }
   .award-item {
     align-items: start;
