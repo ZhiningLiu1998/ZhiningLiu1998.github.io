@@ -57,6 +57,14 @@ if (zhihuFollowersBadge) {
 
 const researchPaperTriggers = Array.from(document.querySelectorAll(".research-paper-trigger"));
 const researchPaperData = window.researchPaperData || {};
+const publicationHighlightTemplates = new Map(
+  Array.from(document.querySelectorAll(".pub-item[data-paper-id]"))
+    .map(item => [
+      item.dataset.paperId,
+      Array.from(item.querySelectorAll(".paper-highlight")),
+    ])
+    .filter(([, highlights]) => highlights.length),
+);
 
 if (researchPaperTriggers.length) {
   const popover = document.createElement("aside");
@@ -72,6 +80,7 @@ if (researchPaperTriggers.length) {
     </button>
     <div class="research-paper-venue"></div>
     <h3 id="researchPaperTitle"></h3>
+    <div class="paper-highlights research-paper-highlights" aria-label="Paper highlights" hidden></div>
     <p class="research-paper-insight"><strong>Core insight</strong><span></span></p>
     <div class="research-paper-topics" aria-label="Paper topics"></div>
     <div class="research-paper-resources">
@@ -84,6 +93,7 @@ if (researchPaperTriggers.length) {
   const closeButton = popover.querySelector(".research-paper-close");
   const venue = popover.querySelector(".research-paper-venue");
   const title = popover.querySelector("h3");
+  const highlights = popover.querySelector(".research-paper-highlights");
   const topics = popover.querySelector(".research-paper-topics");
   const insight = popover.querySelector(".research-paper-insight span");
   const resourceLinks = popover.querySelector(".research-paper-links");
@@ -131,6 +141,18 @@ if (researchPaperTriggers.length) {
     });
   }
 
+  function renderPaperHighlights(paperId) {
+    const templates = publicationHighlightTemplates.get(paperId) || [];
+    const clones = templates.map(template => {
+      const clone = template.cloneNode(true);
+      clone.target = "_blank";
+      clone.rel = "noopener noreferrer";
+      return clone;
+    });
+    highlights.replaceChildren(...clones);
+    highlights.hidden = !clones.length;
+  }
+
   function showResearchPaper(trigger) {
     const paper = researchPaperData[trigger.dataset.paperId];
     const topicInsight = paper?.insights[trigger.dataset.topicId];
@@ -142,6 +164,7 @@ if (researchPaperTriggers.length) {
 
     venue.textContent = paper.venue;
     title.textContent = paper.title;
+    renderPaperHighlights(trigger.dataset.paperId);
     insight.textContent = topicInsight;
     topics.replaceChildren(...paper.topics.map(topic => {
       const tag = document.createElement("span");

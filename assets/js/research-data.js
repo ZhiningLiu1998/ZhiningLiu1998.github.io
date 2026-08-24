@@ -4,7 +4,7 @@ window.researchPaperData = {
     venue: "arXiv 2026",
     topics: ["Agent Harnesses", "Tool Use", "Context Engineering"],
     insights: {
-      "agent-harnesses": "Code is more than an action format: it gives agents compositional tools, persistent state, and verifiable execution.",
+      "agent-harnesses": "Code gives agents compositional tools, persistent state, and verifiable execution.",
     },
     links: [
       { label: "PDF", url: "https://arxiv.org/pdf/2605.18747", icon: "fas fa-file-pdf" },
@@ -14,11 +14,10 @@ window.researchPaperData = {
   },
   recontext: {
     title: "ReContext: Recursive Evidence Replay as LLM Harness for Long-Context Reasoning",
-    venue: "arXiv 2026",
+    venue: "EMNLP 2026 Findings",
     topics: ["Long-Context Reasoning", "Agent Harnesses", "Evidence Replay"],
     insights: {
-      "agent-harnesses": "A lightweight replay loop can improve reasoning without retraining or expanding the base model.",
-      "agentic-reasoning": "Reasoning improves when the agent decides what evidence to revisit instead of reading the context only once.",
+      "agent-harnesses": "Recursive evidence replay improves long-context reasoning without retraining.",
       "context-grounding": "Recursive replay turns long-context grounding into an iterative evidence-seeking process.",
     },
     links: [
@@ -31,8 +30,8 @@ window.researchPaperData = {
     venue: "arXiv 2026",
     topics: ["Agentic Reasoning", "Planning", "Self-Improvement"],
     insights: {
-      "agentic-reasoning": "Agentic reasoning couples deliberate planning with tools, memory, and feedback rather than a single static chain.",
-      "self-improving-agents": "Self-improvement emerges from feedback loops over plans, memory, tools, and multi-agent interaction.",
+      "agentic-reasoning": "Agentic reasoning combines planning, tools, memory, and feedback.",
+      "self-improving-agents": "Feedback and memory turn static reasoning into continual improvement.",
     },
     links: [
       { label: "PDF", url: "https://arxiv.org/pdf/2601.12538", icon: "fas fa-file-pdf" },
@@ -45,8 +44,8 @@ window.researchPaperData = {
     venue: "ACL 2026",
     topics: ["MLLM Agents", "Long-Term Memory", "Benchmarking"],
     insights: {
-      "self-improving-agents": "Persistent multimodal memory is a prerequisite for agents that learn from their interaction histories.",
-      "context-grounding": "Long context alone does not guarantee reliable long-term conversational memory.",
+      "self-improving-agents": "Multimodal memory lets agents retain and reason over evolving conversations.",
+      "data-optimization": "Curated multi-session image-text conversations expose how memory systems should retain, update, and organize data.",
       "reasoning-reliability": "Reliable multimodal agents must retrieve the right historical visual and textual evidence, not merely store it.",
     },
     links: [
@@ -60,8 +59,8 @@ window.researchPaperData = {
     venue: "ACL 2025",
     topics: ["Long-Context QA", "Evidence Grounding", "Interpretability"],
     insights: {
+      "agentic-reasoning": "Self-guided evidence highlighting improves grounded reasoning without extra training.",
       "context-grounding": "A model's own internal signals can identify relevant evidence that standard long-context processing overlooks.",
-      "reasoning-reliability": "Evidence-aware inference separates what a model sees from what it actually uses to answer.",
     },
     links: [
       { label: "PDF", url: "https://aclanthology.org/2025.acl-long.448.pdf", icon: "fas fa-file-pdf" },
@@ -73,10 +72,24 @@ window.researchPaperData = {
     venue: "ICLR 2026",
     topics: ["VLM Reliability", "Visual Grounding", "Attention"],
     insights: {
+      "data-interpretability": "Layer-wise attention reveals when VLMs see the right evidence but fail to use it.",
       "reasoning-reliability": "Visual attention can look plausible while the answer is wrong, so attention alone is not a reliable grounding signal.",
     },
     links: [
       { label: "PDF", url: "https://arxiv.org/pdf/2510.17771", icon: "fas fa-file-pdf" },
+    ],
+  },
+  moralise: {
+    title: "MORALISE: A Structured Benchmark for Moral Alignment in Visual Language Models",
+    venue: "ICML 2026",
+    topics: ["VLM Alignment", "Moral Reasoning", "Benchmarking"],
+    insights: {
+      "fairness-alignment": "Expert-curated moral scenarios expose alignment failures across visual and textual cues.",
+      "reasoning-reliability": "Structured visual moral scenarios expose alignment failures hidden by aggregate benchmark scores.",
+    },
+    links: [
+      { label: "PDF", url: "https://arxiv.org/pdf/2505.14728", icon: "fas fa-file-pdf" },
+      { label: "Dataset", url: "https://huggingface.co/datasets/Frontier-AI-Research/MORALISE", icon: "fas fa-database" },
     ],
   },
   "moral-backbone": {
@@ -96,6 +109,7 @@ window.researchPaperData = {
     topics: ["Reward Models", "Human Diversity", "Fairness"],
     insights: {
       "fairness-alignment": "Aggregate reward quality can hide systematic preference gaps across demographic and value groups.",
+      "rare-case-generalization": "Demographically skewed preference data leaves minority groups underrepresented in reward-model alignment.",
     },
     links: [
       { label: "PDF", url: "https://aclanthology.org/2025.findings-emnlp.183.pdf", icon: "fas fa-file-pdf" },
@@ -107,24 +121,11 @@ window.researchPaperData = {
     venue: "KDD 2024",
     topics: ["Data Attribution", "Fairness", "Mitigation"],
     insights: {
-      "fairness-alignment": "Fairness failures can be traced to influential samples, turning mitigation into a targeted data intervention.",
-      "data-curation": "Sample-level attribution identifies which training data creates unfair outcomes and should be corrected.",
+      "data-interpretability": "Sample-level attribution reveals which training data creates unfair outcomes and why.",
     },
     links: [
       { label: "PDF", url: "https://arxiv.org/pdf/2406.08819", icon: "fas fa-file-pdf" },
       { label: "GitHub", url: "https://github.com/ZhiningLiu1998/AIM", icon: "fab fa-github" },
-    ],
-  },
-  uadb: {
-    title: "UADB: Unsupervised Anomaly Detection Booster",
-    venue: "ICDE 2023",
-    topics: ["Anomaly Detection", "Adaptive Learning", "Data Optimization"],
-    insights: {
-      "data-optimization": "Weak detector outputs become useful supervision when they are iteratively refined instead of treated as fixed labels.",
-    },
-    links: [
-      { label: "PDF", url: "https://arxiv.org/pdf/2306.01997", icon: "fas fa-file-pdf" },
-      { label: "GitHub", url: "https://github.com/HangtingYe/UADB", icon: "fab fa-github" },
     ],
   },
   mesa: {
@@ -133,10 +134,23 @@ window.researchPaperData = {
     topics: ["Class Imbalance", "Meta-Sampling", "Ensembles"],
     insights: {
       "data-optimization": "Sampling should adapt to the current ensemble state instead of following a fixed balancing rule.",
+      "rare-case-generalization": "Adaptive sampling helps ensembles learn minority cases without discarding useful majority data.",
     },
     links: [
       { label: "PDF", url: "https://arxiv.org/pdf/2010.08830", icon: "fas fa-file-pdf" },
       { label: "GitHub", url: "https://github.com/ZhiningLiu1998/mesa", icon: "fab fa-github" },
+    ],
+  },
+  "self-paced-ensemble": {
+    title: "Self-Paced Ensemble for Highly Imbalanced Massive Data Classification",
+    venue: "ICDE 2020",
+    topics: ["Class Imbalance", "Self-Paced Learning", "Ensembles"],
+    insights: {
+      "data-optimization": "Self-paced undersampling preserves informative majority examples while balancing each ensemble learner.",
+    },
+    links: [
+      { label: "PDF", url: "https://arxiv.org/pdf/1909.03500", icon: "fas fa-file-pdf" },
+      { label: "GitHub", url: "https://github.com/ZhiningLiu1998/self-paced-ensemble", icon: "fab fa-github" },
     ],
   },
   climb: {
@@ -144,8 +158,7 @@ window.researchPaperData = {
     venue: "NeurIPS 2025",
     topics: ["Class Imbalance", "Tabular Learning", "Benchmarking"],
     insights: {
-      "data-curation": "Controlled data regimes reveal which imbalance patterns drive failures and where curation matters most.",
-      "rare-case-generalization": "No imbalance method dominates every dataset, making data-regime-aware evaluation essential.",
+      "data-interpretability": "Controlled data regimes reveal how imbalance type and severity shape model behavior.",
     },
     links: [
       { label: "PDF", url: "https://arxiv.org/pdf/2505.17451", icon: "fas fa-file-pdf" },
@@ -159,7 +172,6 @@ window.researchPaperData = {
     venue: "ICLR 2025",
     topics: ["Graph Learning", "Test-Time Adaptation", "Structure Shift"],
     insights: {
-      "rare-case-generalization": "Test-time structural adaptation protects rare graph patterns without requiring target labels.",
       "graph-learning": "Graph robustness improves when adaptation explicitly targets structural shift at inference time.",
     },
     links: [
@@ -172,8 +184,7 @@ window.researchPaperData = {
     venue: "ICML 2024",
     topics: ["Graph Learning", "Class Imbalance", "Generalization"],
     insights: {
-      "rare-case-generalization": "Minority classes can be improved without distorting graph structure through explicit class rebalancing.",
-      "graph-learning": "Handling imbalance within graph learning avoids the structural side effects of resampling nodes.",
+      "rare-case-generalization": "Topology-aware augmentation improves minority classes without relying on class rebalancing.",
     },
     links: [
       { label: "PDF", url: "https://raw.githubusercontent.com/mlresearch/v235/main/assets/liu24ay/liu24ay.pdf", icon: "fas fa-file-pdf" },
