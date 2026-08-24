@@ -31,9 +31,8 @@ let publicationsExpanded = false;
 let publicationFiltersExpanded = false;
 
 function getFilteredPublications(filter) {
-  return filter === "all"
-    ? pubItems
-    : pubItems.filter(item => item.dataset.tags.split(" ").includes(filter));
+  if (filter === "all") return pubItems;
+  return pubItems.filter(item => item.dataset.tags.split(" ").includes(filter));
 }
 
 function applyPublicationFilter() {
