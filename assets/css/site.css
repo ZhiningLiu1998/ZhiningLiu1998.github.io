@@ -232,6 +232,12 @@ h1 {
   height: 20px;
 }
 
+.hero-photo .hero-badges {
+  justify-content: center;
+  margin: 0;
+  max-width: 220px;
+}
+
 .pill-link,
 .pub-link,
 .filter-btn {
@@ -1423,6 +1429,23 @@ footer {
   .hero-badges {
     justify-content: center;
     max-width: min(100%, 520px);
+  }
+
+  .hero-photo .hero-badges {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    max-width: 340px;
+    width: 100%;
+  }
+
+  .hero-photo .hero-badges a {
+    justify-self: center;
+    max-width: 100%;
+  }
+
+  .hero-photo .hero-badges img {
+    height: auto;
+    max-width: 100%;
   }
 
   .hero-links { justify-content: center; }
