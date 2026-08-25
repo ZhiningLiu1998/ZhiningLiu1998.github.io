@@ -126,10 +126,10 @@ section { padding-top: 48px; }
   border: 3px solid var(--line);
   border-radius: 50%;
   box-shadow: var(--shadow);
-  height: 220px;
+  height: 176px;
   object-fit: cover;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  width: 220px;
+  width: 176px;
 }
 
 .hero-photo > img:hover {
@@ -408,6 +408,11 @@ h1 {
 .pill-link:focus-visible {
   outline: 2px solid var(--orange);
   outline-offset: 2px;
+}
+
+.interest-intro {
+  margin: 24px 0 0;
+  color: var(--muted, #56637a);
 }
 
 .interest-grid {
@@ -1448,7 +1453,7 @@ footer {
     grid-template-columns: 190px minmax(0, 1fr);
   }
 
-  .hero-photo > img { height: 190px; width: 190px; }
+  .hero-photo > img { height: 152px; width: 152px; }
 
   .hero-quote {
     font-size: 17px;
@@ -1513,7 +1518,7 @@ footer {
     flex-direction: column;
     gap: 8px;
   }
-  .hero-photo > img { height: 180px; width: 180px; }
+  .hero-photo > img { height: 144px; width: 144px; }
   .profile-badge img { height: 19px; }
   .profile-tooltip {
     overflow-wrap: anywhere;
