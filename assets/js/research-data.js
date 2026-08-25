@@ -7,9 +7,9 @@ window.researchPaperData = {
       "agent-harness": "Code gives agents compositional tools, persistent state, and verifiable execution.",
     },
     links: [
-      { label: "PDF", url: "https://arxiv.org/pdf/2605.18747", icon: "fas fa-file-pdf" },
-      { label: "GitHub", url: "https://github.com/YennNing/Awesome-Code-as-Agent-Harness-Papers", icon: "fab fa-github" },
-      { label: "Project", url: "https://code-as-harness.github.io/code-as-harness-webpage/", icon: "fas fa-globe" },
+      { label: "PDF", url: "https://arxiv.org/pdf/2605.18747" },
+      { label: "GitHub", url: "https://github.com/YennNing/Awesome-Code-as-Agent-Harness-Papers" },
+      { label: "Project", url: "https://code-as-harness.github.io/code-as-harness-webpage/" },
     ],
   },
   recontext: {
@@ -21,8 +21,8 @@ window.researchPaperData = {
       "context-grounding": "Recursive replay turns long-context grounding into an iterative evidence-seeking process.",
     },
     links: [
-      { label: "PDF", url: "https://arxiv.org/pdf/2607.02509", icon: "fas fa-file-pdf" },
-      { label: "GitHub", url: "https://github.com/Yanjun-Zhao/ReContext", icon: "fab fa-github" },
+      { label: "PDF", url: "https://arxiv.org/pdf/2607.02509" },
+      { label: "GitHub", url: "https://github.com/Yanjun-Zhao/ReContext" },
     ],
   },
   "agentic-reasoning": {
@@ -34,9 +34,9 @@ window.researchPaperData = {
       "self-improving-agents": "Feedback and memory turn static reasoning into continual improvement.",
     },
     links: [
-      { label: "PDF", url: "https://arxiv.org/pdf/2601.12538", icon: "fas fa-file-pdf" },
-      { label: "GitHub", url: "https://github.com/weitianxin/Awesome-Agentic-Reasoning", icon: "fab fa-github" },
-      { label: "Hugging Face", url: "https://huggingface.co/papers/2601.12538", icon: "fas fa-file-alt" },
+      { label: "PDF", url: "https://arxiv.org/pdf/2601.12538" },
+      { label: "GitHub", url: "https://github.com/weitianxin/Awesome-Agentic-Reasoning" },
+      { label: "Hugging Face", url: "https://huggingface.co/papers/2601.12538" },
     ],
   },
   "mem-gallery": {
@@ -49,9 +49,9 @@ window.researchPaperData = {
       "reasoning-reliability": "Reliable multimodal agents must retrieve the right historical visual and textual evidence, not merely store it.",
     },
     links: [
-      { label: "PDF", url: "https://aclanthology.org/2026.acl-long.1892.pdf", icon: "fas fa-file-pdf" },
-      { label: "GitHub", url: "https://github.com/YuanchenBei/Mem-Gallery", icon: "fab fa-github" },
-      { label: "Dataset", url: "https://huggingface.co/datasets/Ethan-Bei/Mem-Gallery", icon: "fas fa-database" },
+      { label: "PDF", url: "https://aclanthology.org/2026.acl-long.1892.pdf" },
+      { label: "GitHub", url: "https://github.com/YuanchenBei/Mem-Gallery" },
+      { label: "Dataset", url: "https://huggingface.co/datasets/Ethan-Bei/Mem-Gallery" },
     ],
   },
   selfelicit: {
@@ -63,8 +63,8 @@ window.researchPaperData = {
       "context-grounding": "A model's own internal signals can identify relevant evidence that standard long-context processing overlooks.",
     },
     links: [
-      { label: "PDF", url: "https://aclanthology.org/2025.acl-long.448.pdf", icon: "fas fa-file-pdf" },
-      { label: "GitHub", url: "https://github.com/ZhiningLiu1998/SelfElicit", icon: "fab fa-github" },
+      { label: "PDF", url: "https://aclanthology.org/2025.acl-long.448.pdf" },
+      { label: "GitHub", url: "https://github.com/ZhiningLiu1998/SelfElicit" },
     ],
   },
   "seeing-not-believing": {
@@ -76,7 +76,7 @@ window.researchPaperData = {
       "reasoning-reliability": "Visual attention can look plausible while the answer is wrong, so attention alone is not a reliable grounding signal.",
     },
     links: [
-      { label: "PDF", url: "https://arxiv.org/pdf/2510.17771", icon: "fas fa-file-pdf" },
+      { label: "PDF", url: "https://arxiv.org/pdf/2510.17771" },
     ],
   },
   moralise: {
@@ -88,8 +88,8 @@ window.researchPaperData = {
       "reasoning-reliability": "Structured visual moral scenarios expose alignment failures hidden by aggregate benchmark scores.",
     },
     links: [
-      { label: "PDF", url: "https://arxiv.org/pdf/2505.14728", icon: "fas fa-file-pdf" },
-      { label: "Dataset", url: "https://huggingface.co/datasets/Frontier-AI-Research/MORALISE", icon: "fas fa-database" },
+      { label: "PDF", url: "https://arxiv.org/pdf/2505.14728" },
+      { label: "Dataset", url: "https://huggingface.co/datasets/Frontier-AI-Research/MORALISE" },
     ],
   },
   "moral-backbone": {
@@ -100,7 +100,7 @@ window.researchPaperData = {
       "fairness-alignment": "VLM moral judgments can shift under superficial context changes, revealing brittle alignment.",
     },
     links: [
-      { label: "PDF", url: "https://aclanthology.org/2026.findings-acl.2079.pdf", icon: "fas fa-file-pdf" },
+      { label: "PDF", url: "https://aclanthology.org/2026.findings-acl.2079.pdf" },
     ],
   },
   "reward-diversity": {
@@ -112,8 +112,8 @@ window.researchPaperData = {
       "rare-case-generalization": "Demographically skewed preference data leaves minority groups underrepresented in reward-model alignment.",
     },
     links: [
-      { label: "PDF", url: "https://aclanthology.org/2025.findings-emnlp.183.pdf", icon: "fas fa-file-pdf" },
-      { label: "GitHub", url: "https://github.com/Violet24K/FaRM", icon: "fab fa-github" },
+      { label: "PDF", url: "https://aclanthology.org/2025.findings-emnlp.183.pdf" },
+      { label: "GitHub", url: "https://github.com/Violet24K/FaRM" },
     ],
   },
   aim: {
@@ -124,8 +124,8 @@ window.researchPaperData = {
       "data-interpretability": "Sample-level attribution reveals which training data creates unfair outcomes and why.",
     },
     links: [
-      { label: "PDF", url: "https://arxiv.org/pdf/2406.08819", icon: "fas fa-file-pdf" },
-      { label: "GitHub", url: "https://github.com/ZhiningLiu1998/AIM", icon: "fab fa-github" },
+      { label: "PDF", url: "https://arxiv.org/pdf/2406.08819" },
+      { label: "GitHub", url: "https://github.com/ZhiningLiu1998/AIM" },
     ],
   },
   mesa: {
@@ -137,8 +137,8 @@ window.researchPaperData = {
       "rare-case-generalization": "Adaptive sampling helps ensembles learn minority cases without discarding useful majority data.",
     },
     links: [
-      { label: "PDF", url: "https://arxiv.org/pdf/2010.08830", icon: "fas fa-file-pdf" },
-      { label: "GitHub", url: "https://github.com/ZhiningLiu1998/mesa", icon: "fab fa-github" },
+      { label: "PDF", url: "https://arxiv.org/pdf/2010.08830" },
+      { label: "GitHub", url: "https://github.com/ZhiningLiu1998/mesa" },
     ],
   },
   "self-paced-ensemble": {
@@ -149,8 +149,8 @@ window.researchPaperData = {
       "data-optimization": "Self-paced undersampling preserves informative majority examples while balancing each ensemble learner.",
     },
     links: [
-      { label: "PDF", url: "https://arxiv.org/pdf/1909.03500", icon: "fas fa-file-pdf" },
-      { label: "GitHub", url: "https://github.com/ZhiningLiu1998/self-paced-ensemble", icon: "fab fa-github" },
+      { label: "PDF", url: "https://arxiv.org/pdf/1909.03500" },
+      { label: "GitHub", url: "https://github.com/ZhiningLiu1998/self-paced-ensemble" },
     ],
   },
   climb: {
@@ -161,10 +161,10 @@ window.researchPaperData = {
       "data-interpretability": "Controlled data regimes reveal how imbalance type and severity shape model behavior.",
     },
     links: [
-      { label: "PDF", url: "https://arxiv.org/pdf/2505.17451", icon: "fas fa-file-pdf" },
-      { label: "GitHub", url: "https://github.com/ZhiningLiu1998/imbalanced-ensemble", icon: "fab fa-github" },
-      { label: "Docs", url: "https://imbalanced-ensemble.readthedocs.io", icon: "fas fa-book" },
-      { label: "PyPI", url: "https://pypi.org/project/imbalanced-ensemble/", icon: "fab fa-python" },
+      { label: "PDF", url: "https://arxiv.org/pdf/2505.17451" },
+      { label: "GitHub", url: "https://github.com/ZhiningLiu1998/imbalanced-ensemble" },
+      { label: "Docs", url: "https://imbalanced-ensemble.readthedocs.io" },
+      { label: "PyPI", url: "https://pypi.org/project/imbalanced-ensemble/" },
     ],
   },
   matcha: {
@@ -175,8 +175,8 @@ window.researchPaperData = {
       "graph-learning": "Graph robustness improves when adaptation explicitly targets structural shift at inference time.",
     },
     links: [
-      { label: "PDF", url: "https://arxiv.org/pdf/2410.06976", icon: "fas fa-file-pdf" },
-      { label: "GitHub", url: "https://github.com/baowenxuan/Matcha", icon: "fab fa-github" },
+      { label: "PDF", url: "https://arxiv.org/pdf/2410.06976" },
+      { label: "GitHub", url: "https://github.com/baowenxuan/Matcha" },
     ],
   },
   bat: {
@@ -187,8 +187,8 @@ window.researchPaperData = {
       "rare-case-generalization": "Topology-aware augmentation improves minority classes without relying on class rebalancing.",
     },
     links: [
-      { label: "PDF", url: "https://raw.githubusercontent.com/mlresearch/v235/main/assets/liu24ay/liu24ay.pdf", icon: "fas fa-file-pdf" },
-      { label: "GitHub", url: "https://github.com/ZhiningLiu1998/BAT", icon: "fab fa-github" },
+      { label: "PDF", url: "https://raw.githubusercontent.com/mlresearch/v235/main/assets/liu24ay/liu24ay.pdf" },
+      { label: "GitHub", url: "https://github.com/ZhiningLiu1998/BAT" },
     ],
   },
   adafuse: {
@@ -199,8 +199,8 @@ window.researchPaperData = {
       "model-fusion": "The best model varies across inputs and decoding steps, so adaptive fusion outperforms a fixed ensemble.",
     },
     links: [
-      { label: "PDF", url: "https://aclanthology.org/2026.acl-long.1974.pdf", icon: "fas fa-file-pdf" },
-      { label: "GitHub", url: "https://github.com/CCM0111/AdaFuse", icon: "fab fa-github" },
+      { label: "PDF", url: "https://aclanthology.org/2026.acl-long.1974.pdf" },
+      { label: "GitHub", url: "https://github.com/CCM0111/AdaFuse" },
     ],
   },
   remix: {
@@ -211,7 +211,7 @@ window.researchPaperData = {
       "model-fusion": "Task feedback can route modular adapters more effectively than merging every specialist uniformly.",
     },
     links: [
-      { label: "PDF", url: "https://arxiv.org/pdf/2603.10160", icon: "fas fa-file-pdf" },
+      { label: "PDF", url: "https://arxiv.org/pdf/2603.10160" },
     ],
   },
   timefuse: {
@@ -223,8 +223,8 @@ window.researchPaperData = {
       "time-series-analysis": "Different temporal samples favor different forecasters, making sample-level adaptation valuable.",
     },
     links: [
-      { label: "PDF", url: "https://raw.githubusercontent.com/mlresearch/v267/main/assets/liu25cm/liu25cm.pdf", icon: "fas fa-file-pdf" },
-      { label: "GitHub", url: "https://github.com/ZhiningLiu1998/TimeFuse", icon: "fab fa-github" },
+      { label: "PDF", url: "https://raw.githubusercontent.com/mlresearch/v267/main/assets/liu25cm/liu25cm.pdf" },
+      { label: "GitHub", url: "https://github.com/ZhiningLiu1998/TimeFuse" },
     ],
   },
   "language-flow": {
@@ -235,8 +235,8 @@ window.researchPaperData = {
       "time-series-analysis": "A shared temporal narrative lets models reason jointly over numeric signals and linguistic context.",
     },
     links: [
-      { label: "PDF", url: "https://arxiv.org/pdf/2502.08942", icon: "fas fa-file-pdf" },
-      { label: "GitHub", url: "https://github.com/iDEA-iSAIL-Lab-UIUC/TaTS", icon: "fab fa-github" },
+      { label: "PDF", url: "https://arxiv.org/pdf/2502.08942" },
+      { label: "GitHub", url: "https://github.com/iDEA-iSAIL-Lab-UIUC/TaTS" },
     ],
   },
   backtime: {
@@ -247,8 +247,8 @@ window.researchPaperData = {
       "time-series-analysis": "A forecaster can retain clean accuracy yet fail under sparse temporal triggers, exposing a hidden reliability risk.",
     },
     links: [
-      { label: "PDF", url: "https://arxiv.org/pdf/2410.02195", icon: "fas fa-file-pdf" },
-      { label: "GitHub", url: "https://github.com/xiaolin-cs/BackTime", icon: "fab fa-github" },
+      { label: "PDF", url: "https://arxiv.org/pdf/2410.02195" },
+      { label: "GitHub", url: "https://github.com/xiaolin-cs/BackTime" },
     ],
   },
   planetalign: {
@@ -259,9 +259,9 @@ window.researchPaperData = {
       "graph-learning": "Standardized evaluation reveals how strongly alignment performance depends on graph conditions and protocol choices.",
     },
     links: [
-      { label: "PDF", url: "https://arxiv.org/pdf/2505.21366", icon: "fas fa-file-pdf" },
-      { label: "GitHub", url: "https://github.com/yq-leo/PlanetAlign", icon: "fab fa-github" },
-      { label: "Docs", url: "https://planetalign.readthedocs.io/en/latest/", icon: "fas fa-book" },
+      { label: "PDF", url: "https://arxiv.org/pdf/2505.21366" },
+      { label: "GitHub", url: "https://github.com/yq-leo/PlanetAlign" },
+      { label: "Docs", url: "https://planetalign.readthedocs.io/en/latest/" },
     ],
   },
 };

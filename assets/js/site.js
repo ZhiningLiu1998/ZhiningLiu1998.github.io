@@ -26,7 +26,7 @@ function initZhihuFollowersBadge() {
   const zhihuFollowersBadge = document.getElementById("zhihuFollowersBadge");
 
   if (zhihuFollowersBadge) {
-    fetch(zhihuFollowersBadge.src)
+    fetch(zhihuFollowersBadge.dataset.countSrc)
       .then(response => {
         if (!response.ok) throw new Error(`Zhihu badge request failed: ${response.status}`);
         return response.text();
@@ -37,7 +37,7 @@ function initZhihuFollowersBadge() {
           .documentElement
           .getAttribute("aria-label");
         const followerCount = Number(badgeLabel?.match(/^Zhihu:\s*([\d,]+)\s+Followers$/i)?.[1].replaceAll(",", ""));
-        if (!Number.isFinite(followerCount)) return;
+        if (!Number.isFinite(followerCount)) throw new Error("Zhihu badge response did not include a follower count");
 
         const compactCount = new Intl.NumberFormat("en-US", {
           notation: "compact",
@@ -59,8 +59,26 @@ function initZhihuFollowersBadge() {
   }
 }
 
+function initHorizontalScrollHints() {
+  document.querySelectorAll(".hero-profile-scroll").forEach(container => {
+    function updateScrollHints() {
+      const maxScrollLeft = container.scrollWidth - container.clientWidth;
+      container.classList.toggle("scroll-fade-left", container.scrollLeft > 2);
+      container.classList.toggle("scroll-fade-right", container.scrollLeft < maxScrollLeft - 2);
+    }
+
+    container.addEventListener("scroll", updateScrollHints, { passive: true });
+    container.querySelectorAll("img").forEach(image => {
+      image.addEventListener("load", updateScrollHints);
+    });
+    new ResizeObserver(updateScrollHints).observe(container);
+    document.fonts?.ready.then(updateScrollHints);
+    updateScrollHints();
+  });
+}
+
 function initProfileTooltips() {
-  const container = document.querySelector(".hero-links");
+  const container = document.querySelector(".hero-profile-scroll");
   if (!container) return;
 
   const pills = Array.from(container.querySelectorAll(".pill-link"));
@@ -110,6 +128,14 @@ function initProfileTooltips() {
 function initResearchPaperPopover() {
   const researchPaperTriggers = Array.from(document.querySelectorAll(".research-paper-trigger"));
   const researchPaperData = window.researchPaperData || {};
+  const resourceIcons = {
+    Dataset: "fas fa-database",
+    Docs: "fas fa-book",
+    GitHub: "fab fa-github",
+    PDF: "fas fa-file-pdf",
+    Project: "fas fa-globe",
+    PyPI: "fab fa-python",
+  };
   const publicationHighlightTemplates = new Map(
     Array.from(document.querySelectorAll(".pub-item[data-paper-id]"))
       .map(item => [
@@ -184,7 +210,7 @@ function initResearchPaperPopover() {
       links.forEach(link => {
         const anchor = document.createElement("a");
         const icon = document.createElement("i");
-        icon.className = link.icon;
+        icon.className = resourceIcons[link.label] || "fas fa-file-alt";
         icon.setAttribute("aria-hidden", "true");
         anchor.href = link.url;
         anchor.target = "_blank";
@@ -393,7 +419,6 @@ function initGallery() {
   let visibleGalleryCount = Math.min(initialGalleryItemCount(), galleryPhotos.length);
   let visibleLocationCount = initialGalleryItemCount();
   let renderedGalleryCount = 0;
-  let activeGalleryView = "time";
   let activeLightboxIndexes = [];
   let currentPhotoPosition = 0;
   let lightboxTouchStart = null;
@@ -404,14 +429,8 @@ function initGallery() {
     lightbox.classList.remove("hint-prev", "hint-next", "hint-close");
   }
 
-  function updateLightboxNavEdges() {
-    lightbox.style.setProperty("--lightbox-prev-edge", "34px");
-    lightbox.style.setProperty("--lightbox-next-edge", "34px");
-  }
-
   function updateLightboxNavHint(event) {
     const imageBounds = lightboxImg.getBoundingClientRect();
-    updateLightboxNavEdges();
     if (event.clientY < imageBounds.top || event.clientY > imageBounds.bottom) {
       lightbox.classList.remove("hint-prev", "hint-next");
       lightbox.classList.add("hint-close");
@@ -477,7 +496,6 @@ function initGallery() {
       return;
     }
     const direction = event.clientX < window.innerWidth / 2 ? -1 : 1;
-    updateLightboxNavEdges();
     showLightboxNavFeedback(direction);
     moveLightbox(direction);
   }
@@ -498,7 +516,6 @@ function initGallery() {
     event.preventDefault();
     suppressNextLightboxClick = true;
     const direction = deltaX < 0 ? 1 : -1;
-    updateLightboxNavEdges();
     showLightboxNavFeedback(direction);
     moveLightbox(direction);
   }
@@ -512,22 +529,23 @@ function initGallery() {
     return src.replace("images/gallery/processed/", "images/gallery/thumbs/").replace(/\.[^.]+$/, ".jpg");
   }
 
+  function setGalleryActions(locationView, hasMore) {
+    galleryActions.classList.toggle("visible", hasMore);
+    galleryShowMore.hidden = locationView;
+    galleryShowAll.hidden = locationView;
+    galleryShowAllLocations.hidden = !locationView;
+  }
+
   function updateGalleryButton() {
     const remainingImages = galleryPhotos.length - visibleGalleryCount;
-    galleryActions.classList.toggle("visible", remainingImages > 0);
-    galleryShowMore.style.display = "";
-    galleryShowAll.style.display = "";
-    galleryShowAllLocations.style.display = "none";
+    setGalleryActions(false, remainingImages > 0);
     galleryShowMore.textContent = `Show ${galleryBatchSize} more (${remainingImages} remaining)`;
     galleryShowAll.textContent = `Show all ${galleryPhotos.length} images`;
   }
 
   function updateLocationButton(totalLocations) {
     const hasHiddenLocations = visibleLocationCount < totalLocations;
-    galleryActions.classList.toggle("visible", hasHiddenLocations);
-    galleryShowMore.style.display = "none";
-    galleryShowAll.style.display = "none";
-    galleryShowAllLocations.style.display = "";
+    setGalleryActions(true, hasHiddenLocations);
     galleryShowAllLocations.textContent = `Show all ${totalLocations} locations`;
   }
 
@@ -718,11 +736,10 @@ function initGallery() {
   }
 
   function setGalleryView(view) {
-    activeGalleryView = view;
     galleryViewButtons.forEach(button => {
-      button.classList.toggle("active", button.dataset.galleryView === activeGalleryView);
+      button.classList.toggle("active", button.dataset.galleryView === view);
     });
-    if (activeGalleryView === "location") {
+    if (view === "location") {
       visibleLocationCount = initialGalleryItemCount();
       renderLocationGallery();
     } else {
@@ -801,6 +818,7 @@ function loadVisitorMap() {
 
 initNavigation();
 initZhihuFollowersBadge();
+initHorizontalScrollHints();
 initProfileTooltips();
 initResearchPaperPopover();
 initPublicationFilter();
