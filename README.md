@@ -1,3 +1,9 @@
-# 个人主页
+# Personal Website
 
-这是我的个人主页。你可以使用其中的内容，但请注明来源：[ZhiningLiu1998.github.io](https://github.com/ZhiningLiu1998/ZhiningLiu1998.github.io)。
+This repository hosts the source code and content for my personal website,
+which presents information about my background, experience, projects, and
+professional activities.
+
+Materials from this repository may be used or adapted. I kindly request that
+any such use be accompanied by an acknowledgment that this website served as a
+source or reference.

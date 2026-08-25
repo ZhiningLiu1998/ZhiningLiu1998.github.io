@@ -113,9 +113,12 @@ section { padding-top: 48px; }
 }
 
 .hero-photo {
+  align-self: stretch;
   align-items: center;
   display: flex;
   flex-direction: column;
+  gap: 20px;
+  justify-content: center;
 }
 
 .hero-photo > img {
@@ -131,6 +134,17 @@ section { padding-top: 48px; }
 .hero-photo > img:hover {
   box-shadow: 0 14px 34px rgba(18, 79, 143, 0.18);
   transform: translateY(-3px) scale(1.02);
+}
+
+.hero-quote {
+  color: var(--muted);
+  font-family: "Crimson Pro", Georgia, serif;
+  font-size: 17px;
+  font-style: italic;
+  line-height: 1.35;
+  margin: 0;
+  max-width: 220px;
+  text-align: center;
 }
 
 h1,
@@ -176,9 +190,9 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
-  justify-content: center;
-  margin-top: 16px;
-  max-width: 220px;
+  justify-content: flex-start;
+  margin: 0 0 14px;
+  max-width: 690px;
 }
 
 .hero-badges a,
@@ -1407,6 +1421,7 @@ footer {
   }
 
   .hero-badges {
+    justify-content: center;
     max-width: min(100%, 520px);
   }
 
