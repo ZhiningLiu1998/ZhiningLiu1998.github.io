@@ -187,7 +187,8 @@ h1 {
 }
 
 .bio-highlight {
-  color: #a84f1f;
+  font-style: italic;
+  font-weight: 600;
 }
 
 .hero-profile-scroll {
