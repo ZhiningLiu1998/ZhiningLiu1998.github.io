@@ -59,6 +59,54 @@ function initZhihuFollowersBadge() {
   }
 }
 
+function initProfileTooltips() {
+  const container = document.querySelector(".hero-links");
+  if (!container) return;
+
+  const pills = Array.from(container.querySelectorAll(".pill-link"));
+  let activePill = null;
+
+  function positionProfileTooltip(pill) {
+    const tooltip = pill.querySelector(".profile-tooltip");
+    if (!tooltip) return;
+
+    tooltip.style.setProperty("--tooltip-shift-x", "0px");
+    const containerRect = container.getBoundingClientRect();
+    const tooltipRect = tooltip.getBoundingClientRect();
+    const leftEdge = Math.max(containerRect.left + 4, 4);
+    const rightEdge = Math.min(containerRect.right - 4, window.innerWidth - 4);
+    const minShift = leftEdge - tooltipRect.left;
+    const maxShift = rightEdge - tooltipRect.right;
+    const shift = Math.max(minShift, Math.min(0, maxShift));
+
+    tooltip.style.setProperty("--tooltip-shift-x", `${shift}px`);
+  }
+
+  pills.forEach(pill => {
+    pill.addEventListener("pointerenter", () => {
+      activePill = pill;
+      positionProfileTooltip(pill);
+    });
+    pill.addEventListener("pointerleave", () => {
+      if (activePill === pill && !pill.matches(":focus-visible")) activePill = null;
+    });
+    pill.addEventListener("focus", () => {
+      activePill = pill;
+      positionProfileTooltip(pill);
+    });
+    pill.addEventListener("blur", () => {
+      if (activePill === pill && !pill.matches(":hover")) activePill = null;
+    });
+  });
+
+  container.addEventListener("scroll", () => {
+    if (activePill) positionProfileTooltip(activePill);
+  }, { passive: true });
+  window.addEventListener("resize", () => {
+    if (activePill) positionProfileTooltip(activePill);
+  });
+}
+
 function initResearchPaperPopover() {
   const researchPaperTriggers = Array.from(document.querySelectorAll(".research-paper-trigger"));
   const researchPaperData = window.researchPaperData || {};
@@ -753,6 +801,7 @@ function loadVisitorMap() {
 
 initNavigation();
 initZhihuFollowersBadge();
+initProfileTooltips();
 initResearchPaperPopover();
 initPublicationFilter();
 initGallery();
