@@ -166,6 +166,11 @@ h1 {
   margin-bottom: 8px;
 }
 
+.cn-name {
+  font-family: "Ma Shan Zheng", "Crimson Pro", Georgia, serif;
+  font-weight: 400;
+}
+
 .subtitle {
   color: var(--muted);
   font-size: 16px;
