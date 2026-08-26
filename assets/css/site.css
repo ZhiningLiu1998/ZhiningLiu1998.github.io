@@ -1276,7 +1276,7 @@ html:not(.js-ready) .pub-show-all { display: block; }
 .lightbox img {
   background: #fff;
   border: clamp(18px, 4.8vw, 36px) solid #fff;
-  border-radius: 8px;
+  border-radius: 0;
   box-shadow: 0 18px 48px rgba(0, 0, 0, 0.36);
   cursor: pointer;
   max-height: min(80vh, calc(100vh - 120px));
