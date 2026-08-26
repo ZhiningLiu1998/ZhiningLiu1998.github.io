@@ -1275,7 +1275,9 @@ html:not(.js-ready) .pub-show-all { display: block; }
 
 .lightbox img {
   background: #fff;
-  border: clamp(18px, 4.8vw, 36px) solid #fff;
+  /* Frame width is set by JS as a fixed ratio of the displayed photo size
+     (see applyProportionalFrame); the clamp is a fallback before JS runs. */
+  border: var(--frame-w, clamp(18px, 4.8vw, 36px)) solid #fff;
   border-radius: 0;
   box-shadow: 0 18px 48px rgba(0, 0, 0, 0.36);
   cursor: pointer;
@@ -1285,7 +1287,6 @@ html:not(.js-ready) .pub-show-all { display: block; }
 }
 
 .lightbox img.portrait {
-  border-width: clamp(8px, 2.4vw, 18px);
   max-height: min(84vh, calc(100vh - 120px));
   max-width: 82vw;
 }

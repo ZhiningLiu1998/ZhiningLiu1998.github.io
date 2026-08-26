@@ -412,6 +412,8 @@ function initGallery() {
   const lightboxPrev = document.getElementById("lightboxPrev");
   const lightboxNext = document.getElementById("lightboxNext");
   const galleryBatchSize = 10;
+  // White frame thickness as a fraction of the displayed photo's shorter side.
+  const lightboxFrameRatio = 0.04;
   const mobileGalleryQuery = window.matchMedia("(max-width: 640px)");
   function initialGalleryItemCount() {
     return mobileGalleryQuery.matches ? 10 : 20;
@@ -520,9 +522,24 @@ function initGallery() {
     moveLightbox(direction);
   }
 
+  function applyProportionalFrame() {
+    // Measure against the CSS fallback border, then set the frame as a fixed
+    // ratio of the displayed photo's shorter side so it scales with the image.
+    lightboxImg.style.removeProperty("--frame-w");
+    const shorter = Math.min(lightboxImg.clientWidth, lightboxImg.clientHeight);
+    if (shorter > 0) {
+      lightboxImg.style.setProperty("--frame-w", `${Math.round(shorter * lightboxFrameRatio)}px`);
+    }
+  }
+
   lightboxImg.addEventListener("load", () => {
     lightboxImg.classList.toggle("portrait", lightboxImg.naturalHeight > lightboxImg.naturalWidth);
     lightboxImg.classList.toggle("landscape", lightboxImg.naturalWidth >= lightboxImg.naturalHeight);
+    applyProportionalFrame();
+  });
+
+  window.addEventListener("resize", () => {
+    if (lightbox.classList.contains("active")) applyProportionalFrame();
   });
 
   function thumbnailSrc(src) {
