@@ -196,6 +196,19 @@ h1 {
   font-weight: 600;
 }
 
+.collaboration-note {
+  color: var(--text);
+  margin: 24px 0 0;
+}
+
+.collaboration-emphasis {
+  font-weight: 600;
+}
+
+.collaboration-contact {
+  color: var(--blue);
+}
+
 .hero-profile-scroll {
   --scroll-fade-size: 24px;
   grid-column: 1 / -1;
@@ -414,11 +427,6 @@ h1 {
 .pill-link:focus-visible {
   outline: 2px solid var(--orange);
   outline-offset: 2px;
-}
-
-.interest-intro {
-  margin: 24px 0 0;
-  color: var(--muted, #56637a);
 }
 
 .interest-grid {
