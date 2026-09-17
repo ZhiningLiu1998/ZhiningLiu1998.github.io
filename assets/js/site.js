@@ -797,6 +797,71 @@ function initGallery() {
   });
 }
 
+function initPublicationFigures() {
+  const thumbs = Array.from(document.querySelectorAll(".pub-thumb"));
+  if (!thumbs.length) return;
+
+  const viewer = document.createElement("div");
+  viewer.className = "fig-viewer";
+  viewer.id = "figViewer";
+  viewer.hidden = true;
+  viewer.setAttribute("role", "dialog");
+  viewer.setAttribute("aria-modal", "true");
+  viewer.setAttribute("aria-label", "Paper figure");
+  viewer.innerHTML = `
+    <button class="fig-viewer-close" type="button" aria-label="Close figure">
+      <i class="fas fa-times" aria-hidden="true"></i>
+    </button>
+    <figure class="fig-viewer-frame">
+      <img alt="">
+      <figcaption><a class="fig-viewer-link" href=""></a></figcaption>
+    </figure>
+  `;
+  document.body.appendChild(viewer);
+
+  const viewerImage = viewer.querySelector("img");
+  const viewerLink = viewer.querySelector(".fig-viewer-link");
+  let lastTrigger = null;
+
+  function openViewer(thumb) {
+    const image = thumb.querySelector("img");
+    const title = thumb.parentElement.querySelector(".pub-title");
+    lastTrigger = thumb;
+    viewerImage.src = image.src;
+    viewerImage.alt = image.alt;
+    viewerLink.href = thumb.href;
+    viewerLink.textContent = title ? title.textContent : "View paper";
+    viewer.hidden = false;
+    document.body.style.overflow = "hidden";
+  }
+
+  function closeViewer() {
+    if (viewer.hidden) return;
+    viewer.hidden = true;
+    viewerImage.src = "";
+    document.body.style.overflow = "";
+    if (lastTrigger) lastTrigger.focus({ preventScroll: true });
+  }
+
+  thumbs.forEach(thumb => {
+    thumb.addEventListener("click", event => {
+      // Let modified clicks fall through so the paper can still open in a new tab.
+      if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey || event.button !== 0) return;
+      event.preventDefault();
+      openViewer(thumb);
+    });
+  });
+
+  viewer.addEventListener("click", event => {
+    if (event.target.closest(".fig-viewer-link")) return;
+    closeViewer();
+  });
+
+  document.addEventListener("keydown", event => {
+    if (event.key === "Escape") closeViewer();
+  });
+}
+
 function loadVisitorMap() {
   const mount = document.getElementById("visitorMapMount");
   if (!mount) return;
@@ -839,5 +904,6 @@ initHorizontalScrollHints();
 initProfileTooltips();
 initResearchPaperPopover();
 initPublicationFilter();
+initPublicationFigures();
 initGallery();
 loadVisitorMap();
