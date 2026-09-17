@@ -210,16 +210,65 @@ h1 {
   color: var(--blue);
 }
 
-.hero-profile-scroll {
-  --scroll-fade-size: 24px;
+.hero-profile-nav {
   grid-column: 1 / -1;
   margin: -42px 0 8px;
+  min-width: 0;
+  position: relative;
+  width: 100%;
+}
+
+.hero-profile-scroll {
+  --scroll-fade-size: 24px;
+  cursor: grab;
   min-width: 0;
   overflow-x: auto;
   padding: 50px var(--scroll-fade-size) 0 0;
   scrollbar-width: none;
   width: 100%;
 }
+
+.hero-profile-scroll.is-dragging {
+  cursor: grabbing;
+  scroll-behavior: auto;
+  user-select: none;
+}
+
+.hero-profile-scroll img {
+  -webkit-user-drag: none;
+}
+
+.profile-scroll-arrow {
+  align-items: center;
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(23, 32, 42, 0.14);
+  color: var(--muted);
+  cursor: pointer;
+  display: inline-flex;
+  font-size: 12px;
+  height: 28px;
+  justify-content: center;
+  position: absolute;
+  top: calc(50% + 25px);
+  transform: translateY(-50%);
+  transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease, opacity 0.2s ease;
+  width: 28px;
+  z-index: 3;
+}
+
+.profile-scroll-arrow[hidden] { display: none; }
+
+.profile-scroll-arrow:hover {
+  background: #fff;
+  border-color: var(--blue);
+  color: var(--blue);
+}
+
+.arrow-prev { left: -8px; }
+
+.arrow-next { right: -8px; }
 
 .hero-profile-scroll.scroll-fade-left {
   -webkit-mask-image: linear-gradient(to right, transparent, #000 var(--scroll-fade-size));

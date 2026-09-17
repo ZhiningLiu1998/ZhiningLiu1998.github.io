@@ -60,12 +60,66 @@ function initZhihuFollowersBadge() {
 }
 
 function initHorizontalScrollHints() {
+  const dragThreshold = 4;
+
   document.querySelectorAll(".hero-profile-scroll").forEach(container => {
+    const nav = container.closest(".hero-profile-nav");
+    const previousArrow = nav?.querySelector(".arrow-prev");
+    const nextArrow = nav?.querySelector(".arrow-next");
+    let drag = null;
+
     function updateScrollHints() {
       const maxScrollLeft = container.scrollWidth - container.clientWidth;
-      container.classList.toggle("scroll-fade-left", container.scrollLeft > 2);
-      container.classList.toggle("scroll-fade-right", container.scrollLeft < maxScrollLeft - 2);
+      const atStart = container.scrollLeft <= 2;
+      const atEnd = container.scrollLeft >= maxScrollLeft - 2;
+      container.classList.toggle("scroll-fade-left", !atStart);
+      container.classList.toggle("scroll-fade-right", !atEnd);
+      if (previousArrow) previousArrow.hidden = maxScrollLeft <= 2 || atStart;
+      if (nextArrow) nextArrow.hidden = maxScrollLeft <= 2 || atEnd;
     }
+
+    function scrollByPage(direction) {
+      container.scrollBy({ left: direction * container.clientWidth * 0.7, behavior: "smooth" });
+    }
+
+    previousArrow?.addEventListener("click", () => scrollByPage(-1));
+    nextArrow?.addEventListener("click", () => scrollByPage(1));
+
+    // Mouse users have no horizontal wheel or swipe, so let them drag the strip.
+    container.addEventListener("pointerdown", event => {
+      if (event.pointerType !== "mouse" || event.button !== 0) return;
+      drag = { startX: event.clientX, startScrollLeft: container.scrollLeft, moved: false };
+    });
+
+    container.addEventListener("pointermove", event => {
+      if (!drag) return;
+      const deltaX = event.clientX - drag.startX;
+      if (!drag.moved && Math.abs(deltaX) < dragThreshold) return;
+      if (!drag.moved) {
+        drag.moved = true;
+        container.classList.add("is-dragging");
+        container.setPointerCapture(event.pointerId);
+      }
+      container.scrollLeft = drag.startScrollLeft - deltaX;
+    });
+
+    function endDrag() {
+      if (!drag) return;
+      const wasDragged = drag.moved;
+      drag = null;
+      container.classList.remove("is-dragging");
+      // Swallow the click that ends a drag so badges do not open their links.
+      if (wasDragged) {
+        container.addEventListener("click", event => {
+          event.preventDefault();
+          event.stopPropagation();
+        }, { capture: true, once: true });
+      }
+    }
+
+    container.addEventListener("pointerup", endDrag);
+    container.addEventListener("pointercancel", endDrag);
+    container.addEventListener("dragstart", event => event.preventDefault());
 
     container.addEventListener("scroll", updateScrollHints, { passive: true });
     container.querySelectorAll("img").forEach(image => {
