@@ -385,6 +385,24 @@ h1 {
   height: 20px;
 }
 
+.profile-badge.inline-badge {
+  align-items: center;
+  background: #f4f7fa;
+  color: #333;
+  display: inline-flex;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 11px;
+  height: 18px;
+  line-height: 16px;
+  padding-right: 6px;
+  vertical-align: middle;
+}
+
+.profile-badge.inline-badge img {
+  border-radius: 0;
+  height: 20px;
+}
+
 .pill-link,
 .pub-link,
 .filter-btn {
