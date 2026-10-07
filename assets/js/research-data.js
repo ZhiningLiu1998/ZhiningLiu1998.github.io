@@ -26,8 +26,8 @@ window.researchPaperData = {
     ],
   },
   "agentic-reasoning": {
-    title: "Agentic Reasoning for Large Language Models",
-    venue: "arXiv 2026",
+    title: "A Survey of Agentic Reasoning for Large Language Models: Towards Recursively Self-Improving and Collective Agents",
+    venue: "TMLR 2026",
     topics: ["Agentic Reasoning", "Planning", "Self-Improvement"],
     insights: {
       "agentic-reasoning": "Agentic reasoning combines planning, tools, memory, and feedback.",
@@ -41,7 +41,7 @@ window.researchPaperData = {
   },
   "mem-gallery": {
     title: "Mem-Gallery: Benchmarking Multimodal Long-Term Conversational Memory for MLLM Agents",
-    venue: "ACL 2026",
+    venue: "ACL 2026 Main",
     topics: ["MLLM Agents", "Long-Term Memory", "Benchmarking"],
     insights: {
       "self-improving-agents": "Multimodal memory lets agents retain and reason over evolving conversations.",
@@ -56,7 +56,7 @@ window.researchPaperData = {
   },
   selfelicit: {
     title: "SelfElicit: Your Language Model Secretly Knows Where Is the Relevant Evidence",
-    venue: "ACL 2025",
+    venue: "ACL 2025 Main",
     topics: ["Long-Context QA", "Evidence Grounding", "Interpretability"],
     insights: {
       "agentic-reasoning": "Self-guided evidence highlighting improves grounded reasoning without extra training.",
@@ -68,7 +68,7 @@ window.researchPaperData = {
     ],
   },
   "seeing-not-believing": {
-    title: "Seeing but Not Believing: Probing the Disconnect between Visual Attention and Answer Correctness in VLMs",
+    title: "Seeing but Not Believing: Probing the Disconnect Between Visual Attention and Answer Correctness in VLMs",
     venue: "ICLR 2026",
     topics: ["VLM Reliability", "Visual Grounding", "Attention"],
     insights: {
@@ -76,7 +76,7 @@ window.researchPaperData = {
       "reasoning-reliability": "Visual attention can look plausible while the answer is wrong, so attention alone is not a reliable grounding signal.",
     },
     links: [
-      { label: "PDF", url: "https://arxiv.org/pdf/2510.17771" },
+      { label: "PDF", url: "https://proceedings.iclr.cc/paper_files/paper/2026/file/76818d8d85e05e45ce3a16a8468619d1-Paper-Conference.pdf" },
     ],
   },
   moralise: {
@@ -88,13 +88,13 @@ window.researchPaperData = {
       "reasoning-reliability": "Structured visual moral scenarios expose alignment failures hidden by aggregate benchmark scores.",
     },
     links: [
-      { label: "PDF", url: "https://arxiv.org/pdf/2505.14728" },
+      { label: "PDF", url: "https://openreview.net/pdf?id=il6P7EHU1w" },
       { label: "Dataset", url: "https://huggingface.co/datasets/Frontier-AI-Research/MORALISE" },
     ],
   },
   "moral-backbone": {
     title: "Do VLMs Have a Moral Backbone? A Study on the Fragile Morality of Vision-Language Models",
-    venue: "ACL 2026",
+    venue: "ACL 2026 Findings",
     topics: ["VLM Alignment", "Moral Reasoning", "Robustness"],
     insights: {
       "fairness-alignment": "VLM moral judgments can shift under superficial context changes, revealing brittle alignment.",
@@ -105,7 +105,7 @@ window.researchPaperData = {
   },
   "reward-diversity": {
     title: "Not All Voices Are Rewarded Equally: Probing and Repairing Reward Models across Human Diversity",
-    venue: "EMNLP 2025",
+    venue: "EMNLP 2025 Findings",
     topics: ["Reward Models", "Human Diversity", "Fairness"],
     insights: {
       "fairness-alignment": "Aggregate reward quality can hide systematic preference gaps across demographic and value groups.",
@@ -193,7 +193,7 @@ window.researchPaperData = {
   },
   adafuse: {
     title: "AdaFuse: Adaptive Ensemble Decoding for Large Language Models",
-    venue: "ACL 2026",
+    venue: "ACL 2026 Main",
     topics: ["LLM Ensembles", "Adaptive Decoding", "Model Fusion"],
     insights: {
       "model-fusion": "The best model varies across inputs and decoding steps, so adaptive fusion outperforms a fixed ensemble.",
@@ -204,14 +204,14 @@ window.researchPaperData = {
     ],
   },
   remix: {
-    title: "ReMix: Reinforcement Routing for Mixtures of LoRAs in LLM Finetuning",
-    venue: "LLA 2026",
+    title: "Reinforcement Routing for Mixtures of LoRAs in Parameter-Efficient LLM Finetuning",
+    venue: "COLM 2026",
     topics: ["LoRA Routing", "Reinforcement Learning", "Model Fusion"],
     insights: {
       "model-fusion": "Task feedback can route modular adapters more effectively than merging every specialist uniformly.",
     },
     links: [
-      { label: "PDF", url: "https://arxiv.org/pdf/2603.10160" },
+      { label: "PDF", url: "https://openreview.net/pdf?id=Y089dOJOwf" },
     ],
   },
   timefuse: {
