@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 242 350">
+  <title>Block I in Illini orange</title>
+  <style>
+    .block-i-outline { fill: #13294B; }
+    .block-i-fill { fill: #FF5F05; }
+  </style>
+  <path class="block-i-outline" d="M242 94V0H0v94h54v162H0v94h242v-94h-54V94zm-54 175h41v68H13v-68h41q12-1 13-13V94q-1-12-13-13H13V13h216v68h-41q-12 1-13 13v162q1 12 13 13"/>
+  <path class="block-i-fill" d="M188 81h41V13H13v68h41q12 1 13 13v162q-1 12-13 13H13v68h216v-68h-41q-12-1-13-13V94q1-12 13-13"/>
+</svg>

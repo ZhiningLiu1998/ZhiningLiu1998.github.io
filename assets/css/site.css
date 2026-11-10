@@ -213,6 +213,10 @@ h1 {
   margin: 24px 0 0;
 }
 
+.collaboration-note a:has(.inline-logo) {
+  white-space: nowrap;
+}
+
 .collaboration-emphasis {
   font-weight: 600;
 }
